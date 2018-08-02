@@ -1,2 +1,2 @@
 # test-repo
-sonar test
+sonarqube test
