@@ -1,0 +1,24 @@
+
+UPDATE meta_social_needs_category SET display_value = 'Conflict Resolution' WHERE id = 'metaSocialNeedsCategory:005';
+UPDATE meta_social_needs_category SET display_value = 'Crisis Intervention/Support Counseling' WHERE id = 'metaSocialNeedsCategory:006';
+UPDATE meta_social_needs_category SET display_value = 'Education/Employment' WHERE id = 'metaSocialNeedsCategory:007';
+UPDATE meta_social_needs_category SET value_order = '9' WHERE id = 'metaSocialNeedsCategory:008';
+UPDATE meta_social_needs_category SET display_value = 'General Information and Referral',value_order = '10' WHERE id = 'metaSocialNeedsCategory:009';
+UPDATE meta_social_needs_category SET display_value = 'Health Care/Services',value_order = '11' WHERE id = 'metaSocialNeedsCategory:010';
+UPDATE meta_social_needs_category SET value_order = '12' WHERE id = 'metaSocialNeedsCategory:011';
+UPDATE meta_social_needs_category SET value_order = '13' WHERE id = 'metaSocialNeedsCategory:012';
+UPDATE meta_social_needs_category SET value_order = '14' WHERE id = 'metaSocialNeedsCategory:013';
+UPDATE meta_social_needs_category SET value_order = '15' WHERE id = 'metaSocialNeedsCategory:014';
+UPDATE meta_social_needs_category SET value_order = '16' WHERE id = 'metaSocialNeedsCategory:015';
+UPDATE meta_social_needs_category SET value_order = '17' WHERE id = 'metaSocialNeedsCategory:016';
+UPDATE meta_social_needs_category SET value_order = '18' WHERE id = 'metaSocialNeedsCategory:017';
+UPDATE meta_social_needs_category SET value_order = '19' WHERE id = 'metaSocialNeedsCategory:018';
+UPDATE meta_social_needs_category SET value_order = '20' WHERE id = 'metaSocialNeedsCategory:019';
+UPDATE meta_social_needs_category SET display_value = 'Community/Residents/Tenants Associations',value_order = '21' WHERE id = 'metaSocialNeedsCategory:020';
+UPDATE meta_social_needs_category SET value_order = '22' WHERE id = 'metaSocialNeedsCategory:021';
+UPDATE meta_social_needs_category SET value_order = '23' WHERE id = 'metaSocialNeedsCategory:022';
+UPDATE meta_social_needs_category SET display_value = 'Transfer to Alternative Housing or Hospital',value_order = '24' WHERE id = 'metaSocialNeedsCategory:023';
+UPDATE meta_social_needs_category SET value_order = '25' WHERE id = 'metaSocialNeedsCategory:024';
+UPDATE meta_social_needs_category SET value_order = '26' WHERE id = 'metaSocialNeedsCategory:025';
+INSERT INTO meta_social_needs_category(key,display_value,value_order,status,created_on_date,created_on_time,created_by,id,tags,organization_id,custom_property,checksum,object_path,is_deleted) values ('fairHousingCivilRightsAssistance','Fair Housing and Civil Rights Assistance','8','active',NULL,NULL,NULL,'metaSocialNeedsCategory:026',NULL,NULL,NULL,NULL,NULL,false);
+INSERT INTO meta_social_needs_category(key,display_value,value_order,status,created_on_date,created_on_time,created_by,id,tags,organization_id,custom_property,checksum,object_path,is_deleted) values ('other','Other','27','active',NULL,NULL,NULL,'metaSocialNeedsCategory:027',NULL,NULL,NULL,NULL,NULL,false);

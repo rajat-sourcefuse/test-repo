@@ -1,0 +1,4 @@
+
+UPDATE meta_worklist_status SET value = 'INITIATED' WHERE id = 'metaWorklistStatus:OPEN';
+INSERT INTO meta_worklist_status(value,ui_hidden,created_on_date,created_on_time,created_by,id,tags,organization_id,custom_property,checksum,object_path,is_deleted) values ('IN PROCESS',false,NULL,NULL,NULL,'metaWorklistStatus:INPROCESS',NULL,NULL,NULL,NULL,NULL,false);
+INSERT INTO meta_worklist_status(value,ui_hidden,created_on_date,created_on_time,created_by,id,tags,organization_id,custom_property,checksum,object_path,is_deleted) values ('PROCESSED',false,NULL,NULL,NULL,'metaWorklistStatus:PROCESSED',NULL,NULL,NULL,NULL,NULL,false);
