@@ -1,0 +1,16 @@
+services:
+#    omlbl.example:
+#        class: SynapEssentials\OMLBLBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
+
+    BLListener:
+        class:  SynapEssentials\OMLBLBundle\EventListener\BLListener
+        arguments: ["@service_container"]
+        tags:
+            - { name: kernel.event_listener, event: oml.notify, method: onNotify }
+            
+    SignatureValidate:
+        class:  SynapEssentials\OMLBLBundle\Implementations\SignatureValidator\SignatureValidator
+        arguments: ["@service_container"]
+        tags:
+            - { name: kernel.event_listener, event: oml.signatureValidate, method: listen }
