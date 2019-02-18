@@ -1,0 +1,2 @@
+
+INSERT INTO system_user(first_name,last_name,user_type,synap_user_id,created_on_date,created_on_time,created_by,id,tags,organization_id,custom_property,checksum,object_path,is_deleted) values ('cron','Aperiohealth','metaUserType:system','synapUser:002',NULL,NULL,NULL,'systemUser:001',NULL,'organization:001',NULL,NULL,NULL,false);
