@@ -1,0 +1,5 @@
+
+UPDATE meta_oml_script SET name = 'AuditLoggerUpdateCron',authorization_policy = 'metaAuthPolicy:AllowOnlySystem' WHERE id = 'metaOmlScript:033';
+UPDATE meta_oml_script SET name = 'DailyScheduleEmailCron' WHERE id = 'metaOmlScript:041';
+INSERT INTO meta_oml_script(name,authorization_policy,script_type,created_on_date,created_on_time,created_by,id,tags,organization_id,custom_property,checksum,object_path,is_deleted) values ('SyncDataUploadCron','metaAuthPolicy:AllowOnlySystem','SUC',NULL,NULL,NULL,'metaOmlScript:071',NULL,NULL,NULL,NULL,NULL,false);
+INSERT INTO meta_oml_script(name,authorization_policy,script_type,created_on_date,created_on_time,created_by,id,tags,organization_id,custom_property,checksum,object_path,is_deleted) values ('DownloadSyncData','metaAuthPolicy:AllowOnlySystem','SUC',NULL,NULL,NULL,'metaOmlScript:072',NULL,NULL,NULL,NULL,NULL,false);
