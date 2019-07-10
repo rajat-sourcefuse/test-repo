@@ -1,0 +1,4 @@
+
+INSERT INTO meta_question(question,sort_order,created_on_date,created_on_time,created_by,id,tags,organization_id,custom_property,checksum,object_path,is_deleted) values ('I am motivated to better manage my health?','1',NULL,NULL,NULL,'metaQuestion:001',NULL,NULL,NULL,NULL,NULL,false);
+INSERT INTO meta_question(question,sort_order,created_on_date,created_on_time,created_by,id,tags,organization_id,custom_property,checksum,object_path,is_deleted) values ('I am confident in my ability to manage my health?','2',NULL,NULL,NULL,'metaQuestion:002',NULL,NULL,NULL,NULL,NULL,false);
+INSERT INTO meta_question(question,sort_order,created_on_date,created_on_time,created_by,id,tags,organization_id,custom_property,checksum,object_path,is_deleted) values ('Compared to others my age, I feel my health is?','3',NULL,NULL,NULL,'metaQuestion:003',NULL,NULL,NULL,NULL,NULL,false);

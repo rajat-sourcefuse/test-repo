@@ -1,0 +1,2 @@
+
+INSERT INTO meta_oml_script(name,authorization_policy,script_type,created_on_date,created_on_time,created_by,id,tags,organization_id,custom_property,checksum,object_path,is_deleted) values ('CourseSessionAttendance','metaAuthPolicy:denyInstructorPatient','SUC',NULL,NULL,NULL,'metaOmlScript:073',NULL,NULL,NULL,NULL,NULL,false);
