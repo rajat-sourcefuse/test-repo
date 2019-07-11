@@ -5,6 +5,8 @@
 -- Dumped from database version 9.6.11
 -- Dumped by pg_dump version 9.6.11
 
+-- Started on 2019-07-11 03:46:03 UTC
+
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET idle_in_transaction_session_timeout = 0;
@@ -16,6 +18,7 @@ SET client_min_messages = warning;
 SET row_security = off;
 
 --
+-- TOC entry 1 (class 3079 OID 13308)
 -- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
 --
 
@@ -23,6 +26,8 @@ CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
 
 
 --
+-- TOC entry 5760 (class 0 OID 0)
+-- Dependencies: 1
 -- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
 --
 
@@ -30,6 +35,7 @@ COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
 
 
 --
+-- TOC entry 2 (class 3079 OID 280462)
 -- Name: ltree; Type: EXTENSION; Schema: -; Owner: 
 --
 
@@ -37,6 +43,8 @@ CREATE EXTENSION IF NOT EXISTS ltree WITH SCHEMA public;
 
 
 --
+-- TOC entry 5761 (class 0 OID 0)
+-- Dependencies: 2
 -- Name: EXTENSION ltree; Type: COMMENT; Schema: -; Owner: 
 --
 
@@ -48,6 +56,7 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
+-- TOC entry 318 (class 1259 OID 281881)
 -- Name: calendar_item; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -86,6 +95,7 @@ CREATE TABLE public.calendar_item (
 ALTER TABLE public.calendar_item OWNER TO aperiosf;
 
 --
+-- TOC entry 189 (class 1259 OID 280700)
 -- Name: care_continuity_import_request; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -117,6 +127,7 @@ CREATE TABLE public.care_continuity_import_request (
 ALTER TABLE public.care_continuity_import_request OWNER TO aperiosf;
 
 --
+-- TOC entry 196 (class 1259 OID 280754)
 -- Name: ccd_upload; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -141,6 +152,7 @@ CREATE TABLE public.ccd_upload (
 ALTER TABLE public.ccd_upload OWNER TO aperiosf;
 
 --
+-- TOC entry 190 (class 1259 OID 280710)
 -- Name: ccda_export; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -174,6 +186,7 @@ CREATE TABLE public.ccda_export (
 ALTER TABLE public.ccda_export OWNER TO aperiosf;
 
 --
+-- TOC entry 325 (class 1259 OID 281931)
 -- Name: ccda_export_include_sections; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -187,6 +200,7 @@ CREATE TABLE public.ccda_export_include_sections (
 ALTER TABLE public.ccda_export_include_sections OWNER TO aperiosf;
 
 --
+-- TOC entry 191 (class 1259 OID 280718)
 -- Name: ccda_export_log; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -210,6 +224,7 @@ CREATE TABLE public.ccda_export_log (
 ALTER TABLE public.ccda_export_log OWNER TO aperiosf;
 
 --
+-- TOC entry 192 (class 1259 OID 280725)
 -- Name: ccda_export_request; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -233,6 +248,7 @@ CREATE TABLE public.ccda_export_request (
 ALTER TABLE public.ccda_export_request OWNER TO aperiosf;
 
 --
+-- TOC entry 326 (class 1259 OID 281937)
 -- Name: ccda_export_request_patient_ids; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -246,6 +262,7 @@ CREATE TABLE public.ccda_export_request_patient_ids (
 ALTER TABLE public.ccda_export_request_patient_ids OWNER TO aperiosf;
 
 --
+-- TOC entry 193 (class 1259 OID 280733)
 -- Name: ccda_import_allergy; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -274,6 +291,7 @@ CREATE TABLE public.ccda_import_allergy (
 ALTER TABLE public.ccda_import_allergy OWNER TO aperiosf;
 
 --
+-- TOC entry 194 (class 1259 OID 280740)
 -- Name: ccda_import_diagnosis; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -301,6 +319,7 @@ CREATE TABLE public.ccda_import_diagnosis (
 ALTER TABLE public.ccda_import_diagnosis OWNER TO aperiosf;
 
 --
+-- TOC entry 195 (class 1259 OID 280747)
 -- Name: ccda_import_medication; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -333,6 +352,7 @@ CREATE TABLE public.ccda_import_medication (
 ALTER TABLE public.ccda_import_medication OWNER TO aperiosf;
 
 --
+-- TOC entry 197 (class 1259 OID 280761)
 -- Name: cdn_temp_file; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -358,6 +378,7 @@ CREATE TABLE public.cdn_temp_file (
 ALTER TABLE public.cdn_temp_file OWNER TO aperiosf;
 
 --
+-- TOC entry 198 (class 1259 OID 280768)
 -- Name: client_document; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -381,6 +402,7 @@ CREATE TABLE public.client_document (
 ALTER TABLE public.client_document OWNER TO aperiosf;
 
 --
+-- TOC entry 199 (class 1259 OID 280775)
 -- Name: client_document_file; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -403,6 +425,7 @@ CREATE TABLE public.client_document_file (
 ALTER TABLE public.client_document_file OWNER TO aperiosf;
 
 --
+-- TOC entry 200 (class 1259 OID 280782)
 -- Name: client_note; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -426,6 +449,7 @@ CREATE TABLE public.client_note (
 ALTER TABLE public.client_note OWNER TO aperiosf;
 
 --
+-- TOC entry 201 (class 1259 OID 280789)
 -- Name: course; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -454,6 +478,7 @@ CREATE TABLE public.course (
 ALTER TABLE public.course OWNER TO aperiosf;
 
 --
+-- TOC entry 321 (class 1259 OID 281903)
 -- Name: course_category; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -475,6 +500,7 @@ CREATE TABLE public.course_category (
 ALTER TABLE public.course_category OWNER TO aperiosf;
 
 --
+-- TOC entry 202 (class 1259 OID 280796)
 -- Name: course_custom_field_definition; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -498,6 +524,7 @@ CREATE TABLE public.course_custom_field_definition (
 ALTER TABLE public.course_custom_field_definition OWNER TO aperiosf;
 
 --
+-- TOC entry 203 (class 1259 OID 280803)
 -- Name: course_participant; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -523,6 +550,7 @@ CREATE TABLE public.course_participant (
 ALTER TABLE public.course_participant OWNER TO aperiosf;
 
 --
+-- TOC entry 204 (class 1259 OID 280810)
 -- Name: course_session; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -552,6 +580,7 @@ CREATE TABLE public.course_session (
 ALTER TABLE public.course_session OWNER TO aperiosf;
 
 --
+-- TOC entry 205 (class 1259 OID 280817)
 -- Name: course_session_attendance; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -577,6 +606,7 @@ CREATE TABLE public.course_session_attendance (
 ALTER TABLE public.course_session_attendance OWNER TO aperiosf;
 
 --
+-- TOC entry 206 (class 1259 OID 280825)
 -- Name: course_session_custom_field_value; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -600,6 +630,7 @@ CREATE TABLE public.course_session_custom_field_value (
 ALTER TABLE public.course_session_custom_field_value OWNER TO aperiosf;
 
 --
+-- TOC entry 207 (class 1259 OID 280832)
 -- Name: data_export_request; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -624,6 +655,7 @@ CREATE TABLE public.data_export_request (
 ALTER TABLE public.data_export_request OWNER TO aperiosf;
 
 --
+-- TOC entry 208 (class 1259 OID 280839)
 -- Name: data_import_request; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -646,6 +678,7 @@ CREATE TABLE public.data_import_request (
 ALTER TABLE public.data_import_request OWNER TO aperiosf;
 
 --
+-- TOC entry 209 (class 1259 OID 280846)
 -- Name: housing_upgrade; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -679,6 +712,7 @@ CREATE TABLE public.housing_upgrade (
 ALTER TABLE public.housing_upgrade OWNER TO aperiosf;
 
 --
+-- TOC entry 210 (class 1259 OID 280853)
 -- Name: kch_program; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -702,6 +736,7 @@ CREATE TABLE public.kch_program (
 ALTER TABLE public.kch_program OWNER TO aperiosf;
 
 --
+-- TOC entry 211 (class 1259 OID 280861)
 -- Name: kch_program_assignment; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -724,6 +759,7 @@ CREATE TABLE public.kch_program_assignment (
 ALTER TABLE public.kch_program_assignment OWNER TO aperiosf;
 
 --
+-- TOC entry 212 (class 1259 OID 280868)
 -- Name: meta_address_type; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -749,6 +785,7 @@ CREATE TABLE public.meta_address_type (
 ALTER TABLE public.meta_address_type OWNER TO aperiosf;
 
 --
+-- TOC entry 213 (class 1259 OID 280875)
 -- Name: meta_allergy_severity; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -771,6 +808,7 @@ CREATE TABLE public.meta_allergy_severity (
 ALTER TABLE public.meta_allergy_severity OWNER TO aperiosf;
 
 --
+-- TOC entry 214 (class 1259 OID 280882)
 -- Name: meta_allergy_type; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -792,6 +830,7 @@ CREATE TABLE public.meta_allergy_type (
 ALTER TABLE public.meta_allergy_type OWNER TO aperiosf;
 
 --
+-- TOC entry 323 (class 1259 OID 281917)
 -- Name: meta_answer; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -815,6 +854,7 @@ CREATE TABLE public.meta_answer (
 ALTER TABLE public.meta_answer OWNER TO aperiosf;
 
 --
+-- TOC entry 215 (class 1259 OID 280889)
 -- Name: meta_auth_policy; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -836,6 +876,7 @@ CREATE TABLE public.meta_auth_policy (
 ALTER TABLE public.meta_auth_policy OWNER TO aperiosf;
 
 --
+-- TOC entry 216 (class 1259 OID 280897)
 -- Name: meta_basic_status; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -857,6 +898,7 @@ CREATE TABLE public.meta_basic_status (
 ALTER TABLE public.meta_basic_status OWNER TO aperiosf;
 
 --
+-- TOC entry 217 (class 1259 OID 280904)
 -- Name: meta_blood_pressure_unit; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -878,6 +920,7 @@ CREATE TABLE public.meta_blood_pressure_unit (
 ALTER TABLE public.meta_blood_pressure_unit OWNER TO aperiosf;
 
 --
+-- TOC entry 320 (class 1259 OID 281895)
 -- Name: meta_calendar_item_status; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -899,6 +942,7 @@ CREATE TABLE public.meta_calendar_item_status (
 ALTER TABLE public.meta_calendar_item_status OWNER TO aperiosf;
 
 --
+-- TOC entry 319 (class 1259 OID 281888)
 -- Name: meta_calendar_item_type; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -920,6 +964,7 @@ CREATE TABLE public.meta_calendar_item_type (
 ALTER TABLE public.meta_calendar_item_type OWNER TO aperiosf;
 
 --
+-- TOC entry 218 (class 1259 OID 280911)
 -- Name: meta_care_continuity_document_type; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -943,6 +988,7 @@ CREATE TABLE public.meta_care_continuity_document_type (
 ALTER TABLE public.meta_care_continuity_document_type OWNER TO aperiosf;
 
 --
+-- TOC entry 219 (class 1259 OID 280918)
 -- Name: meta_ccda_export_log_type; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -964,6 +1010,7 @@ CREATE TABLE public.meta_ccda_export_log_type (
 ALTER TABLE public.meta_ccda_export_log_type OWNER TO aperiosf;
 
 --
+-- TOC entry 220 (class 1259 OID 280925)
 -- Name: meta_ccda_export_status; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -985,6 +1032,7 @@ CREATE TABLE public.meta_ccda_export_status (
 ALTER TABLE public.meta_ccda_export_status OWNER TO aperiosf;
 
 --
+-- TOC entry 221 (class 1259 OID 280932)
 -- Name: meta_ccda_sections; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1006,6 +1054,7 @@ CREATE TABLE public.meta_ccda_sections (
 ALTER TABLE public.meta_ccda_sections OWNER TO aperiosf;
 
 --
+-- TOC entry 222 (class 1259 OID 280939)
 -- Name: meta_clinical_document_type; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1028,6 +1077,7 @@ CREATE TABLE public.meta_clinical_document_type (
 ALTER TABLE public.meta_clinical_document_type OWNER TO aperiosf;
 
 --
+-- TOC entry 223 (class 1259 OID 280947)
 -- Name: meta_communication_mode; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1049,6 +1099,7 @@ CREATE TABLE public.meta_communication_mode (
 ALTER TABLE public.meta_communication_mode OWNER TO aperiosf;
 
 --
+-- TOC entry 224 (class 1259 OID 280954)
 -- Name: meta_contact_type; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1071,6 +1122,7 @@ CREATE TABLE public.meta_contact_type (
 ALTER TABLE public.meta_contact_type OWNER TO aperiosf;
 
 --
+-- TOC entry 225 (class 1259 OID 280961)
 -- Name: meta_country; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1092,6 +1144,7 @@ CREATE TABLE public.meta_country (
 ALTER TABLE public.meta_country OWNER TO aperiosf;
 
 --
+-- TOC entry 226 (class 1259 OID 280968)
 -- Name: meta_data_family; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1113,6 +1166,7 @@ CREATE TABLE public.meta_data_family (
 ALTER TABLE public.meta_data_family OWNER TO aperiosf;
 
 --
+-- TOC entry 227 (class 1259 OID 280975)
 -- Name: meta_day_of_week; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1134,6 +1188,7 @@ CREATE TABLE public.meta_day_of_week (
 ALTER TABLE public.meta_day_of_week OWNER TO aperiosf;
 
 --
+-- TOC entry 228 (class 1259 OID 280982)
 -- Name: meta_default_status; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1155,6 +1210,7 @@ CREATE TABLE public.meta_default_status (
 ALTER TABLE public.meta_default_status OWNER TO aperiosf;
 
 --
+-- TOC entry 229 (class 1259 OID 280989)
 -- Name: meta_diagnostic_code; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1183,6 +1239,7 @@ CREATE TABLE public.meta_diagnostic_code (
 ALTER TABLE public.meta_diagnostic_code OWNER TO aperiosf;
 
 --
+-- TOC entry 230 (class 1259 OID 280997)
 -- Name: meta_employee_status; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1205,6 +1262,7 @@ CREATE TABLE public.meta_employee_status (
 ALTER TABLE public.meta_employee_status OWNER TO aperiosf;
 
 --
+-- TOC entry 231 (class 1259 OID 281004)
 -- Name: meta_employment_status; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1227,6 +1285,7 @@ CREATE TABLE public.meta_employment_status (
 ALTER TABLE public.meta_employment_status OWNER TO aperiosf;
 
 --
+-- TOC entry 232 (class 1259 OID 281011)
 -- Name: meta_ethnicity; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1250,6 +1309,7 @@ CREATE TABLE public.meta_ethnicity (
 ALTER TABLE public.meta_ethnicity OWNER TO aperiosf;
 
 --
+-- TOC entry 233 (class 1259 OID 281018)
 -- Name: meta_family_relationship; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1272,6 +1332,7 @@ CREATE TABLE public.meta_family_relationship (
 ALTER TABLE public.meta_family_relationship OWNER TO aperiosf;
 
 --
+-- TOC entry 234 (class 1259 OID 281025)
 -- Name: meta_field_defination_type; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1293,6 +1354,7 @@ CREATE TABLE public.meta_field_defination_type (
 ALTER TABLE public.meta_field_defination_type OWNER TO aperiosf;
 
 --
+-- TOC entry 235 (class 1259 OID 281032)
 -- Name: meta_gender; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1316,6 +1378,7 @@ CREATE TABLE public.meta_gender (
 ALTER TABLE public.meta_gender OWNER TO aperiosf;
 
 --
+-- TOC entry 236 (class 1259 OID 281039)
 -- Name: meta_height_unit; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1337,6 +1400,7 @@ CREATE TABLE public.meta_height_unit (
 ALTER TABLE public.meta_height_unit OWNER TO aperiosf;
 
 --
+-- TOC entry 237 (class 1259 OID 281046)
 -- Name: meta_household_income_level; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1358,6 +1422,7 @@ CREATE TABLE public.meta_household_income_level (
 ALTER TABLE public.meta_household_income_level OWNER TO aperiosf;
 
 --
+-- TOC entry 238 (class 1259 OID 281053)
 -- Name: meta_housing_status; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1380,6 +1445,7 @@ CREATE TABLE public.meta_housing_status (
 ALTER TABLE public.meta_housing_status OWNER TO aperiosf;
 
 --
+-- TOC entry 239 (class 1259 OID 281060)
 -- Name: meta_housing_upgrade_status; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1401,6 +1467,7 @@ CREATE TABLE public.meta_housing_upgrade_status (
 ALTER TABLE public.meta_housing_upgrade_status OWNER TO aperiosf;
 
 --
+-- TOC entry 240 (class 1259 OID 281067)
 -- Name: meta_housing_upgrade_type; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1422,6 +1489,7 @@ CREATE TABLE public.meta_housing_upgrade_type (
 ALTER TABLE public.meta_housing_upgrade_type OWNER TO aperiosf;
 
 --
+-- TOC entry 241 (class 1259 OID 281074)
 -- Name: meta_id_type; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1443,6 +1511,7 @@ CREATE TABLE public.meta_id_type (
 ALTER TABLE public.meta_id_type OWNER TO aperiosf;
 
 --
+-- TOC entry 242 (class 1259 OID 281081)
 -- Name: meta_income_level; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1464,6 +1533,7 @@ CREATE TABLE public.meta_income_level (
 ALTER TABLE public.meta_income_level OWNER TO aperiosf;
 
 --
+-- TOC entry 243 (class 1259 OID 281088)
 -- Name: meta_label; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1485,6 +1555,7 @@ CREATE TABLE public.meta_label (
 ALTER TABLE public.meta_label OWNER TO aperiosf;
 
 --
+-- TOC entry 244 (class 1259 OID 281095)
 -- Name: meta_label_detail; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1510,6 +1581,7 @@ CREATE TABLE public.meta_label_detail (
 ALTER TABLE public.meta_label_detail OWNER TO aperiosf;
 
 --
+-- TOC entry 245 (class 1259 OID 281102)
 -- Name: meta_language; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1533,6 +1605,7 @@ CREATE TABLE public.meta_language (
 ALTER TABLE public.meta_language OWNER TO aperiosf;
 
 --
+-- TOC entry 246 (class 1259 OID 281109)
 -- Name: meta_marital_status; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1556,6 +1629,7 @@ CREATE TABLE public.meta_marital_status (
 ALTER TABLE public.meta_marital_status OWNER TO aperiosf;
 
 --
+-- TOC entry 247 (class 1259 OID 281116)
 -- Name: meta_medication_delivery_route; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1577,6 +1651,7 @@ CREATE TABLE public.meta_medication_delivery_route (
 ALTER TABLE public.meta_medication_delivery_route OWNER TO aperiosf;
 
 --
+-- TOC entry 248 (class 1259 OID 281123)
 -- Name: meta_military_status; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1599,6 +1674,7 @@ CREATE TABLE public.meta_military_status (
 ALTER TABLE public.meta_military_status OWNER TO aperiosf;
 
 --
+-- TOC entry 315 (class 1259 OID 281859)
 -- Name: meta_oml_script; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1622,6 +1698,7 @@ CREATE TABLE public.meta_oml_script (
 ALTER TABLE public.meta_oml_script OWNER TO aperiosf;
 
 --
+-- TOC entry 249 (class 1259 OID 281130)
 -- Name: meta_pain_level; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1643,6 +1720,7 @@ CREATE TABLE public.meta_pain_level (
 ALTER TABLE public.meta_pain_level OWNER TO aperiosf;
 
 --
+-- TOC entry 250 (class 1259 OID 281137)
 -- Name: meta_patient_diagnosis_status; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1664,6 +1742,7 @@ CREATE TABLE public.meta_patient_diagnosis_status (
 ALTER TABLE public.meta_patient_diagnosis_status OWNER TO aperiosf;
 
 --
+-- TOC entry 251 (class 1259 OID 281144)
 -- Name: meta_patient_document_status; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1685,6 +1764,7 @@ CREATE TABLE public.meta_patient_document_status (
 ALTER TABLE public.meta_patient_document_status OWNER TO aperiosf;
 
 --
+-- TOC entry 252 (class 1259 OID 281151)
 -- Name: meta_patient_document_type; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1706,6 +1786,7 @@ CREATE TABLE public.meta_patient_document_type (
 ALTER TABLE public.meta_patient_document_type OWNER TO aperiosf;
 
 --
+-- TOC entry 253 (class 1259 OID 281158)
 -- Name: meta_patient_identity_type; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1728,6 +1809,7 @@ CREATE TABLE public.meta_patient_identity_type (
 ALTER TABLE public.meta_patient_identity_type OWNER TO aperiosf;
 
 --
+-- TOC entry 254 (class 1259 OID 281165)
 -- Name: meta_patient_status; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1750,6 +1832,7 @@ CREATE TABLE public.meta_patient_status (
 ALTER TABLE public.meta_patient_status OWNER TO aperiosf;
 
 --
+-- TOC entry 255 (class 1259 OID 281172)
 -- Name: meta_permission; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1776,6 +1859,7 @@ CREATE TABLE public.meta_permission (
 ALTER TABLE public.meta_permission OWNER TO aperiosf;
 
 --
+-- TOC entry 327 (class 1259 OID 281943)
 -- Name: meta_permission_cascaded_permission; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1789,6 +1873,7 @@ CREATE TABLE public.meta_permission_cascaded_permission (
 ALTER TABLE public.meta_permission_cascaded_permission OWNER TO aperiosf;
 
 --
+-- TOC entry 256 (class 1259 OID 281181)
 -- Name: meta_provider_service_type; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1810,6 +1895,7 @@ CREATE TABLE public.meta_provider_service_type (
 ALTER TABLE public.meta_provider_service_type OWNER TO aperiosf;
 
 --
+-- TOC entry 322 (class 1259 OID 281910)
 -- Name: meta_question; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1832,6 +1918,7 @@ CREATE TABLE public.meta_question (
 ALTER TABLE public.meta_question OWNER TO aperiosf;
 
 --
+-- TOC entry 257 (class 1259 OID 281188)
 -- Name: meta_race; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1855,6 +1942,7 @@ CREATE TABLE public.meta_race (
 ALTER TABLE public.meta_race OWNER TO aperiosf;
 
 --
+-- TOC entry 258 (class 1259 OID 281195)
 -- Name: meta_referral; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1878,6 +1966,7 @@ CREATE TABLE public.meta_referral (
 ALTER TABLE public.meta_referral OWNER TO aperiosf;
 
 --
+-- TOC entry 259 (class 1259 OID 281203)
 -- Name: meta_relationship; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1901,6 +1990,7 @@ CREATE TABLE public.meta_relationship (
 ALTER TABLE public.meta_relationship OWNER TO aperiosf;
 
 --
+-- TOC entry 260 (class 1259 OID 281210)
 -- Name: meta_severity; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1923,6 +2013,7 @@ CREATE TABLE public.meta_severity (
 ALTER TABLE public.meta_severity OWNER TO aperiosf;
 
 --
+-- TOC entry 261 (class 1259 OID 281217)
 -- Name: meta_smoking_status; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1946,6 +2037,7 @@ CREATE TABLE public.meta_smoking_status (
 ALTER TABLE public.meta_smoking_status OWNER TO aperiosf;
 
 --
+-- TOC entry 262 (class 1259 OID 281224)
 -- Name: meta_snomed; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1968,6 +2060,7 @@ CREATE TABLE public.meta_snomed (
 ALTER TABLE public.meta_snomed OWNER TO aperiosf;
 
 --
+-- TOC entry 263 (class 1259 OID 281231)
 -- Name: meta_snomed_code; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -1994,6 +2087,7 @@ CREATE TABLE public.meta_snomed_code (
 ALTER TABLE public.meta_snomed_code OWNER TO aperiosf;
 
 --
+-- TOC entry 264 (class 1259 OID 281238)
 -- Name: meta_social_needs; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2023,6 +2117,7 @@ CREATE TABLE public.meta_social_needs (
 ALTER TABLE public.meta_social_needs OWNER TO aperiosf;
 
 --
+-- TOC entry 265 (class 1259 OID 281246)
 -- Name: meta_social_needs_category; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2047,6 +2142,7 @@ CREATE TABLE public.meta_social_needs_category (
 ALTER TABLE public.meta_social_needs_category OWNER TO aperiosf;
 
 --
+-- TOC entry 266 (class 1259 OID 281253)
 -- Name: meta_state; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2069,6 +2165,7 @@ CREATE TABLE public.meta_state (
 ALTER TABLE public.meta_state OWNER TO aperiosf;
 
 --
+-- TOC entry 267 (class 1259 OID 281260)
 -- Name: meta_synap_profile; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2091,6 +2188,7 @@ CREATE TABLE public.meta_synap_profile (
 ALTER TABLE public.meta_synap_profile OWNER TO aperiosf;
 
 --
+-- TOC entry 317 (class 1259 OID 281874)
 -- Name: meta_sync_status; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2112,6 +2210,7 @@ CREATE TABLE public.meta_sync_status (
 ALTER TABLE public.meta_sync_status OWNER TO aperiosf;
 
 --
+-- TOC entry 268 (class 1259 OID 281267)
 -- Name: meta_telephone_type; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2135,6 +2234,7 @@ CREATE TABLE public.meta_telephone_type (
 ALTER TABLE public.meta_telephone_type OWNER TO aperiosf;
 
 --
+-- TOC entry 269 (class 1259 OID 281274)
 -- Name: meta_temperature_unit; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2156,6 +2256,7 @@ CREATE TABLE public.meta_temperature_unit (
 ALTER TABLE public.meta_temperature_unit OWNER TO aperiosf;
 
 --
+-- TOC entry 270 (class 1259 OID 281281)
 -- Name: meta_timezone; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2177,6 +2278,7 @@ CREATE TABLE public.meta_timezone (
 ALTER TABLE public.meta_timezone OWNER TO aperiosf;
 
 --
+-- TOC entry 271 (class 1259 OID 281288)
 -- Name: meta_token_type; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2198,6 +2300,7 @@ CREATE TABLE public.meta_token_type (
 ALTER TABLE public.meta_token_type OWNER TO aperiosf;
 
 --
+-- TOC entry 272 (class 1259 OID 281295)
 -- Name: meta_user_type; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2222,6 +2325,7 @@ CREATE TABLE public.meta_user_type (
 ALTER TABLE public.meta_user_type OWNER TO aperiosf;
 
 --
+-- TOC entry 273 (class 1259 OID 281303)
 -- Name: meta_weight_unit; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2243,6 +2347,7 @@ CREATE TABLE public.meta_weight_unit (
 ALTER TABLE public.meta_weight_unit OWNER TO aperiosf;
 
 --
+-- TOC entry 274 (class 1259 OID 281310)
 -- Name: meta_work_list_approval_status; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2264,6 +2369,7 @@ CREATE TABLE public.meta_work_list_approval_status (
 ALTER TABLE public.meta_work_list_approval_status OWNER TO aperiosf;
 
 --
+-- TOC entry 276 (class 1259 OID 281324)
 -- Name: meta_work_list_reminder_status; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2285,6 +2391,7 @@ CREATE TABLE public.meta_work_list_reminder_status (
 ALTER TABLE public.meta_work_list_reminder_status OWNER TO aperiosf;
 
 --
+-- TOC entry 277 (class 1259 OID 281331)
 -- Name: meta_work_list_reminder_type; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2306,6 +2413,7 @@ CREATE TABLE public.meta_work_list_reminder_type (
 ALTER TABLE public.meta_work_list_reminder_type OWNER TO aperiosf;
 
 --
+-- TOC entry 278 (class 1259 OID 281338)
 -- Name: meta_work_list_reminder_who_type; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2327,6 +2435,7 @@ CREATE TABLE public.meta_work_list_reminder_who_type (
 ALTER TABLE public.meta_work_list_reminder_who_type OWNER TO aperiosf;
 
 --
+-- TOC entry 275 (class 1259 OID 281317)
 -- Name: meta_worklist_priority; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2349,6 +2458,7 @@ CREATE TABLE public.meta_worklist_priority (
 ALTER TABLE public.meta_worklist_priority OWNER TO aperiosf;
 
 --
+-- TOC entry 279 (class 1259 OID 281345)
 -- Name: meta_worklist_status; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2371,6 +2481,7 @@ CREATE TABLE public.meta_worklist_status (
 ALTER TABLE public.meta_worklist_status OWNER TO aperiosf;
 
 --
+-- TOC entry 280 (class 1259 OID 281353)
 -- Name: meta_zip_code; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2394,6 +2505,7 @@ CREATE TABLE public.meta_zip_code (
 ALTER TABLE public.meta_zip_code OWNER TO aperiosf;
 
 --
+-- TOC entry 186 (class 1259 OID 280637)
 -- Name: oml_data_type; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2415,6 +2527,7 @@ CREATE TABLE public.oml_data_type (
 ALTER TABLE public.oml_data_type OWNER TO aperiosf;
 
 --
+-- TOC entry 187 (class 1259 OID 280652)
 -- Name: oml_object; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2450,6 +2563,7 @@ CREATE TABLE public.oml_object (
 ALTER TABLE public.oml_object OWNER TO aperiosf;
 
 --
+-- TOC entry 188 (class 1259 OID 280670)
 -- Name: oml_property; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2479,6 +2593,7 @@ CREATE TABLE public.oml_property (
 ALTER TABLE public.oml_property OWNER TO aperiosf;
 
 --
+-- TOC entry 281 (class 1259 OID 281360)
 -- Name: organization; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2499,6 +2614,7 @@ CREATE TABLE public.organization (
 ALTER TABLE public.organization OWNER TO aperiosf;
 
 --
+-- TOC entry 282 (class 1259 OID 281367)
 -- Name: organization_division; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2563,6 +2679,7 @@ CREATE TABLE public.organization_division (
 ALTER TABLE public.organization_division OWNER TO aperiosf;
 
 --
+-- TOC entry 283 (class 1259 OID 281386)
 -- Name: organization_employee; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2604,6 +2721,7 @@ CREATE TABLE public.organization_employee (
 ALTER TABLE public.organization_employee OWNER TO aperiosf;
 
 --
+-- TOC entry 284 (class 1259 OID 281394)
 -- Name: organization_employee_address; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2632,6 +2750,7 @@ CREATE TABLE public.organization_employee_address (
 ALTER TABLE public.organization_employee_address OWNER TO aperiosf;
 
 --
+-- TOC entry 285 (class 1259 OID 281401)
 -- Name: organization_employee_division; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2654,6 +2773,7 @@ CREATE TABLE public.organization_employee_division (
 ALTER TABLE public.organization_employee_division OWNER TO aperiosf;
 
 --
+-- TOC entry 328 (class 1259 OID 281949)
 -- Name: organization_employee_profile; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2667,6 +2787,7 @@ CREATE TABLE public.organization_employee_profile (
 ALTER TABLE public.organization_employee_profile OWNER TO aperiosf;
 
 --
+-- TOC entry 286 (class 1259 OID 281408)
 -- Name: organization_employee_telephone; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2691,6 +2812,7 @@ CREATE TABLE public.organization_employee_telephone (
 ALTER TABLE public.organization_employee_telephone OWNER TO aperiosf;
 
 --
+-- TOC entry 287 (class 1259 OID 281416)
 -- Name: organization_folder; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2713,6 +2835,7 @@ CREATE TABLE public.organization_folder (
 ALTER TABLE public.organization_folder OWNER TO aperiosf;
 
 --
+-- TOC entry 288 (class 1259 OID 281423)
 -- Name: organization_profile; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2736,6 +2859,7 @@ CREATE TABLE public.organization_profile (
 ALTER TABLE public.organization_profile OWNER TO aperiosf;
 
 --
+-- TOC entry 329 (class 1259 OID 281955)
 -- Name: organization_profile_permission; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2749,6 +2873,7 @@ CREATE TABLE public.organization_profile_permission (
 ALTER TABLE public.organization_profile_permission OWNER TO aperiosf;
 
 --
+-- TOC entry 289 (class 1259 OID 281432)
 -- Name: patient; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2823,6 +2948,7 @@ CREATE TABLE public.patient (
 ALTER TABLE public.patient OWNER TO aperiosf;
 
 --
+-- TOC entry 324 (class 1259 OID 281924)
 -- Name: patient_activation_q_a; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2846,6 +2972,7 @@ CREATE TABLE public.patient_activation_q_a (
 ALTER TABLE public.patient_activation_q_a OWNER TO aperiosf;
 
 --
+-- TOC entry 290 (class 1259 OID 281453)
 -- Name: patient_address; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2880,6 +3007,7 @@ CREATE TABLE public.patient_address (
 ALTER TABLE public.patient_address OWNER TO aperiosf;
 
 --
+-- TOC entry 291 (class 1259 OID 281463)
 -- Name: patient_admission; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2906,6 +3034,7 @@ CREATE TABLE public.patient_admission (
 ALTER TABLE public.patient_admission OWNER TO aperiosf;
 
 --
+-- TOC entry 292 (class 1259 OID 281471)
 -- Name: patient_allergy; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2941,6 +3070,7 @@ CREATE TABLE public.patient_allergy (
 ALTER TABLE public.patient_allergy OWNER TO aperiosf;
 
 --
+-- TOC entry 331 (class 1259 OID 281967)
 -- Name: patient_associated_patient; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -2954,6 +3084,7 @@ CREATE TABLE public.patient_associated_patient (
 ALTER TABLE public.patient_associated_patient OWNER TO aperiosf;
 
 --
+-- TOC entry 293 (class 1259 OID 281480)
 -- Name: patient_contact; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3002,6 +3133,7 @@ CREATE TABLE public.patient_contact (
 ALTER TABLE public.patient_contact OWNER TO aperiosf;
 
 --
+-- TOC entry 294 (class 1259 OID 281495)
 -- Name: patient_contact_address; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3031,6 +3163,7 @@ CREATE TABLE public.patient_contact_address (
 ALTER TABLE public.patient_contact_address OWNER TO aperiosf;
 
 --
+-- TOC entry 295 (class 1259 OID 281503)
 -- Name: patient_diagnosis; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3075,6 +3208,7 @@ CREATE TABLE public.patient_diagnosis (
 ALTER TABLE public.patient_diagnosis OWNER TO aperiosf;
 
 --
+-- TOC entry 332 (class 1259 OID 281973)
 -- Name: patient_diagnosis_program; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3088,6 +3222,7 @@ CREATE TABLE public.patient_diagnosis_program (
 ALTER TABLE public.patient_diagnosis_program OWNER TO aperiosf;
 
 --
+-- TOC entry 296 (class 1259 OID 281516)
 -- Name: patient_employment_info; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3118,6 +3253,7 @@ CREATE TABLE public.patient_employment_info (
 ALTER TABLE public.patient_employment_info OWNER TO aperiosf;
 
 --
+-- TOC entry 297 (class 1259 OID 281524)
 -- Name: patient_medication; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3234,6 +3370,7 @@ CREATE TABLE public.patient_medication (
 ALTER TABLE public.patient_medication OWNER TO aperiosf;
 
 --
+-- TOC entry 298 (class 1259 OID 281546)
 -- Name: patient_prescription; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3276,6 +3413,7 @@ CREATE TABLE public.patient_prescription (
 ALTER TABLE public.patient_prescription OWNER TO aperiosf;
 
 --
+-- TOC entry 299 (class 1259 OID 281556)
 -- Name: patient_primary_care_provider; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3308,6 +3446,7 @@ CREATE TABLE public.patient_primary_care_provider (
 ALTER TABLE public.patient_primary_care_provider OWNER TO aperiosf;
 
 --
+-- TOC entry 330 (class 1259 OID 281961)
 -- Name: patient_race; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3321,6 +3460,7 @@ CREATE TABLE public.patient_race (
 ALTER TABLE public.patient_race OWNER TO aperiosf;
 
 --
+-- TOC entry 300 (class 1259 OID 281563)
 -- Name: patient_social_needs; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3526,6 +3666,7 @@ CREATE TABLE public.patient_social_needs (
 ALTER TABLE public.patient_social_needs OWNER TO aperiosf;
 
 --
+-- TOC entry 342 (class 1259 OID 282033)
 -- Name: patient_social_needs_assistance_with; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3539,6 +3680,7 @@ CREATE TABLE public.patient_social_needs_assistance_with (
 ALTER TABLE public.patient_social_needs_assistance_with OWNER TO aperiosf;
 
 --
+-- TOC entry 343 (class 1259 OID 282039)
 -- Name: patient_social_needs_encourage_clients_to; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3552,6 +3694,7 @@ CREATE TABLE public.patient_social_needs_encourage_clients_to (
 ALTER TABLE public.patient_social_needs_encourage_clients_to OWNER TO aperiosf;
 
 --
+-- TOC entry 341 (class 1259 OID 282027)
 -- Name: patient_social_needs_followup_with; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3565,6 +3708,7 @@ CREATE TABLE public.patient_social_needs_followup_with (
 ALTER TABLE public.patient_social_needs_followup_with OWNER TO aperiosf;
 
 --
+-- TOC entry 340 (class 1259 OID 282021)
 -- Name: patient_social_needs_identified_encouraged; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3578,6 +3722,7 @@ CREATE TABLE public.patient_social_needs_identified_encouraged (
 ALTER TABLE public.patient_social_needs_identified_encouraged OWNER TO aperiosf;
 
 --
+-- TOC entry 338 (class 1259 OID 282009)
 -- Name: patient_social_needs_initial_assessment; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3591,6 +3736,7 @@ CREATE TABLE public.patient_social_needs_initial_assessment (
 ALTER TABLE public.patient_social_needs_initial_assessment OWNER TO aperiosf;
 
 --
+-- TOC entry 337 (class 1259 OID 282003)
 -- Name: patient_social_needs_legislative_action; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3604,6 +3750,7 @@ CREATE TABLE public.patient_social_needs_legislative_action (
 ALTER TABLE public.patient_social_needs_legislative_action OWNER TO aperiosf;
 
 --
+-- TOC entry 339 (class 1259 OID 282015)
 -- Name: patient_social_needs_update_assessment; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3617,6 +3764,7 @@ CREATE TABLE public.patient_social_needs_update_assessment (
 ALTER TABLE public.patient_social_needs_update_assessment OWNER TO aperiosf;
 
 --
+-- TOC entry 301 (class 1259 OID 281753)
 -- Name: patient_specific_document; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3642,6 +3790,7 @@ CREATE TABLE public.patient_specific_document (
 ALTER TABLE public.patient_specific_document OWNER TO aperiosf;
 
 --
+-- TOC entry 302 (class 1259 OID 281760)
 -- Name: patient_vital; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3688,6 +3837,7 @@ CREATE TABLE public.patient_vital (
 ALTER TABLE public.patient_vital OWNER TO aperiosf;
 
 --
+-- TOC entry 303 (class 1259 OID 281769)
 -- Name: preferred_provider; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3722,6 +3872,7 @@ CREATE TABLE public.preferred_provider (
 ALTER TABLE public.preferred_provider OWNER TO aperiosf;
 
 --
+-- TOC entry 304 (class 1259 OID 281776)
 -- Name: report; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3746,6 +3897,7 @@ CREATE TABLE public.report (
 ALTER TABLE public.report OWNER TO aperiosf;
 
 --
+-- TOC entry 305 (class 1259 OID 281783)
 -- Name: synap_config; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3768,6 +3920,7 @@ CREATE TABLE public.synap_config (
 ALTER TABLE public.synap_config OWNER TO aperiosf;
 
 --
+-- TOC entry 306 (class 1259 OID 281790)
 -- Name: synap_user; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3803,6 +3956,7 @@ CREATE TABLE public.synap_user (
 ALTER TABLE public.synap_user OWNER TO aperiosf;
 
 --
+-- TOC entry 307 (class 1259 OID 281801)
 -- Name: synap_user_group; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3825,6 +3979,7 @@ CREATE TABLE public.synap_user_group (
 ALTER TABLE public.synap_user_group OWNER TO aperiosf;
 
 --
+-- TOC entry 308 (class 1259 OID 281808)
 -- Name: synap_user_token; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3848,6 +4003,7 @@ CREATE TABLE public.synap_user_token (
 ALTER TABLE public.synap_user_token OWNER TO aperiosf;
 
 --
+-- TOC entry 316 (class 1259 OID 281867)
 -- Name: system_user; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3872,6 +4028,7 @@ CREATE TABLE public.system_user (
 ALTER TABLE public.system_user OWNER TO aperiosf;
 
 --
+-- TOC entry 309 (class 1259 OID 281815)
 -- Name: user_password; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3894,6 +4051,7 @@ CREATE TABLE public.user_password (
 ALTER TABLE public.user_password OWNER TO aperiosf;
 
 --
+-- TOC entry 310 (class 1259 OID 281822)
 -- Name: viewed_client; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3917,6 +4075,7 @@ CREATE TABLE public.viewed_client (
 ALTER TABLE public.viewed_client OWNER TO aperiosf;
 
 --
+-- TOC entry 311 (class 1259 OID 281829)
 -- Name: work_list; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3962,6 +4121,7 @@ CREATE TABLE public.work_list (
 ALTER TABLE public.work_list OWNER TO aperiosf;
 
 --
+-- TOC entry 312 (class 1259 OID 281837)
 -- Name: work_list_approver; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -3987,6 +4147,7 @@ CREATE TABLE public.work_list_approver (
 ALTER TABLE public.work_list_approver OWNER TO aperiosf;
 
 --
+-- TOC entry 333 (class 1259 OID 281979)
 -- Name: work_list_assignee_employee; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -4000,6 +4161,7 @@ CREATE TABLE public.work_list_assignee_employee (
 ALTER TABLE public.work_list_assignee_employee OWNER TO aperiosf;
 
 --
+-- TOC entry 334 (class 1259 OID 281985)
 -- Name: work_list_assignee_patient; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -4013,6 +4175,7 @@ CREATE TABLE public.work_list_assignee_patient (
 ALTER TABLE public.work_list_assignee_patient OWNER TO aperiosf;
 
 --
+-- TOC entry 313 (class 1259 OID 281845)
 -- Name: work_list_notes; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -4037,6 +4200,7 @@ CREATE TABLE public.work_list_notes (
 ALTER TABLE public.work_list_notes OWNER TO aperiosf;
 
 --
+-- TOC entry 314 (class 1259 OID 281852)
 -- Name: work_list_reminder; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -4062,6 +4226,7 @@ CREATE TABLE public.work_list_reminder (
 ALTER TABLE public.work_list_reminder OWNER TO aperiosf;
 
 --
+-- TOC entry 335 (class 1259 OID 281991)
 -- Name: work_list_reminder_who_employee; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -4075,6 +4240,7 @@ CREATE TABLE public.work_list_reminder_who_employee (
 ALTER TABLE public.work_list_reminder_who_employee OWNER TO aperiosf;
 
 --
+-- TOC entry 336 (class 1259 OID 281997)
 -- Name: work_list_reminder_who_patient; Type: TABLE; Schema: public; Owner: aperiosf
 --
 
@@ -4088,15 +4254,23 @@ CREATE TABLE public.work_list_reminder_who_patient (
 ALTER TABLE public.work_list_reminder_who_patient OWNER TO aperiosf;
 
 --
+-- TOC entry 5727 (class 0 OID 281881)
+-- Dependencies: 318
 -- Data for Name: calendar_item; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
 COPY public.calendar_item (patient_id, start_date, end_date, start_time, end_time, course_id, session_id, encounter_id, encounter_type, item_type, status, description, instructor_user, secondary_instructor_user, registrant_by_registrant_limit, location, program_name, primary_provider, created_on_date, created_on_time, created_by, id, tags, organization_id, custom_property, checksum, object_path, is_deleted) FROM stdin;
 \N	2019-07-02	2019-07-02	22:03:23	23:03:24	course:dz8jr4a	courseSession:8ckprm6	\N	\N	metaCalendarItemType:education	metaCalendarItemStatus:active	\N	organizationEmployee:001	organizationEmployee:001	1/12	MOHALLI	\N	\N	2019-07-09	17:33:29	synapUser:001	calendarItem:dp88yya	\N	organization:001	[]	fd608851adf01ab7941c38ce6683cee579b1a83efebf601239f3fa2e2dc37852baf8050588272d575400823fd768d8562ef3624e7d0843db737eacf89d7050c1	organization__001	f
+\N	2019-07-10	2019-07-10	12:12:17	13:12:17	course:jjdd83j	courseSession:38ywtcg	\N	\N	metaCalendarItemType:education	metaCalendarItemStatus:active	\N	organizationEmployee:001	\N	0/1	\N	\N	\N	2019-07-10	06:42:11	synapUser:001	calendarItem:6rvc386	\N	organization:001	[]	e8922b2f62b165fe4a4470d17e14987a624f8bdc82708914cb9b4e839ae5401cf2b5cd65fb14c28de44837a387de6f58d645fb29f03dd89d297d5777cf1a5a73	organization__001	f
+\N	2019-07-10	2019-07-10	15:53:09	15:54:11	course:w6fmdvn	courseSession:bmnayfg	\N	\N	metaCalendarItemType:education	metaCalendarItemStatus:cancelled	\N	organizationEmployee:001	\N	2/12	Mohali	\N	\N	2019-07-10	10:23:18	synapUser:001	calendarItem:zn7z23t	\N	organization:001	[]	ea75424f15e30968512be4cbb1dd2fef0e84ae960acdec193ac078b545902f62d6379b6deb4cb82cdc3318411cc8116c751153a0097668102284264e8c1c1875	organization__001	f
+\N	2019-07-10	2019-07-10	04:12:42	06:00:43	course:yugykv3	courseSession:xwkhyf6	\N	\N	metaCalendarItemType:education	metaCalendarItemStatus:active	\N	organizationEmployee:001	organizationEmployee:001	11/12	Ney York	\N	\N	2019-07-10	06:42:44	synapUser:001	calendarItem:ynect2t	\N	organization:001	[]	b3e87de15df8ab0190c9b9a300c6564adde998617908681b0d17b0a7350dacdb59c95d3603a15d8e8948b1af4884d9c1e44b62c7bb5feac9f54b691db4fa2397	organization__001	f
+\N	2019-07-10	2019-07-10	18:44:44	18:45:42	course:k4watej	courseSession:tndrp8j	\N	\N	metaCalendarItemType:education	metaCalendarItemStatus:active	\N	organizationEmployee:001	\N	1/12	\N	\N	\N	2019-07-10	13:15:46	synapUser:001	calendarItem:tunwyab	\N	organization:001	[]	e446186d4aa4854ba7b73ff9d1faac4f4284415c543bc09a5d660f7055372c77dd00b0095b5ebc3d1ed7e603d2b093b2b8607ef127c6e4da6fa8c263a663fbcb	organization__001	f
 \.
 
 
 --
+-- TOC entry 5598 (class 0 OID 280700)
+-- Dependencies: 189
 -- Data for Name: care_continuity_import_request; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4105,6 +4279,8 @@ COPY public.care_continuity_import_request (emr_direct_message_id, cdn_path_orig
 
 
 --
+-- TOC entry 5605 (class 0 OID 280754)
+-- Dependencies: 196
 -- Data for Name: ccd_upload; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4113,6 +4289,8 @@ COPY public.ccd_upload (file, notes, modified_file, created_on_date, created_on_
 
 
 --
+-- TOC entry 5599 (class 0 OID 280710)
+-- Dependencies: 190
 -- Data for Name: ccda_export; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4121,6 +4299,8 @@ COPY public.ccda_export (cdn_path, ccda_sent, emr_direct_message_id, ccda_export
 
 
 --
+-- TOC entry 5734 (class 0 OID 281931)
+-- Dependencies: 325
 -- Data for Name: ccda_export_include_sections; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4129,6 +4309,8 @@ COPY public.ccda_export_include_sections (include_sections, ccda_export_id, chec
 
 
 --
+-- TOC entry 5600 (class 0 OID 280718)
+-- Dependencies: 191
 -- Data for Name: ccda_export_log; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4137,6 +4319,8 @@ COPY public.ccda_export_log (log_type, ccda_export_id, created_on_date, created_
 
 
 --
+-- TOC entry 5601 (class 0 OID 280725)
+-- Dependencies: 192
 -- Data for Name: ccda_export_request; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4145,6 +4329,8 @@ COPY public.ccda_export_request (reciever_direct_address, clinical_document_type
 
 
 --
+-- TOC entry 5735 (class 0 OID 281937)
+-- Dependencies: 326
 -- Data for Name: ccda_export_request_patient_ids; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4153,6 +4339,8 @@ COPY public.ccda_export_request_patient_ids (patient_ids, ccda_export_request_id
 
 
 --
+-- TOC entry 5602 (class 0 OID 280733)
+-- Dependencies: 193
 -- Data for Name: ccda_import_allergy; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4161,6 +4349,8 @@ COPY public.ccda_import_allergy (emr_direct_message_id, name, drug_rx_norm_id, o
 
 
 --
+-- TOC entry 5603 (class 0 OID 280740)
+-- Dependencies: 194
 -- Data for Name: ccda_import_diagnosis; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4169,6 +4359,8 @@ COPY public.ccda_import_diagnosis (emr_direct_message_id, snomed_code, status, o
 
 
 --
+-- TOC entry 5604 (class 0 OID 280747)
+-- Dependencies: 195
 -- Data for Name: ccda_import_medication; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4177,14 +4369,58 @@ COPY public.ccda_import_medication (emr_direct_message_id, medication_drug_route
 
 
 --
+-- TOC entry 5606 (class 0 OID 280761)
+-- Dependencies: 197
 -- Data for Name: cdn_temp_file; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
 COPY public.cdn_temp_file (cdn_url, file_name, object_type, property_name, synap_user_id, created_on_date, created_on_time, created_by, id, tags, organization_id, custom_property, checksum, object_path, is_deleted) FROM stdin;
+organization:001-report-cdnPath-118bc468-5402-5076-b766-fde13a99f0fa.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:tjzfx4w	\N	\N	\N	6dd5a2aa768b40388c19934ef0d6db6244297141b4b991f49e3c6a195c6b4cf004a60edbb7ecc97d16c22e9df9e141df4ebadf1988262a18823a1515c39a4493	\N	f
+organization:001-report-cdnPath-92ae9417-d600-5728-a9c5-3d0aab47a881.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:j8ny4uh	\N	\N	\N	4fccf138fdaeb357bc6f918d61cbd5750a2815fda81ffe9ec65e0e74fa3b8d82bc04c23ed375de1985ad2f0a1dc7be8dbab4490ab2f4acf6d989981cd4fa21a6	\N	f
+organization:001-report-cdnPath-0899baab-02ab-5c75-8a09-434caa30c308.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:fxmkyeg	\N	\N	\N	908ca6b7fe09e1c605e8fe0dbf4b7ebf5b63b4db614c36610a186e07f643cf4a5ca00330a54d182e69415d8285f3aadf212fd8afe8a2c882dd4ee067ea6c0ce5	\N	f
+organization:001-report-cdnPath-dc20f60d-272f-5cd6-aaff-ca5bcb8488f2.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:4wh7mwj	\N	\N	\N	4fb784442d8ccd4932e7f48458205b45825919d5657235c64ac28a71c1ac072f545d01b6c381faa77758e5780ba0d1418790b26887a90c4d5a8c459bbb407dd9	\N	f
+organization:001-report-cdnPath-1ed2b11d-34ef-591b-9642-286aafa3c655.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:wj8t4mh	\N	\N	\N	559d81e70566f8f9a47db1bb642f36c6dcc2f851af836b29ba72ed6bd1aac9c5942ac011f16ffc39910241345ea3e0ebc9d426db61bf34ff0f805f9b652aa80c	\N	f
+organization:001-report-cdnPath-c5154291-000d-5a1e-aa09-b4748e2d4569.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:66ypcpn	\N	\N	\N	b05672750749ffe9e1178b3b677f123ae9f5294c9791dabaa3b9862772eae0b167d0b831509c64dd1897fe0fd6d63a6d44e6778ccbf05be0a1b4593697628d1e	\N	f
+organization:001-report-cdnPath-6fe9b67f-8a91-5bbd-b830-7db7771a720d.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:ud4x3hd	\N	\N	\N	5bbea8ae1ac637076c7e5996166af0e6ec0564d7d0fae25c06358f791fd8b746c4fe9bdfabf1f0833cdc2a80f73ab3868882e9b3cfbd0451a961b489f6b39181	\N	f
+organization:001-report-cdnPath-3573109f-0c48-5db5-b0e3-2350073c2e33.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:kbu6b66	\N	\N	\N	531302925386060b79188e0e3cdbf524edc9a76dd23255c6655f04d6a3f27666373e1e238182ed5fc6e86fb2b1806690dd6b35567d1ba50b12060730d7d9e00e	\N	f
+organization:001-report-cdnPath-3413205e-5854-5eeb-8ba2-f0c7d2ad11ba.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:tbmfccr	\N	\N	\N	116119e1e2970706d4ba900bd292192dd8a4910d4084b5a124767200ed678418c4013ffc763333de3e8a2cbf054fe58c42ef6e7a0d18089fdcfc6c8c1dd98bbd	\N	f
+organization:001-report-cdnPath-215801fb-d884-5466-975e-afa0e6f79c09.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:nve7zrz	\N	\N	\N	f622feec4ee643052a8da375141d9424fb018ab761129c003eb459e9013129a0a8476e27884db9f6b0ba712c939167cdefcd34be19d16b06894cf0ae0af169b9	\N	f
+organization:001-report-cdnPath-4186b49b-58c6-5999-b718-19fff62caba9.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:8rcwbvr	\N	\N	\N	5e83d89fc83a6fed728fb7fbbcd68e281f3a882babedfa6786441a9ec54ac2a423c4b1d2e63d133fd4935234ade154d4befac4ce60ef97f1bef701a71efa4eba	\N	f
+organization:001-report-cdnPath-05f591a3-7704-5e5b-ac15-9b1ba2ba5fc9.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:ekmwrxa	\N	\N	\N	ca544e725e9addf7b93d85ac36dd20ee8f68e321142bf9aaa04c900d517e478ff1d6bdc5c6a71bf2e66158260a4423a7839ccb5c6fb4bcb1c060a94f52e001f3	\N	f
+organization:001-report-cdnPath-5fbad48e-f236-59c6-98e2-565d16abe45b.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:jwvnth8	\N	\N	\N	08a1507f11b5bc800db468a0f6503c893342b869c4527b0f0c59d146c1730ce5b5f6ed79172717a134db644e7cbb8072bc114561f0cb27be9affa08933ad86f0	\N	f
+organization:001-report-cdnPath-5100c5b5-146a-5c87-9229-612890c071c2.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:6hbcubw	\N	\N	\N	7b959b9ed7735159c6ae3f6f06a4b23122c73b6da2c914e745cfa538adc5e244fe9d4b5f01b28f613ee164a029b7280feba79ffa8c009b5b56c9c418e5d000f0	\N	f
+organization:001-report-cdnPath-17bd0215-6e28-50d3-acb6-727b069d7312.xlsx	aperioReport1562753640.xlsx	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:nnhvtpa	\N	\N	\N	69f278a65c8c4c33faba578ed6d54a62ab4b6d663408e517ed0c221badd5994a6700b4d8af49190fc322fed0c902eae82ebdde0c595cdc3c42050211d6576447	\N	t
+organization:001-report-cdnPath-87bfe2e5-82e4-5b99-8e2a-25f274388837.xlsx	aperioReport1562753658.xlsx	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:rdy4m6p	\N	\N	\N	a0d67f22f49713c8883ecbe895b52ac9c4d7d536947fa653a4fc500fe3ca665697f9511e27a3187f1eb59795657ceb8eaba30772a716f42b91f7e126c6d34c74	\N	t
+organization:001-report-cdnPath-ade7506d-3ab9-5606-a057-99fe15af7151.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:83zg8rf	\N	\N	\N	7700e100978b339b883f44eb4c6150e321da4e542c4efc7e8594f3d0c2ce15ac37ddd41fda9dfb26397e3ff9717699b592a3d3c87116695ad763c35b2316a7a2	\N	f
+organization:001-report-cdnPath-5bb6266c-4329-5d66-81cc-b0ed15b0f4bb.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:uz46dbv	\N	\N	\N	2c99c8f3a82d976f59bcf8c9dc5de3980a64b4d922efac046600c0c5ec08b47b06931301773daebeccd6982e8990a6099f289f59fe4dfec274f79a353af62cd4	\N	f
+organization:001-report-cdnPath-49034350-1eea-5a15-b316-632f5f58339b.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:pjppfh8	\N	\N	\N	5c1ad1709ffa8dd7b1d2d93e4bdf872cb6966d2b97e84b524b878ee4aa3592311413a77f92183c17be1bdff4a449788e2642a2a673f3f43334adc52e81603d1b	\N	f
+organization:001-report-cdnPath-2b27fa93-3f81-5ee4-b9d3-ce91d3cc78a7.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:kvjnrdn	\N	\N	\N	6e86c8ed5d68aa272272aa1d3aba8a2f1a4c71764c8fdc2642bef0c609617ce6ec806fb8ad5153ad256cc56447d291bc72e5641842feb2b632cd9118b314e3f0	\N	f
+organization:001-report-cdnPath-148d8c74-3bb0-5e51-aaec-52951c25ab1d.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:v3fjd4c	\N	\N	\N	369f8f0a1f65f90adfbc5273c685d99ab173f0ecc337b80a52f6bf82549fdcc214a4ac1055db02e75f5877282ea4f74e9d0bfd331623395d465662a22c007038	\N	f
+organization:001-report-cdnPath-4a8073c4-3fa9-5295-8320-f5bddba76184.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:3fgtaj7	\N	\N	\N	f2b0814434e766d38e27d9fddd0c0593701196367074351c1b3a33e888b42bc609c36dd5f8cdd061ddf698bf54dfed15d5d1cb25729298140471c5157fcaab6d	\N	f
+organization:001-report-cdnPath-cfa46f06-6012-5ba9-97d2-a944e98ce1f6.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:eucveu7	\N	\N	\N	1e593e357c8d1935b3ac9641292c5e564c6fb05be1f8f16c1fdb12ea9713a04a28b8982b4e5571c248525989b85db92c160aacfb6833e216f787e6af81cc14b7	\N	f
+organization:001-report-cdnPath-3722c941-685a-5c90-9d03-c45040e2230b.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:rjppptf	\N	\N	\N	0c86ed1902c22f356b83a94d1d25f5d1be25398d419c1a48c794fd44cc4bab1ce00859a1cd1fa60bd84821bd60008985620eb3df72a1119288132a2eb9b57303	\N	f
+organization:001-report-cdnPath-d0ce3186-e2e4-5f7e-90d3-d58839dd7c71.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:7mudttm	\N	\N	\N	bcb10e392fa539a462868d40f6903f23d6dae567c8adf2d273ee4a39f66ee618036520df0c53ddc63940f7bdd07a5fb42b29397f5a7342aada51d40c7d919f44	\N	f
+organization:001-report-cdnPath-66ec17db-530e-52cb-9d6f-5169533e7760.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:wfbvjeh	\N	\N	\N	49831587757d15626da32da746cd8e0973bf43531a5b1243b0a6cc5ab7fb6d3e7f6509c8ae6a1afb0b1b23bffab9fa59505f758b292dd3963df045f6d30c5013	\N	f
+organization:001-report-cdnPath-a97ccfbc-760c-5073-ac24-4dd1432a4638.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:jgwuepx	\N	\N	\N	15d3038385ddb4440a5905b584699f7ae47e84328ecbb5ccbab6793d757a37101b5ad4d1a52eefc74c1b6ad14a0664ecc0a5816c57566ca14bcb0d83760647d8	\N	f
+organization:001-report-cdnPath-c8a87ccb-65c1-5edd-a469-89a55f961ea6.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:t78363g	\N	\N	\N	dbe0299cff4a7812f33e8a584612ab504bb0032af9932aec63a9a2acd1b3a720b11173e7f9cb79e2bf1496646b1277c1300598f9bc4858571cb3c3b5edb622a0	\N	f
+organization:001-report-cdnPath-d996ca7d-3f71-575e-899f-299fc940189f.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:r4akfmz	\N	\N	\N	566f6469b2540fbdbbd2a1fc0f79faf5155dbc17599f575590f3399081293bbe5f58148f5f634879fdff1ecf19da7ed476944e0cebd426e0c5e42036c608ae2f	\N	f
+organization:001-report-cdnPath-35a72367-2cd9-5356-85e2-6ac3bfc9ca39.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:g3adbwx	\N	\N	\N	d91d8b5567584021d52ec5dbc66e3620fc63efbc37ce6c957a9ddc4d52f52f6a843686a07a66c5ba1ad75ff436062fc8da12f8cdbd935454b2da1ac257d47263	\N	f
+organization:001-report-cdnPath-78976eee-fa82-5e05-b2c9-a0cba131137e.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:bk7bg26	\N	\N	\N	1d475dcb8c75797b15e027b0529f11825fa855501c48a281b8e8e4c08450b777b9c3ddacd3f6ccec650369d6a7b302de55d3fc75b7bcba769dd6ba973d894e11	\N	f
+organization:001-report-cdnPath-b9e5108e-6ce3-5fd5-a86b-93e10c7f401e.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:zk3kkt6	\N	\N	\N	326d003319789625a104ad71c2fe83b8c1ba7c27dd811625fbbd55183977f47f33dc4b44516bb0d184de46ded6b9ee97d8caf7b8a556305e62dee5272dd812fc	\N	f
+organization:001-report-cdnPath-7c942c67-5998-542c-adea-7a2f81bbbfa9.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:arhwa64	\N	\N	\N	7fbfd7d9f3fc6f5461d4b9a428a7045d26bd5d889c550f680bc2d9f98ef3c16e2213baa2aa268838f4511a109d70d1eb6a4eb243d6fca8b957306284ca345d64	\N	f
+organization:001-report-cdnPath-e9875d44-0efc-59a8-96c9-e5434bcb4bfd.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:yd6db6a	\N	\N	\N	25aea63dfa327c9289d0308fe22058b58b530833455f2c446a5e214a7c5e1196554ebb74315ea5506af3a219df790b3886302295855a8200c81c34e5817b5665	\N	f
+organization:001-report-cdnPath-30ed2fe5-7834-5dad-ad90-115f8e9bfc7e.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:phbe3gy	\N	\N	\N	89b20160ea5ba3e913a4de8d63e757dee3553bcb0421fb62b0b0d563d4146d6620b2182a9eb5e6f8e7bfff9e123fb786085dbc86b8c9461ecfc488c80bc95e5a	\N	f
+organization:001-report-cdnPath-183663aa-ebfa-5813-98e8-2571f3702ae0.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:j7rbfbr	\N	\N	\N	da7b3715b6d89fba3a000f928307b595bc975a17087ec19048c2b339c3c5acc4c5ef0543636408faf0e38060ae51a6d4f4baceaa2b9b5280157dc5df8cdb6ed1	\N	f
+organization:001-report-cdnPath-9a8503c4-04aa-5729-a545-4448e6122bee.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:ydw338d	\N	\N	\N	266f969fdedf81403903e63b5baf5cdd53f717e0f89dedc3bd02ef884725668575c8376708fa4c72aff439fc5e16c4a4965b9497aaea0e7177d114853bf8c0ce	\N	f
+organization:001-report-cdnPath-4d819e84-30eb-5320-aa57-0bb3b271edd3.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:pfjcmeu	\N	\N	\N	337a4358ceede4f86b2275807d1b925c5e4b0df7d73ac32727239588bf577d03b6216240c8836190a8851211d3ba781c67819c233d656210e384a3969fbb28ba	\N	f
+organization:001-report-cdnPath-1a94ac39-2136-5af4-9372-39b582a4ce90.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:gbffwhp	\N	\N	\N	0e9e7540f83b5491c4c7d5193a4ed8596efbe4472d03c81b0689b15425ce213cb066a329467caa29dceb0d465d804bffbc764e41280ef64e684c2c6a99d3b3c0	\N	f
+organization:001-report-cdnPath-365c70a2-c5c3-5863-973d-8dc6a33b68bb.pdf	sessionAttendance.pdf	report	cdnPath	synapUser:001	\N	\N	\N	cdnTempFile:pujk324	\N	\N	\N	de00c7f5f7fb570d129cd59ea5452620b735be07d5c5ab24ad1c695d249bc2750ba90828a4c24b9f200b1c8f1dafad5c3d05078a940ff17b44df7ab5fb360bb7	\N	f
 \.
 
 
 --
+-- TOC entry 5607 (class 0 OID 280768)
+-- Dependencies: 198
 -- Data for Name: client_document; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4193,6 +4429,8 @@ COPY public.client_document (document_file, name, created_on_date, created_on_ti
 
 
 --
+-- TOC entry 5608 (class 0 OID 280775)
+-- Dependencies: 199
 -- Data for Name: client_document_file; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4201,6 +4439,8 @@ COPY public.client_document_file (cdn_file, created_on_date, created_on_time, cr
 
 
 --
+-- TOC entry 5609 (class 0 OID 280782)
+-- Dependencies: 200
 -- Data for Name: client_note; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4209,15 +4449,23 @@ COPY public.client_note (note, status, created_on_date, created_on_time, created
 
 
 --
+-- TOC entry 5610 (class 0 OID 280789)
+-- Dependencies: 201
 -- Data for Name: course; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
 COPY public.course (name, fee, min_registrant_limit, registrant_limit, start_period, end_period, status, category, created_on_date, created_on_time, created_by, id, tags, organization_id, custom_property, checksum, object_path, is_deleted) FROM stdin;
 course	1	0	12	2019-07-02	2019-07-02	metaBasicStatus:active	\N	2019-07-09	17:32:41	synapUser:001	course:dz8jr4a	\N	organization:001	[]	b2ea0c5689cce361c5fc64945e8704628e403787ba24978f371b09489a2c46decf1a731369957fb89b670f7c5a8e806ccc9b517e879611ce6450ef15bad932dd	\N	f
+zero registrant	0	0	1	2019-07-10	2019-07-10	metaBasicStatus:active	courseCategory:enat2kj	2019-07-10	06:41:33	synapUser:001	course:jjdd83j	\N	organization:001	[]	73b4c8629a0ab29604491ad96da924915ed15b3618655f226842477ad9dae391761cbddeb96e02844be46007426e106a3ac8ebdcc02940c2c128dbe10303939e	\N	f
+World Cup	0	0	12	2019-07-10	2019-07-10	metaBasicStatus:active	courseCategory:enat2kj	2019-07-10	10:22:08	synapUser:001	course:w6fmdvn	\N	organization:001	[]	8b7f5110e79a447fd71785efc43537c48b7033d8bc40e2364aeaa240c934611ae8f15916d7f543e66801333af0cc4c365d7fb64edcb04c382d2fd3d172ed5c8f	\N	f
+course name 2	0	0	12	2019-07-10	2019-07-10	metaBasicStatus:active	courseCategory:enat2kj	2019-07-10	06:38:30	synapUser:001	course:yugykv3	\N	organization:001	[]	cd6891014e4513bb93ab6a12cc91277707750f8f09a3dc9a9aa69d6c9d05519b49ac7d00d3ce5dfa07f7aa29fb1411f94c1f1d5b8003a1cd95f87a2a9c6c73ab	\N	f
+test course	0	0	12	2019-07-10	2019-07-10	metaBasicStatus:active	courseCategory:enat2kj	2019-07-10	13:15:08	synapUser:001	course:k4watej	\N	organization:001	[]	e0af2694d7180ef8625a91bc72167537d733a31e927eb6da3ad8495d71e2d72093febb45b5d10e3a65405d11b645c471a70462dadb98e1f9e283194907c5c137	\N	f
 \.
 
 
 --
+-- TOC entry 5730 (class 0 OID 281903)
+-- Dependencies: 321
 -- Data for Name: course_category; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4227,49 +4475,139 @@ alpha	2019-07-09	17:31:53	synapUser:001	courseCategory:enat2kj	\N	organization:0
 
 
 --
+-- TOC entry 5611 (class 0 OID 280796)
+-- Dependencies: 202
 -- Data for Name: course_custom_field_definition; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
 COPY public.course_custom_field_definition (name, type, created_on_date, created_on_time, created_by, course_id, id, tags, organization_id, custom_property, checksum, object_path, is_deleted) FROM stdin;
+checking box	metaFieldDefinationType:checkbox	2019-07-10	10:27:18	synapUser:001	course:w6fmdvn	courseCustomFieldDefinition:3vrbc34	\N	organization:001	[]	33b54ec3432e1f7068b448b28ad4e9d629e98b3146f6fa85642c86c92696f66a275667f6cf6a353071250366650727b9f9a0278e4f073a5df412ded5440183c1	course__w6fmdvn	f
+which date	metaFieldDefinationType:datetime	2019-07-10	10:29:33	synapUser:001	course:w6fmdvn	courseCustomFieldDefinition:762ycfx	\N	organization:001	[]	3826f65c3c5d1cac40ce6238f20916912c3012250c2d9327c3af5177eacc38364525b68087454e4b394d5e522f54cea4165e21b5444a8c82fabf78e27928dd26	course__w6fmdvn	f
+Decimal enter	metaFieldDefinationType:decimal	2019-07-10	10:29:44	synapUser:001	course:w6fmdvn	courseCustomFieldDefinition:enn6edm	\N	organization:001	[]	ad09ac38866b2cd831cf0a6ed6ef5ac089c77958b52bd07ecec814cdb584531bf2c3e224da6dea16a8b0db67b60f5050817e056a819ad390b9309c52954d29b1	course__w6fmdvn	f
+Number	metaFieldDefinationType:number	2019-07-10	10:29:56	synapUser:001	course:w6fmdvn	courseCustomFieldDefinition:demhfjr	\N	organization:001	[]	22bab2c775aacc7dec00e0114fb4d4e53050095d78d4fb9cee5ae2513b6f14b32c61c13e4790497c1c6daad8d2ff151fc443068317fe5316edbbe81849bb0d9c	course__w6fmdvn	f
+enter text	metaFieldDefinationType:text	2019-07-10	10:30:04	synapUser:001	course:w6fmdvn	courseCustomFieldDefinition:fg7cgzc	\N	organization:001	[]	508c4ef08e9157f9d871a6afe8f71cc084fee004080a8e858a4f35243b5e6adfe9cf1efb8916df3b07e0865515d2961287b7d29b38fea31cfe6a8eab52c0bc03	course__w6fmdvn	f
+again	metaFieldDefinationType:checkbox	2019-07-10	10:31:18	synapUser:001	course:w6fmdvn	courseCustomFieldDefinition:pkawnxn	\N	organization:001	[]	1bc257986bdf62d32f1941e8fa995cc3c29d92bac3a57d02ea5ed8f97c2719283db6ec9de00c8c3819a27fe4cc657da6c3ce75fce570015bb684183468bb7020	course__w6fmdvn	f
+alpha	metaFieldDefinationType:checkbox	2019-07-10	11:12:30	synapUser:001	course:yugykv3	courseCustomFieldDefinition:ymaff6m	\N	organization:001	[]	2c24a3b92434b633d100660fe4d4ad7f314bb3e34b5019897240e5a7106a7a9eac1a2ee4372852bf8e22d5e984f9aca723357f84190f8573a9262235abed47ce	course__yugykv3	f
+bet	metaFieldDefinationType:datetime	2019-07-10	11:12:37	synapUser:001	course:yugykv3	courseCustomFieldDefinition:p8ffrt2	\N	organization:001	[]	dd76907330f2016ba50563edef0fe6037fcc3d58a4d9823be53c2b64c674f52683364203dcbea06acb40de4297552078898610f893c15f146b2d6a0fef10e1e6	course__yugykv3	f
+cello	metaFieldDefinationType:decimal	2019-07-10	11:12:48	synapUser:001	course:yugykv3	courseCustomFieldDefinition:xvag7up	\N	organization:001	[]	65dac3ba5970adc1c8379adebce01c59c9b7955528486ea2edcc2a8208ee48eac44b73ade534c420972a3742868d50f0dbd9736f2234654f9c074bc7823a9da1	course__yugykv3	f
+delta	metaFieldDefinationType:number	2019-07-10	11:12:55	synapUser:001	course:yugykv3	courseCustomFieldDefinition:dkvpe34	\N	organization:001	[]	867402c1c891eb0cdffb0131bf36d34d361d0ab69df79e0e0cc08780947cfd94ba19ee146d8ac434820e3faee5f2dc7c916eb219a58b0c99368372b5abffe21f	course__yugykv3	f
+etta	metaFieldDefinationType:text	2019-07-10	11:13:07	synapUser:001	course:yugykv3	courseCustomFieldDefinition:xgf3bdb	\N	organization:001	[]	df311c471cb91d5c68f57a2d89451cf084fca79b4d0e1965b33f0df03993faf3436e39dabc42d18b5b69cc3860c49215cd3f68292086a0d17d6b3f5a642df23d	course__yugykv3	f
 \.
 
 
 --
+-- TOC entry 5612 (class 0 OID 280803)
+-- Dependencies: 203
 -- Data for Name: course_participant; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
 COPY public.course_participant (patient_id, fee_collected, status, paid_date_time, created_on_date, created_on_time, created_by, course_id, id, tags, organization_id, custom_property, checksum, object_path, is_deleted) FROM stdin;
 patient:afxtxhy	0	metaBasicStatus:active	2019-07-09 17:34:39	2019-07-09	17:34:39	synapUser:001	course:dz8jr4a	courseParticipant:kwyztgr	\N	organization:001	[]	7a9ef16f6f108f4d740712a10031db6eaf75a24a59253b94e7047602da1c2717aad97fa5a07e583080b5499b67f475942bb97837410521042c7875bf06f03ea2	course__dz8jr4a	f
+patient:afxtxhy	0	metaBasicStatus:active	2019-07-10 06:38:51	2019-07-10	06:38:51	synapUser:001	course:yugykv3	courseParticipant:vt4cu44	\N	organization:001	[]	a03a98ac40cfc4a1bde2b8c160d7cb042eab333b3d3ac10d58fc10a8dfacaa7f6feeed158808726eb8bb0b58668307edeb580835c3ea6ec8a936af8fde491371	course__yugykv3	f
+patient:gkpvdnv	0	metaBasicStatus:active	2019-07-10 06:39:07	2019-07-10	06:39:07	synapUser:001	course:yugykv3	courseParticipant:wdpjbyn	\N	organization:001	[]	dd8acddab7e4905afaa636bddf6c4ae64e42c8d227f782f78c2d32c16b3ef82b0f6f81961b4a53c41e5e5794fce9424b8410d005130789e1755819b2f11e22cb	course__yugykv3	f
+patient:num7wxp	0	metaBasicStatus:active	2019-07-10 06:39:19	2019-07-10	06:39:19	synapUser:001	course:yugykv3	courseParticipant:2pdh7yx	\N	organization:001	[]	c7fcb4d9e22fd80879fd291bd920a1c6e147d8484d0c07a8ae11ccebcc0c9ab867de94016e73472ff8e41f5765c7b739219be61f24a2b7a7de992f3173ce54e8	course__yugykv3	f
+patient:cdkk3hz	0	metaBasicStatus:active	2019-07-10 06:39:29	2019-07-10	06:39:29	synapUser:001	course:yugykv3	courseParticipant:6atmcwt	\N	organization:001	[]	b34a1e4142e135928e21a0320b2d1abb142e4c9fedeb6b1b48429d1c469f5602679e00b9d32111b6031081dcd8b1fa7a571cb53b40e51fba6cacdb3039d72876	course__yugykv3	f
+patient:daehk8n	0	metaBasicStatus:active	2019-07-10 06:39:40	2019-07-10	06:39:40	synapUser:001	course:yugykv3	courseParticipant:vjg3mdv	\N	organization:001	[]	796fa57c0b1db3c1155763f3649bfcbb535635e75d743be0d856218eae0974ba0baa34a74587df9c437b4db994deabbf264b9c221e50215e008291c4c558703a	course__yugykv3	f
+patient:6ccdnmu	0	metaBasicStatus:active	2019-07-10 06:39:56	2019-07-10	06:39:56	synapUser:001	course:yugykv3	courseParticipant:dm8ymky	\N	organization:001	[]	5db69f918d48c5e142c9be550022b8ba5aff34d94f9e4e92e12f3ef54c9c86950edf80d9bd7183520ab80eb4887a9ce779f14faa7bf014451c209c9948314482	course__yugykv3	f
+patient:8u27fg7	0	metaBasicStatus:active	2019-07-10 06:40:06	2019-07-10	06:40:06	synapUser:001	course:yugykv3	courseParticipant:bv7jgph	\N	organization:001	[]	2683c9b433f8a2eaa97efeb281245f350fa8f422387807877e789937da31d4b1c28c3e4f4ce94ecb688a82e7ddd540e80eac5dcdae3f7777bbc41a4a70d14fbc	course__yugykv3	f
+patient:pn7pnby	0	metaBasicStatus:active	2019-07-10 06:40:18	2019-07-10	06:40:18	synapUser:001	course:yugykv3	courseParticipant:t864zpm	\N	organization:001	[]	a7e519b558eb10edd9162a2ebef69f54fa64ce3a69f68b42d27c971784e20a9d50a7429a7cd7943ea1ebd185abbbcca0b5aa879d83d0df7582c9cf23dfadf389	course__yugykv3	f
+patient:ppgvev8	0	metaBasicStatus:active	2019-07-10 06:40:35	2019-07-10	06:40:35	synapUser:001	course:yugykv3	courseParticipant:6hdmw4f	\N	organization:001	[]	c2adfae3c526dc4fb121d277ae52e3121f61c8d24e3f5d5b76a5af4a2a013cf122fd5953054473bb66c18383bf13b3dc09ca17cc22fcdd943f1fc216d9848520	course__yugykv3	f
+patient:renvmv8	0	metaBasicStatus:active	2019-07-10 06:40:46	2019-07-10	06:40:46	synapUser:001	course:yugykv3	courseParticipant:6dhgdhf	\N	organization:001	[]	af24f3d1f6203dec5973512a9beab81aae67c36ca13b332a12dde68c642a2e1130ca7b4ab4542c5bd4c9ee5a4b5c96886212955c14d17706b4760296120b0acf	course__yugykv3	f
+patient:n26akvg	0	metaBasicStatus:active	2019-07-10 06:40:57	2019-07-10	06:40:57	synapUser:001	course:yugykv3	courseParticipant:mbccgec	\N	organization:001	[]	ab1c16dff0d41170dd33034cda01620f591d513da3b6d56d8e7f134cfb6fda3e47245cda8134f1c2b881296a49779c383c000e080c6dc05cb7415e051ca36e9a	course__yugykv3	f
+patient:afxtxhy	0	metaBasicStatus:active	2019-07-10 10:24:05	2019-07-10	10:24:05	synapUser:001	course:w6fmdvn	courseParticipant:3mjpvhc	\N	organization:001	[]	1ecd3f68c3f19baea53df98ba24a790fe0cad5795f9c99e51c229fc5eefe4bb08de99ac31f76684eabacb06e361067587946f81e6da6a1d2dd527abe2fd093aa	course__w6fmdvn	f
+patient:gkpvdnv	12	metaBasicStatus:active	2019-07-10 11:21:02	2019-07-10	10:33:46	synapUser:001	course:w6fmdvn	courseParticipant:dr7rgkm	\N	organization:001	[]	8e0818d73e01099cac56c0f773262c7faa5550324b5947021c372372c6855d3d7a505732c27773754ac445b1aac3d82e9cb12f4d992d1a4d51af1c7009205d06	course__w6fmdvn	f
+patient:afxtxhy	0	metaBasicStatus:active	2019-07-10 13:15:24	2019-07-10	13:15:24	synapUser:001	course:k4watej	courseParticipant:zu8d4ab	\N	organization:001	[]	cfb221167d55da829b798159706f2253cb746ed870556f77a422165ba1eb34b72de26ac7ab0009678983a5f954582bc4b0336ba23d574ef7ca17617e72fc47e0	course__k4watej	f
 \.
 
 
 --
+-- TOC entry 5613 (class 0 OID 280810)
+-- Dependencies: 204
 -- Data for Name: course_session; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
 COPY public.course_session (name, date, start_time, end_time, location, status, instructor_user, secondary_instructor_user, created_on_date, created_on_time, created_by, course_id, id, tags, organization_id, custom_property, checksum, object_path, is_deleted) FROM stdin;
 test session	2019-07-02	22:03:23	23:03:24	MOHALLI	metaBasicStatus:active	organizationEmployee:001	organizationEmployee:001	2019-07-09	17:33:29	synapUser:001	course:dz8jr4a	courseSession:8ckprm6	\N	organization:001	[]	61b6d730c591f31f7d203ecaf0b907dbedd80bd9a8035d9d96115a9e58ac0a54b10ed7fd3ce3040edd765076cba691d39b3906e46baafc780d0a337ebbadcd67	course__dz8jr4a	f
+no people	2019-07-10	12:12:17	13:12:17	\N	metaBasicStatus:active	organizationEmployee:001	\N	2019-07-10	06:42:10	synapUser:001	course:jjdd83j	courseSession:38ywtcg	\N	organization:001	[]	ba4cf2462ac83aa4c61b1f25af85a06e9d1eae160a087032d1e7ab2db6be8d86e8e336e868d91d0c5eebece40f4921cd5221f622d893554bcded37992ac3d8cc	course__jjdd83j	f
+no. 1	2019-07-10	15:53:09	15:54:11	Mohali	metaBasicStatus:cancelled	organizationEmployee:001	\N	2019-07-10	10:23:18	synapUser:001	course:w6fmdvn	courseSession:bmnayfg	\N	organization:001	[]	2c10d959a2a95b8477fefddf90729bbc71d5df4d3f96503db1efff9ec791ece3ea41960d3f2172f49e7a9eef0736c6f019cd72843706ff009b4b5bc13ee8caa6	course__w6fmdvn	f
+session for 12	2019-07-10	04:12:42	06:00:43	Ney York	metaBasicStatus:active	organizationEmployee:001	organizationEmployee:001	2019-07-10	06:42:44	synapUser:001	course:yugykv3	courseSession:xwkhyf6	\N	organization:001	[]	c4cee12ac4d21d6eb52624c9dd892600f1191c0a6aec14ba336331a97d5db0fa404705a4225d74d95bdb93f8bf2e2c2537e303cf30a8ee9ee15f4cf48dbb512d	course__yugykv3	f
+test cas	2019-07-10	18:44:44	18:45:42	\N	metaBasicStatus:active	organizationEmployee:001	\N	2019-07-10	13:15:46	synapUser:001	course:k4watej	courseSession:tndrp8j	\N	organization:001	[]	e61eb25bd5aa3890cbfb6989c2cd6f92c5dfd399a836f6697f2f4a04580ae65e1c9c4a6d09534b5ae8bf96180a56cd002abcee5b6d72e0f74b60d1668eff5da5	course__k4watej	f
 \.
 
 
 --
+-- TOC entry 5614 (class 0 OID 280817)
+-- Dependencies: 205
 -- Data for Name: course_session_attendance; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
 COPY public.course_session_attendance (course_id, notes, patient_id, attended, created_on_date, created_on_time, created_by, course_session_id, id, tags, organization_id, custom_property, checksum, object_path, is_deleted) FROM stdin;
 course:dz8jr4a	\N	patient:afxtxhy	t	2019-07-09	17:36:01	synapUser:001	courseSession:8ckprm6	courseSessionAttendance:hhnxvf3	\N	organization:001	[]	2d3b2e2c9c5667a7c7778aba920601c2d3465eea7f815cb334882971b66680ddc288cf4f62bbb01ababd555d741fda58402649a38449e7793df38397f6ec6599	course__dz8jr4a.courseSession__8ckprm6	f
+course:yugykv3	Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 	patient:8u27fg7	t	2019-07-10	11:14:27	synapUser:001	courseSession:xwkhyf6	courseSessionAttendance:ypcztcm	\N	organization:001	[]	8975fe59d37a5c4e57b50292d4baa8e3d03f2aac9476ba954e1c209e87642800feda4976b1e5e781bf77b8982278b29b8c0c745cae9e8d9727a74e7eb956e5f1	course__yugykv3.courseSession__xwkhyf6	f
+course:yugykv3	\N	patient:gkpvdnv	t	2019-07-10	11:14:30	synapUser:001	courseSession:xwkhyf6	courseSessionAttendance:cxey6hh	\N	organization:001	[]	8c4b73bf2d70ec0c44c8a5ad5ec4ef0e23561788cd62ea5ca909efca38fd9cf7da486057e72ffff1ab94651449e11724572d4fa6897bd81ac817b91859ceae4a	course__yugykv3.courseSession__xwkhyf6	f
+course:yugykv3	Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 	patient:6ccdnmu	t	2019-07-10	11:14:27	synapUser:001	courseSession:xwkhyf6	courseSessionAttendance:tjpen7v	\N	organization:001	[]	de6135b659c5792e9ab0a07e59272f77638f92e2cee4fb6cec63c802ed3a5c4620c855321d59dee53bac2ae7273107bc1d44e11f5952e48f5a96d99649d90d87	course__yugykv3.courseSession__xwkhyf6	f
+course:w6fmdvn	\N	patient:gkpvdnv	t	2019-07-10	10:34:06	synapUser:001	courseSession:bmnayfg	courseSessionAttendance:k6tfk8x	\N	organization:001	[]	9ad1ac47bae75ba8de99df78bdaade1b5f480bee29edb3e541c6dc9f1066b4f44007e923792fa0664064b9a19b0f5faee71cffda2742a45a89f6513f4ff91f09	course__w6fmdvn.courseSession__bmnayfg	f
+course:yugykv3	\N	patient:n26akvg	t	2019-07-10	07:00:44	synapUser:001	courseSession:xwkhyf6	courseSessionAttendance:b47bvwb	\N	organization:001	[]	e537cf151c26aa75a19f27fc169d21ea8bf1762998af24a4250e95a737354d071b98fe8ff15cb59877e10b41de31d47987477214e6685ce18d9f97cbf0d07c91	course__yugykv3.courseSession__xwkhyf6	f
+course:w6fmdvn	Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 	patient:afxtxhy	f	2019-07-10	10:27:43	synapUser:001	courseSession:bmnayfg	courseSessionAttendance:mztz8e7	\N	organization:001	[]	67d9c89b8ca54fb1a12cc948f0b78cb633f996ac9565783f3b6233585d29862eaa1096f07e633c6183b5c9f730f03add96dabfefe3ca40067cc6726ba6ff98eb	course__w6fmdvn.courseSession__bmnayfg	f
+course:yugykv3	Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 	patient:pn7pnby	t	2019-07-10	11:13:40	synapUser:001	courseSession:xwkhyf6	courseSessionAttendance:drgbvjb	\N	organization:001	[]	bb9d4c1fa913792a3b0741d65d2d7a152207985625314f5a3d54d258a5927cae5d434ba3b47917804b3fbcc766ee82871a4d4f22405fdaa1b83177bc1660d73f	course__yugykv3.courseSession__xwkhyf6	f
+course:yugykv3	\N	patient:daehk8n	t	2019-07-10	11:14:28	synapUser:001	courseSession:xwkhyf6	courseSessionAttendance:4we8ajy	\N	organization:001	[]	b7e09b83192b842ac5799d496fa3a2cb0aeac557b6d467b5aef7f9a097d3cfbe4aefbb7bd16e9b9fd4a081fb76d857ecaf34ffea31714d33750209e2340c20e3	course__yugykv3.courseSession__xwkhyf6	f
+course:yugykv3	Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 	patient:renvmv8	t	2019-07-10	10:04:35	synapUser:001	courseSession:xwkhyf6	courseSessionAttendance:ra3kxvn	\N	organization:001	[]	ef95fe297896cf0699d964a8a9d9a287a6b1d46c27005652fa446acba91ae06c9233d58ac1703d022123e95493bdbd50656c19472c6688c6feeda9343b19e207	course__yugykv3.courseSession__xwkhyf6	f
+course:yugykv3	Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 	patient:ppgvev8	f	2019-07-10	11:23:25	synapUser:001	courseSession:xwkhyf6	courseSessionAttendance:j783kr8	\N	organization:001	[]	d676244b7bcfe13b9f883400f0a4b4b3bf85054391faea6c90ceec2479921ce12553f9a0bd3c80f6d78a62322d93c6bf99712489685d84be25161502ade31f4d	course__yugykv3.courseSession__xwkhyf6	f
+course:yugykv3	Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 	patient:ppgvev8	t	2019-07-10	11:23:25	synapUser:001	courseSession:xwkhyf6	courseSessionAttendance:wexuy7b	\N	organization:001	[]	b2b6ed6eca9c40d5eb12b7158285c4d6d4720da52f233672b81c4ab9e8d911bd2f246d8e77093cf7be01e120078d2383506cfd70c309e776552fc515bc745ba3	course__yugykv3.courseSession__xwkhyf6	f
 \.
 
 
 --
+-- TOC entry 5615 (class 0 OID 280825)
+-- Dependencies: 206
 -- Data for Name: course_session_custom_field_value; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
 COPY public.course_session_custom_field_value (custom_field_definition, value, created_on_date, created_on_time, created_by, course_session_attendance_id, id, tags, organization_id, custom_property, checksum, object_path, is_deleted) FROM stdin;
+courseCustomFieldDefinition:3vrbc34	false	2019-07-10	10:28:06	synapUser:001	courseSessionAttendance:mztz8e7	courseSessionCustomFieldValue:uhah6ef	\N	organization:001	[]	6109887518732902b0ce6abc98102ce608e3d0b4c73f3a1b44c5a467415ada8c988e229c136eb2ff71fbf16735547fa1b457270a4cfb2f8533f55b6d7d9ed2f6	course__w6fmdvn.courseSession__bmnayfg.courseSessionAttendance__mztz8e7	f
+courseCustomFieldDefinition:762ycfx	07/10/2019 12:00 AM	2019-07-10	10:30:43	synapUser:001	courseSessionAttendance:mztz8e7	courseSessionCustomFieldValue:fg2ncny	\N	organization:001	[]	8314767a351e4e5e4f725252b36f8f85e7d5a9d0c79a7336526074c4a0bdf8081fc5c446a562a926edf962a1fb22f7de41f109f64fcf9666880b17dcf6723767	course__w6fmdvn.courseSession__bmnayfg.courseSessionAttendance__mztz8e7	f
+courseCustomFieldDefinition:enn6edm	1243456.00	2019-07-10	10:30:47	synapUser:001	courseSessionAttendance:mztz8e7	courseSessionCustomFieldValue:rppyteu	\N	organization:001	[]	0e3fdca637338f166184cbe023a3737e97550f0fbbecf923c27611cab95eb605d3a851054450e22fec2c85ba286737d93a6c06b5849b5f6ad4e6656cc59ed50a	course__w6fmdvn.courseSession__bmnayfg.courseSessionAttendance__mztz8e7	f
+courseCustomFieldDefinition:demhfjr	123456	2019-07-10	10:30:49	synapUser:001	courseSessionAttendance:mztz8e7	courseSessionCustomFieldValue:a7ar3ud	\N	organization:001	[]	3fb7102d4e2d2ad4c3f30cc0d3d733cea2760c9b43696125d138d89b1a57c331c0f12b9498cf59b985eafb44b52e9ee6ed929303303bd11c0754a599a231370b	course__w6fmdvn.courseSession__bmnayfg.courseSessionAttendance__mztz8e7	f
+courseCustomFieldDefinition:fg7cgzc	 	2019-07-10	10:30:52	synapUser:001	courseSessionAttendance:mztz8e7	courseSessionCustomFieldValue:gu3uwbg	\N	organization:001	[]	fcec4adafbab06d17d9367e714a307228b979557a08e0de4c0fa4212547a213df33dcf71508d9b07e3f863762a2876ecdc651a14c9a018d8f3b0047986f93dec	course__w6fmdvn.courseSession__bmnayfg.courseSessionAttendance__mztz8e7	f
+courseCustomFieldDefinition:pkawnxn	true	2019-07-10	10:34:12	synapUser:001	courseSessionAttendance:k6tfk8x	courseSessionCustomFieldValue:nfe638y	\N	organization:001	[]	845f76d2e36c4bc2e02e92de6f311e7568dc0f90d9742c7878a650cfd3cf730f5adf5e42b58ced6728010662e99f2c38514a0ac1612d212c489100a60e26687d	course__w6fmdvn.courseSession__bmnayfg.courseSessionAttendance__k6tfk8x	f
+courseCustomFieldDefinition:762ycfx	07/18/2019 12:00 AM	2019-07-10	10:34:13	synapUser:001	courseSessionAttendance:k6tfk8x	courseSessionCustomFieldValue:ecptmzv	\N	organization:001	[]	d8c01d0ffcc20a4ac6f88850337efcb1fc45300eba8e6c28305aa42cd627ab4c9eda6b9578e33a0edf380dfb64d445c883e54eef1dd3a30ffdfa33dcf255130e	course__w6fmdvn.courseSession__bmnayfg.courseSessionAttendance__k6tfk8x	f
+courseCustomFieldDefinition:demhfjr	123	2019-07-10	10:34:16	synapUser:001	courseSessionAttendance:k6tfk8x	courseSessionCustomFieldValue:hye7mn6	\N	organization:001	[]	b6c19367f772c1b668aaecee5128bec4fcfd4f8ad7bd58ca8ed09f1272356d7b96d483b684c35cc13820647a7b8290aeb88dec4b0f48861d6bf2ce6b3546832e	course__w6fmdvn.courseSession__bmnayfg.courseSessionAttendance__k6tfk8x	f
+courseCustomFieldDefinition:ymaff6m	true	2019-07-10	11:13:50	synapUser:001	courseSessionAttendance:drgbvjb	courseSessionCustomFieldValue:dvfpcry	\N	organization:001	[]	b1de38cc430e740cf42224f74c6a6cf0c38a623f65641db36c2f579bc6d4d07be1b96c219a38e158b79daaac6d26c1931032d1b6f6675814d44093b188c26dcd	course__yugykv3.courseSession__xwkhyf6.courseSessionAttendance__drgbvjb	f
+courseCustomFieldDefinition:p8ffrt2	07/10/2019 12:00 AM	2019-07-10	11:13:52	synapUser:001	courseSessionAttendance:drgbvjb	courseSessionCustomFieldValue:87n443m	\N	organization:001	[]	00965fb9c67e6daffbed6e0ca880cd116eb530d502378faf7ff722b9b4d0dfec556e0a81499e6619104577aa5787ad82a2cd5f0e0f0c247e6cdb9f3615cc2dc9	course__yugykv3.courseSession__xwkhyf6.courseSessionAttendance__drgbvjb	f
+courseCustomFieldDefinition:xvag7up	12.00	2019-07-10	11:13:55	synapUser:001	courseSessionAttendance:drgbvjb	courseSessionCustomFieldValue:eupm6e3	\N	organization:001	[]	ecb71db6fe2fa67f05fe2d18c485fbbbc67fc3aaebfb6aef8320de8244a1e1ff80950893c668fb4c89cf25035c02a7aa3a45d0b79fc6b683395f592622414883	course__yugykv3.courseSession__xwkhyf6.courseSessionAttendance__drgbvjb	f
+courseCustomFieldDefinition:dkvpe34	12	2019-07-10	11:13:57	synapUser:001	courseSessionAttendance:drgbvjb	courseSessionCustomFieldValue:x23a82n	\N	organization:001	[]	9989d778d751487626fa1b9c86e0f44c7e8b113f3fb7e86ad7b9ba0f33d04c11879654df8f0891f21a1d901d7b175b521d75169e6a0dcc46308f5120a4926794	course__yugykv3.courseSession__xwkhyf6.courseSessionAttendance__drgbvjb	f
+courseCustomFieldDefinition:xgf3bdb	weerwe	2019-07-10	11:14:05	synapUser:001	courseSessionAttendance:drgbvjb	courseSessionCustomFieldValue:tcreaud	\N	organization:001	[]	769122b85e748b8c5b13d222d8fa84c21f4c020260bb3a6371430809011f8cee43d4f02346fc79a7ac512a064f6d92f7f4bd5f76f021ae29101429347fdc74dd	course__yugykv3.courseSession__xwkhyf6.courseSessionAttendance__drgbvjb	f
+courseCustomFieldDefinition:ymaff6m	true	2019-07-10	11:16:00	synapUser:001	courseSessionAttendance:4we8ajy	courseSessionCustomFieldValue:g2rctp4	\N	organization:001	[]	d5c8b0dd01b6b17e13622e659792eca560d5762a9d1c4c6c8876daded89d9f49809b3179cff09e3bf182a8fea645c6e565fd4ad0223a44339a1e47fcdabd1d91	course__yugykv3.courseSession__xwkhyf6.courseSessionAttendance__4we8ajy	f
+courseCustomFieldDefinition:ymaff6m	true	2019-07-10	11:22:20	synapUser:001	courseSessionAttendance:b47bvwb	courseSessionCustomFieldValue:rfgjynh	\N	organization:001	[]	163344cc4733494a6a60e11d430d58bb8142d842ca7366e6d3e186fe66864757e144dc8b8cb76a4fa388bd3e2c0e1332b47206eeb7faf0abb383106de75c4ffa	course__yugykv3.courseSession__xwkhyf6.courseSessionAttendance__b47bvwb	f
+courseCustomFieldDefinition:p8ffrt2	07/09/2019 12:00 AM	2019-07-10	11:22:21	synapUser:001	courseSessionAttendance:b47bvwb	courseSessionCustomFieldValue:k8brxdp	\N	organization:001	[]	28edf7b8899e32b3a35074ec2d11ad71135f4edaf1baf1514a2726aff17b1f3483937441bba58188fddda05543b433d027f54f2b4b558db4f16f824df5350f2b	course__yugykv3.courseSession__xwkhyf6.courseSessionAttendance__b47bvwb	f
+courseCustomFieldDefinition:xvag7up	12.00	2019-07-10	11:22:23	synapUser:001	courseSessionAttendance:b47bvwb	courseSessionCustomFieldValue:t26wuxt	\N	organization:001	[]	cb68a1b383e2b516554ea958ec918dccf58c90e273e28c7ab98fbaceef27a4aa0229e48e37ca58bc0b573a60741ad79a8ee8f4c59c1eec68ec45bd12664f964f	course__yugykv3.courseSession__xwkhyf6.courseSessionAttendance__b47bvwb	f
+courseCustomFieldDefinition:dkvpe34	12	2019-07-10	11:22:25	synapUser:001	courseSessionAttendance:b47bvwb	courseSessionCustomFieldValue:7wtwbhj	\N	organization:001	[]	2162931bec7f0800c6073de0a53f14512255810647372e07bb6d7fd3f655f990feafdc68e8667fd324b8b6d8f650f1122ccf691e1c5e071493f4a963c5171c50	course__yugykv3.courseSession__xwkhyf6.courseSessionAttendance__b47bvwb	f
+courseCustomFieldDefinition:xgf3bdb	Lorem Ipsum Lorem Ips	2019-07-10	11:22:43	synapUser:001	courseSessionAttendance:b47bvwb	courseSessionCustomFieldValue:mfwegku	\N	organization:001	[]	6784468bf259ca15373818e794eabee038405c385b40b4fbf0663aebbe9fa6b168d7aa6b12e36027e13080941a12849c8642bd7e46466ee1db3ffd5a66aa43fe	course__yugykv3.courseSession__xwkhyf6.courseSessionAttendance__b47bvwb	f
+courseCustomFieldDefinition:ymaff6m	true	2019-07-10	11:22:49	synapUser:001	courseSessionAttendance:ra3kxvn	courseSessionCustomFieldValue:yhthww7	\N	organization:001	[]	ea3b960991e6f5d5c8e7544c2c4f7ea5dc3a1f296c3c72ba8ed47c4e7fcac75b3d492930351b49d38f8a144d36e3a2f5951176b17ecfb94bbd578790270cccd6	course__yugykv3.courseSession__xwkhyf6.courseSessionAttendance__ra3kxvn	f
+courseCustomFieldDefinition:p8ffrt2	07/18/2019 12:00 AM	2019-07-10	11:22:56	synapUser:001	courseSessionAttendance:ra3kxvn	courseSessionCustomFieldValue:k7mpayd	\N	organization:001	[]	97e0e9df269150e754b4751c58b907554edde29d67e4fb038889b155ab825fe2da89ae9476cb2b8770206ba7af9bd51d3dc87909bd1f5c09540e3a9ce47d5cd1	course__yugykv3.courseSession__xwkhyf6.courseSessionAttendance__ra3kxvn	f
+courseCustomFieldDefinition:xvag7up	12.00	2019-07-10	11:22:58	synapUser:001	courseSessionAttendance:ra3kxvn	courseSessionCustomFieldValue:wr7cdup	\N	organization:001	[]	c8d180a85b392956770633e63330dd92b6fb3d1579447285db966a5bc322a7cd752aecb7a3a8e21b79ff58f02a05fed90f9f03f8d61dce5b79f80088be232545	course__yugykv3.courseSession__xwkhyf6.courseSessionAttendance__ra3kxvn	f
+courseCustomFieldDefinition:dkvpe34	12	2019-07-10	11:23:02	synapUser:001	courseSessionAttendance:ra3kxvn	courseSessionCustomFieldValue:232zwer	\N	organization:001	[]	488d760e8fb09bea3afcd9b7c0cfb849221ef75586bdb9161edf047a83c4926972fdb129fb05703b83b179afcddadbaddd262ae7f8bb05f8a01d43833ec2d1bc	course__yugykv3.courseSession__xwkhyf6.courseSessionAttendance__ra3kxvn	f
+courseCustomFieldDefinition:xgf3bdb	fdg dsf dfg dsfgfd fd ffd dsds g dg d f d	2019-07-10	11:23:23	synapUser:001	courseSessionAttendance:ra3kxvn	courseSessionCustomFieldValue:ytytmnm	\N	organization:001	[]	6e55be2b7a3215ec36d0c80ce6b4a05fc007779a4a1b978a26c73f4f1c0a25403afa13f3b1650c90bbeba3d2f9245389c5dbb7de928ff1d48f3359c4123f625b	course__yugykv3.courseSession__xwkhyf6.courseSessionAttendance__ra3kxvn	f
+courseCustomFieldDefinition:ymaff6m	true	2019-07-10	11:23:32	synapUser:001	courseSessionAttendance:j783kr8	courseSessionCustomFieldValue:b8umwff	\N	organization:001	[]	bbeb304b2cd1fb5acf0f4e1a4dc17d7834c74a69529f3163d326ab354e4d347f0f34af65ed559e412b0489f7914b9426be9e030b567fe1017055c7c99b8769c9	course__yugykv3.courseSession__xwkhyf6.courseSessionAttendance__j783kr8	f
+courseCustomFieldDefinition:p8ffrt2	07/10/2019 12:00 AM	2019-07-10	11:23:35	synapUser:001	courseSessionAttendance:j783kr8	courseSessionCustomFieldValue:zyxje7j	\N	organization:001	[]	efb4da7b17906af98a91e1f808f1ea4d80affea84016c49caaef0269cb03af799cffef8b65c021955b6827632abb07f15b79c1230de8ee5ec312d6352afa1beb	course__yugykv3.courseSession__xwkhyf6.courseSessionAttendance__j783kr8	f
+courseCustomFieldDefinition:xvag7up	12.00	2019-07-10	11:23:37	synapUser:001	courseSessionAttendance:j783kr8	courseSessionCustomFieldValue:vmk2vn3	\N	organization:001	[]	2902f15de7d925b4d4e1217c146e94fba5d1a43190ebb833c59b96dadf0519c4e3a6c353073dd6dbccc550975f40284b51dfb3f7a31a67d12bb03e15c1b16f27	course__yugykv3.courseSession__xwkhyf6.courseSessionAttendance__j783kr8	f
+courseCustomFieldDefinition:dkvpe34	12	2019-07-10	11:23:39	synapUser:001	courseSessionAttendance:j783kr8	courseSessionCustomFieldValue:xn2hprh	\N	organization:001	[]	f6fb2072f46d0e5123446a8e7a5d5c1b13fd6b2b2e46d2359768fc2e2ca6e2c9402a1dea349becc0b7a32f913a4c08161d2dbc1b40f81c26f9389c3ab5588a12	course__yugykv3.courseSession__xwkhyf6.courseSessionAttendance__j783kr8	f
+courseCustomFieldDefinition:xgf3bdb	df d d fd gfgf	2019-07-10	11:23:45	synapUser:001	courseSessionAttendance:j783kr8	courseSessionCustomFieldValue:vhganp4	\N	organization:001	[]	39f40b506f0ee402c1e95472cdec33b84494d36233c085feb9887cbf496fc19e883dc444599cae68dd8276ce3e323ad3b88d0143fe48a9ffef75158309f0bda9	course__yugykv3.courseSession__xwkhyf6.courseSessionAttendance__j783kr8	f
+courseCustomFieldDefinition:ymaff6m	true	2019-07-10	11:23:52	synapUser:001	courseSessionAttendance:ypcztcm	courseSessionCustomFieldValue:fb62ndc	\N	organization:001	[]	c8978b37a9b77d44c57cb3e116f624e97653666016704a38aba3b043434dc9fd146a3325c5e69077851b2aad89a504f1bbe8aaffda46b89732f28d5dffe59abe	course__yugykv3.courseSession__xwkhyf6.courseSessionAttendance__ypcztcm	f
+courseCustomFieldDefinition:p8ffrt2	07/03/2019 12:00 AM	2019-07-10	11:23:53	synapUser:001	courseSessionAttendance:ypcztcm	courseSessionCustomFieldValue:3yxutj3	\N	organization:001	[]	92009ce182fd5911098c53a75022792ee0e0c8ab0779d03ffbc47929bdb5a52e35673d0bbac5f6ec405d73dbb871ca1e379583f178daf663a98524cd4ea76e9e	course__yugykv3.courseSession__xwkhyf6.courseSessionAttendance__ypcztcm	f
+courseCustomFieldDefinition:xvag7up	12.00	2019-07-10	11:23:56	synapUser:001	courseSessionAttendance:ypcztcm	courseSessionCustomFieldValue:edyhb2t	\N	organization:001	[]	2a2346f5e770cae47d465b23ebfe2624687150a0b0bfdd12126b0a0c51534ad9a6779dc360b7139102c2ee3caccec7c60bf801600b49c260ea0a531caf3d6113	course__yugykv3.courseSession__xwkhyf6.courseSessionAttendance__ypcztcm	f
+courseCustomFieldDefinition:dkvpe34	12	2019-07-10	11:23:57	synapUser:001	courseSessionAttendance:ypcztcm	courseSessionCustomFieldValue:dy4btcc	\N	organization:001	[]	c4397f32c06d6761fc35a80be06f0810d95ea4102df62e6832763767d9732f41237bcbf2a8d275d9a574259783ffee898b52acd111d8bf59c39673f085a361af	course__yugykv3.courseSession__xwkhyf6.courseSessionAttendance__ypcztcm	f
+courseCustomFieldDefinition:xgf3bdb	zdzgd  gf g fzdf  fd	2019-07-10	11:24:01	synapUser:001	courseSessionAttendance:ypcztcm	courseSessionCustomFieldValue:77xzvyh	\N	organization:001	[]	b7639da4e9860f31bcf2fcf1879d07b48458e9907bf147bd89534f8072680f0a720f5e155fa6b0796d5eb1ecba4064046e1123de8104af4daaf6da5f4747c6db	course__yugykv3.courseSession__xwkhyf6.courseSessionAttendance__ypcztcm	f
+courseCustomFieldDefinition:ymaff6m	true	2019-07-10	11:24:04	synapUser:001	courseSessionAttendance:tjpen7v	courseSessionCustomFieldValue:h2dhawj	\N	organization:001	[]	b39510d54402f4a85a0f7b186585a34ceb975cd28159355d6b854c0735e2bf9282038d47e739eaa345b8c4f28d1639318d3aeaf8e8838899c825ed3345ff51c9	course__yugykv3.courseSession__xwkhyf6.courseSessionAttendance__tjpen7v	f
+courseCustomFieldDefinition:enn6edm	 	2019-07-10	11:56:31	synapUser:001	courseSessionAttendance:k6tfk8x	courseSessionCustomFieldValue:uxafbwr	\N	organization:001	[]	f645e26c0a6516ca9ef600c1ee5d8831a2fb641ecd9a17a130ad9a4b51e33ac36a1b0b70d49eb7e5967c14ed1f5ea5ce777aabbd651f0cdc67007c0ecc3dde73	course__w6fmdvn.courseSession__bmnayfg.courseSessionAttendance__k6tfk8x	f
+courseCustomFieldDefinition:3vrbc34	true	2019-07-10	11:56:32	synapUser:001	courseSessionAttendance:k6tfk8x	courseSessionCustomFieldValue:bhmzvh7	\N	organization:001	[]	aee95cefd82a1541b6c13d62ae5ce8b3f363d51acb8c7f10fb125b0711fac73110368a1087dad1dbac08f3bef7b28d8cceb3095984843c0d28d113ef319604d8	course__w6fmdvn.courseSession__bmnayfg.courseSessionAttendance__k6tfk8x	f
+courseCustomFieldDefinition:3vrbc34	false	2019-07-10	11:56:32	synapUser:001	courseSessionAttendance:k6tfk8x	courseSessionCustomFieldValue:hpp2tb6	\N	organization:001	[]	78ac00ded086575607007e1c0f6c1dad0bd5e9a47952593c1f54133bca8038944866a7314a62af822a46a7cc0f0ee9744213846bc2cc22d4a65d81bebc204520	course__w6fmdvn.courseSession__bmnayfg.courseSessionAttendance__k6tfk8x	f
 \.
 
 
 --
+-- TOC entry 5616 (class 0 OID 280832)
+-- Dependencies: 207
 -- Data for Name: data_export_request; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4278,6 +4616,8 @@ COPY public.data_export_request (data_family, pateint_id, other_data_tables, exp
 
 
 --
+-- TOC entry 5617 (class 0 OID 280839)
+-- Dependencies: 208
 -- Data for Name: data_import_request; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4286,6 +4626,8 @@ COPY public.data_import_request (import_data, status, created_on_date, created_o
 
 
 --
+-- TOC entry 5618 (class 0 OID 280846)
+-- Dependencies: 209
 -- Data for Name: housing_upgrade; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4294,6 +4636,8 @@ COPY public.housing_upgrade (reference, upgrade_type, start_date, completion_dat
 
 
 --
+-- TOC entry 5619 (class 0 OID 280853)
+-- Dependencies: 210
 -- Data for Name: kch_program; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4305,15 +4649,29 @@ Wise & Well / Education	t	WWE	\N	\N	\N	kchProgram:003	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5620 (class 0 OID 280861)
+-- Dependencies: 211
 -- Data for Name: kch_program_assignment; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
 COPY public.kch_program_assignment (program_id, created_on_date, created_on_time, created_by, patient_id, id, tags, organization_id, custom_property, checksum, object_path, is_deleted) FROM stdin;
 kchProgram:003	2019-07-09	17:34:39	synapUser:001	patient:afxtxhy	kchProgramAssignment:v64djm2	\N	organization:001	[]	d7e5735a97abd8f8ff1b8a6e62eff06a9f0d93c1171228a0e2fecb5f232da14952de9859c09444c3f415d01689106758af3b484d302031075f49d4028f4df1ee	patient__afxtxhy	f
+kchProgram:003	2019-07-10	06:39:07	synapUser:001	patient:gkpvdnv	kchProgramAssignment:wp77bmn	\N	organization:001	[]	bcca7d5a8f6195f3bba2f0048778144daa475cf4834a2aeb419ed24853b77577421499c4307998defe600573b60b09bac4e332d0fc6af8ac267599a6c6fca393	patient__gkpvdnv	f
+kchProgram:003	2019-07-10	06:39:19	synapUser:001	patient:num7wxp	kchProgramAssignment:wn7wp27	\N	organization:001	[]	f9955bfc03ca35e72d98294a650ea78b039eceb42b28b96aa9158a63a0e52100dfbfb97541c60a37fe53122d0f084d3bffb6bf536783c5a24d632c703a60799b	patient__num7wxp	f
+kchProgram:003	2019-07-10	06:39:29	synapUser:001	patient:cdkk3hz	kchProgramAssignment:8vtpced	\N	organization:001	[]	bb2f949259e542ee7c24e482e1ce1b236e5ccc9e8d41810f05c4a15e832813cb84254609d52656098ea8f0515805b07538b34490d79b84da0eac4c79cd4c305f	patient__cdkk3hz	f
+kchProgram:003	2019-07-10	06:39:40	synapUser:001	patient:daehk8n	kchProgramAssignment:2vnyexy	\N	organization:001	[]	2c0b4ed88a1dab94dffa9e62cd1b5b0f356d42b41674c317e99049516835cef96b8c0467b5b33fa0e346fac76ba93012a51418fd288a482eb09d96cd93adf071	patient__daehk8n	f
+kchProgram:003	2019-07-10	06:39:56	synapUser:001	patient:6ccdnmu	kchProgramAssignment:atp8h3r	\N	organization:001	[]	d1f6d20d7625078839f54e4a8711f86817d86faf2bfc37bd8d2209b5f7fc6e41441f9627331b3800c416e65591817e1daf07f262d260b3782ea726c8f752c12e	patient__6ccdnmu	f
+kchProgram:003	2019-07-10	06:40:06	synapUser:001	patient:8u27fg7	kchProgramAssignment:nmm66fw	\N	organization:001	[]	25e41c4f03c427910363fa7e96a6e3b311f2705d19887814798e2c8fd0dbae33eca5515541c71d94944f1938b7ded227661ca8395ac4bcd7455f77fec85216a8	patient__8u27fg7	f
+kchProgram:003	2019-07-10	06:40:18	synapUser:001	patient:pn7pnby	kchProgramAssignment:zjj6k6t	\N	organization:001	[]	3595e7311300528e71f1023012e4243a73c9f174c336a4362bfb6f481ef3a767b1836618d28f13110aa153197d10910d8c9c8214fe5e12ac671acd2a832286bb	patient__pn7pnby	f
+kchProgram:003	2019-07-10	06:40:35	synapUser:001	patient:ppgvev8	kchProgramAssignment:m3zd44k	\N	organization:001	[]	3065dac395ed8517e054f745681faca7eafda462c1342f04ff5d94de40fbfdc79530e858826c4804cb6b32b2f1e5066734fc72101c92100f9fde86974f55fe14	patient__ppgvev8	f
+kchProgram:003	2019-07-10	06:40:46	synapUser:001	patient:renvmv8	kchProgramAssignment:neyjaby	\N	organization:001	[]	27392798ac55f358783e4934071b04703af815dc9a40a0d30d78149a165232e4ac72c198311ebe15dd6e9f8907de1d82f9b3891661e18a128fe70e73f4cf84b6	patient__renvmv8	f
+kchProgram:003	2019-07-10	06:40:57	synapUser:001	patient:n26akvg	kchProgramAssignment:h7yhev4	\N	organization:001	[]	91c159a141020998de32d76beddb1c284a7fd84f401a7b081e2e662ab1133cac36a829b9917e0268555b214485b3f52b08b0430fa72173c83fcc7725e00e655c	patient__n26akvg	f
 \.
 
 
 --
+-- TOC entry 5621 (class 0 OID 280868)
+-- Dependencies: 212
 -- Data for Name: meta_address_type; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4341,6 +4699,8 @@ metaLabel:pager	A paging device suitable to solicit a callback or to leave a ver
 
 
 --
+-- TOC entry 5622 (class 0 OID 280875)
+-- Dependencies: 213
 -- Data for Name: meta_allergy_severity; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4350,6 +4710,8 @@ metaLabel:coldLabel	\N	\N	\N	\N	metaAllergySeverity:coldSev	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5623 (class 0 OID 280882)
+-- Dependencies: 214
 -- Data for Name: meta_allergy_type; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4361,6 +4723,8 @@ metaLabel:coldLabel1	\N	\N	\N	metaAllergyType:hot	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5732 (class 0 OID 281917)
+-- Dependencies: 323
 -- Data for Name: meta_answer; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4384,6 +4748,8 @@ Poor	5	\N	\N	\N	metaQuestion:003	metaAnswer:015	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5624 (class 0 OID 280889)
+-- Dependencies: 215
 -- Data for Name: meta_auth_policy; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4408,6 +4774,8 @@ COPY public.meta_auth_policy (policy, created_on_date, created_on_time, created_
 
 
 --
+-- TOC entry 5625 (class 0 OID 280897)
+-- Dependencies: 216
 -- Data for Name: meta_basic_status; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4418,6 +4786,8 @@ CANCELLED	\N	\N	\N	metaBasicStatus:cancelled	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5626 (class 0 OID 280904)
+-- Dependencies: 217
 -- Data for Name: meta_blood_pressure_unit; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4427,6 +4797,8 @@ mmHg	\N	\N	\N	metaBloodPressureUnit:mmhg	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5729 (class 0 OID 281895)
+-- Dependencies: 320
 -- Data for Name: meta_calendar_item_status; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4437,6 +4809,8 @@ Cancelled	\N	\N	\N	metaCalendarItemStatus:cancelled	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5728 (class 0 OID 281888)
+-- Dependencies: 319
 -- Data for Name: meta_calendar_item_type; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4447,6 +4821,8 @@ Encounter	\N	\N	\N	metaCalendarItemType:encounter	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5627 (class 0 OID 280911)
+-- Dependencies: 218
 -- Data for Name: meta_care_continuity_document_type; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4458,6 +4834,8 @@ CCR	CCR.xsl	ContinuityOfCareRecord	\N	\N	\N	metaCareContinuityDocumentType:CCR	\
 
 
 --
+-- TOC entry 5628 (class 0 OID 280918)
+-- Dependencies: 219
 -- Data for Name: meta_ccda_export_log_type; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4469,6 +4847,8 @@ metaLabel:ccdaDownload	\N	\N	\N	metaCcdaExportLogType:download	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5629 (class 0 OID 280925)
+-- Dependencies: 220
 -- Data for Name: meta_ccda_export_status; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4482,6 +4862,8 @@ metaLabel:failed	\N	\N	\N	metaCcdaExportStatus:failed	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5630 (class 0 OID 280932)
+-- Dependencies: 221
 -- Data for Name: meta_ccda_sections; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4507,6 +4889,8 @@ metaLabel:encounters	\N	\N	\N	metaCcdaSections:encounters	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5631 (class 0 OID 280939)
+-- Dependencies: 222
 -- Data for Name: meta_clinical_document_type; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4519,6 +4903,8 @@ metaLabel:clinicaldocumente2	t	\N	\N	\N	metaClinicalDocumentType:E2	\N	\N	\N	\N	
 
 
 --
+-- TOC entry 5632 (class 0 OID 280947)
+-- Dependencies: 223
 -- Data for Name: meta_communication_mode; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4530,6 +4916,8 @@ metaLabel:secureMessage	\N	\N	\N	metaCommunicationMode:secureMessage	\N	\N	\N	\N
 
 
 --
+-- TOC entry 5633 (class 0 OID 280954)
+-- Dependencies: 224
 -- Data for Name: meta_contact_type; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4541,6 +4929,8 @@ metaLabel:other	3	\N	\N	\N	metaContactType:other	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5634 (class 0 OID 280961)
+-- Dependencies: 225
 -- Data for Name: meta_country; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4550,6 +4940,8 @@ metaLabel:unitedStatesOfAmerica	\N	\N	\N	metaCountry:US	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5635 (class 0 OID 280968)
+-- Dependencies: 226
 -- Data for Name: meta_data_family; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4560,6 +4952,8 @@ metaLabel:patient	\N	\N	\N	metaDataFamily:patient	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5636 (class 0 OID 280975)
+-- Dependencies: 227
 -- Data for Name: meta_day_of_week; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4575,6 +4969,8 @@ metaLabel:Sunday	\N	\N	\N	metaDayOfWeek:7	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5637 (class 0 OID 280982)
+-- Dependencies: 228
 -- Data for Name: meta_default_status; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4585,6 +4981,8 @@ INACTIVE	\N	\N	\N	metaDefaultStatus:inactive	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5638 (class 0 OID 280989)
+-- Dependencies: 229
 -- Data for Name: meta_diagnostic_code; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4593,6 +4991,8 @@ COPY public.meta_diagnostic_code (code, icd10_long_desc, icd10_short_desc, icd9,
 
 
 --
+-- TOC entry 5639 (class 0 OID 280997)
+-- Dependencies: 230
 -- Data for Name: meta_employee_status; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4603,6 +5003,8 @@ Inactive	I	\N	\N	\N	metaEmployeeStatus:inactive	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5640 (class 0 OID 281004)
+-- Dependencies: 231
 -- Data for Name: meta_employment_status; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4617,6 +5019,8 @@ metaLabel:unemployed	6	\N	\N	\N	metaEmploymentStatus:unemployed	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5641 (class 0 OID 281011)
+-- Dependencies: 232
 -- Data for Name: meta_ethnicity; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4628,6 +5032,8 @@ Declined to provide	\N	3	\N	\N	\N	metaEthnicity:declinedToProvide	\N	\N	\N	\N	\N
 
 
 --
+-- TOC entry 5642 (class 0 OID 281018)
+-- Dependencies: 233
 -- Data for Name: meta_family_relationship; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4652,6 +5058,8 @@ Other Relationship	16	\N	\N	\N	metaFamilyRelationship:OtherRelationship	\N	\N	\N
 
 
 --
+-- TOC entry 5643 (class 0 OID 281025)
+-- Dependencies: 234
 -- Data for Name: meta_field_defination_type; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4665,6 +5073,8 @@ Date-Time	\N	\N	\N	metaFieldDefinationType:datetime	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5644 (class 0 OID 281032)
+-- Dependencies: 235
 -- Data for Name: meta_gender; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4676,6 +5086,8 @@ Unknown	UN	U	\N	\N	\N	metaGender:unknown	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5645 (class 0 OID 281039)
+-- Dependencies: 236
 -- Data for Name: meta_height_unit; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4686,6 +5098,8 @@ Feet & Inches	\N	\N	\N	metaHeightUnit:feetInch	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5646 (class 0 OID 281046)
+-- Dependencies: 237
 -- Data for Name: meta_household_income_level; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4714,6 +5128,8 @@ $250,000 and above	\N	\N	\N	metaHouseholdIncomeLevel:020	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5647 (class 0 OID 281053)
+-- Dependencies: 238
 -- Data for Name: meta_housing_status; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4726,6 +5142,8 @@ Rents Home	4	\N	\N	\N	metaHousingStatus:rentsHome	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5648 (class 0 OID 281060)
+-- Dependencies: 239
 -- Data for Name: meta_housing_upgrade_status; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4737,6 +5155,8 @@ Complete	\N	\N	\N	metaHousingUpgradeStatus:complete	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5649 (class 0 OID 281067)
+-- Dependencies: 240
 -- Data for Name: meta_housing_upgrade_type; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4772,6 +5192,8 @@ Smoke detectors	\N	\N	\N	metaHousingUpgradeType:SD	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5650 (class 0 OID 281074)
+-- Dependencies: 241
 -- Data for Name: meta_id_type; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4786,6 +5208,8 @@ metaLabel:other	\N	\N	\N	metaIdType:other	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5651 (class 0 OID 281081)
+-- Dependencies: 242
 -- Data for Name: meta_income_level; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -4814,6 +5238,8 @@ $250,000 and above	\N	\N	\N	metaIncomeLevel:020	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5652 (class 0 OID 281088)
+-- Dependencies: 243
 -- Data for Name: meta_label; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -5650,6 +6076,8 @@ Postal Address	\N	\N	\N	metaLabel:postalAddress	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5653 (class 0 OID 281095)
+-- Dependencies: 244
 -- Data for Name: meta_label_detail; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -6524,6 +6952,8 @@ COPY public.meta_label_detail (meta_language_id, help_text, plural_value, singul
 
 
 --
+-- TOC entry 5654 (class 0 OID 281102)
+-- Dependencies: 245
 -- Data for Name: meta_language; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -6717,6 +7147,8 @@ Declined to provide	\N	1	\N	\N	\N	metaLanguage:declinedToProvide	\N	\N	\N	\N	\N	
 
 
 --
+-- TOC entry 5655 (class 0 OID 281109)
+-- Dependencies: 246
 -- Data for Name: meta_marital_status; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -6734,6 +7166,8 @@ Polygamous	P	9	\N	\N	\N	metaMaritalStatus:polygamous	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5656 (class 0 OID 281116)
+-- Dependencies: 247
 -- Data for Name: meta_medication_delivery_route; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -6774,6 +7208,8 @@ Other	\N	\N	\N	metaMedicationDeliveryRoute:OT	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5657 (class 0 OID 281123)
+-- Dependencies: 248
 -- Data for Name: meta_military_status; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -6785,6 +7221,8 @@ metaLabel:veteran	3	\N	\N	\N	metaMilitaryStatus:veteran	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5724 (class 0 OID 281859)
+-- Dependencies: 315
 -- Data for Name: meta_oml_script; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -6810,6 +7248,8 @@ CourseSessionAttendance	metaAuthPolicy:denyInstructorPatient	SUC	\N	\N	\N	metaOm
 
 
 --
+-- TOC entry 5658 (class 0 OID 281130)
+-- Dependencies: 249
 -- Data for Name: meta_pain_level; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -6828,6 +7268,8 @@ COPY public.meta_pain_level (value, created_on_date, created_on_time, created_by
 
 
 --
+-- TOC entry 5659 (class 0 OID 281137)
+-- Dependencies: 250
 -- Data for Name: meta_patient_diagnosis_status; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -6839,6 +7281,8 @@ Resolved	\N	\N	\N	metaPatientDiagnosisStatus:resolved	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5660 (class 0 OID 281144)
+-- Dependencies: 251
 -- Data for Name: meta_patient_document_status; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -6852,6 +7296,8 @@ metaLabel:completeError	\N	\N	\N	metaPatientDocumentStatus:completeError	\N	\N	\
 
 
 --
+-- TOC entry 5661 (class 0 OID 281151)
+-- Dependencies: 252
 -- Data for Name: meta_patient_document_type; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -6860,6 +7306,8 @@ COPY public.meta_patient_document_type (value, created_on_date, created_on_time,
 
 
 --
+-- TOC entry 5662 (class 0 OID 281158)
+-- Dependencies: 253
 -- Data for Name: meta_patient_identity_type; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -6873,6 +7321,8 @@ metaLabel:other	5	\N	\N	\N	metaPatientIdentityType:other	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5663 (class 0 OID 281165)
+-- Dependencies: 254
 -- Data for Name: meta_patient_status; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -6884,6 +7334,8 @@ metaLabel:inactive	I	\N	\N	\N	metaPatientStatus:inactive	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5664 (class 0 OID 281172)
+-- Dependencies: 255
 -- Data for Name: meta_permission; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -7581,6 +8033,8 @@ userPassword	f	read	f	userPassword read	\N	\N	\N	\N	metaPermission:userPasswordR
 
 
 --
+-- TOC entry 5736 (class 0 OID 281943)
+-- Dependencies: 327
 -- Data for Name: meta_permission_cascaded_permission; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -7852,6 +8306,8 @@ metaPermission:userPasswordRead	metaPermission:userPasswordRead	\N
 
 
 --
+-- TOC entry 5665 (class 0 OID 281181)
+-- Dependencies: 256
 -- Data for Name: meta_provider_service_type; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -7936,6 +8392,8 @@ Neuromuscular Medicine	\N	\N	\N	metaProviderServiceType:NeuromuscularMedicine	\N
 
 
 --
+-- TOC entry 5731 (class 0 OID 281910)
+-- Dependencies: 322
 -- Data for Name: meta_question; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -7947,6 +8405,8 @@ Compared to others my age, I feel my health is?	3	\N	\N	\N	metaQuestion:003	\N	\
 
 
 --
+-- TOC entry 5666 (class 0 OID 281188)
+-- Dependencies: 257
 -- Data for Name: meta_race; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -7962,6 +8422,8 @@ Declined to provide	\N	7	\N	\N	\N	metaRace:declinedToProvide	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5667 (class 0 OID 281195)
+-- Dependencies: 258
 -- Data for Name: meta_referral; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -7981,6 +8443,8 @@ Other	t	11	\N	\N	\N	metaReferral:011	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5668 (class 0 OID 281203)
+-- Dependencies: 259
 -- Data for Name: meta_relationship; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -8021,6 +8485,8 @@ metaLabel:WRD	WRD	metaContactType:other	\N	\N	\N	metaRelationship:WRD	\N	\N	\N	\
 
 
 --
+-- TOC entry 5669 (class 0 OID 281210)
+-- Dependencies: 260
 -- Data for Name: meta_severity; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -8033,6 +8499,8 @@ metaLabel:verySevere	4	\N	\N	\N	metaSeverity:verySevere	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5670 (class 0 OID 281217)
+-- Dependencies: 261
 -- Data for Name: meta_smoking_status; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -8049,6 +8517,8 @@ metaLabel:unknownSmoker	266927001	8	\N	\N	\N	metaSmokingStatus:unknownSmoker	\N	
 
 
 --
+-- TOC entry 5671 (class 0 OID 281224)
+-- Dependencies: 262
 -- Data for Name: meta_snomed; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -8057,6 +8527,8 @@ COPY public.meta_snomed (code, description, created_on_date, created_on_time, cr
 
 
 --
+-- TOC entry 5672 (class 0 OID 281231)
+-- Dependencies: 263
 -- Data for Name: meta_snomed_code; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -8065,6 +8537,8 @@ COPY public.meta_snomed_code (code, description, icd10_code, icd_code, icd_long_
 
 
 --
+-- TOC entry 5673 (class 0 OID 281238)
+-- Dependencies: 264
 -- Data for Name: meta_social_needs; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -8264,6 +8738,8 @@ otherSocialNeeds	string	[]	f	Other Social Needs	\N	1	active	\N	\N	\N	metaSocialN
 
 
 --
+-- TOC entry 5674 (class 0 OID 281246)
+-- Dependencies: 265
 -- Data for Name: meta_social_needs_category; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -8299,6 +8775,8 @@ other	Other	27	active	\N	\N	\N	metaSocialNeedsCategory:027	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5675 (class 0 OID 281253)
+-- Dependencies: 266
 -- Data for Name: meta_state; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -8357,6 +8835,8 @@ WY	\N	\N	\N	metaCountry:US	metaState:WY	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5676 (class 0 OID 281260)
+-- Dependencies: 267
 -- Data for Name: meta_synap_profile; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -8400,6 +8880,8 @@ organizationAdmin	metaPermission:organizationProfileUpdate	\N	\N	\N	metaSynapPro
 
 
 --
+-- TOC entry 5726 (class 0 OID 281874)
+-- Dependencies: 317
 -- Data for Name: meta_sync_status; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -8412,6 +8894,8 @@ Failed	\N	\N	\N	metaSyncStatus:failed	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5677 (class 0 OID 281267)
+-- Dependencies: 268
 -- Data for Name: meta_telephone_type; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -8433,6 +8917,8 @@ metaLabel:other	OT	8	\N	\N	\N	metaTelephoneType:other	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5678 (class 0 OID 281274)
+-- Dependencies: 269
 -- Data for Name: meta_temperature_unit; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -8443,6 +8929,8 @@ C	\N	\N	\N	metaTemperatureUnit:c	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5679 (class 0 OID 281281)
+-- Dependencies: 270
 -- Data for Name: meta_timezone; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -8457,6 +8945,8 @@ Hawaii Standard Time (HST)	\N	\N	\N	metaTimezone:hst	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5680 (class 0 OID 281288)
+-- Dependencies: 271
 -- Data for Name: meta_token_type; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -8468,6 +8958,8 @@ Forgot Password	\N	\N	\N	metaTokenType:forgotPassword	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5681 (class 0 OID 281295)
+-- Dependencies: 272
 -- Data for Name: meta_user_type; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -8481,6 +8973,8 @@ Client	5	t	patient	\N	\N	\N	metaUserType:client	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5682 (class 0 OID 281303)
+-- Dependencies: 273
 -- Data for Name: meta_weight_unit; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -8491,6 +8985,8 @@ Pounds	\N	\N	\N	metaWeightUnit:lbs	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5683 (class 0 OID 281310)
+-- Dependencies: 274
 -- Data for Name: meta_work_list_approval_status; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -8503,6 +8999,8 @@ Approved	\N	\N	\N	metaWorkListApprovalStatus:APPROVED	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5685 (class 0 OID 281324)
+-- Dependencies: 276
 -- Data for Name: meta_work_list_reminder_status; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -8515,6 +9013,8 @@ Done	\N	\N	\N	metaWorkListReminderStatus:DONE	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5686 (class 0 OID 281331)
+-- Dependencies: 277
 -- Data for Name: meta_work_list_reminder_type; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -8525,6 +9025,8 @@ Notification	\N	\N	\N	metaWorkListReminderType:Notification	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5687 (class 0 OID 281338)
+-- Dependencies: 278
 -- Data for Name: meta_work_list_reminder_who_type; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -8538,6 +9040,8 @@ Role	\N	\N	\N	metaWorkListReminderWhoType:Role	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5684 (class 0 OID 281317)
+-- Dependencies: 275
 -- Data for Name: meta_worklist_priority; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -8550,6 +9054,8 @@ URGENT	1	\N	\N	\N	metaWorklistPriority:1-URGENT	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5688 (class 0 OID 281345)
+-- Dependencies: 279
 -- Data for Name: meta_worklist_status; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -8568,6 +9074,8 @@ READONLY	t	\N	\N	\N	metaWorklistStatus:READONLY	\N	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5689 (class 0 OID 281353)
+-- Dependencies: 280
 -- Data for Name: meta_zip_code; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -8576,6 +9084,8 @@ COPY public.meta_zip_code (value, state, city, created_on_date, created_on_time,
 
 
 --
+-- TOC entry 5595 (class 0 OID 280637)
+-- Dependencies: 186
 -- Data for Name: oml_data_type; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -8595,6 +9105,8 @@ arrays	f	f	t	t	f	f	f	f	will be an array of tags	f
 
 
 --
+-- TOC entry 5596 (class 0 OID 280652)
+-- Dependencies: 187
 -- Data for Name: oml_object; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -8741,6 +9253,8 @@ COPY public.oml_object (organization_id, name, display_name, parent, authorizati
 
 
 --
+-- TOC entry 5597 (class 0 OID 280670)
+-- Dependencies: 188
 -- Data for Name: oml_property; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11012,6 +11526,8 @@ COPY public.oml_property (organization_id, object, property, display_name, data_
 
 
 --
+-- TOC entry 5690 (class 0 OID 281360)
+-- Dependencies: 281
 -- Data for Name: organization; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11021,6 +11537,8 @@ AperioDemoOrg	\N	\N	\N	organization:001	\N	\N	\N	\N	f
 
 
 --
+-- TOC entry 5691 (class 0 OID 281367)
+-- Dependencies: 282
 -- Data for Name: organization_division; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11030,6 +11548,8 @@ Division-0	\N	f	\N	\N	A-59 phase 8 ind area	Mohali	\N	\N	94010	\N	1234567890	t	\
 
 
 --
+-- TOC entry 5692 (class 0 OID 281386)
+-- Dependencies: 283
 -- Data for Name: organization_employee; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11039,6 +11559,8 @@ metaEmployeeStatus:active	\N	admin@aperiohealth.com	admin@aperiohealth.com	1985-
 
 
 --
+-- TOC entry 5693 (class 0 OID 281394)
+-- Dependencies: 284
 -- Data for Name: organization_employee_address; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11047,6 +11569,8 @@ COPY public.organization_employee_address (zip, state, country, city, address_ty
 
 
 --
+-- TOC entry 5694 (class 0 OID 281401)
+-- Dependencies: 285
 -- Data for Name: organization_employee_division; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11056,6 +11580,8 @@ organizationDivision:001	\N	\N	\N	organizationEmployee:001	organizationEmployeeD
 
 
 --
+-- TOC entry 5737 (class 0 OID 281949)
+-- Dependencies: 328
 -- Data for Name: organization_employee_profile; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11064,6 +11590,8 @@ COPY public.organization_employee_profile (profile, organization_employee_id, ch
 
 
 --
+-- TOC entry 5695 (class 0 OID 281408)
+-- Dependencies: 286
 -- Data for Name: organization_employee_telephone; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11072,6 +11600,8 @@ COPY public.organization_employee_telephone (telephone_type, is_primary, number,
 
 
 --
+-- TOC entry 5696 (class 0 OID 281416)
+-- Dependencies: 287
 -- Data for Name: organization_folder; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11080,6 +11610,8 @@ COPY public.organization_folder (name, patient_id, created_on_date, created_on_t
 
 
 --
+-- TOC entry 5697 (class 0 OID 281423)
+-- Dependencies: 288
 -- Data for Name: organization_profile; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11093,6 +11625,8 @@ RevenueCycleManager	t	t	\N	\N	\N	organizationProfile:revenueCycleManager	\N	orga
 
 
 --
+-- TOC entry 5738 (class 0 OID 281955)
+-- Dependencies: 329
 -- Data for Name: organization_profile_permission; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11101,6 +11635,8 @@ COPY public.organization_profile_permission (permission, organization_profile_id
 
 
 --
+-- TOC entry 5698 (class 0 OID 281432)
+-- Dependencies: 289
 -- Data for Name: patient; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11109,17 +11645,28 @@ COPY public.patient (user_type, status, military_status, marital_status, preferr
 \N	\N	\N	\N	metaLanguage:bih	\N	metaGender:male		metaEthnicity:hispanicOrLatino	\N	2019-07-02	second	\N	f	client	\N	\N	\N	\N	\N	\N	\N	\N	f	f	\N	\N	f	f	\N	f	\N	f	\N	\N	\N	f	\N	\N	\N	\N	\N	1213123123	f	f	\N	\N	\N	\N	f	f	metaSyncStatus:processing	f	\N	2019-07-09	17:18:33	synapUser:001	patient:gkpvdnv	\N	organization:001	[]	5b5042124e9c73f4f4f80211c2a75b03341e5c35e01895082a14b08a319c812a78a12d32746a0c3a988ce3c8f94675c24ce102c9d2d8591358e4fc01e7cc7443	\N	f
 \N	\N	\N	\N	metaLanguage:bak	\N	metaGender:male		metaEthnicity:declinedToProvide	\N	2019-07-03	third	\N	f	CLIENT	\N	\N	\N	\N	\N	\N	\N	\N	f	f	\N	\N	f	f	\N	f	\N	f	\N	\N	\N	f	\N	\N	\N	\N	\N	1111111111	f	f	\N	\N	\N	\N	f	f	metaSyncStatus:processing	f	\N	2019-07-09	17:19:31	synapUser:001	patient:num7wxp	\N	organization:001	[]	8c3b327d2c18349375fcb617b12cd8456718e953270156997f2f366cf10131e6f8fc1a581545f0dd34238733549fe2f4a5cd2d29b18244cdd0ad9fe58f5523aa	\N	f
 \N	\N	\N	\N	metaLanguage:ben	\N	metaGender:male		metaEthnicity:declinedToProvide	\N	2019-07-01	fourth	\N	f	client	\N	\N	\N	\N	\N	\N	\N	\N	f	f	\N	\N	f	f	\N	f	\N	f	\N	\N	\N	f	\N	\N	\N	\N	\N	1231213123	f	f	\N	\N	\N	\N	f	f	metaSyncStatus:processing	f	\N	2019-07-09	17:21:05	synapUser:001	patient:cdkk3hz	\N	organization:001	[]	b528d9b94f5de2e8c875f7a67b6dd3c73f8c0a52e23a37da655a561cd1a1bb6af58c3d181aa4b56638f5864ed04121e50a29def1b47b13ec2839f27df5ec4dbe	\N	f
-\N	\N	\N	\N	metaLanguage:aze	\N	metaGender:male		metaEthnicity:hispanicOrLatino	\N	2019-07-03	fifth	\N	f	client	\N	\N	\N	\N	\N	\N	\N	\N	f	f	\N	\N	f	f	\N	f	\N	f	\N	\N	\N	f	\N	\N	\N	\N	\N	1237654321	f	f	\N	\N	\N	\N	f	f	metaSyncStatus:processing	f	\N	2019-07-09	17:22:10	synapUser:001	patient:daehk8n	\N	organization:001	[]	6941427925130d073f8df464db127270fb60399bac181054764fc363f670a6f6c9649361a7bd3b4dc0ee1d83514452b0e03190c3dd23eeb40e3f84bc922783eb	\N	f
+metaUserType:client	\N	\N	\N	metaLanguage:eng	\N	metaGender:male	aylin.margot487@qa.sourcefuse.com	metaEthnicity:declinedToProvide	\N	1980-10-19	Aylin	\N	f	Margot	\N	\N	\N	\N	\N	\N	\N	synapUser:4rurk32	f	f	\N	\N	f	f	\N	f	\N	f	\N	\N	\N	t	\N	\N	\N	\N	\N	4850666826	f	f	\N	\N	\N	\N	f	f	metaSyncStatus:processing	f	\N	2019-07-10	08:12:28	synapUser:001	patient:kfbd7an	\N	organization:001	[]	53f14e3e6cc9e69fea7bc2ba3d0bff73d6631066445269451fd2951d71de6c2363a3819b2c6c21dbcb9f5cb1a42a290122081ff2d6ac3a1bf3bbf49a170c52f8	\N	f
 \N	\N	\N	\N	metaLanguage:bak	\N	metaGender:male		metaEthnicity:declinedToProvide	\N	2019-05-27	sixth	\N	f	client	\N	\N	\N	\N	\N	\N	\N	\N	f	f	\N	\N	f	f	\N	f	\N	f	\N	\N	\N	f	\N	\N	\N	\N	\N	9876543212	f	f	\N	\N	\N	\N	f	f	metaSyncStatus:processing	f	\N	2019-07-09	17:23:12	synapUser:001	patient:6ccdnmu	\N	organization:001	[]	db69ecf8b60979800235fe1144b0eb441fc803992e3a76fd4a33e1d35034e7943f3917e7502c319c025bfeacca593da759f35b207ceba06eea4d99a39fb3dbf3	\N	f
 \N	\N	\N	\N	metaLanguage:bel	\N	metaGender:male		metaEthnicity:notHispanicOrLatino	\N	2019-06-30	seventh	\N	f	client	\N	\N	\N	\N	\N	\N	\N	\N	f	f	\N	\N	f	f	\N	f	\N	f	\N	\N	\N	f	\N	\N	\N	\N	\N	3333333333	f	f	\N	\N	\N	\N	f	f	metaSyncStatus:processing	f	\N	2019-07-09	17:23:54	synapUser:001	patient:8u27fg7	\N	organization:001	[]	84d84bd8587b7ee92b1e70427dde9e0983a85ec4e39fa34aa5308c56eb2fb01f9549e0b4d41a7793226ee823ec9ef92932df9f783b71bbc016eb381c4013a7f7	\N	f
 \N	\N	\N	\N	metaLanguage:bak	\N	metaGender:male		metaEthnicity:declinedToProvide	\N	2019-01-29	eighth	\N	f	client	\N	\N	\N	\N	\N	\N	\N	\N	f	f	\N	\N	f	f	\N	f	\N	f	\N	\N	\N	f	\N	\N	\N	\N	\N	1123142234	f	f	\N	\N	\N	\N	f	f	metaSyncStatus:processing	f	\N	2019-07-09	17:25:05	synapUser:001	patient:pn7pnby	\N	organization:001	[]	3fd05dd782fa8238994f22d7118360c7244a09a5511b2f3a6aa6ff1faa543af40a214db82e217ab42a829c6f5cfcb60e4ffdad874b3fafc1bcb7da0eda46c840	\N	f
 \N	\N	\N	\N	metaLanguage:eus	\N	metaGender:male		metaEthnicity:declinedToProvide	\N	2019-05-06	ninth	\N	f	client	\N	\N	\N	\N	\N	\N	\N	\N	f	f	\N	\N	f	f	\N	f	\N	f	\N	\N	\N	f	\N	\N	\N	\N	\N	1231212312	f	f	\N	\N	\N	\N	f	f	metaSyncStatus:processing	f	\N	2019-07-09	17:26:14	synapUser:001	patient:ppgvev8	\N	organization:001	[]	84c8dad1635839b9bf41a3635431d81c9a994955794ca23a7aee2b73d3addf6116f5aee7eea7e0c8c27e0b4227b2f0cbd08fe9fc786488a357f6d8b437f7c496	\N	f
 \N	\N	\N	\N	metaLanguage:bih	\N	metaGender:male		metaEthnicity:declinedToProvide	\N	2010-06-09	tenth	\N	f	client	\N	\N	\N	\N	\N	\N	\N	\N	f	f	\N	\N	f	f	\N	f	\N	f	\N	\N	\N	f	\N	\N	\N	\N	\N	1311111111	f	f	\N	\N	\N	\N	f	f	metaSyncStatus:processing	f	\N	2019-07-09	17:27:02	synapUser:001	patient:renvmv8	\N	organization:001	[]	e2274ead6324498f762112f6237e1277992eb38dd4adad40a81ef3e48b2a8688383baa0a2d4224d62fa5a71200b3226e5ec7a95fcba9f1a6efdf2de1fc46a4a7	\N	f
 \N	\N	\N	\N	metaLanguage:bam	\N	metaGender:male		metaEthnicity:declinedToProvide	\N	2019-01-30	eleventh	\N	f	client	\N	\N	\N	\N	\N	\N	\N	\N	f	f	\N	\N	f	f	\N	f	\N	f	\N	\N	\N	f	\N	\N	\N	\N	\N	1231213123	f	f	\N	\N	\N	\N	f	f	metaSyncStatus:processing	f	\N	2019-07-09	17:28:43	synapUser:001	patient:n26akvg	\N	organization:001	[]	1b95fe9dd706c171c05f7dd4642bc29ffa9ad61fed4995c63ee4fdd0f981a28ba8462082c2554d9b57d0bf4b6d9c1fb63ef537abb1055fb3c01368117396e8f8	\N	f
+\N	\N	\N	\N	metaLanguage:fao	\N	metaGender:male		metaEthnicity:declinedToProvide	\N	2010-04-02	check	\N	f	sync	\N	\N	\N	\N	\N	\N	\N	\N	f	f	\N	\N	f	f	\N	f	\N	f	\N	\N	\N	f	\N	\N	\N	\N	\N	9876543234	f	f	\N	\N	\N	\N	f	f	metaSyncStatus:processing	f	\N	2019-07-10	06:34:27	synapUser:001	patient:c7ytpgj	\N	organization:001	[]	39aedee34cacb1dc3d115a606f3efaa07d5717b7163fdbbdc0b9533ae03e047b07b9aa25e5c0d1c88a9dca280c7e959114e48eea22913702adcfeb0c29b9730d	\N	f
+metaUserType:client	\N	\N	\N	metaLanguage:eng	\N	metaGender:male	tania.peter1065@qa.sourcefuse.com	metaEthnicity:declinedToProvide	\N	1986-06-23	Tania	\N	f	Peter	\N	\N	\N	\N	\N	\N	\N	synapUser:6xvyfna	f	f	\N	\N	f	f	\N	f	\N	f	\N	\N	\N	t	\N	\N	\N	\N	\N	3576151187	f	f	\N	\N	\N	\N	f	f	metaSyncStatus:processing	f	\N	2019-07-10	07:41:32	synapUser:001	patient:geccet3	\N	organization:001	[]	f48aee2532e718dc9a751e378926047732ed4d70186e74277eeddcc1ce84d1d4f81234a0b2a76a361af38629286c83a8d28e7cc8cbd69d270e6f58e095aa7dce	\N	f
+metaUserType:client	\N	\N	\N	metaLanguage:eng	\N	metaGender:male	kristian.pearl3963@qa.sourcefuse.com	metaEthnicity:declinedToProvide	\N	1986-11-26	Kristian	\N	f	Pearl	\N	\N	\N	\N	\N	\N	\N	synapUser:6fvcjwe	f	f	\N	\N	f	f	\N	f	\N	f	\N	\N	\N	t	\N	\N	\N	\N	\N	4071034128	f	f	\N	\N	\N	\N	f	f	metaSyncStatus:processing	f	\N	2019-07-10	07:45:48	synapUser:001	patient:hbavy7r	\N	organization:001	[]	f7989732e314177e25fe151811a4670c6ca42a435adb18a17e8477c42b11c15ece8cb0dc9a9dbbeb364d58da5e1639cc656541c088118ea6c9589045d20a0124	\N	f
+metaUserType:client	\N	\N	\N	metaLanguage:eng	\N	metaGender:male	hoyt.geovanny2798@qa.sourcefuse.com	metaEthnicity:declinedToProvide	\N	1992-07-06	Hoyt	\N	f	Geovanny	\N	\N	\N	\N	\N	\N	\N	synapUser:v22u8m7	f	f	\N	\N	f	f	\N	f	\N	f	\N	\N	\N	t	\N	\N	\N	\N	\N	9210939482	f	f	\N	\N	\N	\N	f	f	metaSyncStatus:processing	f	\N	2019-07-10	09:45:01	synapUser:001	patient:ayvmyc4	\N	organization:001	[]	a15a71b6877c4bb6e77ac6bdb472c7cfb3904ea00757e41ace56c84ca2456be68f37d519372087e75ccf13c9b6fdee3331697f7a08ba12a9638c168a5a8cd7ae	\N	f
+metaUserType:client	\N	\N	\N	metaLanguage:eng	\N	metaGender:male	tyson.horace4365@qa.sourcefuse.com	metaEthnicity:declinedToProvide	\N	1993-01-04	Tyson	\N	f	Horace	\N	\N	\N	\N	\N	\N	\N	synapUser:uvnjzp8	f	f	\N	\N	f	f	\N	f	\N	f	\N	\N	\N	t	\N	\N	\N	\N	\N	6442011039	f	f	\N	\N	\N	\N	f	f	metaSyncStatus:processing	f	\N	2019-07-10	08:07:00	synapUser:001	patient:vzark6c	\N	organization:001	[]	02595f74eaa8b5c0cabe4c34144f0fa9e605a2543f61d22d9c2e3d67097ba9d24f8e407d3071d1b93204f395d3641e4b5d40d6ee221544bc4af7ff1d83be8bb0	\N	f
+\N	\N	\N	\N	metaLanguage:aze	\N	metaGender:male		metaEthnicity:hispanicOrLatino	\N	2019-07-03	fifth	\N	f	client	\N	\N	\N	\N	\N	\N	\N	\N	f	f	\N	\N	f	f	\N	f	\N	f	\N	\N	\N	f	\N	\N	\N	\N	\N	1237654321	f	f	2019-07-02	\N	\N	\N	f	f	metaSyncStatus:processing	f	\N	2019-07-09	17:22:10	synapUser:001	patient:daehk8n	\N	organization:001	[]	5596ba6e359440b60cb0bbcedc4a18cf0d4a68c12f2c5320f32cab0d85b68c981ad3867dcb8707551c9d962b01bd32badaa441c3fb31a01b09a3f582784ec3bc	\N	f
+metaUserType:client	\N	\N	\N	metaLanguage:eng	\N	metaGender:male	elenora.buck8522@qa.sourcefuse.com	metaEthnicity:declinedToProvide	\N	1973-12-02	Elenora	\N	f	Buck	\N	\N	\N	\N	\N	\N	\N	synapUser:emfnpj2	f	f	\N	\N	f	f	\N	f	\N	f	\N	\N	\N	t	\N	\N	\N	\N	\N	1938465871	f	f	\N	\N	\N	\N	f	f	metaSyncStatus:processing	f	\N	2019-07-10	10:40:00	synapUser:001	patient:8gkw7ht	\N	organization:001	[]	2ed14a6f96f35cd9f5c445ced8ef60486a85a0badbf8d20d6dc32022dce7e8872bfe0437a061b866ac4970e06cf46c9860c3194a9071a9d813648aa51e1b0c65	\N	f
+metaUserType:client	\N	\N	\N	metaLanguage:eng	\N	metaGender:male	emilio.jasmin6030@qa.sourcefuse.com	metaEthnicity:declinedToProvide	\N	1993-02-17	Emilio	\N	f	Jasmin	\N	\N	\N	\N	\N	\N	\N	synapUser:cpwht8t	f	f	\N	\N	f	f	\N	f	\N	f	\N	\N	\N	t	\N	\N	\N	\N	\N	4646172612	f	f	2019-07-09	2019-07-11	\N	\N	f	f	metaSyncStatus:processing	f	\N	2019-07-10	10:49:06	synapUser:001	patient:k4wjgx2	\N	organization:001	[]	4f16965b52e12acc5bb579eee6d770a7e1ab56d8d8520480f67c32fc60690cd4e158c7e47f09ef16812f6eac16f7d5143b5281d86c6ea81a4d525a376ba7b0d1	\N	f
+\N	metaPatientStatus:active	\N	metaMaritalStatus:married	metaLanguage:ind	metaHousingStatus:ownsHome	metaGender:male	Manishxjnez@mailinator.com	metaEthnicity:hispanicOrLatino	metaEmploymentStatus:unemployed	1990-12-30	Manish	\N	f	xjnez	M	\N	\N	\N	xjnez	2019-07-10	13:25:08	\N	t	f	\N	\N	f	f	\N	f	\N	f	\N	\N	\N	f	\N	\N	\N	\N	\N	8033725656	f	t	\N	\N	\N	\N	f	f	metaSyncStatus:completed	f	\N	2019-07-10	13:27:14	synapUser:002	patient:gtmeeyh	\N	organization:001	[]	5a3a7c491f75cfa450aae2b43d7f101645af988a687d9bccd8824514056d84ff6de214d77914a0777d90e8dded44c71dc79c4d0a863802df92358f6326bdffbd	\N	f
 \.
 
 
 --
+-- TOC entry 5733 (class 0 OID 281924)
+-- Dependencies: 324
 -- Data for Name: patient_activation_q_a; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11128,6 +11675,8 @@ COPY public.patient_activation_q_a (question_id, answer_id, created_on_date, cre
 
 
 --
+-- TOC entry 5699 (class 0 OID 281453)
+-- Dependencies: 290
 -- Data for Name: patient_address; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11154,18 +11703,41 @@ COPY public.patient_address (zip, state, country, city, address_type, address1, 
 13121	metaState:IL	metaCountry:US	qwe	metaAddressType:home	123	\N	f	\N	\N	1	\N	metaSyncStatus:pending	2019-07-09	17:27:02	synapUser:001	patient:renvmv8	patientAddress:naru6k7	\N	organization:001	[]	f0be33ae1b56ff4f2cb619efb8b0bb7632a50f33dabd741bbad8a4e1f93cdcc0ad7251b73151ab24fff042a230636deaad93e686bf82cc04bde88e8b2a968952	patient__renvmv8	f
 12312	metaState:MD	metaCountry:US	qwe	metaAddressType:home	123	\N	t	\N	\N	0	\N	metaSyncStatus:processing	2019-07-09	17:30:13	synapUser:002	patient:n26akvg	patientAddress:g8e8ue3	\N	organization:001	[]	3d3883cc1c4e63a33ec012f5314c2277eacf4832d1f8489f4ea701900b32d8e0ea3199a9efe1a3ffd34bcfcae060446e33b0786e0415ac7182a772e52b5c8447	patient__n26akvg	f
 12312	metaState:MD	metaCountry:US	qwe	metaAddressType:home	123	\N	f	\N	\N	1	\N	metaSyncStatus:pending	2019-07-09	17:28:43	synapUser:001	patient:n26akvg	patientAddress:rgda3f7	\N	organization:001	[]	65dca31e4a8790871e7ce3b78e129fcfca5093924761c02f2819b6a4225b1dc5e98379c5a1293e8e33a8694e0227707d1ee35d7d571a878cd4ce473162fde036	patient__n26akvg	f
+08063	metaState:AK	metaCountry:US	Chandigarh	metaAddressType:home	201	\N	f	\N	\N	1	\N	metaSyncStatus:pending	2019-07-10	08:12:28	synapUser:001	patient:kfbd7an	patientAddress:ee4pjp8	\N	organization:001	[]	df41b5dd8cb6d3ea72acb402818d3ca8ac5156c4e8cc071e044f5aa033f1633cc868fc207b6143fc8a6bd2088977d5eb3ac9228002a3a6df1f83b2c846a85331	patient__kfbd7an	f
+11123	metaState:LA	metaCountry:US	qwe	metaAddressType:home	123	\N	t	\N	\N	0	\N	metaSyncStatus:processing	2019-07-10	06:36:13	synapUser:002	patient:c7ytpgj	patientAddress:pjmu2p3	\N	organization:001	[]	f503a4963471f7e295230d6cfef6903c101100c2fb7c20e9d48ea9bdad7d2eb0982f89dbc29a5277a5c15f4cc92d5c6689b5402e1208907ea87182ebf12a95e0	patient__c7ytpgj	f
+11123	metaState:LA	metaCountry:US	qwe	metaAddressType:home	123	\N	f	\N	\N	1	\N	metaSyncStatus:pending	2019-07-10	06:34:27	synapUser:001	patient:c7ytpgj	patientAddress:fkzdy4z	\N	organization:001	[]	a109243179e10a6e6b0be11974df536696fe2f5478ba5a86276bdf60c589194acb9aee38ddd596b5a5455b5c78216fe148697487a3482ec571fc76df9d85032f	patient__c7ytpgj	f
+33917	metaState:AK	metaCountry:US	Chandigarh	metaAddressType:home	2005	\N	t	\N	\N	0	\N	metaSyncStatus:processing	2019-07-10	08:08:13	synapUser:002	patient:vzark6c	patientAddress:dmatn34	\N	organization:001	[]	b76f3632eb63ecc80789b721694738f62e871185b75013111920519dd0f8f3901fbbb802b7c82e8bc7c945dcc452f43741d8b2c1dcf92bcae7d1c5f930f49a96	patient__vzark6c	f
+05172	metaState:AK	metaCountry:US	Chandigarh	metaAddressType:home	0462	\N	t	\N	\N	0	\N	metaSyncStatus:processing	2019-07-10	07:42:13	synapUser:002	patient:geccet3	patientAddress:3446724	\N	organization:001	[]	573bac01348f9247ea5399b4ca40ab5c913e708ac32fc76540c69798ace5a0081057fc029b8b7fe67da4bd2b28f8f766e83db8ca15c5db99035f98c92928d50c	patient__geccet3	f
+05172	metaState:AK	metaCountry:US	Chandigarh	metaAddressType:home	0462	\N	f	\N	\N	1	\N	metaSyncStatus:pending	2019-07-10	07:41:32	synapUser:001	patient:geccet3	patientAddress:7aba4m2	\N	organization:001	[]	21348374bc2a692482af401fcab754633446493f32ed83c26b5c772a52805f6341eaa79324202fb29d54e8d392d4bffca4e9c3c6493e2efda08c25b6f678b59e	patient__geccet3	f
+23455-991	metaState:AK	metaCountry:US	Chandigarh	metaAddressType:home	165	\N	t	\N	\N	0	\N	metaSyncStatus:processing	2019-07-10	07:46:13	synapUser:002	patient:hbavy7r	patientAddress:kh28re8	\N	organization:001	[]	b5fd85627c6c1fe76b79ac7e1f460e23808a05a9619fef7818563aaac166a5f33a6bea0c12da8c2eaf5e321e8940b9adc0cde2a7d0d6394fbfb5e1f6d753183d	patient__hbavy7r	f
+23455-991	metaState:AK	metaCountry:US	Chandigarh	metaAddressType:home	165	\N	f	\N	\N	1	\N	metaSyncStatus:pending	2019-07-10	07:45:48	synapUser:001	patient:hbavy7r	patientAddress:gy6duaj	\N	organization:001	[]	66958ab053e134a175c58c25711be00c092cf9ad9e714d3c79e809ae29ea8ec4cfce9a1a3d4fcefb840cb701f6076dff4c03750dd11ac641c0c16acdf0f26fd9	patient__hbavy7r	f
+33917	metaState:AK	metaCountry:US	Chandigarh	metaAddressType:home	2005	\N	f	\N	\N	1	\N	metaSyncStatus:pending	2019-07-10	08:07:00	synapUser:001	patient:vzark6c	patientAddress:nxd4dmm	\N	organization:001	[]	0a43adbb7c9abf22b018eeae774b27365b02fafbd08b427e5d2a0a80bec8696ec91a3c843db918f9015f3aeaa7f70eda234de7a4c3493edb277fb45edbf7d5d6	patient__vzark6c	f
+82131	metaState:AK	metaCountry:US	Chandigarh	metaAddressType:home	38908	\N	f	\N	\N	1	\N	metaSyncStatus:pending	2019-07-10	09:45:01	synapUser:001	patient:ayvmyc4	patientAddress:68f4w8b	\N	organization:001	[]	fbcef0bcfd6354e199e92d21fad049e5baea81fe1ad116fb484d00c60544f9657f9e7ed61906b5c1114b3a65dfbd598c2caf0383f5c1b02c0649eee6e7c68c6f	patient__ayvmyc4	f
+08063	metaState:AK	metaCountry:US	Chandigarh	metaAddressType:home	201	\N	t	\N	\N	0	\N	metaSyncStatus:processing	2019-07-10	08:14:13	synapUser:002	patient:kfbd7an	patientAddress:fzrdkwa	\N	organization:001	[]	21fb05023969dc0a66a20364a3e239c435a980f4f6d1b87034d9dd0a8ef3d0e8406b64be6d6970a8f35f3da91ccb2c4e75ebc3d1a54800eb5fc5a1417b375e80	patient__kfbd7an	f
+82131	metaState:AK	metaCountry:US	Chandigarh	metaAddressType:home	38908	\N	t	\N	\N	0	\N	metaSyncStatus:processing	2019-07-10	09:46:13	synapUser:002	patient:ayvmyc4	patientAddress:ndem4my	\N	organization:001	[]	4c87d183ed055316514c9c66827290e7d8df700075317b19dd2cf4bb23b0d3ac2f5f43b4f0af7c627e23f02604196a1d776a410b062bbc05d3c8cdd413f65fb3	patient__ayvmyc4	f
+71639-296	metaState:AK	metaCountry:US	Chandigarh	metaAddressType:home	651	\N	t	\N	\N	0	\N	metaSyncStatus:processing	2019-07-10	10:40:13	synapUser:002	patient:8gkw7ht	patientAddress:zwezx2c	\N	organization:001	[]	9614169d42e4bbbd54c790a4766a374293e09737fd5d069686a1d570de8b89ddf91259bb46bea992dc41c252743b78c6b5032677c308ab020337ecd440f83572	patient__8gkw7ht	f
+71639-296	metaState:AK	metaCountry:US	Chandigarh	metaAddressType:home	651	\N	f	\N	\N	1	\N	metaSyncStatus:pending	2019-07-10	10:40:00	synapUser:001	patient:8gkw7ht	patientAddress:8a7apj3	\N	organization:001	[]	08c0de36230e151c4fc16a2aea5338f22fd467647c4115d1a9a3d14120c25e84063e11b5a4577166f0e8670cbc848dd1d66b92f70c1dd86d630446f664e5a36b	patient__8gkw7ht	f
+36039	metaState:AK	metaCountry:US	Chandigarh	metaAddressType:home	77079	\N	t	\N	\N	0	\N	metaSyncStatus:processing	2019-07-10	10:50:13	synapUser:002	patient:k4wjgx2	patientAddress:dv2f7vu	\N	organization:001	[]	41935523c3b47b50a4be021de82e2274e67fc9d78b14cbd01a039250e998e107c3743b7d454037c0be8eb3864990d277dcd24db7fbd9fdd198878356d385801c	patient__k4wjgx2	f
+36039	metaState:AK	metaCountry:US	Chandigarh	metaAddressType:home	77079	\N	f	\N	\N	1	\N	metaSyncStatus:pending	2019-07-10	10:49:06	synapUser:001	patient:k4wjgx2	patientAddress:r3zeaz6	\N	organization:001	[]	2875fa7816759605b18fa66bead77812bdab3a603acbe42565f61db57c2798543c8cf6265f3b64914301b0dc31c3f3cf3a956f4367146dfae54062c310daac5f	patient__k4wjgx2	f
+29730	metaState:SC	metaCountry:US	Rock Hill	metaAddressType:home	4726  Wexford Way	\N	t	\N	\N	0	\N	metaSyncStatus:completed	2019-07-10	13:27:14	synapUser:002	patient:gtmeeyh	patientAddress:kht4ezv	\N	organization:001	[]	c1aaf6434f9cbfba9906832e035587642801da72b8778306d2e6275a9127aba9bc448ac32aba022d3b3b6ac4e27b1532a826c61cf5dd0d24d29d10f84f4c2072	patient__gtmeeyh	f
 \.
 
 
 --
+-- TOC entry 5700 (class 0 OID 281463)
+-- Dependencies: 291
 -- Data for Name: patient_admission; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
 COPY public.patient_admission (admission_date, discharge_date, facility, info_source, ncm_sync_status, created_on_date, created_on_time, created_by, patient_id, id, tags, organization_id, custom_property, checksum, object_path, is_deleted) FROM stdin;
+2019-07-02	\N	test	test	metaSyncStatus:pending	2019-07-10	08:02:55	synapUser:001	patient:daehk8n	patientAdmission:m2fbhx3	\N	organization:001	[]	99901d10bc236d429fc7e3c33fa06f4574b3f90fb811f6a080e76f267ad62db48916b15f2c63e60892651c3f6e9ab2878630117c9b81a858602fe1e148102005	patient__daehk8n	f
+2019-07-09	2019-07-11	e	e	metaSyncStatus:pending	2019-07-10	11:40:56	synapUser:001	patient:k4wjgx2	patientAdmission:tvheemu	\N	organization:001	[]	7ffad4538a4f604c2e98575a6753f909c4c1f294c045c6ffd0c43d9762e0522ad081caaa902912906c958bd865f2efb8611c818ead8ab0132e2a68c280fe0c9c	patient__k4wjgx2	f
 \.
 
 
 --
+-- TOC entry 5701 (class 0 OID 281471)
+-- Dependencies: 292
 -- Data for Name: patient_allergy; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11174,6 +11746,8 @@ COPY public.patient_allergy (name, reaction, rcopia_id, group_name, group_id, on
 
 
 --
+-- TOC entry 5740 (class 0 OID 281967)
+-- Dependencies: 331
 -- Data for Name: patient_associated_patient; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11182,6 +11756,8 @@ COPY public.patient_associated_patient (associated_patient, patient_id, checksum
 
 
 --
+-- TOC entry 5702 (class 0 OID 281480)
+-- Dependencies: 293
 -- Data for Name: patient_contact; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11190,6 +11766,8 @@ COPY public.patient_contact (image, contact_type, other_contact_type, first_name
 
 
 --
+-- TOC entry 5703 (class 0 OID 281495)
+-- Dependencies: 294
 -- Data for Name: patient_contact_address; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11198,14 +11776,19 @@ COPY public.patient_contact_address (address1, address2, address_type, city, sta
 
 
 --
+-- TOC entry 5704 (class 0 OID 281503)
+-- Dependencies: 295
 -- Data for Name: patient_diagnosis; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
 COPY public.patient_diagnosis (start_date, end_date, status, icd10_code, snomed_code, provider, is_resolved, onset_date, is_primary, is_ruled_out, date_of_ruled_out, ruled_out_reason, ruled_out_note, notes, changed_date, last_modified_time, last_modified_date, is_active, rcopia_id, resolution_date, icd10_desc, snomed_desc, ncm_sync_status, created_on_date, created_on_time, created_by, patient_id, id, tags, organization_id, custom_property, checksum, object_path, is_deleted) FROM stdin;
+2019-01-04	2019-01-10	metaPatientDiagnosisStatus:active	I2109	I2109	\N	f	\N	f	f	\N	\N	\N	\N	\N	\N	\N	t	\N	\N	\N	\N	metaSyncStatus:completed	2019-07-10	13:32:53	synapUser:002	patient:gtmeeyh	patientDiagnosis:xjaud3x	\N	organization:001	[]	10302162d91b4e257475fa48b26e4ebbccb205b8b3e7677aabc9d9af0b5ad9e950ed6d9141ead8d0f7588fcb71921886d6fba5c7f3bfa30d47ef2a9e241423a5	patient__gtmeeyh	f
 \.
 
 
 --
+-- TOC entry 5741 (class 0 OID 281973)
+-- Dependencies: 332
 -- Data for Name: patient_diagnosis_program; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11214,6 +11797,8 @@ COPY public.patient_diagnosis_program (program, patient_diagnosis_id, checksum) 
 
 
 --
+-- TOC entry 5705 (class 0 OID 281516)
+-- Dependencies: 296
 -- Data for Name: patient_employment_info; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11222,6 +11807,8 @@ COPY public.patient_employment_info (employer_name, address1, address2, zip, sta
 
 
 --
+-- TOC entry 5706 (class 0 OID 281524)
+-- Dependencies: 297
 -- Data for Name: patient_medication; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11230,6 +11817,8 @@ COPY public.patient_medication (dr_first_is_deleted, rcopia_id, start_date, star
 
 
 --
+-- TOC entry 5707 (class 0 OID 281546)
+-- Dependencies: 298
 -- Data for Name: patient_prescription; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11238,6 +11827,8 @@ COPY public.patient_prescription (deleted, voided, denied, rcopia_id, needs_revi
 
 
 --
+-- TOC entry 5708 (class 0 OID 281556)
+-- Dependencies: 299
 -- Data for Name: patient_primary_care_provider; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11246,6 +11837,8 @@ COPY public.patient_primary_care_provider (first_name, last_name, title, address
 
 
 --
+-- TOC entry 5739 (class 0 OID 281961)
+-- Dependencies: 330
 -- Data for Name: patient_race; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11261,10 +11854,21 @@ metaRace:blackOrAfricanAmerican	patient:pn7pnby	e75fa278a9c1f57c461236ea2258fbb0
 metaRace:asian	patient:ppgvev8	1fe593766778e6a02a12a824663944a4620149e211a4070ca34be2f76c770d71d06a0effeb6cdcbdb4f15aae0251760d994cc07ddf93700525bf43e4d4307784
 metaRace:asian	patient:renvmv8	78a7af8c159a984e2ca60058738ef2da6177c1d4607742c60d3d73cc0ae1bf84c1d86c1c97d13a2a5eb8f04832c6d677154fb47a9612ac61af66fb3d1f913d1d
 metaRace:nativeHawaiianOtherPacificIslander	patient:n26akvg	7cbda6ce182018ab5cc72db014fc3aa3480e37827d992050326ab2b0cf5197c7f10405f3b4cbaa612cfc27b025d41e919318ba18fa68a2021fbedb62fbb20478
+metaRace:asian	patient:c7ytpgj	56c24c8a77a5bbb82eed857852a8dd2372a608a25af45f3e14b7cf465f872cbfa3253ad1b8a35959fa86a6f9fc63c248858b1a803a7f8e420d35ddb141cdb40b
+metaRace:declinedToProvide	patient:geccet3	e490ce1c608d4ed399daffb2d2d374644a314d75ee9bd3432902ab6f0252d070f45fecba600e1853299e981d0f0134a76220d9a1beddaadef9a70cb56a8a5c40
+metaRace:declinedToProvide	patient:hbavy7r	6726a96a2562b32317633f47738d4cae513e58353274d9868a28203872e0409aa79dd55939c475bda5b540792dfbe846bff06fb7d9e674cb776585443bd2cc80
+metaRace:declinedToProvide	patient:vzark6c	ad7c43ecf67c4a3d3aaf9ff6a201200f9e4d6a27e7b560e5db3a4bed97123ff7e73789ac6957b8aab21b4a49168f3895fefb12db92787569977f64747a7ca7a0
+metaRace:declinedToProvide	patient:kfbd7an	2b6a1520195387514a7812b972e58b27e5e6754e7b1baf6d6988525c3ba3fe39f9f92c4859548224a5cd25ed9cf2c8f76b2e134ca8b821e2d799a4739d2ad42f
+metaRace:declinedToProvide	patient:ayvmyc4	36b0ba1f4ad3fdd5da74d767ae21fd2158caf02592138562514c879e4bbbd3dd169d75366c18b01dc38542c2aaab5e16c235ef691d6ac74d98aab4d033a9e967
+metaRace:declinedToProvide	patient:8gkw7ht	bc3b276d4d0a3cbc1b319e695da0620ebf9963b8197d9911c2f8a7856af313f719eae4fa4ea1e21f7612ddc38af21ff95079f5d3d1a3038150281397e5c8a016
+metaRace:declinedToProvide	patient:k4wjgx2	43aa48020bce7f1736d73406beff55d0b13acd5c9bf9b64cbea3f9d3228b7f7b1ee9af4b113d7762920a36d5384f2a16823ce6096b520024d355c1d8f9c186dc
+metaRace:asian	patient:gtmeeyh	da6a2f5288bc0729a2a0a579e19abca8b5f9192cb3b71b7abc9b19fc8f526da07dd008d98e165a60ca1a65f2be8f6e21a79b7297424ac35b7fd97f23416cf9bd
 \.
 
 
 --
+-- TOC entry 5709 (class 0 OID 281563)
+-- Dependencies: 300
 -- Data for Name: patient_social_needs; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11280,10 +11884,21 @@ f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	
 f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	\N	2019-07-09	17:26:14	synapUser:001	patient:ppgvev8	patientSocialNeeds:mgmwgam	\N	organization:001	[]	178fcc3576aa3dbe32b818e193112de51feb2fa0416a99829b48cef6dbf5be351c5fbb6b280238d9e19481d0d8b29dc0ddecc52a98183a7cfbc70327eab3feff	patient__ppgvev8	f
 f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	\N	2019-07-09	17:27:02	synapUser:001	patient:renvmv8	patientSocialNeeds:b6ktv8z	\N	organization:001	[]	25bc12ac40e4224438a3c75631398f3290de5e10a1293c6b48a3b7867a77fd2e9191dc451e7ab7fdc8a0a4db5c29987abe8f440323fe0d0a43bd4d6e7302d1cd	patient__renvmv8	f
 f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	\N	2019-07-09	17:28:43	synapUser:001	patient:n26akvg	patientSocialNeeds:jkny3u8	\N	organization:001	[]	1fc0982b7f9ecc1bcc9141e51eb72b825c364c8e22a952e581a357535f64100e13add4d5bc1bb20351f9f8e04d845c0fa8dd2caefe1931b13ebc11c5845958d0	patient__n26akvg	f
+f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	\N	2019-07-10	06:34:27	synapUser:001	patient:c7ytpgj	patientSocialNeeds:f8yg67n	\N	organization:001	[]	27fe0eddda4c16ad4c71e610d3614d0c4593b898415c88bb56516517b804c3c774e63db57fd02fcbe82aa6a19eb2bc24c7f98c2e6a1e7646a1668877e9b892fc	patient__c7ytpgj	f
+f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	\N	2019-07-10	07:41:32	synapUser:001	patient:geccet3	patientSocialNeeds:2fzmwxf	\N	organization:001	[]	a9d3070769b314b70f5652c232dd7d91421a78b2fd3d25438937000533c3a26d467605dd66fc93e8ff855777fae1ff54def22e2e82911e4b5fa312a400825d46	patient__geccet3	f
+f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	\N	2019-07-10	07:45:48	synapUser:001	patient:hbavy7r	patientSocialNeeds:wh6v4vx	\N	organization:001	[]	c5a278f032589ea0a31c2f819fa7c909fb31ab6796f2a89c114ac78c0688baccd32eb4c0750b3220dccd60b03b5f3c7d76846aa8ca7e739b9f008b7e9178cd56	patient__hbavy7r	f
+f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	\N	2019-07-10	08:07:00	synapUser:001	patient:vzark6c	patientSocialNeeds:fjxpud4	\N	organization:001	[]	cb2fad5f067be59ac8786fe88f016ad7125b1eca4c1966a826663f3499a6c90dd33d010a4c3e24afb753c8cf7ca259f7a539266a0ed1140dda73e3a61e44ed2a	patient__vzark6c	f
+f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	\N	2019-07-10	08:12:28	synapUser:001	patient:kfbd7an	patientSocialNeeds:w3phjjc	\N	organization:001	[]	fedb164c1cfeb7d9804c7c0f6298bebb33bde398ba7995258c45d5c7979220160b8f623f368072630b663aa9da172f475949efc2736640b168f5312dd9c9ea9a	patient__kfbd7an	f
+f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	\N	2019-07-10	09:45:01	synapUser:001	patient:ayvmyc4	patientSocialNeeds:m8ray42	\N	organization:001	[]	05c93523887376b4bc6d1009b70ca9cb515db587f857100b7e6313618249b57f12da05e71415ffaa008dd476b76b2e30efdef822ee022acea849706d664c553f	patient__ayvmyc4	f
+f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	\N	2019-07-10	10:40:00	synapUser:001	patient:8gkw7ht	patientSocialNeeds:kyfg7kk	\N	organization:001	[]	bbef578c8cb1b2888a5e7ce1c1dda8b5971187df1334f50d530ac5a0f6debda40599b3e4b9c366874e7b8830c615ee1efe5242775f7f944dd09ec1c9dc4f13e2	patient__8gkw7ht	f
+f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	\N	2019-07-10	10:49:06	synapUser:001	patient:k4wjgx2	patientSocialNeeds:4hbywc7	\N	organization:001	[]	3aa97b9b441d65376533026d095ae9e9bb0c3b3172069a6d8c5f101073ed3067282d2d30cd5f62dedc2454d966507cbd3f8aa6980f9c53ddfb4a8b3f27b6a575	patient__k4wjgx2	f
+f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	f	\N	2019-07-10	13:27:14	synapUser:002	patient:gtmeeyh	patientSocialNeeds:ymkff8w	\N	organization:001	[]	36b5b5abb3d10b5911d527fec76df91ee8e35a95584f52c63c5b89c43f1979c4e546abba3fd3f6678115aebc0c4d3bdd65aed724af8acd5c9729f9a4f8e538ef	patient__gtmeeyh	f
 \.
 
 
 --
+-- TOC entry 5751 (class 0 OID 282033)
+-- Dependencies: 342
 -- Data for Name: patient_social_needs_assistance_with; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11292,6 +11907,8 @@ COPY public.patient_social_needs_assistance_with (assistance_with, patient_socia
 
 
 --
+-- TOC entry 5752 (class 0 OID 282039)
+-- Dependencies: 343
 -- Data for Name: patient_social_needs_encourage_clients_to; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11300,6 +11917,8 @@ COPY public.patient_social_needs_encourage_clients_to (encourage_clients_to, pat
 
 
 --
+-- TOC entry 5750 (class 0 OID 282027)
+-- Dependencies: 341
 -- Data for Name: patient_social_needs_followup_with; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11308,6 +11927,8 @@ COPY public.patient_social_needs_followup_with (followup_with, patient_social_ne
 
 
 --
+-- TOC entry 5749 (class 0 OID 282021)
+-- Dependencies: 340
 -- Data for Name: patient_social_needs_identified_encouraged; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11316,6 +11937,8 @@ COPY public.patient_social_needs_identified_encouraged (identified_encouraged, p
 
 
 --
+-- TOC entry 5747 (class 0 OID 282009)
+-- Dependencies: 338
 -- Data for Name: patient_social_needs_initial_assessment; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11324,6 +11947,8 @@ COPY public.patient_social_needs_initial_assessment (initial_assessment, patient
 
 
 --
+-- TOC entry 5746 (class 0 OID 282003)
+-- Dependencies: 337
 -- Data for Name: patient_social_needs_legislative_action; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11332,6 +11957,8 @@ COPY public.patient_social_needs_legislative_action (legislative_action, patient
 
 
 --
+-- TOC entry 5748 (class 0 OID 282015)
+-- Dependencies: 339
 -- Data for Name: patient_social_needs_update_assessment; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11340,6 +11967,8 @@ COPY public.patient_social_needs_update_assessment (update_assessment, patient_s
 
 
 --
+-- TOC entry 5710 (class 0 OID 281753)
+-- Dependencies: 301
 -- Data for Name: patient_specific_document; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11348,6 +11977,8 @@ COPY public.patient_specific_document (document, name, type, patient_form_id, cr
 
 
 --
+-- TOC entry 5711 (class 0 OID 281760)
+-- Dependencies: 302
 -- Data for Name: patient_vital; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11356,6 +11987,8 @@ COPY public.patient_vital (smoking_status, encounter_id, observation_date, obser
 
 
 --
+-- TOC entry 5712 (class 0 OID 281769)
+-- Dependencies: 303
 -- Data for Name: preferred_provider; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11364,14 +11997,20 @@ COPY public.preferred_provider (group_name, last_name, first_name, phone, fax, a
 
 
 --
+-- TOC entry 5713 (class 0 OID 281776)
+-- Dependencies: 304
 -- Data for Name: report; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
 COPY public.report (class_name, cdn_path, note, parameters, created_on_date, created_on_time, created_by, id, tags, organization_id, custom_property, checksum, object_path, is_deleted) FROM stdin;
+PatientAllDetails	organization:001-report-cdnPath-17bd0215-6e28-50d3-acb6-727b069d7312.xlsx	report generated	[]	2019-07-10	10:14:00	synapUser:001	report:p4mpxpx	\N	organization:001	[]	238aadf449ad90c7e68315803bd3b92b61f44f6fe2db65bb4b4dee907e8876255ce2898f541a256668a657c5ba5f7491fe86051720edee29ab2f67ef0a986f13	\N	f
+PatientAllDetails	organization:001-report-cdnPath-87bfe2e5-82e4-5b99-8e2a-25f274388837.xlsx	report generated	[]	2019-07-10	10:14:18	synapUser:001	report:8xkzpty	\N	organization:001	[]	e635a9f2c65209f5fba5d3f7835d66370d11a09a0f7b6a0f2df8a55cafe07e49ea3aef929c913fd6e7c9e45418417565d83759cf3cb08970348f47f29d2d3be3	\N	f
 \.
 
 
 --
+-- TOC entry 5714 (class 0 OID 281783)
+-- Dependencies: 305
 -- Data for Name: synap_config; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11385,16 +12024,27 @@ passwordCapitalLetter	1	\N	\N	\N	synapConfig:passwordCapitalLetter	\N	\N	\N	\N	\
 
 
 --
+-- TOC entry 5715 (class 0 OID 281790)
+-- Dependencies: 306
 -- Data for Name: synap_user; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
 COPY public.synap_user (email, first_name, middle_name, is_active, is_locked, last_name, username, profile_pic, resend_email, pin, signature, password, failure_attempts, is_registered, password_expiry_time, created_on_date, created_on_time, created_by, id, tags, organization_id, custom_property, checksum, object_path, is_deleted) FROM stdin;
 admin@aperiohealth.com	John	\N	t	f	Aperio	admin@aperiohealth.com	\N	f	\N	\N	$2y$14$gBYLY6KVUuYpNvaz.OKkoeJFurzGkqaDb4N0mVcu1aCaeDHQn3LFe	\N	t	\N	\N	\N	\N	synapUser:001	\N	organization:001	\N	\N	\N	f
 cron@aperiohealth.com	Cron	\N	t	f	Cron	cron@aperiohealth.com	\N	f	\N	\N	$2y$14$gBYLY6KVUuYpNvaz.OKkoeJFurzGkqaDb4N0mVcu1aCaeDHQn3LFe	\N	t	\N	\N	\N	\N	synapUser:002	\N	organization:001	\N	\N	\N	f
+tania.peter1065@qa.sourcefuse.com	Tania	\N	f	f	Peter	tania.peter1065@qa.sourcefuse.com	\N	f	\N	\N	\N	0	f	\N	2019-07-10	07:41:32	synapUser:001	synapUser:6xvyfna	\N	organization:001	[]	75df551a40a767775fa2fc978bff45f97d66a8cbe6b3495d8ae725c54b21731599d4d591ae257d9d9467f999f37f0db8a5bfcf3e45cdbfec3254b1865cde2bf8	\N	f
+kristian.pearl3963@qa.sourcefuse.com	Kristian	\N	f	f	Pearl	kristian.pearl3963@qa.sourcefuse.com	\N	f	\N	\N	\N	0	f	\N	2019-07-10	07:45:47	synapUser:001	synapUser:6fvcjwe	\N	organization:001	[]	8429d5df4bcb299725eee34c888c9a39c9b2fd86802c0a00b71986c1fc2b0095c98c5e30d47f29a58b2ade08bb34ef205dcb017b53bd79afec40f2beb17a3661	\N	f
+tyson.horace4365@qa.sourcefuse.com	Tyson	\N	f	f	Horace	tyson.horace4365@qa.sourcefuse.com	\N	f	\N	\N	\N	0	f	\N	2019-07-10	08:07:00	synapUser:001	synapUser:uvnjzp8	\N	organization:001	[]	45492f70ace8f4dac38bb71ef3acf0c2bfba2740c1acb3bb5c08a78467c2d0733a9cd3ff1b6f0273cbac9e5b73aad93228c76e149518ca109a242eaad20c3433	\N	f
+aylin.margot487@qa.sourcefuse.com	Aylin	\N	f	f	Margot	aylin.margot487@qa.sourcefuse.com	\N	f	\N	\N	\N	0	f	\N	2019-07-10	08:12:28	synapUser:001	synapUser:4rurk32	\N	organization:001	[]	68b8e986e92aea90b1f5b4f4cb2851816719ed5ff54211a0d1ef64487f3014739469cb1549aa6af63641baf8346dc2fd3d46ffe3a3dd32894db380bb10cd9729	\N	f
+hoyt.geovanny2798@qa.sourcefuse.com	Hoyt	\N	f	f	Geovanny	hoyt.geovanny2798@qa.sourcefuse.com	\N	f	\N	\N	\N	0	f	\N	2019-07-10	09:45:01	synapUser:001	synapUser:v22u8m7	\N	organization:001	[]	49f18e923eab9b91e740111daf6d20bfefc362cf177e874bd5da08aa0375368683f906cdd0f16976b7cd058aec07f288f05891e8d1dc73ec509bcba9afc786b6	\N	f
+elenora.buck8522@qa.sourcefuse.com	Elenora	\N	f	f	Buck	elenora.buck8522@qa.sourcefuse.com	\N	f	\N	\N	\N	0	f	\N	2019-07-10	10:40:00	synapUser:001	synapUser:emfnpj2	\N	organization:001	[]	3ba6e8b90d78ea59da6e972f7b97296bf6c1972d11e6879c870f45493e7b214d25df2dc6aafe2d47085af5261f2f87018599b978c03f65e3e8ff40d5d0b3b6db	\N	f
+emilio.jasmin6030@qa.sourcefuse.com	Emilio	\N	f	f	Jasmin	emilio.jasmin6030@qa.sourcefuse.com	\N	f	\N	\N	\N	0	f	\N	2019-07-10	10:49:06	synapUser:001	synapUser:cpwht8t	\N	organization:001	[]	7f1475afeabfa4a042471150b23935a7b6496baf0306eda336592c020fa532dc697cc7c861804f7ca2b0c801e0c751436b27d19fad3ad485c0aa41115579d3cb	\N	f
 \.
 
 
 --
+-- TOC entry 5716 (class 0 OID 281801)
+-- Dependencies: 307
 -- Data for Name: synap_user_group; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11403,14 +12053,25 @@ COPY public.synap_user_group (group_id, created_on_date, created_on_time, create
 
 
 --
+-- TOC entry 5717 (class 0 OID 281808)
+-- Dependencies: 308
 -- Data for Name: synap_user_token; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
 COPY public.synap_user_token (token_type, token_expiry_time, created_on_date, created_on_time, created_by, synap_user_id, id, tags, organization_id, custom_property, checksum, object_path, is_deleted) FROM stdin;
+metaTokenType:register	1562830892	2019-07-10	07:41:32	synapUser:001	synapUser:6xvyfna	synapUserToken:bc7rr7t	\N	organization:001	[]	fb07ef4ce7519e5fcab5ac641930c614494046f982f06fdec669cbc1a48d662946abad055258a87ca31d84e5af871e50743d60c5db7ff3b784e874f98c580956	synapUser__6xvyfna	f
+metaTokenType:register	1562831148	2019-07-10	07:45:48	synapUser:001	synapUser:6fvcjwe	synapUserToken:33vzpy6	\N	organization:001	[]	79ce1dc02a074785e0467eec53912a8b3e175d01d8286f4e3259357faaf6f0a0eaf3d4b15770f7f69d659553e05ad9c77196b4cd1b65a312af251bc8693fd3d8	synapUser__6fvcjwe	f
+metaTokenType:register	1562832420	2019-07-10	08:07:00	synapUser:001	synapUser:uvnjzp8	synapUserToken:gw2gwjt	\N	organization:001	[]	c6225d9a03c3d0f9a9dad5270ba2436ed9316488bc6c035f5602eb0e0b30c6ba4b3d960ed59f7c07b04911bb2a6c81b6662f082c1cf36e3d5e000e06e32e0f06	synapUser__uvnjzp8	f
+metaTokenType:register	1562832748	2019-07-10	08:12:28	synapUser:001	synapUser:4rurk32	synapUserToken:t2bjhgf	\N	organization:001	[]	4cfda07efdaf4ba48aaca822fc72bdfb32eee0c4995ce1eb20ffcacdac6e01e3bf6cb2cdc4dc40b5787752673a191e7d51ad1cb745b7fe930b71ac2daec1204c	synapUser__4rurk32	f
+metaTokenType:register	1562838301	2019-07-10	09:45:01	synapUser:001	synapUser:v22u8m7	synapUserToken:kwdebbd	\N	organization:001	[]	b3e4647fa5d11d42f7ad3b8e7a2356ba1c4c2d292ee7588dccdd5b9a97724699ffbafe9489d42fe007577cd038beff23db4d72cdfdcbfbfb891dcac523c2a9cc	synapUser__v22u8m7	f
+metaTokenType:register	1562841600	2019-07-10	10:40:00	synapUser:001	synapUser:emfnpj2	synapUserToken:zcrwmut	\N	organization:001	[]	3e9502a85da5546b4acd88827c7dd00a154ddc54dd5bf20cb7b74f20a8860dc2a28955c09b0d7a456c34d8aa3bbda93ea96e8619d053f875ef15d9abe5e18d8a	synapUser__emfnpj2	f
+metaTokenType:register	1562842146	2019-07-10	10:49:06	synapUser:001	synapUser:cpwht8t	synapUserToken:rv8jax2	\N	organization:001	[]	8e2e89fce5569c3efee58e00205c12a5f78691147dab87e69b6a2ae7522dfb767c6fe35bc6b7bfe8c2c38aa13478252d73aebe6391a3f79da73ea45c9df18e72	synapUser__cpwht8t	f
 \.
 
 
 --
+-- TOC entry 5725 (class 0 OID 281867)
+-- Dependencies: 316
 -- Data for Name: system_user; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11420,6 +12081,8 @@ cron	Aperiohealth	metaUserType:system	synapUser:002	\N	\N	\N	systemUser:001	\N	o
 
 
 --
+-- TOC entry 5718 (class 0 OID 281815)
+-- Dependencies: 309
 -- Data for Name: user_password; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11428,25 +12091,37 @@ COPY public.user_password (password, created_on_date, created_on_time, created_b
 
 
 --
+-- TOC entry 5719 (class 0 OID 281822)
+-- Dependencies: 310
 -- Data for Name: viewed_client; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
 COPY public.viewed_client (client_id, view_date, created_on_date, created_on_time, created_by, synap_user_id, id, tags, organization_id, custom_property, checksum, object_path, is_deleted) FROM stdin;
-patient:afxtxhy	2019-07-09	2019-07-09	17:17:00	synapUser:001	synapUser:001	viewedClient:7ncxv4c	\N	organization:001	[]	f2babe66dd61e31f14cc4a1f7568e82596bf280e19f0d07d46fa7dab618b35cbdb0cf4e600b9ff423b2ea7883b91de2563aad0ffd7048e2fb8303d02deef7532	synapUser__001	f
 patient:gkpvdnv	2019-07-09	2019-07-09	17:18:35	synapUser:001	synapUser:001	viewedClient:23zk4df	\N	organization:001	[]	20885a0115c50db1f94cd897e253d815cd14954e304b389da2d87dc4fab6d584bac6aff9f7b213fc014463025baab4fd2a9be3a7f3539b660bc3e95cd380c036	synapUser__001	f
-patient:num7wxp	2019-07-09	2019-07-09	17:19:33	synapUser:001	synapUser:001	viewedClient:rne4etf	\N	organization:001	[]	4984b152b6ab5e4078d8b8a86e4abe6756bfc874245987af27bf8e2bf33f4eca95c3e16de9ce5023408c190c528ecc3c44b5b71093ca0980ee6d68495aab0680	synapUser__001	f
 patient:cdkk3hz	2019-07-09	2019-07-09	17:21:08	synapUser:001	synapUser:001	viewedClient:ghtzjeu	\N	organization:001	[]	2728686a74c04e07c058db22b0b9ab63df7cf24498280d3bc643b0f6adc02920be819c6bc0ee957c251b5f47c2cdc7f967e4a813b391492b24d7a0f802c3983e	synapUser__001	f
-patient:daehk8n	2019-07-09	2019-07-09	17:22:12	synapUser:001	synapUser:001	viewedClient:j2fx2ae	\N	organization:001	[]	44b5ef824fde13f6a1daa0d561f22815b03ec132a6c542157b82f675bcc797a9d55458f657921f0957edb73c4fb8945b732f31a5e798036be62c6ae85aa61d9b	synapUser__001	f
 patient:6ccdnmu	2019-07-09	2019-07-09	17:23:14	synapUser:001	synapUser:001	viewedClient:h3d33c6	\N	organization:001	[]	39db7619ba94d7410a76b08ad2352522ea2dfe1c65eb38980d1fe360dda73655ff2ae186d57a29eb8262f02e7f6315be360c91259c81443241f189f62a24e76d	synapUser__001	f
 patient:8u27fg7	2019-07-09	2019-07-09	17:23:56	synapUser:001	synapUser:001	viewedClient:z77vgnp	\N	organization:001	[]	ee7921413be0b68913a16459ffabc50dac6aa4cca6e6eeb2c13b92c98a9c9997564fa997ee3c5ea4a5b22f76482ba2c77a2d10a7d7e733e3c5d8a349ffb68aee	synapUser__001	f
 patient:pn7pnby	2019-07-09	2019-07-09	17:25:07	synapUser:001	synapUser:001	viewedClient:h2xngb7	\N	organization:001	[]	50f608646fe64d6c7077ee709c2239b7a186477ad33ac66cd3bfa4dcabaddf999eb1f2e43230b6cecd30460f18095a9059d90abe9e4dd0ee8ce5f3c67e9bdcce	synapUser__001	f
 patient:ppgvev8	2019-07-09	2019-07-09	17:26:16	synapUser:001	synapUser:001	viewedClient:b8cb26h	\N	organization:001	[]	c2b144dbfe2e2b8cd6af9da6327a4d9b6dbcea888fb98a02681f5d3bd4c021541855b366505b987673d0fc38074af25c539656062c065a960d6be91f89d39eb3	synapUser__001	f
 patient:renvmv8	2019-07-09	2019-07-09	17:27:04	synapUser:001	synapUser:001	viewedClient:wgr4beu	\N	organization:001	[]	bcef2768cb2370a2d13e8792fa9c9a88826f438093fabe42b71ab262757e23ab685a696dfc7262d24311dc6e3227c183d0accfbcc581a1366a3d13622728d44c	synapUser__001	f
-patient:n26akvg	2019-07-09	2019-07-09	17:28:45	synapUser:001	synapUser:001	viewedClient:c7yn4by	\N	organization:001	[]	8a74825d1e6475faf46f8b775393aea06fb23a1f7701a5c61f77d298b06fd6396802dfe11c605e863f876cae36dbe1adb637fd5d189aacb1b7a7aa7476db56a2	synapUser__001	f
+patient:n26akvg	2019-07-10	2019-07-09	17:28:45	synapUser:001	synapUser:001	viewedClient:c7yn4by	\N	organization:001	[]	9e1ff5f656d93056a7b55ef1f7c4c4fd185feff0f8facdc0b85722e971421537ebffbf6e190461ba8fbfb68096f5f3b014ac0758ae1e81d1d2ed6f0e5c84a7a4	synapUser__001	f
+patient:afxtxhy	2019-07-10	2019-07-09	17:17:00	synapUser:001	synapUser:001	viewedClient:7ncxv4c	\N	organization:001	[]	32eeb1c5f72a455765ad5dfd1dc622cff59292ebbfb668978a967f2d2b88bf2153d5ee02ff28c6fe026196d5832e2c521f4af13ad276dab9a6cf397a38a84d6c	synapUser__001	f
+patient:daehk8n	2019-07-10	2019-07-09	17:22:12	synapUser:001	synapUser:001	viewedClient:j2fx2ae	\N	organization:001	[]	ea9bfe9fe685352e60c23c738996bd65f131bf0c7a46ff630fac6c25f9b732da0d34b0451913aff59045a77cc5799459d97d01e67601b7101c9ab359d384f453	synapUser__001	f
+patient:c7ytpgj	2019-07-10	2019-07-10	06:34:33	synapUser:001	synapUser:001	viewedClient:wh7uhxn	\N	organization:001	[]	a2e73a676dc4f0dbfc315612072bacfcf809293a20c08ea8d3ec76721d9eea28e00ba93199dc412a44c435977fb854289b2fba43f432ae9d5bca5905f3b55778	synapUser__001	f
+patient:num7wxp	2019-07-10	2019-07-09	17:19:33	synapUser:001	synapUser:001	viewedClient:rne4etf	\N	organization:001	[]	de906a9c1c52e64f6daacebf3c68992271c54c45eb900f5ce6e732d0c422ceb5272e9f9f896994bbb983b50edb6d0334dc35520d4190b7dc7f7481f3781858d3	synapUser__001	f
+patient:geccet3	2019-07-10	2019-07-10	07:41:34	synapUser:001	synapUser:001	viewedClient:ntf82e4	\N	organization:001	[]	a41f49fcd78977f785644a0729b48af04789b4abd397c1f808edd1b4ffa64ca2826e06552ba430f5343b3e3926098e10a7b1015b1f1d322d1fffa9a0f07c060b	synapUser__001	f
+patient:hbavy7r	2019-07-10	2019-07-10	07:45:50	synapUser:001	synapUser:001	viewedClient:dzpu4h7	\N	organization:001	[]	98fc4e164114126ffdcfc535d99a821a4a4dc779e00eb4f509545c99f7dd7b0962dff856b78d2ae59f792f96bde8df742f20c5d5aeda3c229e58199359e13d13	synapUser__001	f
+patient:vzark6c	2019-07-10	2019-07-10	08:07:02	synapUser:001	synapUser:001	viewedClient:xhce6ua	\N	organization:001	[]	521a1421abc06fa8bdf686cd8234dd9c6699c2211fe93bf717656f966b573405c990d4c86fd32b95cf9cd47b2a72d06fae19013c1cf12aa90c82bf252bfaf51c	synapUser__001	f
+patient:kfbd7an	2019-07-10	2019-07-10	08:12:30	synapUser:001	synapUser:001	viewedClient:6wmht7t	\N	organization:001	[]	ed98457bc24653d9f9deb48c2ad394114ce2eaf9482e6a9697219ef1c410f85cd5ea135e82d9020370f2528acb09d4b661f6bae4f7171c71215efb5ad1aedf84	synapUser__001	f
+patient:ayvmyc4	2019-07-10	2019-07-10	09:45:04	synapUser:001	synapUser:001	viewedClient:yuzadgz	\N	organization:001	[]	27db5c4b7003e5d1c87f7cfaba87a4f111ea2c0e228bf2394fc9342e213c2ba6dd9d7197daa7734557a4dc9b2dcd085bcf4a60c514cc4e2074d8cd0999f5535a	synapUser__001	f
+patient:8gkw7ht	2019-07-10	2019-07-10	10:40:02	synapUser:001	synapUser:001	viewedClient:nhkr72t	\N	organization:001	[]	699b957321dc2d459a099a0236346f34dfeb0e9cb095d7999fdb9b71556e76d47cd772686424d0c1192e799efe9c9a97f2d568fd7ad85c6a81e8e54f7863271c	synapUser__001	f
+patient:k4wjgx2	2019-07-10	2019-07-10	10:49:08	synapUser:001	synapUser:001	viewedClient:eebrcp2	\N	organization:001	[]	f772ec5e96e4da1c89326106f95643c62f9163654f308cbcd016e88d2811b4abff4ee00896375fb819c992d7075350cc2fe3c0874c64db244a49f4e21689833a	synapUser__001	f
 \.
 
 
 --
+-- TOC entry 5720 (class 0 OID 281829)
+-- Dependencies: 311
 -- Data for Name: work_list; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11455,6 +12130,8 @@ COPY public.work_list (action_type, author_patient, author_employee, logical_gro
 
 
 --
+-- TOC entry 5721 (class 0 OID 281837)
+-- Dependencies: 312
 -- Data for Name: work_list_approver; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11463,6 +12140,8 @@ COPY public.work_list_approver (level, approver_id, approval_status, execution_i
 
 
 --
+-- TOC entry 5742 (class 0 OID 281979)
+-- Dependencies: 333
 -- Data for Name: work_list_assignee_employee; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11471,6 +12150,8 @@ COPY public.work_list_assignee_employee (assignee_employee, work_list_id, checks
 
 
 --
+-- TOC entry 5743 (class 0 OID 281985)
+-- Dependencies: 334
 -- Data for Name: work_list_assignee_patient; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11479,6 +12160,8 @@ COPY public.work_list_assignee_patient (assignee_patient, work_list_id, checksum
 
 
 --
+-- TOC entry 5722 (class 0 OID 281845)
+-- Dependencies: 313
 -- Data for Name: work_list_notes; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11487,6 +12170,8 @@ COPY public.work_list_notes (notes, notes_by, execution_id, created_on_date, cre
 
 
 --
+-- TOC entry 5723 (class 0 OID 281852)
+-- Dependencies: 314
 -- Data for Name: work_list_reminder; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11495,6 +12180,8 @@ COPY public.work_list_reminder (reminder_type, who_type, reminder_time, status, 
 
 
 --
+-- TOC entry 5744 (class 0 OID 281991)
+-- Dependencies: 335
 -- Data for Name: work_list_reminder_who_employee; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11503,6 +12190,8 @@ COPY public.work_list_reminder_who_employee (who_employee, work_list_reminder_id
 
 
 --
+-- TOC entry 5745 (class 0 OID 281997)
+-- Dependencies: 336
 -- Data for Name: work_list_reminder_who_patient; Type: TABLE DATA; Schema: public; Owner: aperiosf
 --
 
@@ -11511,6 +12200,7 @@ COPY public.work_list_reminder_who_patient (who_patient, work_list_reminder_id, 
 
 
 --
+-- TOC entry 4949 (class 2606 OID 282304)
 -- Name: calendar_item pk_calendar_item_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11519,6 +12209,7 @@ ALTER TABLE ONLY public.calendar_item
 
 
 --
+-- TOC entry 4294 (class 2606 OID 282046)
 -- Name: care_continuity_import_request pk_care_continuity_import_request_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11527,6 +12218,7 @@ ALTER TABLE ONLY public.care_continuity_import_request
 
 
 --
+-- TOC entry 4329 (class 2606 OID 282060)
 -- Name: ccd_upload pk_ccd_upload_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11535,6 +12227,7 @@ ALTER TABLE ONLY public.ccd_upload
 
 
 --
+-- TOC entry 4299 (class 2606 OID 282048)
 -- Name: ccda_export pk_ccda_export_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11543,6 +12236,7 @@ ALTER TABLE ONLY public.ccda_export
 
 
 --
+-- TOC entry 4304 (class 2606 OID 282050)
 -- Name: ccda_export_log pk_ccda_export_log_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11551,6 +12245,7 @@ ALTER TABLE ONLY public.ccda_export_log
 
 
 --
+-- TOC entry 4309 (class 2606 OID 282052)
 -- Name: ccda_export_request pk_ccda_export_request_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11559,6 +12254,7 @@ ALTER TABLE ONLY public.ccda_export_request
 
 
 --
+-- TOC entry 4314 (class 2606 OID 282054)
 -- Name: ccda_import_allergy pk_ccda_import_allergy_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11567,6 +12263,7 @@ ALTER TABLE ONLY public.ccda_import_allergy
 
 
 --
+-- TOC entry 4319 (class 2606 OID 282056)
 -- Name: ccda_import_diagnosis pk_ccda_import_diagnosis_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11575,6 +12272,7 @@ ALTER TABLE ONLY public.ccda_import_diagnosis
 
 
 --
+-- TOC entry 4324 (class 2606 OID 282058)
 -- Name: ccda_import_medication pk_ccda_import_medication_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11583,6 +12281,7 @@ ALTER TABLE ONLY public.ccda_import_medication
 
 
 --
+-- TOC entry 4334 (class 2606 OID 282062)
 -- Name: cdn_temp_file pk_cdn_temp_file_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11591,6 +12290,7 @@ ALTER TABLE ONLY public.cdn_temp_file
 
 
 --
+-- TOC entry 4344 (class 2606 OID 282066)
 -- Name: client_document_file pk_client_document_file_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11599,6 +12299,7 @@ ALTER TABLE ONLY public.client_document_file
 
 
 --
+-- TOC entry 4339 (class 2606 OID 282064)
 -- Name: client_document pk_client_document_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11607,6 +12308,7 @@ ALTER TABLE ONLY public.client_document
 
 
 --
+-- TOC entry 4349 (class 2606 OID 282068)
 -- Name: client_note pk_client_note_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11615,6 +12317,7 @@ ALTER TABLE ONLY public.client_note
 
 
 --
+-- TOC entry 4964 (class 2606 OID 282310)
 -- Name: course_category pk_course_category_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11623,6 +12326,7 @@ ALTER TABLE ONLY public.course_category
 
 
 --
+-- TOC entry 4359 (class 2606 OID 282072)
 -- Name: course_custom_field_definition pk_course_custom_field_definition_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11631,6 +12335,7 @@ ALTER TABLE ONLY public.course_custom_field_definition
 
 
 --
+-- TOC entry 4354 (class 2606 OID 282070)
 -- Name: course pk_course_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11639,6 +12344,7 @@ ALTER TABLE ONLY public.course
 
 
 --
+-- TOC entry 4364 (class 2606 OID 282074)
 -- Name: course_participant pk_course_participant_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11647,6 +12353,7 @@ ALTER TABLE ONLY public.course_participant
 
 
 --
+-- TOC entry 4374 (class 2606 OID 282078)
 -- Name: course_session_attendance pk_course_session_attendance_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11655,6 +12362,7 @@ ALTER TABLE ONLY public.course_session_attendance
 
 
 --
+-- TOC entry 4379 (class 2606 OID 282080)
 -- Name: course_session_custom_field_value pk_course_session_custom_field_value_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11663,6 +12371,7 @@ ALTER TABLE ONLY public.course_session_custom_field_value
 
 
 --
+-- TOC entry 4369 (class 2606 OID 282076)
 -- Name: course_session pk_course_session_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11671,6 +12380,7 @@ ALTER TABLE ONLY public.course_session
 
 
 --
+-- TOC entry 4384 (class 2606 OID 282082)
 -- Name: data_export_request pk_data_export_request_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11679,6 +12389,7 @@ ALTER TABLE ONLY public.data_export_request
 
 
 --
+-- TOC entry 4389 (class 2606 OID 282084)
 -- Name: data_import_request pk_data_import_request_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11687,6 +12398,7 @@ ALTER TABLE ONLY public.data_import_request
 
 
 --
+-- TOC entry 4394 (class 2606 OID 282086)
 -- Name: housing_upgrade pk_housing_upgrade_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11695,6 +12407,7 @@ ALTER TABLE ONLY public.housing_upgrade
 
 
 --
+-- TOC entry 4406 (class 2606 OID 282090)
 -- Name: kch_program_assignment pk_kch_program_assignment_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11703,6 +12416,7 @@ ALTER TABLE ONLY public.kch_program_assignment
 
 
 --
+-- TOC entry 4399 (class 2606 OID 282088)
 -- Name: kch_program pk_kch_program_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11711,6 +12425,7 @@ ALTER TABLE ONLY public.kch_program
 
 
 --
+-- TOC entry 4411 (class 2606 OID 282092)
 -- Name: meta_address_type pk_meta_address_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11719,6 +12434,7 @@ ALTER TABLE ONLY public.meta_address_type
 
 
 --
+-- TOC entry 4416 (class 2606 OID 282094)
 -- Name: meta_allergy_severity pk_meta_allergy_severity_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11727,6 +12443,7 @@ ALTER TABLE ONLY public.meta_allergy_severity
 
 
 --
+-- TOC entry 4421 (class 2606 OID 282096)
 -- Name: meta_allergy_type pk_meta_allergy_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11735,6 +12452,7 @@ ALTER TABLE ONLY public.meta_allergy_type
 
 
 --
+-- TOC entry 4974 (class 2606 OID 282314)
 -- Name: meta_answer pk_meta_answer_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11743,6 +12461,7 @@ ALTER TABLE ONLY public.meta_answer
 
 
 --
+-- TOC entry 4426 (class 2606 OID 282098)
 -- Name: meta_auth_policy pk_meta_auth_policy_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11751,6 +12470,7 @@ ALTER TABLE ONLY public.meta_auth_policy
 
 
 --
+-- TOC entry 4431 (class 2606 OID 282100)
 -- Name: meta_basic_status pk_meta_basic_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11759,6 +12479,7 @@ ALTER TABLE ONLY public.meta_basic_status
 
 
 --
+-- TOC entry 4436 (class 2606 OID 282102)
 -- Name: meta_blood_pressure_unit pk_meta_blood_pressure_unit_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11767,6 +12488,7 @@ ALTER TABLE ONLY public.meta_blood_pressure_unit
 
 
 --
+-- TOC entry 4959 (class 2606 OID 282308)
 -- Name: meta_calendar_item_status pk_meta_calendar_item_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11775,6 +12497,7 @@ ALTER TABLE ONLY public.meta_calendar_item_status
 
 
 --
+-- TOC entry 4954 (class 2606 OID 282306)
 -- Name: meta_calendar_item_type pk_meta_calendar_item_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11783,6 +12506,7 @@ ALTER TABLE ONLY public.meta_calendar_item_type
 
 
 --
+-- TOC entry 4441 (class 2606 OID 282104)
 -- Name: meta_care_continuity_document_type pk_meta_care_continuity_document_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11791,6 +12515,7 @@ ALTER TABLE ONLY public.meta_care_continuity_document_type
 
 
 --
+-- TOC entry 4446 (class 2606 OID 282106)
 -- Name: meta_ccda_export_log_type pk_meta_ccda_export_log_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11799,6 +12524,7 @@ ALTER TABLE ONLY public.meta_ccda_export_log_type
 
 
 --
+-- TOC entry 4451 (class 2606 OID 282108)
 -- Name: meta_ccda_export_status pk_meta_ccda_export_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11807,6 +12533,7 @@ ALTER TABLE ONLY public.meta_ccda_export_status
 
 
 --
+-- TOC entry 4456 (class 2606 OID 282110)
 -- Name: meta_ccda_sections pk_meta_ccda_sections_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11815,6 +12542,7 @@ ALTER TABLE ONLY public.meta_ccda_sections
 
 
 --
+-- TOC entry 4461 (class 2606 OID 282112)
 -- Name: meta_clinical_document_type pk_meta_clinical_document_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11823,6 +12551,7 @@ ALTER TABLE ONLY public.meta_clinical_document_type
 
 
 --
+-- TOC entry 4466 (class 2606 OID 282114)
 -- Name: meta_communication_mode pk_meta_communication_mode_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11831,6 +12560,7 @@ ALTER TABLE ONLY public.meta_communication_mode
 
 
 --
+-- TOC entry 4471 (class 2606 OID 282116)
 -- Name: meta_contact_type pk_meta_contact_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11839,6 +12569,7 @@ ALTER TABLE ONLY public.meta_contact_type
 
 
 --
+-- TOC entry 4476 (class 2606 OID 282118)
 -- Name: meta_country pk_meta_country_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11847,6 +12578,7 @@ ALTER TABLE ONLY public.meta_country
 
 
 --
+-- TOC entry 4481 (class 2606 OID 282120)
 -- Name: meta_data_family pk_meta_data_family_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11855,6 +12587,7 @@ ALTER TABLE ONLY public.meta_data_family
 
 
 --
+-- TOC entry 4486 (class 2606 OID 282122)
 -- Name: meta_day_of_week pk_meta_day_of_week_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11863,6 +12596,7 @@ ALTER TABLE ONLY public.meta_day_of_week
 
 
 --
+-- TOC entry 4491 (class 2606 OID 282124)
 -- Name: meta_default_status pk_meta_default_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11871,6 +12605,7 @@ ALTER TABLE ONLY public.meta_default_status
 
 
 --
+-- TOC entry 4496 (class 2606 OID 282126)
 -- Name: meta_diagnostic_code pk_meta_diagnostic_code_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11879,6 +12614,7 @@ ALTER TABLE ONLY public.meta_diagnostic_code
 
 
 --
+-- TOC entry 4501 (class 2606 OID 282128)
 -- Name: meta_employee_status pk_meta_employee_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11887,6 +12623,7 @@ ALTER TABLE ONLY public.meta_employee_status
 
 
 --
+-- TOC entry 4506 (class 2606 OID 282130)
 -- Name: meta_employment_status pk_meta_employment_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11895,6 +12632,7 @@ ALTER TABLE ONLY public.meta_employment_status
 
 
 --
+-- TOC entry 4511 (class 2606 OID 282132)
 -- Name: meta_ethnicity pk_meta_ethnicity_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11903,6 +12641,7 @@ ALTER TABLE ONLY public.meta_ethnicity
 
 
 --
+-- TOC entry 4516 (class 2606 OID 282134)
 -- Name: meta_family_relationship pk_meta_family_relationship_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11911,6 +12650,7 @@ ALTER TABLE ONLY public.meta_family_relationship
 
 
 --
+-- TOC entry 4521 (class 2606 OID 282136)
 -- Name: meta_field_defination_type pk_meta_field_defination_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11919,6 +12659,7 @@ ALTER TABLE ONLY public.meta_field_defination_type
 
 
 --
+-- TOC entry 4526 (class 2606 OID 282138)
 -- Name: meta_gender pk_meta_gender_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11927,6 +12668,7 @@ ALTER TABLE ONLY public.meta_gender
 
 
 --
+-- TOC entry 4531 (class 2606 OID 282140)
 -- Name: meta_height_unit pk_meta_height_unit_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11935,6 +12677,7 @@ ALTER TABLE ONLY public.meta_height_unit
 
 
 --
+-- TOC entry 4536 (class 2606 OID 282142)
 -- Name: meta_household_income_level pk_meta_household_income_level_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11943,6 +12686,7 @@ ALTER TABLE ONLY public.meta_household_income_level
 
 
 --
+-- TOC entry 4541 (class 2606 OID 282144)
 -- Name: meta_housing_status pk_meta_housing_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11951,6 +12695,7 @@ ALTER TABLE ONLY public.meta_housing_status
 
 
 --
+-- TOC entry 4546 (class 2606 OID 282146)
 -- Name: meta_housing_upgrade_status pk_meta_housing_upgrade_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11959,6 +12704,7 @@ ALTER TABLE ONLY public.meta_housing_upgrade_status
 
 
 --
+-- TOC entry 4551 (class 2606 OID 282148)
 -- Name: meta_housing_upgrade_type pk_meta_housing_upgrade_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11967,6 +12713,7 @@ ALTER TABLE ONLY public.meta_housing_upgrade_type
 
 
 --
+-- TOC entry 4556 (class 2606 OID 282150)
 -- Name: meta_id_type pk_meta_id_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11975,6 +12722,7 @@ ALTER TABLE ONLY public.meta_id_type
 
 
 --
+-- TOC entry 4561 (class 2606 OID 282152)
 -- Name: meta_income_level pk_meta_income_level_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11983,6 +12731,7 @@ ALTER TABLE ONLY public.meta_income_level
 
 
 --
+-- TOC entry 4571 (class 2606 OID 282156)
 -- Name: meta_label_detail pk_meta_label_detail_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11991,6 +12740,7 @@ ALTER TABLE ONLY public.meta_label_detail
 
 
 --
+-- TOC entry 4566 (class 2606 OID 282154)
 -- Name: meta_label pk_meta_label_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -11999,6 +12749,7 @@ ALTER TABLE ONLY public.meta_label
 
 
 --
+-- TOC entry 4578 (class 2606 OID 282158)
 -- Name: meta_language pk_meta_language_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12007,6 +12758,7 @@ ALTER TABLE ONLY public.meta_language
 
 
 --
+-- TOC entry 4583 (class 2606 OID 282160)
 -- Name: meta_marital_status pk_meta_marital_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12015,6 +12767,7 @@ ALTER TABLE ONLY public.meta_marital_status
 
 
 --
+-- TOC entry 4588 (class 2606 OID 282162)
 -- Name: meta_medication_delivery_route pk_meta_medication_delivery_route_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12023,6 +12776,7 @@ ALTER TABLE ONLY public.meta_medication_delivery_route
 
 
 --
+-- TOC entry 4593 (class 2606 OID 282164)
 -- Name: meta_military_status pk_meta_military_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12031,6 +12785,7 @@ ALTER TABLE ONLY public.meta_military_status
 
 
 --
+-- TOC entry 4932 (class 2606 OID 282298)
 -- Name: meta_oml_script pk_meta_oml_script_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12039,6 +12794,7 @@ ALTER TABLE ONLY public.meta_oml_script
 
 
 --
+-- TOC entry 4598 (class 2606 OID 282166)
 -- Name: meta_pain_level pk_meta_pain_level_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12047,6 +12803,7 @@ ALTER TABLE ONLY public.meta_pain_level
 
 
 --
+-- TOC entry 4603 (class 2606 OID 282168)
 -- Name: meta_patient_diagnosis_status pk_meta_patient_diagnosis_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12055,6 +12812,7 @@ ALTER TABLE ONLY public.meta_patient_diagnosis_status
 
 
 --
+-- TOC entry 4608 (class 2606 OID 282170)
 -- Name: meta_patient_document_status pk_meta_patient_document_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12063,6 +12821,7 @@ ALTER TABLE ONLY public.meta_patient_document_status
 
 
 --
+-- TOC entry 4613 (class 2606 OID 282172)
 -- Name: meta_patient_document_type pk_meta_patient_document_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12071,6 +12830,7 @@ ALTER TABLE ONLY public.meta_patient_document_type
 
 
 --
+-- TOC entry 4618 (class 2606 OID 282174)
 -- Name: meta_patient_identity_type pk_meta_patient_identity_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12079,6 +12839,7 @@ ALTER TABLE ONLY public.meta_patient_identity_type
 
 
 --
+-- TOC entry 4623 (class 2606 OID 282176)
 -- Name: meta_patient_status pk_meta_patient_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12087,6 +12848,7 @@ ALTER TABLE ONLY public.meta_patient_status
 
 
 --
+-- TOC entry 4628 (class 2606 OID 282178)
 -- Name: meta_permission pk_meta_permission_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12095,6 +12857,7 @@ ALTER TABLE ONLY public.meta_permission
 
 
 --
+-- TOC entry 4633 (class 2606 OID 282180)
 -- Name: meta_provider_service_type pk_meta_provider_service_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12103,6 +12866,7 @@ ALTER TABLE ONLY public.meta_provider_service_type
 
 
 --
+-- TOC entry 4969 (class 2606 OID 282312)
 -- Name: meta_question pk_meta_question_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12111,6 +12875,7 @@ ALTER TABLE ONLY public.meta_question
 
 
 --
+-- TOC entry 4638 (class 2606 OID 282182)
 -- Name: meta_race pk_meta_race_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12119,6 +12884,7 @@ ALTER TABLE ONLY public.meta_race
 
 
 --
+-- TOC entry 4643 (class 2606 OID 282184)
 -- Name: meta_referral pk_meta_referral_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12127,6 +12893,7 @@ ALTER TABLE ONLY public.meta_referral
 
 
 --
+-- TOC entry 4648 (class 2606 OID 282186)
 -- Name: meta_relationship pk_meta_relationship_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12135,6 +12902,7 @@ ALTER TABLE ONLY public.meta_relationship
 
 
 --
+-- TOC entry 4653 (class 2606 OID 282188)
 -- Name: meta_severity pk_meta_severity_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12143,6 +12911,7 @@ ALTER TABLE ONLY public.meta_severity
 
 
 --
+-- TOC entry 4658 (class 2606 OID 282190)
 -- Name: meta_smoking_status pk_meta_smoking_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12151,6 +12920,7 @@ ALTER TABLE ONLY public.meta_smoking_status
 
 
 --
+-- TOC entry 4668 (class 2606 OID 282194)
 -- Name: meta_snomed_code pk_meta_snomed_code_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12159,6 +12929,7 @@ ALTER TABLE ONLY public.meta_snomed_code
 
 
 --
+-- TOC entry 4663 (class 2606 OID 282192)
 -- Name: meta_snomed pk_meta_snomed_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12167,6 +12938,7 @@ ALTER TABLE ONLY public.meta_snomed
 
 
 --
+-- TOC entry 4678 (class 2606 OID 282198)
 -- Name: meta_social_needs_category pk_meta_social_needs_category_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12175,6 +12947,7 @@ ALTER TABLE ONLY public.meta_social_needs_category
 
 
 --
+-- TOC entry 4673 (class 2606 OID 282196)
 -- Name: meta_social_needs pk_meta_social_needs_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12183,6 +12956,7 @@ ALTER TABLE ONLY public.meta_social_needs
 
 
 --
+-- TOC entry 4683 (class 2606 OID 282200)
 -- Name: meta_state pk_meta_state_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12191,6 +12965,7 @@ ALTER TABLE ONLY public.meta_state
 
 
 --
+-- TOC entry 4688 (class 2606 OID 282202)
 -- Name: meta_synap_profile pk_meta_synap_profile_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12199,6 +12974,7 @@ ALTER TABLE ONLY public.meta_synap_profile
 
 
 --
+-- TOC entry 4944 (class 2606 OID 282302)
 -- Name: meta_sync_status pk_meta_sync_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12207,6 +12983,7 @@ ALTER TABLE ONLY public.meta_sync_status
 
 
 --
+-- TOC entry 4693 (class 2606 OID 282204)
 -- Name: meta_telephone_type pk_meta_telephone_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12215,6 +12992,7 @@ ALTER TABLE ONLY public.meta_telephone_type
 
 
 --
+-- TOC entry 4698 (class 2606 OID 282206)
 -- Name: meta_temperature_unit pk_meta_temperature_unit_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12223,6 +13001,7 @@ ALTER TABLE ONLY public.meta_temperature_unit
 
 
 --
+-- TOC entry 4703 (class 2606 OID 282208)
 -- Name: meta_timezone pk_meta_timezone_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12231,6 +13010,7 @@ ALTER TABLE ONLY public.meta_timezone
 
 
 --
+-- TOC entry 4708 (class 2606 OID 282210)
 -- Name: meta_token_type pk_meta_token_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12239,6 +13019,7 @@ ALTER TABLE ONLY public.meta_token_type
 
 
 --
+-- TOC entry 4713 (class 2606 OID 282212)
 -- Name: meta_user_type pk_meta_user_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12247,6 +13028,7 @@ ALTER TABLE ONLY public.meta_user_type
 
 
 --
+-- TOC entry 4718 (class 2606 OID 282214)
 -- Name: meta_weight_unit pk_meta_weight_unit_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12255,6 +13037,7 @@ ALTER TABLE ONLY public.meta_weight_unit
 
 
 --
+-- TOC entry 4723 (class 2606 OID 282216)
 -- Name: meta_work_list_approval_status pk_meta_work_list_approval_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12263,6 +13046,7 @@ ALTER TABLE ONLY public.meta_work_list_approval_status
 
 
 --
+-- TOC entry 4733 (class 2606 OID 282220)
 -- Name: meta_work_list_reminder_status pk_meta_work_list_reminder_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12271,6 +13055,7 @@ ALTER TABLE ONLY public.meta_work_list_reminder_status
 
 
 --
+-- TOC entry 4738 (class 2606 OID 282222)
 -- Name: meta_work_list_reminder_type pk_meta_work_list_reminder_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12279,6 +13064,7 @@ ALTER TABLE ONLY public.meta_work_list_reminder_type
 
 
 --
+-- TOC entry 4743 (class 2606 OID 282224)
 -- Name: meta_work_list_reminder_who_type pk_meta_work_list_reminder_who_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12287,6 +13073,7 @@ ALTER TABLE ONLY public.meta_work_list_reminder_who_type
 
 
 --
+-- TOC entry 4728 (class 2606 OID 282218)
 -- Name: meta_worklist_priority pk_meta_worklist_priority_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12295,6 +13082,7 @@ ALTER TABLE ONLY public.meta_worklist_priority
 
 
 --
+-- TOC entry 4748 (class 2606 OID 282226)
 -- Name: meta_worklist_status pk_meta_worklist_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12303,6 +13091,7 @@ ALTER TABLE ONLY public.meta_worklist_status
 
 
 --
+-- TOC entry 4753 (class 2606 OID 282228)
 -- Name: meta_zip_code pk_meta_zip_code_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12311,6 +13100,7 @@ ALTER TABLE ONLY public.meta_zip_code
 
 
 --
+-- TOC entry 4287 (class 2606 OID 280689)
 -- Name: oml_data_type pk_oml_data_type_datatype; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12319,6 +13109,7 @@ ALTER TABLE ONLY public.oml_data_type
 
 
 --
+-- TOC entry 4289 (class 2606 OID 280685)
 -- Name: oml_object pk_oml_object_name; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12327,6 +13118,7 @@ ALTER TABLE ONLY public.oml_object
 
 
 --
+-- TOC entry 4291 (class 2606 OID 280687)
 -- Name: oml_property pk_oml_property_organizationid_object_property; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12335,6 +13127,7 @@ ALTER TABLE ONLY public.oml_property
 
 
 --
+-- TOC entry 4763 (class 2606 OID 282232)
 -- Name: organization_division pk_organization_division_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12343,6 +13136,7 @@ ALTER TABLE ONLY public.organization_division
 
 
 --
+-- TOC entry 4775 (class 2606 OID 282236)
 -- Name: organization_employee_address pk_organization_employee_address_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12351,6 +13145,7 @@ ALTER TABLE ONLY public.organization_employee_address
 
 
 --
+-- TOC entry 4780 (class 2606 OID 282238)
 -- Name: organization_employee_division pk_organization_employee_division_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12359,6 +13154,7 @@ ALTER TABLE ONLY public.organization_employee_division
 
 
 --
+-- TOC entry 4768 (class 2606 OID 282234)
 -- Name: organization_employee pk_organization_employee_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12367,6 +13163,7 @@ ALTER TABLE ONLY public.organization_employee
 
 
 --
+-- TOC entry 4785 (class 2606 OID 282240)
 -- Name: organization_employee_telephone pk_organization_employee_telephone_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12375,6 +13172,7 @@ ALTER TABLE ONLY public.organization_employee_telephone
 
 
 --
+-- TOC entry 4790 (class 2606 OID 282242)
 -- Name: organization_folder pk_organization_folder_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12383,6 +13181,7 @@ ALTER TABLE ONLY public.organization_folder
 
 
 --
+-- TOC entry 4758 (class 2606 OID 282230)
 -- Name: organization pk_organization_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12391,6 +13190,7 @@ ALTER TABLE ONLY public.organization
 
 
 --
+-- TOC entry 4795 (class 2606 OID 282244)
 -- Name: organization_profile pk_organization_profile_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12399,6 +13199,7 @@ ALTER TABLE ONLY public.organization_profile
 
 
 --
+-- TOC entry 4979 (class 2606 OID 282316)
 -- Name: patient_activation_q_a pk_patient_activation_q_a_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12407,6 +13208,7 @@ ALTER TABLE ONLY public.patient_activation_q_a
 
 
 --
+-- TOC entry 4805 (class 2606 OID 282248)
 -- Name: patient_address pk_patient_address_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12415,6 +13217,7 @@ ALTER TABLE ONLY public.patient_address
 
 
 --
+-- TOC entry 4810 (class 2606 OID 282250)
 -- Name: patient_admission pk_patient_admission_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12423,6 +13226,7 @@ ALTER TABLE ONLY public.patient_admission
 
 
 --
+-- TOC entry 4815 (class 2606 OID 282252)
 -- Name: patient_allergy pk_patient_allergy_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12431,6 +13235,7 @@ ALTER TABLE ONLY public.patient_allergy
 
 
 --
+-- TOC entry 4825 (class 2606 OID 282256)
 -- Name: patient_contact_address pk_patient_contact_address_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12439,6 +13244,7 @@ ALTER TABLE ONLY public.patient_contact_address
 
 
 --
+-- TOC entry 4820 (class 2606 OID 282254)
 -- Name: patient_contact pk_patient_contact_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12447,6 +13253,7 @@ ALTER TABLE ONLY public.patient_contact
 
 
 --
+-- TOC entry 4830 (class 2606 OID 282258)
 -- Name: patient_diagnosis pk_patient_diagnosis_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12455,6 +13262,7 @@ ALTER TABLE ONLY public.patient_diagnosis
 
 
 --
+-- TOC entry 4835 (class 2606 OID 282260)
 -- Name: patient_employment_info pk_patient_employment_info_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12463,6 +13271,7 @@ ALTER TABLE ONLY public.patient_employment_info
 
 
 --
+-- TOC entry 4800 (class 2606 OID 282246)
 -- Name: patient pk_patient_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12471,6 +13280,7 @@ ALTER TABLE ONLY public.patient
 
 
 --
+-- TOC entry 4840 (class 2606 OID 282262)
 -- Name: patient_medication pk_patient_medication_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12479,6 +13289,7 @@ ALTER TABLE ONLY public.patient_medication
 
 
 --
+-- TOC entry 4845 (class 2606 OID 282264)
 -- Name: patient_prescription pk_patient_prescription_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12487,6 +13298,7 @@ ALTER TABLE ONLY public.patient_prescription
 
 
 --
+-- TOC entry 4850 (class 2606 OID 282266)
 -- Name: patient_primary_care_provider pk_patient_primary_care_provider_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12495,6 +13307,7 @@ ALTER TABLE ONLY public.patient_primary_care_provider
 
 
 --
+-- TOC entry 4855 (class 2606 OID 282268)
 -- Name: patient_social_needs pk_patient_social_needs_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12503,6 +13316,7 @@ ALTER TABLE ONLY public.patient_social_needs
 
 
 --
+-- TOC entry 4860 (class 2606 OID 282270)
 -- Name: patient_specific_document pk_patient_specific_document_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12511,6 +13325,7 @@ ALTER TABLE ONLY public.patient_specific_document
 
 
 --
+-- TOC entry 4865 (class 2606 OID 282272)
 -- Name: patient_vital pk_patient_vital_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12519,6 +13334,7 @@ ALTER TABLE ONLY public.patient_vital
 
 
 --
+-- TOC entry 4869 (class 2606 OID 282274)
 -- Name: preferred_provider pk_preferred_provider_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12527,6 +13343,7 @@ ALTER TABLE ONLY public.preferred_provider
 
 
 --
+-- TOC entry 4874 (class 2606 OID 282276)
 -- Name: report pk_report_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12535,6 +13352,7 @@ ALTER TABLE ONLY public.report
 
 
 --
+-- TOC entry 4879 (class 2606 OID 282278)
 -- Name: synap_config pk_synap_config_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12543,6 +13361,7 @@ ALTER TABLE ONLY public.synap_config
 
 
 --
+-- TOC entry 4891 (class 2606 OID 282282)
 -- Name: synap_user_group pk_synap_user_group_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12551,6 +13370,7 @@ ALTER TABLE ONLY public.synap_user_group
 
 
 --
+-- TOC entry 4884 (class 2606 OID 282280)
 -- Name: synap_user pk_synap_user_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12559,6 +13379,7 @@ ALTER TABLE ONLY public.synap_user
 
 
 --
+-- TOC entry 4896 (class 2606 OID 282284)
 -- Name: synap_user_token pk_synap_user_token_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12567,6 +13388,7 @@ ALTER TABLE ONLY public.synap_user_token
 
 
 --
+-- TOC entry 4938 (class 2606 OID 282300)
 -- Name: system_user pk_system_user_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12575,6 +13397,7 @@ ALTER TABLE ONLY public.system_user
 
 
 --
+-- TOC entry 4901 (class 2606 OID 282286)
 -- Name: user_password pk_user_password_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12583,6 +13406,7 @@ ALTER TABLE ONLY public.user_password
 
 
 --
+-- TOC entry 4906 (class 2606 OID 282288)
 -- Name: viewed_client pk_viewed_client_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12591,6 +13415,7 @@ ALTER TABLE ONLY public.viewed_client
 
 
 --
+-- TOC entry 4916 (class 2606 OID 282292)
 -- Name: work_list_approver pk_work_list_approver_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12599,6 +13424,7 @@ ALTER TABLE ONLY public.work_list_approver
 
 
 --
+-- TOC entry 4911 (class 2606 OID 282290)
 -- Name: work_list pk_work_list_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12607,6 +13433,7 @@ ALTER TABLE ONLY public.work_list
 
 
 --
+-- TOC entry 4921 (class 2606 OID 282294)
 -- Name: work_list_notes pk_work_list_notes_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12615,6 +13442,7 @@ ALTER TABLE ONLY public.work_list_notes
 
 
 --
+-- TOC entry 4926 (class 2606 OID 282296)
 -- Name: work_list_reminder pk_work_list_reminder_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12623,6 +13451,7 @@ ALTER TABLE ONLY public.work_list_reminder
 
 
 --
+-- TOC entry 4951 (class 2606 OID 285192)
 -- Name: calendar_item unik_calendar_item_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12631,6 +13460,7 @@ ALTER TABLE ONLY public.calendar_item
 
 
 --
+-- TOC entry 4296 (class 2606 OID 284924)
 -- Name: care_continuity_import_request unik_care_continuity_import_request_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12639,6 +13469,7 @@ ALTER TABLE ONLY public.care_continuity_import_request
 
 
 --
+-- TOC entry 4331 (class 2606 OID 284938)
 -- Name: ccd_upload unik_ccd_upload_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12647,6 +13478,7 @@ ALTER TABLE ONLY public.ccd_upload
 
 
 --
+-- TOC entry 4301 (class 2606 OID 284926)
 -- Name: ccda_export unik_ccda_export_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12655,6 +13487,7 @@ ALTER TABLE ONLY public.ccda_export
 
 
 --
+-- TOC entry 4306 (class 2606 OID 284928)
 -- Name: ccda_export_log unik_ccda_export_log_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12663,6 +13496,7 @@ ALTER TABLE ONLY public.ccda_export_log
 
 
 --
+-- TOC entry 4311 (class 2606 OID 284930)
 -- Name: ccda_export_request unik_ccda_export_request_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12671,6 +13505,7 @@ ALTER TABLE ONLY public.ccda_export_request
 
 
 --
+-- TOC entry 4316 (class 2606 OID 284932)
 -- Name: ccda_import_allergy unik_ccda_import_allergy_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12679,6 +13514,7 @@ ALTER TABLE ONLY public.ccda_import_allergy
 
 
 --
+-- TOC entry 4321 (class 2606 OID 284934)
 -- Name: ccda_import_diagnosis unik_ccda_import_diagnosis_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12687,6 +13523,7 @@ ALTER TABLE ONLY public.ccda_import_diagnosis
 
 
 --
+-- TOC entry 4326 (class 2606 OID 284936)
 -- Name: ccda_import_medication unik_ccda_import_medication_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12695,6 +13532,7 @@ ALTER TABLE ONLY public.ccda_import_medication
 
 
 --
+-- TOC entry 4336 (class 2606 OID 284940)
 -- Name: cdn_temp_file unik_cdn_temp_file_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12703,6 +13541,7 @@ ALTER TABLE ONLY public.cdn_temp_file
 
 
 --
+-- TOC entry 4346 (class 2606 OID 284944)
 -- Name: client_document_file unik_client_document_file_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12711,6 +13550,7 @@ ALTER TABLE ONLY public.client_document_file
 
 
 --
+-- TOC entry 4341 (class 2606 OID 284942)
 -- Name: client_document unik_client_document_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12719,6 +13559,7 @@ ALTER TABLE ONLY public.client_document
 
 
 --
+-- TOC entry 4351 (class 2606 OID 284946)
 -- Name: client_note unik_client_note_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12727,6 +13568,7 @@ ALTER TABLE ONLY public.client_note
 
 
 --
+-- TOC entry 4966 (class 2606 OID 285198)
 -- Name: course_category unik_course_category_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12735,6 +13577,7 @@ ALTER TABLE ONLY public.course_category
 
 
 --
+-- TOC entry 4361 (class 2606 OID 284950)
 -- Name: course_custom_field_definition unik_course_custom_field_definition_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12743,6 +13586,7 @@ ALTER TABLE ONLY public.course_custom_field_definition
 
 
 --
+-- TOC entry 4356 (class 2606 OID 284948)
 -- Name: course unik_course_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12751,6 +13595,7 @@ ALTER TABLE ONLY public.course
 
 
 --
+-- TOC entry 4366 (class 2606 OID 284952)
 -- Name: course_participant unik_course_participant_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12759,6 +13604,7 @@ ALTER TABLE ONLY public.course_participant
 
 
 --
+-- TOC entry 4376 (class 2606 OID 284956)
 -- Name: course_session_attendance unik_course_session_attendance_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12767,6 +13613,7 @@ ALTER TABLE ONLY public.course_session_attendance
 
 
 --
+-- TOC entry 4381 (class 2606 OID 284958)
 -- Name: course_session_custom_field_value unik_course_session_custom_field_value_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12775,6 +13622,7 @@ ALTER TABLE ONLY public.course_session_custom_field_value
 
 
 --
+-- TOC entry 4371 (class 2606 OID 284954)
 -- Name: course_session unik_course_session_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12783,6 +13631,7 @@ ALTER TABLE ONLY public.course_session
 
 
 --
+-- TOC entry 4386 (class 2606 OID 284960)
 -- Name: data_export_request unik_data_export_request_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12791,6 +13640,7 @@ ALTER TABLE ONLY public.data_export_request
 
 
 --
+-- TOC entry 4391 (class 2606 OID 284962)
 -- Name: data_import_request unik_data_import_request_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12799,6 +13649,7 @@ ALTER TABLE ONLY public.data_import_request
 
 
 --
+-- TOC entry 4396 (class 2606 OID 284964)
 -- Name: housing_upgrade unik_housing_upgrade_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12807,6 +13658,7 @@ ALTER TABLE ONLY public.housing_upgrade
 
 
 --
+-- TOC entry 4408 (class 2606 OID 284970)
 -- Name: kch_program_assignment unik_kch_program_assignment_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12815,6 +13667,7 @@ ALTER TABLE ONLY public.kch_program_assignment
 
 
 --
+-- TOC entry 4401 (class 2606 OID 284968)
 -- Name: kch_program unik_kch_program_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12823,6 +13676,7 @@ ALTER TABLE ONLY public.kch_program
 
 
 --
+-- TOC entry 4403 (class 2606 OID 284966)
 -- Name: kch_program unik_kch_program_shortname; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12831,6 +13685,7 @@ ALTER TABLE ONLY public.kch_program
 
 
 --
+-- TOC entry 4413 (class 2606 OID 284972)
 -- Name: meta_address_type unik_meta_address_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12839,6 +13694,7 @@ ALTER TABLE ONLY public.meta_address_type
 
 
 --
+-- TOC entry 4418 (class 2606 OID 284974)
 -- Name: meta_allergy_severity unik_meta_allergy_severity_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12847,6 +13703,7 @@ ALTER TABLE ONLY public.meta_allergy_severity
 
 
 --
+-- TOC entry 4423 (class 2606 OID 284976)
 -- Name: meta_allergy_type unik_meta_allergy_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12855,6 +13712,7 @@ ALTER TABLE ONLY public.meta_allergy_type
 
 
 --
+-- TOC entry 4976 (class 2606 OID 285202)
 -- Name: meta_answer unik_meta_answer_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12863,6 +13721,7 @@ ALTER TABLE ONLY public.meta_answer
 
 
 --
+-- TOC entry 4428 (class 2606 OID 284978)
 -- Name: meta_auth_policy unik_meta_auth_policy_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12871,6 +13730,7 @@ ALTER TABLE ONLY public.meta_auth_policy
 
 
 --
+-- TOC entry 4433 (class 2606 OID 284980)
 -- Name: meta_basic_status unik_meta_basic_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12879,6 +13739,7 @@ ALTER TABLE ONLY public.meta_basic_status
 
 
 --
+-- TOC entry 4438 (class 2606 OID 284982)
 -- Name: meta_blood_pressure_unit unik_meta_blood_pressure_unit_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12887,6 +13748,7 @@ ALTER TABLE ONLY public.meta_blood_pressure_unit
 
 
 --
+-- TOC entry 4961 (class 2606 OID 285196)
 -- Name: meta_calendar_item_status unik_meta_calendar_item_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12895,6 +13757,7 @@ ALTER TABLE ONLY public.meta_calendar_item_status
 
 
 --
+-- TOC entry 4956 (class 2606 OID 285194)
 -- Name: meta_calendar_item_type unik_meta_calendar_item_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12903,6 +13766,7 @@ ALTER TABLE ONLY public.meta_calendar_item_type
 
 
 --
+-- TOC entry 4443 (class 2606 OID 284984)
 -- Name: meta_care_continuity_document_type unik_meta_care_continuity_document_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12911,6 +13775,7 @@ ALTER TABLE ONLY public.meta_care_continuity_document_type
 
 
 --
+-- TOC entry 4448 (class 2606 OID 284986)
 -- Name: meta_ccda_export_log_type unik_meta_ccda_export_log_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12919,6 +13784,7 @@ ALTER TABLE ONLY public.meta_ccda_export_log_type
 
 
 --
+-- TOC entry 4453 (class 2606 OID 284988)
 -- Name: meta_ccda_export_status unik_meta_ccda_export_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12927,6 +13793,7 @@ ALTER TABLE ONLY public.meta_ccda_export_status
 
 
 --
+-- TOC entry 4458 (class 2606 OID 284990)
 -- Name: meta_ccda_sections unik_meta_ccda_sections_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12935,6 +13802,7 @@ ALTER TABLE ONLY public.meta_ccda_sections
 
 
 --
+-- TOC entry 4463 (class 2606 OID 284992)
 -- Name: meta_clinical_document_type unik_meta_clinical_document_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12943,6 +13811,7 @@ ALTER TABLE ONLY public.meta_clinical_document_type
 
 
 --
+-- TOC entry 4468 (class 2606 OID 284994)
 -- Name: meta_communication_mode unik_meta_communication_mode_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12951,6 +13820,7 @@ ALTER TABLE ONLY public.meta_communication_mode
 
 
 --
+-- TOC entry 4473 (class 2606 OID 284996)
 -- Name: meta_contact_type unik_meta_contact_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12959,6 +13829,7 @@ ALTER TABLE ONLY public.meta_contact_type
 
 
 --
+-- TOC entry 4478 (class 2606 OID 284998)
 -- Name: meta_country unik_meta_country_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12967,6 +13838,7 @@ ALTER TABLE ONLY public.meta_country
 
 
 --
+-- TOC entry 4483 (class 2606 OID 285000)
 -- Name: meta_data_family unik_meta_data_family_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12975,6 +13847,7 @@ ALTER TABLE ONLY public.meta_data_family
 
 
 --
+-- TOC entry 4488 (class 2606 OID 285002)
 -- Name: meta_day_of_week unik_meta_day_of_week_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12983,6 +13856,7 @@ ALTER TABLE ONLY public.meta_day_of_week
 
 
 --
+-- TOC entry 4493 (class 2606 OID 285004)
 -- Name: meta_default_status unik_meta_default_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12991,6 +13865,7 @@ ALTER TABLE ONLY public.meta_default_status
 
 
 --
+-- TOC entry 4498 (class 2606 OID 285006)
 -- Name: meta_diagnostic_code unik_meta_diagnostic_code_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -12999,6 +13874,7 @@ ALTER TABLE ONLY public.meta_diagnostic_code
 
 
 --
+-- TOC entry 4503 (class 2606 OID 285008)
 -- Name: meta_employee_status unik_meta_employee_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13007,6 +13883,7 @@ ALTER TABLE ONLY public.meta_employee_status
 
 
 --
+-- TOC entry 4508 (class 2606 OID 285010)
 -- Name: meta_employment_status unik_meta_employment_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13015,6 +13892,7 @@ ALTER TABLE ONLY public.meta_employment_status
 
 
 --
+-- TOC entry 4513 (class 2606 OID 285012)
 -- Name: meta_ethnicity unik_meta_ethnicity_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13023,6 +13901,7 @@ ALTER TABLE ONLY public.meta_ethnicity
 
 
 --
+-- TOC entry 4518 (class 2606 OID 285014)
 -- Name: meta_family_relationship unik_meta_family_relationship_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13031,6 +13910,7 @@ ALTER TABLE ONLY public.meta_family_relationship
 
 
 --
+-- TOC entry 4523 (class 2606 OID 285016)
 -- Name: meta_field_defination_type unik_meta_field_defination_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13039,6 +13919,7 @@ ALTER TABLE ONLY public.meta_field_defination_type
 
 
 --
+-- TOC entry 4528 (class 2606 OID 285018)
 -- Name: meta_gender unik_meta_gender_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13047,6 +13928,7 @@ ALTER TABLE ONLY public.meta_gender
 
 
 --
+-- TOC entry 4533 (class 2606 OID 285020)
 -- Name: meta_height_unit unik_meta_height_unit_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13055,6 +13937,7 @@ ALTER TABLE ONLY public.meta_height_unit
 
 
 --
+-- TOC entry 4538 (class 2606 OID 285022)
 -- Name: meta_household_income_level unik_meta_household_income_level_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13063,6 +13946,7 @@ ALTER TABLE ONLY public.meta_household_income_level
 
 
 --
+-- TOC entry 4543 (class 2606 OID 285024)
 -- Name: meta_housing_status unik_meta_housing_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13071,6 +13955,7 @@ ALTER TABLE ONLY public.meta_housing_status
 
 
 --
+-- TOC entry 4548 (class 2606 OID 285026)
 -- Name: meta_housing_upgrade_status unik_meta_housing_upgrade_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13079,6 +13964,7 @@ ALTER TABLE ONLY public.meta_housing_upgrade_status
 
 
 --
+-- TOC entry 4553 (class 2606 OID 285028)
 -- Name: meta_housing_upgrade_type unik_meta_housing_upgrade_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13087,6 +13973,7 @@ ALTER TABLE ONLY public.meta_housing_upgrade_type
 
 
 --
+-- TOC entry 4558 (class 2606 OID 285030)
 -- Name: meta_id_type unik_meta_id_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13095,6 +13982,7 @@ ALTER TABLE ONLY public.meta_id_type
 
 
 --
+-- TOC entry 4563 (class 2606 OID 285032)
 -- Name: meta_income_level unik_meta_income_level_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13103,6 +13991,7 @@ ALTER TABLE ONLY public.meta_income_level
 
 
 --
+-- TOC entry 4573 (class 2606 OID 285038)
 -- Name: meta_label_detail unik_meta_label_detail_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13111,6 +14000,7 @@ ALTER TABLE ONLY public.meta_label_detail
 
 
 --
+-- TOC entry 4575 (class 2606 OID 285036)
 -- Name: meta_label_detail unik_meta_label_detail_metalanguageid; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13119,6 +14009,7 @@ ALTER TABLE ONLY public.meta_label_detail
 
 
 --
+-- TOC entry 4568 (class 2606 OID 285034)
 -- Name: meta_label unik_meta_label_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13127,6 +14018,7 @@ ALTER TABLE ONLY public.meta_label
 
 
 --
+-- TOC entry 4580 (class 2606 OID 285040)
 -- Name: meta_language unik_meta_language_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13135,6 +14027,7 @@ ALTER TABLE ONLY public.meta_language
 
 
 --
+-- TOC entry 4585 (class 2606 OID 285042)
 -- Name: meta_marital_status unik_meta_marital_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13143,6 +14036,7 @@ ALTER TABLE ONLY public.meta_marital_status
 
 
 --
+-- TOC entry 4590 (class 2606 OID 285044)
 -- Name: meta_medication_delivery_route unik_meta_medication_delivery_route_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13151,6 +14045,7 @@ ALTER TABLE ONLY public.meta_medication_delivery_route
 
 
 --
+-- TOC entry 4595 (class 2606 OID 285046)
 -- Name: meta_military_status unik_meta_military_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13159,6 +14054,7 @@ ALTER TABLE ONLY public.meta_military_status
 
 
 --
+-- TOC entry 4934 (class 2606 OID 285186)
 -- Name: meta_oml_script unik_meta_oml_script_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13167,6 +14063,7 @@ ALTER TABLE ONLY public.meta_oml_script
 
 
 --
+-- TOC entry 4936 (class 2606 OID 285184)
 -- Name: meta_oml_script unik_meta_oml_script_name; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13175,6 +14072,7 @@ ALTER TABLE ONLY public.meta_oml_script
 
 
 --
+-- TOC entry 4600 (class 2606 OID 285048)
 -- Name: meta_pain_level unik_meta_pain_level_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13183,6 +14081,7 @@ ALTER TABLE ONLY public.meta_pain_level
 
 
 --
+-- TOC entry 4605 (class 2606 OID 285050)
 -- Name: meta_patient_diagnosis_status unik_meta_patient_diagnosis_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13191,6 +14090,7 @@ ALTER TABLE ONLY public.meta_patient_diagnosis_status
 
 
 --
+-- TOC entry 4610 (class 2606 OID 285052)
 -- Name: meta_patient_document_status unik_meta_patient_document_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13199,6 +14099,7 @@ ALTER TABLE ONLY public.meta_patient_document_status
 
 
 --
+-- TOC entry 4615 (class 2606 OID 285054)
 -- Name: meta_patient_document_type unik_meta_patient_document_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13207,6 +14108,7 @@ ALTER TABLE ONLY public.meta_patient_document_type
 
 
 --
+-- TOC entry 4620 (class 2606 OID 285056)
 -- Name: meta_patient_identity_type unik_meta_patient_identity_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13215,6 +14117,7 @@ ALTER TABLE ONLY public.meta_patient_identity_type
 
 
 --
+-- TOC entry 4625 (class 2606 OID 285058)
 -- Name: meta_patient_status unik_meta_patient_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13223,6 +14126,7 @@ ALTER TABLE ONLY public.meta_patient_status
 
 
 --
+-- TOC entry 4630 (class 2606 OID 285060)
 -- Name: meta_permission unik_meta_permission_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13231,6 +14135,7 @@ ALTER TABLE ONLY public.meta_permission
 
 
 --
+-- TOC entry 4635 (class 2606 OID 285062)
 -- Name: meta_provider_service_type unik_meta_provider_service_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13239,6 +14144,7 @@ ALTER TABLE ONLY public.meta_provider_service_type
 
 
 --
+-- TOC entry 4971 (class 2606 OID 285200)
 -- Name: meta_question unik_meta_question_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13247,6 +14153,7 @@ ALTER TABLE ONLY public.meta_question
 
 
 --
+-- TOC entry 4640 (class 2606 OID 285064)
 -- Name: meta_race unik_meta_race_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13255,6 +14162,7 @@ ALTER TABLE ONLY public.meta_race
 
 
 --
+-- TOC entry 4645 (class 2606 OID 285066)
 -- Name: meta_referral unik_meta_referral_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13263,6 +14171,7 @@ ALTER TABLE ONLY public.meta_referral
 
 
 --
+-- TOC entry 4650 (class 2606 OID 285068)
 -- Name: meta_relationship unik_meta_relationship_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13271,6 +14180,7 @@ ALTER TABLE ONLY public.meta_relationship
 
 
 --
+-- TOC entry 4655 (class 2606 OID 285070)
 -- Name: meta_severity unik_meta_severity_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13279,6 +14189,7 @@ ALTER TABLE ONLY public.meta_severity
 
 
 --
+-- TOC entry 4660 (class 2606 OID 285072)
 -- Name: meta_smoking_status unik_meta_smoking_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13287,6 +14198,7 @@ ALTER TABLE ONLY public.meta_smoking_status
 
 
 --
+-- TOC entry 4670 (class 2606 OID 285076)
 -- Name: meta_snomed_code unik_meta_snomed_code_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13295,6 +14207,7 @@ ALTER TABLE ONLY public.meta_snomed_code
 
 
 --
+-- TOC entry 4665 (class 2606 OID 285074)
 -- Name: meta_snomed unik_meta_snomed_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13303,6 +14216,7 @@ ALTER TABLE ONLY public.meta_snomed
 
 
 --
+-- TOC entry 4680 (class 2606 OID 285080)
 -- Name: meta_social_needs_category unik_meta_social_needs_category_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13311,6 +14225,7 @@ ALTER TABLE ONLY public.meta_social_needs_category
 
 
 --
+-- TOC entry 4675 (class 2606 OID 285078)
 -- Name: meta_social_needs unik_meta_social_needs_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13319,6 +14234,7 @@ ALTER TABLE ONLY public.meta_social_needs
 
 
 --
+-- TOC entry 4685 (class 2606 OID 285082)
 -- Name: meta_state unik_meta_state_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13327,6 +14243,7 @@ ALTER TABLE ONLY public.meta_state
 
 
 --
+-- TOC entry 4690 (class 2606 OID 285084)
 -- Name: meta_synap_profile unik_meta_synap_profile_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13335,6 +14252,7 @@ ALTER TABLE ONLY public.meta_synap_profile
 
 
 --
+-- TOC entry 4946 (class 2606 OID 285190)
 -- Name: meta_sync_status unik_meta_sync_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13343,6 +14261,7 @@ ALTER TABLE ONLY public.meta_sync_status
 
 
 --
+-- TOC entry 4695 (class 2606 OID 285086)
 -- Name: meta_telephone_type unik_meta_telephone_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13351,6 +14270,7 @@ ALTER TABLE ONLY public.meta_telephone_type
 
 
 --
+-- TOC entry 4700 (class 2606 OID 285088)
 -- Name: meta_temperature_unit unik_meta_temperature_unit_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13359,6 +14279,7 @@ ALTER TABLE ONLY public.meta_temperature_unit
 
 
 --
+-- TOC entry 4705 (class 2606 OID 285090)
 -- Name: meta_timezone unik_meta_timezone_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13367,6 +14288,7 @@ ALTER TABLE ONLY public.meta_timezone
 
 
 --
+-- TOC entry 4710 (class 2606 OID 285092)
 -- Name: meta_token_type unik_meta_token_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13375,6 +14297,7 @@ ALTER TABLE ONLY public.meta_token_type
 
 
 --
+-- TOC entry 4715 (class 2606 OID 285094)
 -- Name: meta_user_type unik_meta_user_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13383,6 +14306,7 @@ ALTER TABLE ONLY public.meta_user_type
 
 
 --
+-- TOC entry 4720 (class 2606 OID 285096)
 -- Name: meta_weight_unit unik_meta_weight_unit_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13391,6 +14315,7 @@ ALTER TABLE ONLY public.meta_weight_unit
 
 
 --
+-- TOC entry 4725 (class 2606 OID 285098)
 -- Name: meta_work_list_approval_status unik_meta_work_list_approval_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13399,6 +14324,7 @@ ALTER TABLE ONLY public.meta_work_list_approval_status
 
 
 --
+-- TOC entry 4735 (class 2606 OID 285102)
 -- Name: meta_work_list_reminder_status unik_meta_work_list_reminder_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13407,6 +14333,7 @@ ALTER TABLE ONLY public.meta_work_list_reminder_status
 
 
 --
+-- TOC entry 4740 (class 2606 OID 285104)
 -- Name: meta_work_list_reminder_type unik_meta_work_list_reminder_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13415,6 +14342,7 @@ ALTER TABLE ONLY public.meta_work_list_reminder_type
 
 
 --
+-- TOC entry 4745 (class 2606 OID 285106)
 -- Name: meta_work_list_reminder_who_type unik_meta_work_list_reminder_who_type_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13423,6 +14351,7 @@ ALTER TABLE ONLY public.meta_work_list_reminder_who_type
 
 
 --
+-- TOC entry 4730 (class 2606 OID 285100)
 -- Name: meta_worklist_priority unik_meta_worklist_priority_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13431,6 +14360,7 @@ ALTER TABLE ONLY public.meta_worklist_priority
 
 
 --
+-- TOC entry 4750 (class 2606 OID 285108)
 -- Name: meta_worklist_status unik_meta_worklist_status_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13439,6 +14369,7 @@ ALTER TABLE ONLY public.meta_worklist_status
 
 
 --
+-- TOC entry 4755 (class 2606 OID 285110)
 -- Name: meta_zip_code unik_meta_zip_code_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13447,6 +14378,7 @@ ALTER TABLE ONLY public.meta_zip_code
 
 
 --
+-- TOC entry 4765 (class 2606 OID 285114)
 -- Name: organization_division unik_organization_division_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13455,6 +14387,7 @@ ALTER TABLE ONLY public.organization_division
 
 
 --
+-- TOC entry 4777 (class 2606 OID 285120)
 -- Name: organization_employee_address unik_organization_employee_address_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13463,6 +14396,7 @@ ALTER TABLE ONLY public.organization_employee_address
 
 
 --
+-- TOC entry 4782 (class 2606 OID 285122)
 -- Name: organization_employee_division unik_organization_employee_division_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13471,6 +14405,7 @@ ALTER TABLE ONLY public.organization_employee_division
 
 
 --
+-- TOC entry 4770 (class 2606 OID 285118)
 -- Name: organization_employee unik_organization_employee_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13479,6 +14414,7 @@ ALTER TABLE ONLY public.organization_employee
 
 
 --
+-- TOC entry 4787 (class 2606 OID 285124)
 -- Name: organization_employee_telephone unik_organization_employee_telephone_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13487,6 +14423,7 @@ ALTER TABLE ONLY public.organization_employee_telephone
 
 
 --
+-- TOC entry 4772 (class 2606 OID 285116)
 -- Name: organization_employee unik_organization_employee_workemail; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13495,6 +14432,7 @@ ALTER TABLE ONLY public.organization_employee
 
 
 --
+-- TOC entry 4792 (class 2606 OID 285126)
 -- Name: organization_folder unik_organization_folder_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13503,6 +14441,7 @@ ALTER TABLE ONLY public.organization_folder
 
 
 --
+-- TOC entry 4760 (class 2606 OID 285112)
 -- Name: organization unik_organization_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13511,6 +14450,7 @@ ALTER TABLE ONLY public.organization
 
 
 --
+-- TOC entry 4797 (class 2606 OID 285128)
 -- Name: organization_profile unik_organization_profile_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13519,6 +14459,7 @@ ALTER TABLE ONLY public.organization_profile
 
 
 --
+-- TOC entry 4981 (class 2606 OID 285204)
 -- Name: patient_activation_q_a unik_patient_activation_q_a_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13527,6 +14468,7 @@ ALTER TABLE ONLY public.patient_activation_q_a
 
 
 --
+-- TOC entry 4807 (class 2606 OID 285132)
 -- Name: patient_address unik_patient_address_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13535,6 +14477,7 @@ ALTER TABLE ONLY public.patient_address
 
 
 --
+-- TOC entry 4812 (class 2606 OID 285134)
 -- Name: patient_admission unik_patient_admission_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13543,6 +14486,7 @@ ALTER TABLE ONLY public.patient_admission
 
 
 --
+-- TOC entry 4817 (class 2606 OID 285136)
 -- Name: patient_allergy unik_patient_allergy_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13551,6 +14495,7 @@ ALTER TABLE ONLY public.patient_allergy
 
 
 --
+-- TOC entry 4827 (class 2606 OID 285140)
 -- Name: patient_contact_address unik_patient_contact_address_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13559,6 +14504,7 @@ ALTER TABLE ONLY public.patient_contact_address
 
 
 --
+-- TOC entry 4822 (class 2606 OID 285138)
 -- Name: patient_contact unik_patient_contact_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13567,6 +14513,7 @@ ALTER TABLE ONLY public.patient_contact
 
 
 --
+-- TOC entry 4832 (class 2606 OID 285142)
 -- Name: patient_diagnosis unik_patient_diagnosis_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13575,6 +14522,7 @@ ALTER TABLE ONLY public.patient_diagnosis
 
 
 --
+-- TOC entry 4837 (class 2606 OID 285144)
 -- Name: patient_employment_info unik_patient_employment_info_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13583,6 +14531,7 @@ ALTER TABLE ONLY public.patient_employment_info
 
 
 --
+-- TOC entry 4802 (class 2606 OID 285130)
 -- Name: patient unik_patient_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13591,6 +14540,7 @@ ALTER TABLE ONLY public.patient
 
 
 --
+-- TOC entry 4842 (class 2606 OID 285146)
 -- Name: patient_medication unik_patient_medication_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13599,6 +14549,7 @@ ALTER TABLE ONLY public.patient_medication
 
 
 --
+-- TOC entry 4847 (class 2606 OID 285148)
 -- Name: patient_prescription unik_patient_prescription_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13607,6 +14558,7 @@ ALTER TABLE ONLY public.patient_prescription
 
 
 --
+-- TOC entry 4852 (class 2606 OID 285150)
 -- Name: patient_primary_care_provider unik_patient_primary_care_provider_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13615,6 +14567,7 @@ ALTER TABLE ONLY public.patient_primary_care_provider
 
 
 --
+-- TOC entry 4857 (class 2606 OID 285152)
 -- Name: patient_social_needs unik_patient_social_needs_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13623,6 +14576,7 @@ ALTER TABLE ONLY public.patient_social_needs
 
 
 --
+-- TOC entry 4862 (class 2606 OID 285154)
 -- Name: patient_specific_document unik_patient_specific_document_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13631,6 +14585,7 @@ ALTER TABLE ONLY public.patient_specific_document
 
 
 --
+-- TOC entry 4867 (class 2606 OID 285156)
 -- Name: patient_vital unik_patient_vital_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13639,6 +14594,7 @@ ALTER TABLE ONLY public.patient_vital
 
 
 --
+-- TOC entry 4872 (class 2606 OID 285158)
 -- Name: preferred_provider unik_preferred_provider_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13647,6 +14603,7 @@ ALTER TABLE ONLY public.preferred_provider
 
 
 --
+-- TOC entry 4877 (class 2606 OID 285160)
 -- Name: report unik_report_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13655,6 +14612,7 @@ ALTER TABLE ONLY public.report
 
 
 --
+-- TOC entry 4882 (class 2606 OID 285162)
 -- Name: synap_config unik_synap_config_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13663,6 +14621,7 @@ ALTER TABLE ONLY public.synap_config
 
 
 --
+-- TOC entry 4887 (class 2606 OID 285164)
 -- Name: synap_user unik_synap_user_email; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13671,6 +14630,7 @@ ALTER TABLE ONLY public.synap_user
 
 
 --
+-- TOC entry 4894 (class 2606 OID 285168)
 -- Name: synap_user_group unik_synap_user_group_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13679,6 +14639,7 @@ ALTER TABLE ONLY public.synap_user_group
 
 
 --
+-- TOC entry 4889 (class 2606 OID 285166)
 -- Name: synap_user unik_synap_user_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13687,6 +14648,7 @@ ALTER TABLE ONLY public.synap_user
 
 
 --
+-- TOC entry 4899 (class 2606 OID 285170)
 -- Name: synap_user_token unik_synap_user_token_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13695,6 +14657,7 @@ ALTER TABLE ONLY public.synap_user_token
 
 
 --
+-- TOC entry 4941 (class 2606 OID 285188)
 -- Name: system_user unik_system_user_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13703,6 +14666,7 @@ ALTER TABLE ONLY public.system_user
 
 
 --
+-- TOC entry 4903 (class 2606 OID 285172)
 -- Name: user_password unik_user_password_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13711,6 +14675,7 @@ ALTER TABLE ONLY public.user_password
 
 
 --
+-- TOC entry 4908 (class 2606 OID 285174)
 -- Name: viewed_client unik_viewed_client_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13719,6 +14684,7 @@ ALTER TABLE ONLY public.viewed_client
 
 
 --
+-- TOC entry 4918 (class 2606 OID 285178)
 -- Name: work_list_approver unik_work_list_approver_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13727,6 +14693,7 @@ ALTER TABLE ONLY public.work_list_approver
 
 
 --
+-- TOC entry 4913 (class 2606 OID 285176)
 -- Name: work_list unik_work_list_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13735,6 +14702,7 @@ ALTER TABLE ONLY public.work_list
 
 
 --
+-- TOC entry 4923 (class 2606 OID 285180)
 -- Name: work_list_notes unik_work_list_notes_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13743,6 +14711,7 @@ ALTER TABLE ONLY public.work_list_notes
 
 
 --
+-- TOC entry 4928 (class 2606 OID 285182)
 -- Name: work_list_reminder unik_work_list_reminder_id; Type: CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -13751,6 +14720,7 @@ ALTER TABLE ONLY public.work_list_reminder
 
 
 --
+-- TOC entry 4947 (class 1259 OID 284916)
 -- Name: calendar_item_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13758,6 +14728,7 @@ CREATE INDEX calendar_item_tags ON public.calendar_item USING gin (tags);
 
 
 --
+-- TOC entry 4292 (class 1259 OID 284787)
 -- Name: care_continuity_import_request_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13765,6 +14736,7 @@ CREATE INDEX care_continuity_import_request_tags ON public.care_continuity_impor
 
 
 --
+-- TOC entry 4327 (class 1259 OID 284794)
 -- Name: ccd_upload_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13772,6 +14744,7 @@ CREATE INDEX ccd_upload_tags ON public.ccd_upload USING gin (tags);
 
 
 --
+-- TOC entry 4302 (class 1259 OID 284789)
 -- Name: ccda_export_log_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13779,6 +14752,7 @@ CREATE INDEX ccda_export_log_tags ON public.ccda_export_log USING gin (tags);
 
 
 --
+-- TOC entry 4307 (class 1259 OID 284790)
 -- Name: ccda_export_request_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13786,6 +14760,7 @@ CREATE INDEX ccda_export_request_tags ON public.ccda_export_request USING gin (t
 
 
 --
+-- TOC entry 4297 (class 1259 OID 284788)
 -- Name: ccda_export_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13793,6 +14768,7 @@ CREATE INDEX ccda_export_tags ON public.ccda_export USING gin (tags);
 
 
 --
+-- TOC entry 4312 (class 1259 OID 284791)
 -- Name: ccda_import_allergy_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13800,6 +14776,7 @@ CREATE INDEX ccda_import_allergy_tags ON public.ccda_import_allergy USING gin (t
 
 
 --
+-- TOC entry 4317 (class 1259 OID 284792)
 -- Name: ccda_import_diagnosis_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13807,6 +14784,7 @@ CREATE INDEX ccda_import_diagnosis_tags ON public.ccda_import_diagnosis USING gi
 
 
 --
+-- TOC entry 4322 (class 1259 OID 284793)
 -- Name: ccda_import_medication_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13814,6 +14792,7 @@ CREATE INDEX ccda_import_medication_tags ON public.ccda_import_medication USING 
 
 
 --
+-- TOC entry 4332 (class 1259 OID 284795)
 -- Name: cdn_temp_file_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13821,6 +14800,7 @@ CREATE INDEX cdn_temp_file_tags ON public.cdn_temp_file USING gin (tags);
 
 
 --
+-- TOC entry 4342 (class 1259 OID 284797)
 -- Name: client_document_file_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13828,6 +14808,7 @@ CREATE INDEX client_document_file_tags ON public.client_document_file USING gin 
 
 
 --
+-- TOC entry 4337 (class 1259 OID 284796)
 -- Name: client_document_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13835,6 +14816,7 @@ CREATE INDEX client_document_tags ON public.client_document USING gin (tags);
 
 
 --
+-- TOC entry 4347 (class 1259 OID 284798)
 -- Name: client_note_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13842,6 +14824,7 @@ CREATE INDEX client_note_tags ON public.client_note USING gin (tags);
 
 
 --
+-- TOC entry 4962 (class 1259 OID 284919)
 -- Name: course_category_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13849,6 +14832,7 @@ CREATE INDEX course_category_tags ON public.course_category USING gin (tags);
 
 
 --
+-- TOC entry 4357 (class 1259 OID 284800)
 -- Name: course_custom_field_definition_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13856,6 +14840,7 @@ CREATE INDEX course_custom_field_definition_tags ON public.course_custom_field_d
 
 
 --
+-- TOC entry 4362 (class 1259 OID 284801)
 -- Name: course_participant_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13863,6 +14848,7 @@ CREATE INDEX course_participant_tags ON public.course_participant USING gin (tag
 
 
 --
+-- TOC entry 4372 (class 1259 OID 284803)
 -- Name: course_session_attendance_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13870,6 +14856,7 @@ CREATE INDEX course_session_attendance_tags ON public.course_session_attendance 
 
 
 --
+-- TOC entry 4377 (class 1259 OID 284804)
 -- Name: course_session_custom_field_value_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13877,6 +14864,7 @@ CREATE INDEX course_session_custom_field_value_tags ON public.course_session_cus
 
 
 --
+-- TOC entry 4367 (class 1259 OID 284802)
 -- Name: course_session_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13884,6 +14872,7 @@ CREATE INDEX course_session_tags ON public.course_session USING gin (tags);
 
 
 --
+-- TOC entry 4352 (class 1259 OID 284799)
 -- Name: course_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13891,6 +14880,7 @@ CREATE INDEX course_tags ON public.course USING gin (tags);
 
 
 --
+-- TOC entry 4382 (class 1259 OID 284805)
 -- Name: data_export_request_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13898,6 +14888,7 @@ CREATE INDEX data_export_request_tags ON public.data_export_request USING gin (t
 
 
 --
+-- TOC entry 4387 (class 1259 OID 284806)
 -- Name: data_import_request_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13905,6 +14896,7 @@ CREATE INDEX data_import_request_tags ON public.data_import_request USING gin (t
 
 
 --
+-- TOC entry 4392 (class 1259 OID 284807)
 -- Name: housing_upgrade_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13912,6 +14904,7 @@ CREATE INDEX housing_upgrade_tags ON public.housing_upgrade USING gin (tags);
 
 
 --
+-- TOC entry 4404 (class 1259 OID 284809)
 -- Name: kch_program_assignment_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13919,6 +14912,7 @@ CREATE INDEX kch_program_assignment_tags ON public.kch_program_assignment USING 
 
 
 --
+-- TOC entry 4397 (class 1259 OID 284808)
 -- Name: kch_program_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13926,6 +14920,7 @@ CREATE INDEX kch_program_tags ON public.kch_program USING gin (tags);
 
 
 --
+-- TOC entry 4409 (class 1259 OID 284810)
 -- Name: meta_address_type_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13933,6 +14928,7 @@ CREATE INDEX meta_address_type_tags ON public.meta_address_type USING gin (tags)
 
 
 --
+-- TOC entry 4414 (class 1259 OID 284811)
 -- Name: meta_allergy_severity_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13940,6 +14936,7 @@ CREATE INDEX meta_allergy_severity_tags ON public.meta_allergy_severity USING gi
 
 
 --
+-- TOC entry 4419 (class 1259 OID 284812)
 -- Name: meta_allergy_type_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13947,6 +14944,7 @@ CREATE INDEX meta_allergy_type_tags ON public.meta_allergy_type USING gin (tags)
 
 
 --
+-- TOC entry 4972 (class 1259 OID 284921)
 -- Name: meta_answer_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13954,6 +14952,7 @@ CREATE INDEX meta_answer_tags ON public.meta_answer USING gin (tags);
 
 
 --
+-- TOC entry 4424 (class 1259 OID 284813)
 -- Name: meta_auth_policy_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13961,6 +14960,7 @@ CREATE INDEX meta_auth_policy_tags ON public.meta_auth_policy USING gin (tags);
 
 
 --
+-- TOC entry 4429 (class 1259 OID 284814)
 -- Name: meta_basic_status_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13968,6 +14968,7 @@ CREATE INDEX meta_basic_status_tags ON public.meta_basic_status USING gin (tags)
 
 
 --
+-- TOC entry 4434 (class 1259 OID 284815)
 -- Name: meta_blood_pressure_unit_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13975,6 +14976,7 @@ CREATE INDEX meta_blood_pressure_unit_tags ON public.meta_blood_pressure_unit US
 
 
 --
+-- TOC entry 4957 (class 1259 OID 284918)
 -- Name: meta_calendar_item_status_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13982,6 +14984,7 @@ CREATE INDEX meta_calendar_item_status_tags ON public.meta_calendar_item_status 
 
 
 --
+-- TOC entry 4952 (class 1259 OID 284917)
 -- Name: meta_calendar_item_type_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13989,6 +14992,7 @@ CREATE INDEX meta_calendar_item_type_tags ON public.meta_calendar_item_type USIN
 
 
 --
+-- TOC entry 4439 (class 1259 OID 284816)
 -- Name: meta_care_continuity_document_type_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -13996,6 +15000,7 @@ CREATE INDEX meta_care_continuity_document_type_tags ON public.meta_care_continu
 
 
 --
+-- TOC entry 4444 (class 1259 OID 284817)
 -- Name: meta_ccda_export_log_type_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14003,6 +15008,7 @@ CREATE INDEX meta_ccda_export_log_type_tags ON public.meta_ccda_export_log_type 
 
 
 --
+-- TOC entry 4449 (class 1259 OID 284818)
 -- Name: meta_ccda_export_status_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14010,6 +15016,7 @@ CREATE INDEX meta_ccda_export_status_tags ON public.meta_ccda_export_status USIN
 
 
 --
+-- TOC entry 4454 (class 1259 OID 284819)
 -- Name: meta_ccda_sections_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14017,6 +15024,7 @@ CREATE INDEX meta_ccda_sections_tags ON public.meta_ccda_sections USING gin (tag
 
 
 --
+-- TOC entry 4459 (class 1259 OID 284820)
 -- Name: meta_clinical_document_type_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14024,6 +15032,7 @@ CREATE INDEX meta_clinical_document_type_tags ON public.meta_clinical_document_t
 
 
 --
+-- TOC entry 4464 (class 1259 OID 284821)
 -- Name: meta_communication_mode_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14031,6 +15040,7 @@ CREATE INDEX meta_communication_mode_tags ON public.meta_communication_mode USIN
 
 
 --
+-- TOC entry 4469 (class 1259 OID 284822)
 -- Name: meta_contact_type_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14038,6 +15048,7 @@ CREATE INDEX meta_contact_type_tags ON public.meta_contact_type USING gin (tags)
 
 
 --
+-- TOC entry 4474 (class 1259 OID 284823)
 -- Name: meta_country_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14045,6 +15056,7 @@ CREATE INDEX meta_country_tags ON public.meta_country USING gin (tags);
 
 
 --
+-- TOC entry 4479 (class 1259 OID 284824)
 -- Name: meta_data_family_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14052,6 +15064,7 @@ CREATE INDEX meta_data_family_tags ON public.meta_data_family USING gin (tags);
 
 
 --
+-- TOC entry 4484 (class 1259 OID 284825)
 -- Name: meta_day_of_week_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14059,6 +15072,7 @@ CREATE INDEX meta_day_of_week_tags ON public.meta_day_of_week USING gin (tags);
 
 
 --
+-- TOC entry 4489 (class 1259 OID 284826)
 -- Name: meta_default_status_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14066,6 +15080,7 @@ CREATE INDEX meta_default_status_tags ON public.meta_default_status USING gin (t
 
 
 --
+-- TOC entry 4494 (class 1259 OID 284827)
 -- Name: meta_diagnostic_code_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14073,6 +15088,7 @@ CREATE INDEX meta_diagnostic_code_tags ON public.meta_diagnostic_code USING gin 
 
 
 --
+-- TOC entry 4499 (class 1259 OID 284828)
 -- Name: meta_employee_status_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14080,6 +15096,7 @@ CREATE INDEX meta_employee_status_tags ON public.meta_employee_status USING gin 
 
 
 --
+-- TOC entry 4504 (class 1259 OID 284829)
 -- Name: meta_employment_status_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14087,6 +15104,7 @@ CREATE INDEX meta_employment_status_tags ON public.meta_employment_status USING 
 
 
 --
+-- TOC entry 4509 (class 1259 OID 284830)
 -- Name: meta_ethnicity_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14094,6 +15112,7 @@ CREATE INDEX meta_ethnicity_tags ON public.meta_ethnicity USING gin (tags);
 
 
 --
+-- TOC entry 4514 (class 1259 OID 284831)
 -- Name: meta_family_relationship_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14101,6 +15120,7 @@ CREATE INDEX meta_family_relationship_tags ON public.meta_family_relationship US
 
 
 --
+-- TOC entry 4519 (class 1259 OID 284832)
 -- Name: meta_field_defination_type_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14108,6 +15128,7 @@ CREATE INDEX meta_field_defination_type_tags ON public.meta_field_defination_typ
 
 
 --
+-- TOC entry 4524 (class 1259 OID 284833)
 -- Name: meta_gender_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14115,6 +15136,7 @@ CREATE INDEX meta_gender_tags ON public.meta_gender USING gin (tags);
 
 
 --
+-- TOC entry 4529 (class 1259 OID 284834)
 -- Name: meta_height_unit_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14122,6 +15144,7 @@ CREATE INDEX meta_height_unit_tags ON public.meta_height_unit USING gin (tags);
 
 
 --
+-- TOC entry 4534 (class 1259 OID 284835)
 -- Name: meta_household_income_level_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14129,6 +15152,7 @@ CREATE INDEX meta_household_income_level_tags ON public.meta_household_income_le
 
 
 --
+-- TOC entry 4539 (class 1259 OID 284836)
 -- Name: meta_housing_status_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14136,6 +15160,7 @@ CREATE INDEX meta_housing_status_tags ON public.meta_housing_status USING gin (t
 
 
 --
+-- TOC entry 4544 (class 1259 OID 284837)
 -- Name: meta_housing_upgrade_status_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14143,6 +15168,7 @@ CREATE INDEX meta_housing_upgrade_status_tags ON public.meta_housing_upgrade_sta
 
 
 --
+-- TOC entry 4549 (class 1259 OID 284838)
 -- Name: meta_housing_upgrade_type_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14150,6 +15176,7 @@ CREATE INDEX meta_housing_upgrade_type_tags ON public.meta_housing_upgrade_type 
 
 
 --
+-- TOC entry 4554 (class 1259 OID 284839)
 -- Name: meta_id_type_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14157,6 +15184,7 @@ CREATE INDEX meta_id_type_tags ON public.meta_id_type USING gin (tags);
 
 
 --
+-- TOC entry 4559 (class 1259 OID 284840)
 -- Name: meta_income_level_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14164,6 +15192,7 @@ CREATE INDEX meta_income_level_tags ON public.meta_income_level USING gin (tags)
 
 
 --
+-- TOC entry 4569 (class 1259 OID 284842)
 -- Name: meta_label_detail_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14171,6 +15200,7 @@ CREATE INDEX meta_label_detail_tags ON public.meta_label_detail USING gin (tags)
 
 
 --
+-- TOC entry 4564 (class 1259 OID 284841)
 -- Name: meta_label_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14178,6 +15208,7 @@ CREATE INDEX meta_label_tags ON public.meta_label USING gin (tags);
 
 
 --
+-- TOC entry 4576 (class 1259 OID 284843)
 -- Name: meta_language_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14185,6 +15216,7 @@ CREATE INDEX meta_language_tags ON public.meta_language USING gin (tags);
 
 
 --
+-- TOC entry 4581 (class 1259 OID 284844)
 -- Name: meta_marital_status_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14192,6 +15224,7 @@ CREATE INDEX meta_marital_status_tags ON public.meta_marital_status USING gin (t
 
 
 --
+-- TOC entry 4586 (class 1259 OID 284845)
 -- Name: meta_medication_delivery_route_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14199,6 +15232,7 @@ CREATE INDEX meta_medication_delivery_route_tags ON public.meta_medication_deliv
 
 
 --
+-- TOC entry 4591 (class 1259 OID 284846)
 -- Name: meta_military_status_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14206,6 +15240,7 @@ CREATE INDEX meta_military_status_tags ON public.meta_military_status USING gin 
 
 
 --
+-- TOC entry 4930 (class 1259 OID 284913)
 -- Name: meta_oml_script_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14213,6 +15248,7 @@ CREATE INDEX meta_oml_script_tags ON public.meta_oml_script USING gin (tags);
 
 
 --
+-- TOC entry 4596 (class 1259 OID 284847)
 -- Name: meta_pain_level_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14220,6 +15256,7 @@ CREATE INDEX meta_pain_level_tags ON public.meta_pain_level USING gin (tags);
 
 
 --
+-- TOC entry 4601 (class 1259 OID 284848)
 -- Name: meta_patient_diagnosis_status_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14227,6 +15264,7 @@ CREATE INDEX meta_patient_diagnosis_status_tags ON public.meta_patient_diagnosis
 
 
 --
+-- TOC entry 4606 (class 1259 OID 284849)
 -- Name: meta_patient_document_status_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14234,6 +15272,7 @@ CREATE INDEX meta_patient_document_status_tags ON public.meta_patient_document_s
 
 
 --
+-- TOC entry 4611 (class 1259 OID 284850)
 -- Name: meta_patient_document_type_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14241,6 +15280,7 @@ CREATE INDEX meta_patient_document_type_tags ON public.meta_patient_document_typ
 
 
 --
+-- TOC entry 4616 (class 1259 OID 284851)
 -- Name: meta_patient_identity_type_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14248,6 +15288,7 @@ CREATE INDEX meta_patient_identity_type_tags ON public.meta_patient_identity_typ
 
 
 --
+-- TOC entry 4621 (class 1259 OID 284852)
 -- Name: meta_patient_status_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14255,6 +15296,7 @@ CREATE INDEX meta_patient_status_tags ON public.meta_patient_status USING gin (t
 
 
 --
+-- TOC entry 4626 (class 1259 OID 284853)
 -- Name: meta_permission_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14262,6 +15304,7 @@ CREATE INDEX meta_permission_tags ON public.meta_permission USING gin (tags);
 
 
 --
+-- TOC entry 4631 (class 1259 OID 284854)
 -- Name: meta_provider_service_type_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14269,6 +15312,7 @@ CREATE INDEX meta_provider_service_type_tags ON public.meta_provider_service_typ
 
 
 --
+-- TOC entry 4967 (class 1259 OID 284920)
 -- Name: meta_question_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14276,6 +15320,7 @@ CREATE INDEX meta_question_tags ON public.meta_question USING gin (tags);
 
 
 --
+-- TOC entry 4636 (class 1259 OID 284855)
 -- Name: meta_race_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14283,6 +15328,7 @@ CREATE INDEX meta_race_tags ON public.meta_race USING gin (tags);
 
 
 --
+-- TOC entry 4641 (class 1259 OID 284856)
 -- Name: meta_referral_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14290,6 +15336,7 @@ CREATE INDEX meta_referral_tags ON public.meta_referral USING gin (tags);
 
 
 --
+-- TOC entry 4646 (class 1259 OID 284857)
 -- Name: meta_relationship_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14297,6 +15344,7 @@ CREATE INDEX meta_relationship_tags ON public.meta_relationship USING gin (tags)
 
 
 --
+-- TOC entry 4651 (class 1259 OID 284858)
 -- Name: meta_severity_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14304,6 +15352,7 @@ CREATE INDEX meta_severity_tags ON public.meta_severity USING gin (tags);
 
 
 --
+-- TOC entry 4656 (class 1259 OID 284859)
 -- Name: meta_smoking_status_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14311,6 +15360,7 @@ CREATE INDEX meta_smoking_status_tags ON public.meta_smoking_status USING gin (t
 
 
 --
+-- TOC entry 4666 (class 1259 OID 284861)
 -- Name: meta_snomed_code_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14318,6 +15368,7 @@ CREATE INDEX meta_snomed_code_tags ON public.meta_snomed_code USING gin (tags);
 
 
 --
+-- TOC entry 4661 (class 1259 OID 284860)
 -- Name: meta_snomed_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14325,6 +15376,7 @@ CREATE INDEX meta_snomed_tags ON public.meta_snomed USING gin (tags);
 
 
 --
+-- TOC entry 4676 (class 1259 OID 284863)
 -- Name: meta_social_needs_category_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14332,6 +15384,7 @@ CREATE INDEX meta_social_needs_category_tags ON public.meta_social_needs_categor
 
 
 --
+-- TOC entry 4671 (class 1259 OID 284862)
 -- Name: meta_social_needs_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14339,6 +15392,7 @@ CREATE INDEX meta_social_needs_tags ON public.meta_social_needs USING gin (tags)
 
 
 --
+-- TOC entry 4681 (class 1259 OID 284864)
 -- Name: meta_state_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14346,6 +15400,7 @@ CREATE INDEX meta_state_tags ON public.meta_state USING gin (tags);
 
 
 --
+-- TOC entry 4686 (class 1259 OID 284865)
 -- Name: meta_synap_profile_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14353,6 +15408,7 @@ CREATE INDEX meta_synap_profile_tags ON public.meta_synap_profile USING gin (tag
 
 
 --
+-- TOC entry 4942 (class 1259 OID 284915)
 -- Name: meta_sync_status_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14360,6 +15416,7 @@ CREATE INDEX meta_sync_status_tags ON public.meta_sync_status USING gin (tags);
 
 
 --
+-- TOC entry 4691 (class 1259 OID 284866)
 -- Name: meta_telephone_type_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14367,6 +15424,7 @@ CREATE INDEX meta_telephone_type_tags ON public.meta_telephone_type USING gin (t
 
 
 --
+-- TOC entry 4696 (class 1259 OID 284867)
 -- Name: meta_temperature_unit_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14374,6 +15432,7 @@ CREATE INDEX meta_temperature_unit_tags ON public.meta_temperature_unit USING gi
 
 
 --
+-- TOC entry 4701 (class 1259 OID 284868)
 -- Name: meta_timezone_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14381,6 +15440,7 @@ CREATE INDEX meta_timezone_tags ON public.meta_timezone USING gin (tags);
 
 
 --
+-- TOC entry 4706 (class 1259 OID 284869)
 -- Name: meta_token_type_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14388,6 +15448,7 @@ CREATE INDEX meta_token_type_tags ON public.meta_token_type USING gin (tags);
 
 
 --
+-- TOC entry 4711 (class 1259 OID 284870)
 -- Name: meta_user_type_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14395,6 +15456,7 @@ CREATE INDEX meta_user_type_tags ON public.meta_user_type USING gin (tags);
 
 
 --
+-- TOC entry 4716 (class 1259 OID 284871)
 -- Name: meta_weight_unit_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14402,6 +15464,7 @@ CREATE INDEX meta_weight_unit_tags ON public.meta_weight_unit USING gin (tags);
 
 
 --
+-- TOC entry 4721 (class 1259 OID 284872)
 -- Name: meta_work_list_approval_status_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14409,6 +15472,7 @@ CREATE INDEX meta_work_list_approval_status_tags ON public.meta_work_list_approv
 
 
 --
+-- TOC entry 4731 (class 1259 OID 284874)
 -- Name: meta_work_list_reminder_status_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14416,6 +15480,7 @@ CREATE INDEX meta_work_list_reminder_status_tags ON public.meta_work_list_remind
 
 
 --
+-- TOC entry 4736 (class 1259 OID 284875)
 -- Name: meta_work_list_reminder_type_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14423,6 +15488,7 @@ CREATE INDEX meta_work_list_reminder_type_tags ON public.meta_work_list_reminder
 
 
 --
+-- TOC entry 4741 (class 1259 OID 284876)
 -- Name: meta_work_list_reminder_who_type_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14430,6 +15496,7 @@ CREATE INDEX meta_work_list_reminder_who_type_tags ON public.meta_work_list_remi
 
 
 --
+-- TOC entry 4726 (class 1259 OID 284873)
 -- Name: meta_worklist_priority_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14437,6 +15504,7 @@ CREATE INDEX meta_worklist_priority_tags ON public.meta_worklist_priority USING 
 
 
 --
+-- TOC entry 4746 (class 1259 OID 284877)
 -- Name: meta_worklist_status_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14444,6 +15512,7 @@ CREATE INDEX meta_worklist_status_tags ON public.meta_worklist_status USING gin 
 
 
 --
+-- TOC entry 4751 (class 1259 OID 284878)
 -- Name: meta_zip_code_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14451,6 +15520,7 @@ CREATE INDEX meta_zip_code_tags ON public.meta_zip_code USING gin (tags);
 
 
 --
+-- TOC entry 4761 (class 1259 OID 284880)
 -- Name: organization_division_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14458,6 +15528,7 @@ CREATE INDEX organization_division_tags ON public.organization_division USING gi
 
 
 --
+-- TOC entry 4773 (class 1259 OID 284882)
 -- Name: organization_employee_address_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14465,6 +15536,7 @@ CREATE INDEX organization_employee_address_tags ON public.organization_employee_
 
 
 --
+-- TOC entry 4778 (class 1259 OID 284883)
 -- Name: organization_employee_division_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14472,6 +15544,7 @@ CREATE INDEX organization_employee_division_tags ON public.organization_employee
 
 
 --
+-- TOC entry 4766 (class 1259 OID 284881)
 -- Name: organization_employee_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14479,6 +15552,7 @@ CREATE INDEX organization_employee_tags ON public.organization_employee USING gi
 
 
 --
+-- TOC entry 4783 (class 1259 OID 284884)
 -- Name: organization_employee_telephone_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14486,6 +15560,7 @@ CREATE INDEX organization_employee_telephone_tags ON public.organization_employe
 
 
 --
+-- TOC entry 4788 (class 1259 OID 284885)
 -- Name: organization_folder_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14493,6 +15568,7 @@ CREATE INDEX organization_folder_tags ON public.organization_folder USING gin (t
 
 
 --
+-- TOC entry 4793 (class 1259 OID 284886)
 -- Name: organization_profile_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14500,6 +15576,7 @@ CREATE INDEX organization_profile_tags ON public.organization_profile USING gin 
 
 
 --
+-- TOC entry 4756 (class 1259 OID 284879)
 -- Name: organization_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14507,6 +15584,7 @@ CREATE INDEX organization_tags ON public.organization USING gin (tags);
 
 
 --
+-- TOC entry 4977 (class 1259 OID 284922)
 -- Name: patient_activation_q_a_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14514,6 +15592,7 @@ CREATE INDEX patient_activation_q_a_tags ON public.patient_activation_q_a USING 
 
 
 --
+-- TOC entry 4803 (class 1259 OID 284888)
 -- Name: patient_address_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14521,6 +15600,7 @@ CREATE INDEX patient_address_tags ON public.patient_address USING gin (tags);
 
 
 --
+-- TOC entry 4808 (class 1259 OID 284889)
 -- Name: patient_admission_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14528,6 +15608,7 @@ CREATE INDEX patient_admission_tags ON public.patient_admission USING gin (tags)
 
 
 --
+-- TOC entry 4813 (class 1259 OID 284890)
 -- Name: patient_allergy_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14535,6 +15616,7 @@ CREATE INDEX patient_allergy_tags ON public.patient_allergy USING gin (tags);
 
 
 --
+-- TOC entry 4823 (class 1259 OID 284892)
 -- Name: patient_contact_address_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14542,6 +15624,7 @@ CREATE INDEX patient_contact_address_tags ON public.patient_contact_address USIN
 
 
 --
+-- TOC entry 4818 (class 1259 OID 284891)
 -- Name: patient_contact_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14549,6 +15632,7 @@ CREATE INDEX patient_contact_tags ON public.patient_contact USING gin (tags);
 
 
 --
+-- TOC entry 4828 (class 1259 OID 284893)
 -- Name: patient_diagnosis_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14556,6 +15640,7 @@ CREATE INDEX patient_diagnosis_tags ON public.patient_diagnosis USING gin (tags)
 
 
 --
+-- TOC entry 4833 (class 1259 OID 284894)
 -- Name: patient_employment_info_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14563,6 +15648,7 @@ CREATE INDEX patient_employment_info_tags ON public.patient_employment_info USIN
 
 
 --
+-- TOC entry 4838 (class 1259 OID 284895)
 -- Name: patient_medication_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14570,6 +15656,7 @@ CREATE INDEX patient_medication_tags ON public.patient_medication USING gin (tag
 
 
 --
+-- TOC entry 4843 (class 1259 OID 284896)
 -- Name: patient_prescription_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14577,6 +15664,7 @@ CREATE INDEX patient_prescription_tags ON public.patient_prescription USING gin 
 
 
 --
+-- TOC entry 4848 (class 1259 OID 284897)
 -- Name: patient_primary_care_provider_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14584,6 +15672,7 @@ CREATE INDEX patient_primary_care_provider_tags ON public.patient_primary_care_p
 
 
 --
+-- TOC entry 4853 (class 1259 OID 284898)
 -- Name: patient_social_needs_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14591,6 +15680,7 @@ CREATE INDEX patient_social_needs_tags ON public.patient_social_needs USING gin 
 
 
 --
+-- TOC entry 4858 (class 1259 OID 284899)
 -- Name: patient_specific_document_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14598,6 +15688,7 @@ CREATE INDEX patient_specific_document_tags ON public.patient_specific_document 
 
 
 --
+-- TOC entry 4798 (class 1259 OID 284887)
 -- Name: patient_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14605,6 +15696,7 @@ CREATE INDEX patient_tags ON public.patient USING gin (tags);
 
 
 --
+-- TOC entry 4863 (class 1259 OID 284900)
 -- Name: patient_vital_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14612,6 +15704,7 @@ CREATE INDEX patient_vital_tags ON public.patient_vital USING gin (tags);
 
 
 --
+-- TOC entry 4870 (class 1259 OID 284901)
 -- Name: preferred_provider_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14619,6 +15712,7 @@ CREATE INDEX preferred_provider_tags ON public.preferred_provider USING gin (tag
 
 
 --
+-- TOC entry 4875 (class 1259 OID 284902)
 -- Name: report_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14626,6 +15720,7 @@ CREATE INDEX report_tags ON public.report USING gin (tags);
 
 
 --
+-- TOC entry 4880 (class 1259 OID 284903)
 -- Name: synap_config_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14633,6 +15728,7 @@ CREATE INDEX synap_config_tags ON public.synap_config USING gin (tags);
 
 
 --
+-- TOC entry 4892 (class 1259 OID 284905)
 -- Name: synap_user_group_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14640,6 +15736,7 @@ CREATE INDEX synap_user_group_tags ON public.synap_user_group USING gin (tags);
 
 
 --
+-- TOC entry 4885 (class 1259 OID 284904)
 -- Name: synap_user_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14647,6 +15744,7 @@ CREATE INDEX synap_user_tags ON public.synap_user USING gin (tags);
 
 
 --
+-- TOC entry 4897 (class 1259 OID 284906)
 -- Name: synap_user_token_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14654,6 +15752,7 @@ CREATE INDEX synap_user_token_tags ON public.synap_user_token USING gin (tags);
 
 
 --
+-- TOC entry 4939 (class 1259 OID 284914)
 -- Name: system_user_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14661,6 +15760,7 @@ CREATE INDEX system_user_tags ON public.system_user USING gin (tags);
 
 
 --
+-- TOC entry 4904 (class 1259 OID 284907)
 -- Name: user_password_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14668,6 +15768,7 @@ CREATE INDEX user_password_tags ON public.user_password USING gin (tags);
 
 
 --
+-- TOC entry 4909 (class 1259 OID 284908)
 -- Name: viewed_client_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14675,6 +15776,7 @@ CREATE INDEX viewed_client_tags ON public.viewed_client USING gin (tags);
 
 
 --
+-- TOC entry 4919 (class 1259 OID 284910)
 -- Name: work_list_approver_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14682,6 +15784,7 @@ CREATE INDEX work_list_approver_tags ON public.work_list_approver USING gin (tag
 
 
 --
+-- TOC entry 4924 (class 1259 OID 284911)
 -- Name: work_list_notes_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14689,6 +15792,7 @@ CREATE INDEX work_list_notes_tags ON public.work_list_notes USING gin (tags);
 
 
 --
+-- TOC entry 4929 (class 1259 OID 284912)
 -- Name: work_list_reminder_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14696,6 +15800,7 @@ CREATE INDEX work_list_reminder_tags ON public.work_list_reminder USING gin (tag
 
 
 --
+-- TOC entry 4914 (class 1259 OID 284909)
 -- Name: work_list_tags; Type: INDEX; Schema: public; Owner: aperiosf
 --
 
@@ -14703,6 +15808,7 @@ CREATE INDEX work_list_tags ON public.work_list USING gin (tags);
 
 
 --
+-- TOC entry 5473 (class 2606 OID 284762)
 -- Name: patient_social_needs_update_assessment fk_005b7e7b258fad3eef622e396b2332bc; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14711,6 +15817,7 @@ ALTER TABLE ONLY public.patient_social_needs_update_assessment
 
 
 --
+-- TOC entry 5013 (class 2606 OID 282462)
 -- Name: ccda_import_diagnosis fk_01222034d40a43f2da4b4a5354b23b18; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14719,6 +15826,7 @@ ALTER TABLE ONLY public.ccda_import_diagnosis
 
 
 --
+-- TOC entry 5212 (class 2606 OID 283457)
 -- Name: meta_social_needs fk_015fa9de20ccf4c8c12dfb0681559077; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14727,6 +15835,7 @@ ALTER TABLE ONLY public.meta_social_needs
 
 
 --
+-- TOC entry 5257 (class 2606 OID 283682)
 -- Name: organization_division fk_016084fdd09187af25d55dac592f0c62; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14735,6 +15844,7 @@ ALTER TABLE ONLY public.organization_division
 
 
 --
+-- TOC entry 5168 (class 2606 OID 283237)
 -- Name: meta_military_status fk_019f8ce5d09f50f71518d828115b3ddf; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14743,6 +15853,7 @@ ALTER TABLE ONLY public.meta_military_status
 
 
 --
+-- TOC entry 5202 (class 2606 OID 283407)
 -- Name: meta_smoking_status fk_03689990b7e1be4751f39ea0203f4ad6; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14751,6 +15862,7 @@ ALTER TABLE ONLY public.meta_smoking_status
 
 
 --
+-- TOC entry 5041 (class 2606 OID 282602)
 -- Name: course_custom_field_definition fk_03f511be258b99bea1cb5b82fca687ee; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14759,6 +15871,7 @@ ALTER TABLE ONLY public.course_custom_field_definition
 
 
 --
+-- TOC entry 5183 (class 2606 OID 283312)
 -- Name: meta_patient_status fk_04aea26b851c3d98330f737c778c1467; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14767,6 +15880,7 @@ ALTER TABLE ONLY public.meta_patient_status
 
 
 --
+-- TOC entry 5050 (class 2606 OID 282647)
 -- Name: course_session fk_0554bf2bcac48a60280d7fc34f535e7a; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14775,6 +15889,7 @@ ALTER TABLE ONLY public.course_session
 
 
 --
+-- TOC entry 5113 (class 2606 OID 282962)
 -- Name: meta_communication_mode fk_058cd873a6eb3a0e61040231017d3b87; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14783,6 +15898,7 @@ ALTER TABLE ONLY public.meta_communication_mode
 
 
 --
+-- TOC entry 5243 (class 2606 OID 283612)
 -- Name: meta_work_list_reminder_who_type fk_05cfd372e0ed9fe5cfd7f6ec07f0ff67; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14791,6 +15907,7 @@ ALTER TABLE ONLY public.meta_work_list_reminder_who_type
 
 
 --
+-- TOC entry 5347 (class 2606 OID 284132)
 -- Name: patient_prescription fk_05e17fb480b3727bbb0614ee8064845e; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14799,6 +15916,7 @@ ALTER TABLE ONLY public.patient_prescription
 
 
 --
+-- TOC entry 5110 (class 2606 OID 282947)
 -- Name: meta_clinical_document_type fk_069a0e43175141ee9d82c8a7f7c055c3; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14807,6 +15925,7 @@ ALTER TABLE ONLY public.meta_clinical_document_type
 
 
 --
+-- TOC entry 5254 (class 2606 OID 283667)
 -- Name: organization_division fk_06a49ae9cc4372f1975db9c8bfb9acac; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14815,6 +15934,7 @@ ALTER TABLE ONLY public.organization_division
 
 
 --
+-- TOC entry 5205 (class 2606 OID 283422)
 -- Name: meta_snomed fk_06cc845934d4295eac09e63716127498; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14823,6 +15943,7 @@ ALTER TABLE ONLY public.meta_snomed
 
 
 --
+-- TOC entry 5252 (class 2606 OID 283657)
 -- Name: organization_division fk_06ebea6845c7b197c02465024c467db6; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14831,6 +15952,7 @@ ALTER TABLE ONLY public.organization_division
 
 
 --
+-- TOC entry 5328 (class 2606 OID 284037)
 -- Name: patient_contact_address fk_06ee2ac9c2d5a5c9191b949ccfea3a35; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14839,6 +15961,7 @@ ALTER TABLE ONLY public.patient_contact_address
 
 
 --
+-- TOC entry 5329 (class 2606 OID 284042)
 -- Name: patient_diagnosis fk_082102e138369801f6ae962792593e2f; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14847,6 +15970,7 @@ ALTER TABLE ONLY public.patient_diagnosis
 
 
 --
+-- TOC entry 5239 (class 2606 OID 283592)
 -- Name: meta_work_list_reminder_status fk_087a12cf9c0df53b30e915ba44a8e5d1; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14855,6 +15979,7 @@ ALTER TABLE ONLY public.meta_work_list_reminder_status
 
 
 --
+-- TOC entry 5155 (class 2606 OID 283172)
 -- Name: meta_income_level fk_08c976c2abcbbf8b13d6d29fd20f5d8b; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14863,6 +15988,7 @@ ALTER TABLE ONLY public.meta_income_level
 
 
 --
+-- TOC entry 5392 (class 2606 OID 284357)
 -- Name: work_list fk_0932d806436f66d6ba1dcaf5200b2bc6; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14871,6 +15997,7 @@ ALTER TABLE ONLY public.work_list
 
 
 --
+-- TOC entry 5297 (class 2606 OID 283882)
 -- Name: patient fk_09b472288d7d9633d6e79adc3715c325; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14879,6 +16006,7 @@ ALTER TABLE ONLY public.patient
 
 
 --
+-- TOC entry 5216 (class 2606 OID 283477)
 -- Name: meta_state fk_0a1f3a02bf2053d719c204af42537866; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14887,6 +16015,7 @@ ALTER TABLE ONLY public.meta_state
 
 
 --
+-- TOC entry 5118 (class 2606 OID 282987)
 -- Name: meta_country fk_0a2149c8a7ec541acdef3242f4488caa; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14895,6 +16024,7 @@ ALTER TABLE ONLY public.meta_country
 
 
 --
+-- TOC entry 5092 (class 2606 OID 282857)
 -- Name: meta_auth_policy fk_0a866380ed7ac5928d34e40c5d0901f4; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14903,6 +16033,7 @@ ALTER TABLE ONLY public.meta_auth_policy
 
 
 --
+-- TOC entry 5078 (class 2606 OID 282787)
 -- Name: kch_program fk_0aada9452154d3d6208ff4c58647b7e1; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14911,6 +16042,7 @@ ALTER TABLE ONLY public.kch_program
 
 
 --
+-- TOC entry 4991 (class 2606 OID 282352)
 -- Name: ccda_export fk_0b66aebdb640ceaa712db1626a6f1787; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14919,6 +16051,7 @@ ALTER TABLE ONLY public.ccda_export
 
 
 --
+-- TOC entry 5131 (class 2606 OID 283052)
 -- Name: meta_employment_status fk_0b686c9024e99764a9e5d83c8185dbc6; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14927,6 +16060,7 @@ ALTER TABLE ONLY public.meta_employment_status
 
 
 --
+-- TOC entry 5293 (class 2606 OID 283862)
 -- Name: patient fk_0b9dde73e77d5a4b03aff9171f4625ec; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14935,6 +16069,7 @@ ALTER TABLE ONLY public.patient
 
 
 --
+-- TOC entry 5151 (class 2606 OID 283152)
 -- Name: meta_housing_upgrade_type fk_0c122b648e9d49a9a43a26b2b6fa5920; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14943,6 +16078,7 @@ ALTER TABLE ONLY public.meta_housing_upgrade_type
 
 
 --
+-- TOC entry 5442 (class 2606 OID 284607)
 -- Name: meta_answer fk_0c5d1816722250108902175955376fea; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14951,6 +16087,7 @@ ALTER TABLE ONLY public.meta_answer
 
 
 --
+-- TOC entry 5060 (class 2606 OID 282697)
 -- Name: course_session_custom_field_value fk_0df6f162a06a31d67054e0312075b2ec; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14959,6 +16096,7 @@ ALTER TABLE ONLY public.course_session_custom_field_value
 
 
 --
+-- TOC entry 5138 (class 2606 OID 283087)
 -- Name: meta_field_defination_type fk_0e0fcd821ab1b68fe4574df26ad4a509; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14967,6 +16105,7 @@ ALTER TABLE ONLY public.meta_field_defination_type
 
 
 --
+-- TOC entry 5210 (class 2606 OID 283447)
 -- Name: meta_social_needs fk_0e21cbf20d846dd28048d0a3c3128f10; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14975,6 +16114,7 @@ ALTER TABLE ONLY public.meta_social_needs
 
 
 --
+-- TOC entry 5325 (class 2606 OID 284022)
 -- Name: patient_contact_address fk_0e54c5c3938f312a9172df081ea3326a; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14983,6 +16123,7 @@ ALTER TABLE ONLY public.patient_contact_address
 
 
 --
+-- TOC entry 5378 (class 2606 OID 284287)
 -- Name: synap_user_group fk_0e8d6237b56afa47fd72a6439962f10c; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14991,6 +16132,7 @@ ALTER TABLE ONLY public.synap_user_group
 
 
 --
+-- TOC entry 5045 (class 2606 OID 282622)
 -- Name: course_participant fk_0e95087a72949d40a0e48d1f1f3d9e90; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -14999,6 +16141,7 @@ ALTER TABLE ONLY public.course_participant
 
 
 --
+-- TOC entry 5196 (class 2606 OID 283377)
 -- Name: meta_relationship fk_0ecfb44e9fb866ecd35ad3659f73b7e8; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15007,6 +16150,7 @@ ALTER TABLE ONLY public.meta_relationship
 
 
 --
+-- TOC entry 5454 (class 2606 OID 284667)
 -- Name: organization_employee_profile fk_0ed2faa371f0838767965cd7386ee31c; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15015,6 +16159,7 @@ ALTER TABLE ONLY public.organization_employee_profile
 
 
 --
+-- TOC entry 5394 (class 2606 OID 284367)
 -- Name: work_list fk_10ac5c881254813f47e4c10374228256; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15023,6 +16168,7 @@ ALTER TABLE ONLY public.work_list
 
 
 --
+-- TOC entry 5307 (class 2606 OID 283932)
 -- Name: patient_admission fk_12271696079fa1ef3191ef4c992a7e61; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15031,6 +16177,7 @@ ALTER TABLE ONLY public.patient_admission
 
 
 --
+-- TOC entry 5376 (class 2606 OID 284277)
 -- Name: synap_config fk_130ff9a2f3384d53b206a7ed19c7105f; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15039,6 +16186,7 @@ ALTER TABLE ONLY public.synap_config
 
 
 --
+-- TOC entry 5452 (class 2606 OID 284657)
 -- Name: ccda_export_request_patient_ids fk_13891dc1e341f602dbf45ee3b75f6805; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15047,6 +16195,7 @@ ALTER TABLE ONLY public.ccda_export_request_patient_ids
 
 
 --
+-- TOC entry 5374 (class 2606 OID 284267)
 -- Name: report fk_138fdc5b9ad4bdb8389364382b847b20; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15055,6 +16204,7 @@ ALTER TABLE ONLY public.report
 
 
 --
+-- TOC entry 5112 (class 2606 OID 282957)
 -- Name: meta_communication_mode fk_13bbee72ab8a2ee4d5196f6f4941a985; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15063,6 +16213,7 @@ ALTER TABLE ONLY public.meta_communication_mode
 
 
 --
+-- TOC entry 5395 (class 2606 OID 284372)
 -- Name: work_list fk_1444e317767baf5cacc6001302b3e182; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15071,6 +16222,7 @@ ALTER TABLE ONLY public.work_list
 
 
 --
+-- TOC entry 5103 (class 2606 OID 282912)
 -- Name: meta_ccda_export_status fk_1543490712dd16fd6980f54f3521fd5b; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15079,6 +16231,7 @@ ALTER TABLE ONLY public.meta_ccda_export_status
 
 
 --
+-- TOC entry 5149 (class 2606 OID 283142)
 -- Name: meta_housing_upgrade_status fk_15d3b9e49d95861983d38a4623c37f76; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15087,6 +16240,7 @@ ALTER TABLE ONLY public.meta_housing_upgrade_status
 
 
 --
+-- TOC entry 5305 (class 2606 OID 283922)
 -- Name: patient_address fk_1659a1f6183a423ccff203f0382d35be; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15095,6 +16249,7 @@ ALTER TABLE ONLY public.patient_address
 
 
 --
+-- TOC entry 5278 (class 2606 OID 283787)
 -- Name: organization_folder fk_176e571bc2933907bf5e47efe44efabb; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15103,6 +16258,7 @@ ALTER TABLE ONLY public.organization_folder
 
 
 --
+-- TOC entry 5084 (class 2606 OID 282817)
 -- Name: meta_address_type fk_18906b15396dc5046d8957c9f20d19bc; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15111,6 +16267,7 @@ ALTER TABLE ONLY public.meta_address_type
 
 
 --
+-- TOC entry 5111 (class 2606 OID 282952)
 -- Name: meta_communication_mode fk_1949af3613e36366f3af8f8c0d94b762; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15119,6 +16276,7 @@ ALTER TABLE ONLY public.meta_communication_mode
 
 
 --
+-- TOC entry 5046 (class 2606 OID 282627)
 -- Name: course_participant fk_194fd4beddb019a224bee0d278b58eef; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15127,6 +16285,7 @@ ALTER TABLE ONLY public.course_participant
 
 
 --
+-- TOC entry 5010 (class 2606 OID 282447)
 -- Name: ccda_import_diagnosis fk_19b46d9de5ca059749b55de00960ee37; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15135,6 +16294,7 @@ ALTER TABLE ONLY public.ccda_import_diagnosis
 
 
 --
+-- TOC entry 5295 (class 2606 OID 283872)
 -- Name: patient fk_19f5d8f446d987148b32bb31b618529a; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15143,6 +16303,7 @@ ALTER TABLE ONLY public.patient
 
 
 --
+-- TOC entry 5269 (class 2606 OID 283742)
 -- Name: organization_employee_address fk_1a6800c78b37c6bac582867d391c955c; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15151,6 +16312,7 @@ ALTER TABLE ONLY public.organization_employee_address
 
 
 --
+-- TOC entry 5095 (class 2606 OID 282872)
 -- Name: meta_basic_status fk_1a7572eb06b88efe5bdcbac242c99687; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15159,6 +16321,7 @@ ALTER TABLE ONLY public.meta_basic_status
 
 
 --
+-- TOC entry 4983 (class 2606 OID 280695)
 -- Name: oml_property fk_1ae01cc88fb4185c70e1b052314a5237; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15167,6 +16330,7 @@ ALTER TABLE ONLY public.oml_property
 
 
 --
+-- TOC entry 4995 (class 2606 OID 282372)
 -- Name: ccda_export fk_1b35a9520425505807841496be5881d1; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15175,6 +16339,7 @@ ALTER TABLE ONLY public.ccda_export
 
 
 --
+-- TOC entry 5091 (class 2606 OID 282852)
 -- Name: meta_allergy_type fk_1b5373e527ab8acf1faf0434a85109f0; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15183,6 +16348,7 @@ ALTER TABLE ONLY public.meta_allergy_type
 
 
 --
+-- TOC entry 5398 (class 2606 OID 284387)
 -- Name: work_list fk_1be894fdce113a092630a8cc8a0a7ad3; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15191,6 +16357,7 @@ ALTER TABLE ONLY public.work_list
 
 
 --
+-- TOC entry 5421 (class 2606 OID 284502)
 -- Name: system_user fk_1d345b89818f461d4d2297595c3283ac; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15199,6 +16366,7 @@ ALTER TABLE ONLY public.system_user
 
 
 --
+-- TOC entry 4992 (class 2606 OID 282357)
 -- Name: ccda_export fk_1d72394c919c61732311b8d928c567ba; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15207,6 +16375,7 @@ ALTER TABLE ONLY public.ccda_export
 
 
 --
+-- TOC entry 5115 (class 2606 OID 282972)
 -- Name: meta_contact_type fk_1dd0ed087aea7ce18bd974a04557e105; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15215,6 +16384,7 @@ ALTER TABLE ONLY public.meta_contact_type
 
 
 --
+-- TOC entry 5038 (class 2606 OID 282587)
 -- Name: course fk_1ddf3b91168df6bba3f89c31ab27fc65; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15223,6 +16393,7 @@ ALTER TABLE ONLY public.course
 
 
 --
+-- TOC entry 5267 (class 2606 OID 283732)
 -- Name: organization_employee_address fk_1dfab521ea88c06c83aaedaaf67cfa5d; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15231,6 +16402,7 @@ ALTER TABLE ONLY public.organization_employee_address
 
 
 --
+-- TOC entry 5385 (class 2606 OID 284322)
 -- Name: user_password fk_1e24f774fdacd2e29277ff0379b6efee; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15239,6 +16411,7 @@ ALTER TABLE ONLY public.user_password
 
 
 --
+-- TOC entry 5357 (class 2606 OID 284182)
 -- Name: patient_specific_document fk_1fe1dea84fee267e8c504b47ac8760ef; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15247,6 +16420,7 @@ ALTER TABLE ONLY public.patient_specific_document
 
 
 --
+-- TOC entry 5090 (class 2606 OID 282847)
 -- Name: meta_allergy_type fk_1fe9186ba93ba519b3ad41bd827b6141; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15255,6 +16429,7 @@ ALTER TABLE ONLY public.meta_allergy_type
 
 
 --
+-- TOC entry 5308 (class 2606 OID 283937)
 -- Name: patient_admission fk_1ff3129230d0d47f5bae8881427e7bd0; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15263,6 +16438,7 @@ ALTER TABLE ONLY public.patient_admission
 
 
 --
+-- TOC entry 5387 (class 2606 OID 284332)
 -- Name: user_password fk_200e1f19832d436aff6decaf677ed671; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15271,6 +16447,7 @@ ALTER TABLE ONLY public.user_password
 
 
 --
+-- TOC entry 5409 (class 2606 OID 284442)
 -- Name: work_list_notes fk_20625ed635fa3af1f6186730a0aa0685; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15279,6 +16456,7 @@ ALTER TABLE ONLY public.work_list_notes
 
 
 --
+-- TOC entry 5234 (class 2606 OID 283567)
 -- Name: meta_work_list_approval_status fk_206d9bc282d5d15a115ebcbfcb973ee5; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15287,6 +16465,7 @@ ALTER TABLE ONLY public.meta_work_list_approval_status
 
 
 --
+-- TOC entry 5002 (class 2606 OID 282407)
 -- Name: ccda_export_request fk_20f3f360d3694b0768160a8476b6176b; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15295,6 +16474,7 @@ ALTER TABLE ONLY public.ccda_export_request
 
 
 --
+-- TOC entry 5226 (class 2606 OID 283527)
 -- Name: meta_timezone fk_22552fbe477bcce7240bcc0e880a0539; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15303,6 +16483,7 @@ ALTER TABLE ONLY public.meta_timezone
 
 
 --
+-- TOC entry 5416 (class 2606 OID 284477)
 -- Name: meta_oml_script fk_227fffbc8a33470f454c599d053d0bdd; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15311,6 +16492,7 @@ ALTER TABLE ONLY public.meta_oml_script
 
 
 --
+-- TOC entry 5408 (class 2606 OID 284437)
 -- Name: work_list_notes fk_235a3553737c768e4ddce1a57671954b; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15319,6 +16501,7 @@ ALTER TABLE ONLY public.work_list_notes
 
 
 --
+-- TOC entry 5280 (class 2606 OID 283797)
 -- Name: organization_folder fk_2412b2d8af776d705c04cdb209d46907; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15327,6 +16510,7 @@ ALTER TABLE ONLY public.organization_folder
 
 
 --
+-- TOC entry 5020 (class 2606 OID 282497)
 -- Name: ccd_upload fk_243c86b96cc3f1b2a016f00b5067a732; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15335,6 +16519,7 @@ ALTER TABLE ONLY public.ccd_upload
 
 
 --
+-- TOC entry 5150 (class 2606 OID 283147)
 -- Name: meta_housing_upgrade_type fk_24e67612789a372c2def46d4bd05e1b1; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15343,6 +16528,7 @@ ALTER TABLE ONLY public.meta_housing_upgrade_type
 
 
 --
+-- TOC entry 5047 (class 2606 OID 282632)
 -- Name: course_participant fk_2538487c8ef677938cea3a09efe6ed2a; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15351,6 +16537,7 @@ ALTER TABLE ONLY public.course_participant
 
 
 --
+-- TOC entry 5472 (class 2606 OID 284757)
 -- Name: patient_social_needs_initial_assessment fk_2554ae266b2ad2e1b22e6d5100432f64; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15359,6 +16546,7 @@ ALTER TABLE ONLY public.patient_social_needs_initial_assessment
 
 
 --
+-- TOC entry 5133 (class 2606 OID 283062)
 -- Name: meta_employment_status fk_2606585dff10c7be0695eabd328c3e2e; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15367,6 +16555,7 @@ ALTER TABLE ONLY public.meta_employment_status
 
 
 --
+-- TOC entry 5244 (class 2606 OID 283617)
 -- Name: meta_worklist_status fk_262d4da0d7059f569f1810f9a295fa7b; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15375,6 +16564,7 @@ ALTER TABLE ONLY public.meta_worklist_status
 
 
 --
+-- TOC entry 5061 (class 2606 OID 282702)
 -- Name: course_session_custom_field_value fk_2637559873e80b477ce97276c1affa7e; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15383,6 +16573,7 @@ ALTER TABLE ONLY public.course_session_custom_field_value
 
 
 --
+-- TOC entry 5386 (class 2606 OID 284327)
 -- Name: user_password fk_26c74d3f472b85a7eab1b621283aa7ec; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15391,6 +16582,7 @@ ALTER TABLE ONLY public.user_password
 
 
 --
+-- TOC entry 5074 (class 2606 OID 282767)
 -- Name: housing_upgrade fk_26c8378df3d89e7e3447c7ac7cc30f5e; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15399,6 +16591,7 @@ ALTER TABLE ONLY public.housing_upgrade
 
 
 --
+-- TOC entry 5424 (class 2606 OID 284517)
 -- Name: calendar_item fk_270efbbf25fbb765cdde8ad4c31e801a; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15407,6 +16600,7 @@ ALTER TABLE ONLY public.calendar_item
 
 
 --
+-- TOC entry 5403 (class 2606 OID 284412)
 -- Name: work_list_approver fk_27476f44fff3bb14390f54c8230765ca; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15415,6 +16609,7 @@ ALTER TABLE ONLY public.work_list_approver
 
 
 --
+-- TOC entry 5434 (class 2606 OID 284567)
 -- Name: meta_calendar_item_type fk_279ed26cf7e370f2c29e0a9073a3d024; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15423,6 +16618,7 @@ ALTER TABLE ONLY public.meta_calendar_item_type
 
 
 --
+-- TOC entry 5309 (class 2606 OID 283942)
 -- Name: patient_admission fk_27cc0b0725f3b5e5d1e2167af58f23ac; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15431,6 +16627,7 @@ ALTER TABLE ONLY public.patient_admission
 
 
 --
+-- TOC entry 5337 (class 2606 OID 284082)
 -- Name: patient_employment_info fk_28d92c001d9c56185308cd60258e2f0f; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15439,6 +16636,7 @@ ALTER TABLE ONLY public.patient_employment_info
 
 
 --
+-- TOC entry 5071 (class 2606 OID 282752)
 -- Name: housing_upgrade fk_28deac26e00206c1b531b5f61e818eab; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15447,6 +16645,7 @@ ALTER TABLE ONLY public.housing_upgrade
 
 
 --
+-- TOC entry 5262 (class 2606 OID 283707)
 -- Name: organization_employee fk_294f20f71fd3d6d00dd17fbf56121ef0; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15455,6 +16654,7 @@ ALTER TABLE ONLY public.organization_employee
 
 
 --
+-- TOC entry 5433 (class 2606 OID 284562)
 -- Name: meta_calendar_item_type fk_29b3484f9f1a3226aa6af28d81c290cd; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15463,6 +16663,7 @@ ALTER TABLE ONLY public.meta_calendar_item_type
 
 
 --
+-- TOC entry 5435 (class 2606 OID 284572)
 -- Name: meta_calendar_item_status fk_2b68066e53a254e49b7624246675a254; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15471,6 +16672,7 @@ ALTER TABLE ONLY public.meta_calendar_item_status
 
 
 --
+-- TOC entry 5283 (class 2606 OID 283812)
 -- Name: patient fk_2ba8d5bf3e2bff068da0cbf61e9df8fe; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15479,6 +16681,7 @@ ALTER TABLE ONLY public.patient
 
 
 --
+-- TOC entry 5390 (class 2606 OID 284347)
 -- Name: viewed_client fk_2bae35d06e4c9b40c0913339036fef45; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15487,6 +16690,7 @@ ALTER TABLE ONLY public.viewed_client
 
 
 --
+-- TOC entry 5201 (class 2606 OID 283402)
 -- Name: meta_smoking_status fk_2bcbb314e01f2f89acaf02e5fa86e41e; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15495,6 +16699,7 @@ ALTER TABLE ONLY public.meta_smoking_status
 
 
 --
+-- TOC entry 5225 (class 2606 OID 283522)
 -- Name: meta_temperature_unit fk_2c50c85e11388265dfb8f4a9b954a340; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15503,6 +16708,7 @@ ALTER TABLE ONLY public.meta_temperature_unit
 
 
 --
+-- TOC entry 5405 (class 2606 OID 284422)
 -- Name: work_list_approver fk_2cd11a771dc56954142b78564f62c31c; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15511,6 +16717,7 @@ ALTER TABLE ONLY public.work_list_approver
 
 
 --
+-- TOC entry 5200 (class 2606 OID 283397)
 -- Name: meta_severity fk_2d4aafaa9582da66f351a50027aade36; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15519,6 +16726,7 @@ ALTER TABLE ONLY public.meta_severity
 
 
 --
+-- TOC entry 5426 (class 2606 OID 284527)
 -- Name: calendar_item fk_2dbd1c8e5bf377c8a81b6b549abcdbdb; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15527,6 +16735,7 @@ ALTER TABLE ONLY public.calendar_item
 
 
 --
+-- TOC entry 5223 (class 2606 OID 283512)
 -- Name: meta_telephone_type fk_2dc7417cdcfbf25b367c68dc0dd3245d; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15535,6 +16744,7 @@ ALTER TABLE ONLY public.meta_telephone_type
 
 
 --
+-- TOC entry 5429 (class 2606 OID 284542)
 -- Name: calendar_item fk_2e2ac46d7871ee0f1d1d129f6e0f0aaf; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15543,6 +16753,7 @@ ALTER TABLE ONLY public.calendar_item
 
 
 --
+-- TOC entry 5306 (class 2606 OID 283927)
 -- Name: patient_address fk_2eba41d1812a4bc0e03837ce448afdb6; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15551,6 +16762,7 @@ ALTER TABLE ONLY public.patient_address
 
 
 --
+-- TOC entry 5331 (class 2606 OID 284052)
 -- Name: patient_diagnosis fk_2ebf3ddf9777f32466a9787c8ccdbce9; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15559,6 +16771,7 @@ ALTER TABLE ONLY public.patient_diagnosis
 
 
 --
+-- TOC entry 5456 (class 2606 OID 284677)
 -- Name: organization_profile_permission fk_2ee33b19bbe00d1aa6fcb38165a65089; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15567,6 +16780,7 @@ ALTER TABLE ONLY public.organization_profile_permission
 
 
 --
+-- TOC entry 5015 (class 2606 OID 282472)
 -- Name: ccda_import_diagnosis fk_2ef518ec94227aff7d6a5c8887fd8e3a; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15575,6 +16789,7 @@ ALTER TABLE ONLY public.ccda_import_diagnosis
 
 
 --
+-- TOC entry 5134 (class 2606 OID 283067)
 -- Name: meta_ethnicity fk_2f233c19db3420a3efce9cc5074d2069; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15583,6 +16798,7 @@ ALTER TABLE ONLY public.meta_ethnicity
 
 
 --
+-- TOC entry 5204 (class 2606 OID 283417)
 -- Name: meta_snomed fk_2f53150e97883b09e5ae8f75711a10e2; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15591,6 +16807,7 @@ ALTER TABLE ONLY public.meta_snomed
 
 
 --
+-- TOC entry 5079 (class 2606 OID 282792)
 -- Name: kch_program_assignment fk_2f8aa9781abf6a920484039529cc0da5; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15599,6 +16816,7 @@ ALTER TABLE ONLY public.kch_program_assignment
 
 
 --
+-- TOC entry 5221 (class 2606 OID 283502)
 -- Name: meta_telephone_type fk_2ff6800f051453d6250eb2ecebd03cbe; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15607,6 +16825,7 @@ ALTER TABLE ONLY public.meta_telephone_type
 
 
 --
+-- TOC entry 5279 (class 2606 OID 283792)
 -- Name: organization_folder fk_304145543f88f349bf39fb38bdadf8a2; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15615,6 +16834,7 @@ ALTER TABLE ONLY public.organization_folder
 
 
 --
+-- TOC entry 4994 (class 2606 OID 282367)
 -- Name: ccda_export fk_3172f2d90d1caddc9acf98d21f0126a8; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15623,6 +16843,7 @@ ALTER TABLE ONLY public.ccda_export
 
 
 --
+-- TOC entry 5419 (class 2606 OID 284492)
 -- Name: system_user fk_31946a1a8161bb7b584df9525e5c7673; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15631,6 +16852,7 @@ ALTER TABLE ONLY public.system_user
 
 
 --
+-- TOC entry 5263 (class 2606 OID 283712)
 -- Name: organization_employee fk_3333e0415ccabdef97af77b1a90c2786; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15639,6 +16861,7 @@ ALTER TABLE ONLY public.organization_employee
 
 
 --
+-- TOC entry 5117 (class 2606 OID 282982)
 -- Name: meta_country fk_34cc0b77835f0175cfcfb2db5710c9bb; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15647,6 +16870,7 @@ ALTER TABLE ONLY public.meta_country
 
 
 --
+-- TOC entry 5233 (class 2606 OID 283562)
 -- Name: meta_weight_unit fk_3522dc54389d70e1d50b99c4bd98af27; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15655,6 +16879,7 @@ ALTER TABLE ONLY public.meta_weight_unit
 
 
 --
+-- TOC entry 5448 (class 2606 OID 284637)
 -- Name: patient_activation_q_a fk_3534152f56f50392207a574f651ddcf6; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15663,6 +16888,7 @@ ALTER TABLE ONLY public.patient_activation_q_a
 
 
 --
+-- TOC entry 5161 (class 2606 OID 283202)
 -- Name: meta_label_detail fk_36420c2a960757a4c4809efa333b59fc; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15671,6 +16897,7 @@ ALTER TABLE ONLY public.meta_label_detail
 
 
 --
+-- TOC entry 5012 (class 2606 OID 282457)
 -- Name: ccda_import_diagnosis fk_368f29489b06c69f2265b9c5579b54e3; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15679,6 +16906,7 @@ ALTER TABLE ONLY public.ccda_import_diagnosis
 
 
 --
+-- TOC entry 5294 (class 2606 OID 283867)
 -- Name: patient fk_377821e01fefbac5fe0acd26b5016fde; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15687,6 +16915,7 @@ ALTER TABLE ONLY public.patient
 
 
 --
+-- TOC entry 5379 (class 2606 OID 284292)
 -- Name: synap_user_group fk_37d48776ef572012647600632feee446; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15695,6 +16924,7 @@ ALTER TABLE ONLY public.synap_user_group
 
 
 --
+-- TOC entry 5108 (class 2606 OID 282937)
 -- Name: meta_ccda_sections fk_3833c355a34e9d5219c52ba6cd1e3423; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15703,6 +16933,7 @@ ALTER TABLE ONLY public.meta_ccda_sections
 
 
 --
+-- TOC entry 5152 (class 2606 OID 283157)
 -- Name: meta_id_type fk_3a0690d226037b629cbe99460c911cda; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15711,6 +16942,7 @@ ALTER TABLE ONLY public.meta_id_type
 
 
 --
+-- TOC entry 5160 (class 2606 OID 283197)
 -- Name: meta_label_detail fk_3a07014bf5ada52d9a62d36081c70968; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15719,6 +16951,7 @@ ALTER TABLE ONLY public.meta_label_detail
 
 
 --
+-- TOC entry 5105 (class 2606 OID 282922)
 -- Name: meta_ccda_export_status fk_3a90258e66704f099b8f37a6a17f3c0e; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15727,6 +16960,7 @@ ALTER TABLE ONLY public.meta_ccda_export_status
 
 
 --
+-- TOC entry 5363 (class 2606 OID 284212)
 -- Name: patient_vital fk_3aa39be07b5f049c09b9701f42511399; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15735,6 +16969,7 @@ ALTER TABLE ONLY public.patient_vital
 
 
 --
+-- TOC entry 5258 (class 2606 OID 283687)
 -- Name: organization_employee fk_3ab35b77be8ba207e4d7a1c80b9803bd; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15743,6 +16978,7 @@ ALTER TABLE ONLY public.organization_employee
 
 
 --
+-- TOC entry 5397 (class 2606 OID 284382)
 -- Name: work_list fk_3ad427d4cc277d0d613c5795a13f507b; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15751,6 +16987,7 @@ ALTER TABLE ONLY public.work_list
 
 
 --
+-- TOC entry 5401 (class 2606 OID 284402)
 -- Name: work_list_approver fk_3ad5ba29a521eb66d4da2cb72aa95fee; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15759,6 +16996,7 @@ ALTER TABLE ONLY public.work_list_approver
 
 
 --
+-- TOC entry 5425 (class 2606 OID 284522)
 -- Name: calendar_item fk_3bcdae6ef9314d681b95de7e437bfb34; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15767,6 +17005,7 @@ ALTER TABLE ONLY public.calendar_item
 
 
 --
+-- TOC entry 5154 (class 2606 OID 283167)
 -- Name: meta_income_level fk_3c707af910998682f9694fdad63455dc; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15775,6 +17014,7 @@ ALTER TABLE ONLY public.meta_income_level
 
 
 --
+-- TOC entry 5141 (class 2606 OID 283102)
 -- Name: meta_gender fk_3cb5205fb5e6640f299e85b07a6a6855; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15783,6 +17023,7 @@ ALTER TABLE ONLY public.meta_gender
 
 
 --
+-- TOC entry 5237 (class 2606 OID 283582)
 -- Name: meta_worklist_priority fk_3cbdf1b794f96a9386affacc77c4c629; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15791,6 +17032,7 @@ ALTER TABLE ONLY public.meta_worklist_priority
 
 
 --
+-- TOC entry 5412 (class 2606 OID 284457)
 -- Name: work_list_reminder fk_3d42415b39e40118a1125505f5333caf; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15799,6 +17041,7 @@ ALTER TABLE ONLY public.work_list_reminder
 
 
 --
+-- TOC entry 5145 (class 2606 OID 283122)
 -- Name: meta_household_income_level fk_3e42070d99f28a00eb6d161aaa8b438c; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15807,6 +17050,7 @@ ALTER TABLE ONLY public.meta_household_income_level
 
 
 --
+-- TOC entry 5327 (class 2606 OID 284032)
 -- Name: patient_contact_address fk_3e94417adfdd8b216d156245837d8210; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15815,6 +17059,7 @@ ALTER TABLE ONLY public.patient_contact_address
 
 
 --
+-- TOC entry 5273 (class 2606 OID 283762)
 -- Name: organization_employee_division fk_3f57616ffbdd1643bfbcf5c487349f28; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15823,6 +17068,7 @@ ALTER TABLE ONLY public.organization_employee_division
 
 
 --
+-- TOC entry 5238 (class 2606 OID 283587)
 -- Name: meta_work_list_reminder_status fk_3f6aa71d64d58289309abc531155ae16; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15831,6 +17077,7 @@ ALTER TABLE ONLY public.meta_work_list_reminder_status
 
 
 --
+-- TOC entry 5080 (class 2606 OID 282797)
 -- Name: kch_program_assignment fk_3f6fbf9bfb4b8a2115d8614d93e6bfdc; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15839,6 +17086,7 @@ ALTER TABLE ONLY public.kch_program_assignment
 
 
 --
+-- TOC entry 5251 (class 2606 OID 283652)
 -- Name: organization_division fk_3fcc2bc344fe727823756e5edadbf73e; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15847,6 +17095,7 @@ ALTER TABLE ONLY public.organization_division
 
 
 --
+-- TOC entry 5470 (class 2606 OID 284747)
 -- Name: work_list_reminder_who_patient fk_3fe11700801da0f3797baf6dde845bda; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15855,6 +17104,7 @@ ALTER TABLE ONLY public.work_list_reminder_who_patient
 
 
 --
+-- TOC entry 4997 (class 2606 OID 282382)
 -- Name: ccda_export_log fk_40636c3094171dc672a68ee2275a6f0d; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15863,6 +17113,7 @@ ALTER TABLE ONLY public.ccda_export_log
 
 
 --
+-- TOC entry 5300 (class 2606 OID 283897)
 -- Name: patient_address fk_40d01b709c6ddca4d28d1ed684d12c06; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15871,6 +17122,7 @@ ALTER TABLE ONLY public.patient_address
 
 
 --
+-- TOC entry 5362 (class 2606 OID 284207)
 -- Name: patient_vital fk_40f5619ee0a42c05cfe6e61b19c5973e; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15879,6 +17131,7 @@ ALTER TABLE ONLY public.patient_vital
 
 
 --
+-- TOC entry 5361 (class 2606 OID 284202)
 -- Name: patient_vital fk_41a4b43a611c2c2a7f46aeaaf5e51a76; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15887,6 +17140,7 @@ ALTER TABLE ONLY public.patient_vital
 
 
 --
+-- TOC entry 5236 (class 2606 OID 283577)
 -- Name: meta_worklist_priority fk_42e8308b8073fa81be2fb70b434ccdf6; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15895,6 +17149,7 @@ ALTER TABLE ONLY public.meta_worklist_priority
 
 
 --
+-- TOC entry 5467 (class 2606 OID 284732)
 -- Name: work_list_reminder_who_employee fk_4340b564a185787fae687bedf56cb789; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15903,6 +17158,7 @@ ALTER TABLE ONLY public.work_list_reminder_who_employee
 
 
 --
+-- TOC entry 5445 (class 2606 OID 284622)
 -- Name: patient_activation_q_a fk_439dce170d59119de32ae24881e69058; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15911,6 +17167,7 @@ ALTER TABLE ONLY public.patient_activation_q_a
 
 
 --
+-- TOC entry 5264 (class 2606 OID 283717)
 -- Name: organization_employee_address fk_440533986255d5a897ad57ec16e846a7; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15919,6 +17176,7 @@ ALTER TABLE ONLY public.organization_employee_address
 
 
 --
+-- TOC entry 5451 (class 2606 OID 284652)
 -- Name: ccda_export_request_patient_ids fk_4530d9c12811151e19359a3d85af4e3d; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15927,6 +17185,7 @@ ALTER TABLE ONLY public.ccda_export_request_patient_ids
 
 
 --
+-- TOC entry 5208 (class 2606 OID 283437)
 -- Name: meta_snomed_code fk_45b42f38fcfb5b71142b1010df103e72; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15935,6 +17194,7 @@ ALTER TABLE ONLY public.meta_snomed_code
 
 
 --
+-- TOC entry 5129 (class 2606 OID 283042)
 -- Name: meta_employee_status fk_4646d259b7d79efded568038f4884d89; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15943,6 +17203,7 @@ ALTER TABLE ONLY public.meta_employee_status
 
 
 --
+-- TOC entry 5402 (class 2606 OID 284407)
 -- Name: work_list_approver fk_46cd08f5e1a65b725128370911c7e0f5; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15951,6 +17212,7 @@ ALTER TABLE ONLY public.work_list_approver
 
 
 --
+-- TOC entry 5348 (class 2606 OID 284137)
 -- Name: patient_prescription fk_46dee981cbb362a708a70982a1daa5ff; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15959,6 +17221,7 @@ ALTER TABLE ONLY public.patient_prescription
 
 
 --
+-- TOC entry 5143 (class 2606 OID 283112)
 -- Name: meta_height_unit fk_47313de0d5fa954f992a3ff59e47e3b9; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15967,6 +17230,7 @@ ALTER TABLE ONLY public.meta_height_unit
 
 
 --
+-- TOC entry 5255 (class 2606 OID 283672)
 -- Name: organization_division fk_4799f5b480304b324bec6ce32bd88d6a; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15975,6 +17239,7 @@ ALTER TABLE ONLY public.organization_division
 
 
 --
+-- TOC entry 5001 (class 2606 OID 282402)
 -- Name: ccda_export_log fk_47bb5f810de68600443e9d14aa52e1aa; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15983,6 +17248,7 @@ ALTER TABLE ONLY public.ccda_export_log
 
 
 --
+-- TOC entry 5463 (class 2606 OID 284712)
 -- Name: work_list_assignee_employee fk_47da53b74842d51a6b3602381e4c77bf; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15991,6 +17257,7 @@ ALTER TABLE ONLY public.work_list_assignee_employee
 
 
 --
+-- TOC entry 5021 (class 2606 OID 282502)
 -- Name: ccd_upload fk_4913b5c090b48d7cc331152ae67e4887; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -15999,6 +17266,7 @@ ALTER TABLE ONLY public.ccd_upload
 
 
 --
+-- TOC entry 5121 (class 2606 OID 283002)
 -- Name: meta_data_family fk_49239cac2f3a5368dfa42234365ec22c; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16007,6 +17275,7 @@ ALTER TABLE ONLY public.meta_data_family
 
 
 --
+-- TOC entry 5222 (class 2606 OID 283507)
 -- Name: meta_telephone_type fk_4ac10b467ebab75b9d52d672710e520d; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16015,6 +17284,7 @@ ALTER TABLE ONLY public.meta_telephone_type
 
 
 --
+-- TOC entry 5281 (class 2606 OID 283802)
 -- Name: organization_profile fk_4acada02dad693522839aeea69ccd91d; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16023,6 +17293,7 @@ ALTER TABLE ONLY public.organization_profile
 
 
 --
+-- TOC entry 5101 (class 2606 OID 282902)
 -- Name: meta_ccda_export_log_type fk_4b30a374249531e324eb1ff3742201bd; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16031,6 +17302,7 @@ ALTER TABLE ONLY public.meta_ccda_export_log_type
 
 
 --
+-- TOC entry 5477 (class 2606 OID 284782)
 -- Name: patient_social_needs_encourage_clients_to fk_4b345d736d64ee9b491c525d9edfc82d; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16039,6 +17311,7 @@ ALTER TABLE ONLY public.patient_social_needs_encourage_clients_to
 
 
 --
+-- TOC entry 5423 (class 2606 OID 284512)
 -- Name: meta_sync_status fk_4b4c09591ba15d120d29d3f97b625c8d; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16047,6 +17320,7 @@ ALTER TABLE ONLY public.meta_sync_status
 
 
 --
+-- TOC entry 5086 (class 2606 OID 282827)
 -- Name: meta_allergy_severity fk_4b6b8722d72881b4bfd54dde505a5ea9; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16055,6 +17329,7 @@ ALTER TABLE ONLY public.meta_allergy_severity
 
 
 --
+-- TOC entry 5332 (class 2606 OID 284057)
 -- Name: patient_diagnosis fk_4bc876f536724548a9de34d3b4e9ad8f; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16063,6 +17338,7 @@ ALTER TABLE ONLY public.patient_diagnosis
 
 
 --
+-- TOC entry 5370 (class 2606 OID 284247)
 -- Name: preferred_provider fk_4bcfc9bd73b34bf762767bd673846fc5; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16071,6 +17347,7 @@ ALTER TABLE ONLY public.preferred_provider
 
 
 --
+-- TOC entry 5054 (class 2606 OID 282667)
 -- Name: course_session fk_4be241057e277d6415baddd0dacadbb8; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16079,6 +17356,7 @@ ALTER TABLE ONLY public.course_session
 
 
 --
+-- TOC entry 5109 (class 2606 OID 282942)
 -- Name: meta_clinical_document_type fk_4d654efe12583a3ee4c4cd4020e0dff4; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16087,6 +17365,7 @@ ALTER TABLE ONLY public.meta_clinical_document_type
 
 
 --
+-- TOC entry 5441 (class 2606 OID 284602)
 -- Name: meta_answer fk_4e3b0e9c8dbd1f79badc2afbe0afccde; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16095,6 +17374,7 @@ ALTER TABLE ONLY public.meta_answer
 
 
 --
+-- TOC entry 5126 (class 2606 OID 283027)
 -- Name: meta_default_status fk_4fb819b06fa8c54034ed076a0126ea02; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16103,6 +17383,7 @@ ALTER TABLE ONLY public.meta_default_status
 
 
 --
+-- TOC entry 5135 (class 2606 OID 283072)
 -- Name: meta_ethnicity fk_4fbead5cbc8e7c8edefe282f20466d7a; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16111,6 +17392,7 @@ ALTER TABLE ONLY public.meta_ethnicity
 
 
 --
+-- TOC entry 5326 (class 2606 OID 284027)
 -- Name: patient_contact_address fk_50199f574e4a699ad17a9d7491064bce; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16119,6 +17401,7 @@ ALTER TABLE ONLY public.patient_contact_address
 
 
 --
+-- TOC entry 5093 (class 2606 OID 282862)
 -- Name: meta_auth_policy fk_5047825da91641aa3452cff723c1bf28; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16127,6 +17410,7 @@ ALTER TABLE ONLY public.meta_auth_policy
 
 
 --
+-- TOC entry 5354 (class 2606 OID 284167)
 -- Name: patient_social_needs fk_5062931bffe66957dd4daaea1be53555; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16135,6 +17419,7 @@ ALTER TABLE ONLY public.patient_social_needs
 
 
 --
+-- TOC entry 5333 (class 2606 OID 284062)
 -- Name: patient_diagnosis fk_50968fc857b62ea24088a6a9f427720a; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16143,6 +17428,7 @@ ALTER TABLE ONLY public.patient_diagnosis
 
 
 --
+-- TOC entry 5277 (class 2606 OID 283782)
 -- Name: organization_employee_telephone fk_5111c4f0310c1f0c84c56ca30b382267; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16151,6 +17437,7 @@ ALTER TABLE ONLY public.organization_employee_telephone
 
 
 --
+-- TOC entry 5157 (class 2606 OID 283182)
 -- Name: meta_label fk_53883f398c371a0e16529e71e2306029; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16159,6 +17446,7 @@ ALTER TABLE ONLY public.meta_label
 
 
 --
+-- TOC entry 5365 (class 2606 OID 284222)
 -- Name: patient_vital fk_54293e10520a8d88d3590b5471ad6ed2; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16167,6 +17455,7 @@ ALTER TABLE ONLY public.patient_vital
 
 
 --
+-- TOC entry 5246 (class 2606 OID 283627)
 -- Name: meta_zip_code fk_57c25ea2938c25507ac3292fffaf0d1c; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16175,6 +17464,7 @@ ALTER TABLE ONLY public.meta_zip_code
 
 
 --
+-- TOC entry 5147 (class 2606 OID 283132)
 -- Name: meta_housing_status fk_58c3aa86081091ce5a067f057a46d8ff; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16183,6 +17473,7 @@ ALTER TABLE ONLY public.meta_housing_status
 
 
 --
+-- TOC entry 5350 (class 2606 OID 284147)
 -- Name: patient_primary_care_provider fk_58c5d1fcc093f528677b81f57cee997f; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16191,6 +17482,7 @@ ALTER TABLE ONLY public.patient_primary_care_provider
 
 
 --
+-- TOC entry 5343 (class 2606 OID 284112)
 -- Name: patient_medication fk_590524f1d3a173df90844f7b5aa07750; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16199,6 +17491,7 @@ ALTER TABLE ONLY public.patient_medication
 
 
 --
+-- TOC entry 5274 (class 2606 OID 283767)
 -- Name: organization_employee_telephone fk_5928b0d78be85c642d9d8d4912f68f20; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16207,6 +17500,7 @@ ALTER TABLE ONLY public.organization_employee_telephone
 
 
 --
+-- TOC entry 5466 (class 2606 OID 284727)
 -- Name: work_list_assignee_patient fk_59bcb60f14929721dd17c496555ab122; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16215,6 +17509,7 @@ ALTER TABLE ONLY public.work_list_assignee_patient
 
 
 --
+-- TOC entry 5191 (class 2606 OID 283352)
 -- Name: meta_race fk_5b42b8c939e83bebc86cfd7d04d4481b; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16223,6 +17518,7 @@ ALTER TABLE ONLY public.meta_race
 
 
 --
+-- TOC entry 5399 (class 2606 OID 284392)
 -- Name: work_list fk_5b4e5bfc20e1c09ad08a621ea722fec4; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16231,6 +17527,7 @@ ALTER TABLE ONLY public.work_list
 
 
 --
+-- TOC entry 5185 (class 2606 OID 283322)
 -- Name: meta_patient_status fk_5bc4f78a6416583e21f25fe684878c0f; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16239,6 +17536,7 @@ ALTER TABLE ONLY public.meta_patient_status
 
 
 --
+-- TOC entry 5344 (class 2606 OID 284117)
 -- Name: patient_medication fk_5d62f5559524ae3922cbefa0ef2c52ae; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16247,6 +17545,7 @@ ALTER TABLE ONLY public.patient_medication
 
 
 --
+-- TOC entry 5432 (class 2606 OID 284557)
 -- Name: calendar_item fk_5e089eb6e22d1e67d5b04fb42ead029b; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16255,6 +17554,7 @@ ALTER TABLE ONLY public.calendar_item
 
 
 --
+-- TOC entry 5396 (class 2606 OID 284377)
 -- Name: work_list fk_5e5d9330067ec48d8b88c281b55e1c76; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16263,6 +17563,7 @@ ALTER TABLE ONLY public.work_list
 
 
 --
+-- TOC entry 5139 (class 2606 OID 283092)
 -- Name: meta_field_defination_type fk_5f1965ace0e3b1617926c40b82c59c3c; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16271,6 +17572,7 @@ ALTER TABLE ONLY public.meta_field_defination_type
 
 
 --
+-- TOC entry 5148 (class 2606 OID 283137)
 -- Name: meta_housing_upgrade_status fk_5f240ab612a9c8fe536d3d9e243e94e6; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16279,6 +17581,7 @@ ALTER TABLE ONLY public.meta_housing_upgrade_status
 
 
 --
+-- TOC entry 5194 (class 2606 OID 283367)
 -- Name: meta_relationship fk_5f5bdb12e700f6bf9fcb568a409df29f; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16287,6 +17590,7 @@ ALTER TABLE ONLY public.meta_relationship
 
 
 --
+-- TOC entry 5055 (class 2606 OID 282672)
 -- Name: course_session_attendance fk_5fa4f1423b101f5d3f3cfeab388d08aa; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16295,6 +17599,7 @@ ALTER TABLE ONLY public.course_session_attendance
 
 
 --
+-- TOC entry 5104 (class 2606 OID 282917)
 -- Name: meta_ccda_export_status fk_606cc704acb0d5feff33a99ada79933c; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16303,6 +17608,7 @@ ALTER TABLE ONLY public.meta_ccda_export_status
 
 
 --
+-- TOC entry 5170 (class 2606 OID 283247)
 -- Name: meta_military_status fk_60b840f05badd58012f4340c1afaac87; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16311,6 +17617,7 @@ ALTER TABLE ONLY public.meta_military_status
 
 
 --
+-- TOC entry 5068 (class 2606 OID 282737)
 -- Name: data_import_request fk_60d0c19743b6831d248c8ca6114fc79e; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16319,6 +17626,7 @@ ALTER TABLE ONLY public.data_import_request
 
 
 --
+-- TOC entry 5232 (class 2606 OID 283557)
 -- Name: meta_weight_unit fk_6109d11f48876ef9f02fa85cc667f34e; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16327,6 +17635,7 @@ ALTER TABLE ONLY public.meta_weight_unit
 
 
 --
+-- TOC entry 5260 (class 2606 OID 283697)
 -- Name: organization_employee fk_63677c797220a1fb6d0745267189da0b; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16335,6 +17644,7 @@ ALTER TABLE ONLY public.organization_employee
 
 
 --
+-- TOC entry 5052 (class 2606 OID 282657)
 -- Name: course_session fk_649a347379331a44666ab162b901f276; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16343,6 +17653,7 @@ ALTER TABLE ONLY public.course_session
 
 
 --
+-- TOC entry 5219 (class 2606 OID 283492)
 -- Name: meta_synap_profile fk_64c167f45bf1b6c2217c7fd849a95e09; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16351,6 +17662,7 @@ ALTER TABLE ONLY public.meta_synap_profile
 
 
 --
+-- TOC entry 5231 (class 2606 OID 283552)
 -- Name: meta_user_type fk_650a08a7a8a27f55fa24f803ba2d9f78; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16359,6 +17671,7 @@ ALTER TABLE ONLY public.meta_user_type
 
 
 --
+-- TOC entry 5000 (class 2606 OID 282397)
 -- Name: ccda_export_log fk_650ea50674f07e8e427cdb74c5a2489a; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16367,6 +17680,7 @@ ALTER TABLE ONLY public.ccda_export_log
 
 
 --
+-- TOC entry 5449 (class 2606 OID 284642)
 -- Name: ccda_export_include_sections fk_656ab26c6851a7b3ec91f833c3da54af; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16375,6 +17689,7 @@ ALTER TABLE ONLY public.ccda_export_include_sections
 
 
 --
+-- TOC entry 5345 (class 2606 OID 284122)
 -- Name: patient_medication fk_68345d2e5e672cbdcb3ae6e54c213723; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16383,6 +17698,7 @@ ALTER TABLE ONLY public.patient_medication
 
 
 --
+-- TOC entry 5036 (class 2606 OID 282577)
 -- Name: course fk_6844fd746c6736efdf136c750bcb3b86; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16391,6 +17707,7 @@ ALTER TABLE ONLY public.course
 
 
 --
+-- TOC entry 4985 (class 2606 OID 282322)
 -- Name: care_continuity_import_request fk_6851eedf9cc9fc4bf2de032f0527143c; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16399,6 +17716,7 @@ ALTER TABLE ONLY public.care_continuity_import_request
 
 
 --
+-- TOC entry 5030 (class 2606 OID 282547)
 -- Name: client_document_file fk_68951f1cb423236876fe6741f943f3bf; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16407,6 +17725,7 @@ ALTER TABLE ONLY public.client_document_file
 
 
 --
+-- TOC entry 5178 (class 2606 OID 283287)
 -- Name: meta_patient_document_type fk_68b7cf98b4f942f3e8e6d04776e66a7d; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16415,6 +17734,7 @@ ALTER TABLE ONLY public.meta_patient_document_type
 
 
 --
+-- TOC entry 4986 (class 2606 OID 282327)
 -- Name: care_continuity_import_request fk_690f1451b28fbff61276112437959da0; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16423,6 +17743,7 @@ ALTER TABLE ONLY public.care_continuity_import_request
 
 
 --
+-- TOC entry 5162 (class 2606 OID 283207)
 -- Name: meta_language fk_69124f15a64f2a09c38b45b6ea54f6ff; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16431,6 +17752,7 @@ ALTER TABLE ONLY public.meta_language
 
 
 --
+-- TOC entry 5188 (class 2606 OID 283337)
 -- Name: meta_provider_service_type fk_6931aba28994662fe1301f57d11b300e; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16439,6 +17761,7 @@ ALTER TABLE ONLY public.meta_provider_service_type
 
 
 --
+-- TOC entry 5132 (class 2606 OID 283057)
 -- Name: meta_employment_status fk_69de68b431f77be2a176ea155c589818; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16447,6 +17770,7 @@ ALTER TABLE ONLY public.meta_employment_status
 
 
 --
+-- TOC entry 5120 (class 2606 OID 282997)
 -- Name: meta_data_family fk_6ab932dc6f7cfa049869497be705daab; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16455,6 +17779,7 @@ ALTER TABLE ONLY public.meta_data_family
 
 
 --
+-- TOC entry 5156 (class 2606 OID 283177)
 -- Name: meta_label fk_6bbfa4c6b4996e455058e289f03d2884; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16463,6 +17788,7 @@ ALTER TABLE ONLY public.meta_label
 
 
 --
+-- TOC entry 5322 (class 2606 OID 284007)
 -- Name: patient_contact_address fk_6bf4e371c782d7e896eeefd144570f00; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16471,6 +17797,7 @@ ALTER TABLE ONLY public.patient_contact_address
 
 
 --
+-- TOC entry 5173 (class 2606 OID 283262)
 -- Name: meta_patient_diagnosis_status fk_6c402bf972a10880e6ca62e223e1af65; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16479,6 +17806,7 @@ ALTER TABLE ONLY public.meta_patient_diagnosis_status
 
 
 --
+-- TOC entry 5450 (class 2606 OID 284647)
 -- Name: ccda_export_include_sections fk_6d7a046d18ee208e45ee5388052e9260; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16487,6 +17815,7 @@ ALTER TABLE ONLY public.ccda_export_include_sections
 
 
 --
+-- TOC entry 5165 (class 2606 OID 283222)
 -- Name: meta_marital_status fk_6e57557ee4a029f77f0c828962a7aac2; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16495,6 +17824,7 @@ ALTER TABLE ONLY public.meta_marital_status
 
 
 --
+-- TOC entry 5389 (class 2606 OID 284342)
 -- Name: viewed_client fk_6ea0d44408d2c678be596ae8b22f0033; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16503,6 +17833,7 @@ ALTER TABLE ONLY public.viewed_client
 
 
 --
+-- TOC entry 5182 (class 2606 OID 283307)
 -- Name: meta_patient_identity_type fk_6ef5839a566ef72840701d14f13d1804; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16511,6 +17842,7 @@ ALTER TABLE ONLY public.meta_patient_identity_type
 
 
 --
+-- TOC entry 4998 (class 2606 OID 282387)
 -- Name: ccda_export_log fk_6f1f316e806a5ab653c4d9a30429d9ae; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16519,6 +17851,7 @@ ALTER TABLE ONLY public.ccda_export_log
 
 
 --
+-- TOC entry 5224 (class 2606 OID 283517)
 -- Name: meta_temperature_unit fk_6fec3629e8a9bab5eefad9f228276287; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16527,6 +17860,7 @@ ALTER TABLE ONLY public.meta_temperature_unit
 
 
 --
+-- TOC entry 5285 (class 2606 OID 283822)
 -- Name: patient fk_702ad19c8dffc1d453dc981bc467db2f; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16535,6 +17869,7 @@ ALTER TABLE ONLY public.patient
 
 
 --
+-- TOC entry 5171 (class 2606 OID 283252)
 -- Name: meta_pain_level fk_704674ab7044e8ed36840ce3b55870b7; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16543,6 +17878,7 @@ ALTER TABLE ONLY public.meta_pain_level
 
 
 --
+-- TOC entry 5292 (class 2606 OID 283857)
 -- Name: patient fk_70644183cad7545fc43cd6d01631d919; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16551,6 +17887,7 @@ ALTER TABLE ONLY public.patient
 
 
 --
+-- TOC entry 5158 (class 2606 OID 283187)
 -- Name: meta_label_detail fk_70e3ff512d729cbfedf8591e30e7bfe3; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16559,6 +17896,7 @@ ALTER TABLE ONLY public.meta_label_detail
 
 
 --
+-- TOC entry 5227 (class 2606 OID 283532)
 -- Name: meta_timezone fk_71d796ef890acdc0740c4073821bc70e; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16567,6 +17905,7 @@ ALTER TABLE ONLY public.meta_timezone
 
 
 --
+-- TOC entry 5342 (class 2606 OID 284107)
 -- Name: patient_medication fk_72fbc1f9efce1e2def925cc3b4861997; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16575,6 +17914,7 @@ ALTER TABLE ONLY public.patient_medication
 
 
 --
+-- TOC entry 5128 (class 2606 OID 283037)
 -- Name: meta_diagnostic_code fk_73857e94e3ad14da25aff7e0920da536; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16583,6 +17923,7 @@ ALTER TABLE ONLY public.meta_diagnostic_code
 
 
 --
+-- TOC entry 5444 (class 2606 OID 284617)
 -- Name: patient_activation_q_a fk_73c3d0fefb65fcd5f52a4a882701b011; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16591,6 +17932,7 @@ ALTER TABLE ONLY public.patient_activation_q_a
 
 
 --
+-- TOC entry 5083 (class 2606 OID 282812)
 -- Name: meta_address_type fk_73c88b03f2726c0a3791f199c06a047d; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16599,6 +17941,7 @@ ALTER TABLE ONLY public.meta_address_type
 
 
 --
+-- TOC entry 5186 (class 2606 OID 283327)
 -- Name: meta_permission fk_755fd7767da715daab5d2ea1647f9ade; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16607,6 +17950,7 @@ ALTER TABLE ONLY public.meta_permission
 
 
 --
+-- TOC entry 5391 (class 2606 OID 284352)
 -- Name: viewed_client fk_760f7018e23edce4e75e717fa0f1bf59; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16615,6 +17959,7 @@ ALTER TABLE ONLY public.viewed_client
 
 
 --
+-- TOC entry 5351 (class 2606 OID 284152)
 -- Name: patient_primary_care_provider fk_77b9f95f8e456c2daf5fff4cf705135b; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16623,6 +17968,7 @@ ALTER TABLE ONLY public.patient_primary_care_provider
 
 
 --
+-- TOC entry 5431 (class 2606 OID 284552)
 -- Name: calendar_item fk_7979ddefec6ebb350cc2467ea04d7e33; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16631,6 +17977,7 @@ ALTER TABLE ONLY public.calendar_item
 
 
 --
+-- TOC entry 5087 (class 2606 OID 282832)
 -- Name: meta_allergy_severity fk_7998509837f47e83c233965b97a44c2e; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16639,6 +17986,7 @@ ALTER TABLE ONLY public.meta_allergy_severity
 
 
 --
+-- TOC entry 5167 (class 2606 OID 283232)
 -- Name: meta_medication_delivery_route fk_79c61249d3d5afef036ea95daf0156d0; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16647,6 +17995,7 @@ ALTER TABLE ONLY public.meta_medication_delivery_route
 
 
 --
+-- TOC entry 5388 (class 2606 OID 284337)
 -- Name: viewed_client fk_7a2f53e2c28f72c8a8688a2a414eb16a; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16655,6 +18004,7 @@ ALTER TABLE ONLY public.viewed_client
 
 
 --
+-- TOC entry 5298 (class 2606 OID 283887)
 -- Name: patient fk_7a6059501e42bf8635aa1cf31c9a5167; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16663,6 +18013,7 @@ ALTER TABLE ONLY public.patient
 
 
 --
+-- TOC entry 5003 (class 2606 OID 282412)
 -- Name: ccda_export_request fk_7a86a7e3d3c54f9e758534df077b8786; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16671,6 +18022,7 @@ ALTER TABLE ONLY public.ccda_export_request
 
 
 --
+-- TOC entry 5439 (class 2606 OID 284592)
 -- Name: meta_question fk_7b52daa45c02c10f24bcc6cfb5caabc3; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16679,6 +18031,7 @@ ALTER TABLE ONLY public.meta_question
 
 
 --
+-- TOC entry 5072 (class 2606 OID 282757)
 -- Name: housing_upgrade fk_7b64276fce79ae0bacfac0a6ed902989; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16687,6 +18040,7 @@ ALTER TABLE ONLY public.housing_upgrade
 
 
 --
+-- TOC entry 5259 (class 2606 OID 283692)
 -- Name: organization_employee fk_7bcfea9f47920295ecc9b083c79329db; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16695,6 +18049,7 @@ ALTER TABLE ONLY public.organization_employee
 
 
 --
+-- TOC entry 5106 (class 2606 OID 282927)
 -- Name: meta_ccda_sections fk_7c6c643ab426b6999b8b2bcddf1119f5; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16703,6 +18058,7 @@ ALTER TABLE ONLY public.meta_ccda_sections
 
 
 --
+-- TOC entry 5287 (class 2606 OID 283832)
 -- Name: patient fk_7cad235d27f6a6bd75ad3dc93dcba1b9; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16711,6 +18067,7 @@ ALTER TABLE ONLY public.patient
 
 
 --
+-- TOC entry 5039 (class 2606 OID 282592)
 -- Name: course fk_7ceff0459b17c2ad8a99d438b078a9ce; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16719,6 +18076,7 @@ ALTER TABLE ONLY public.course
 
 
 --
+-- TOC entry 5319 (class 2606 OID 283992)
 -- Name: patient_contact fk_7ef5633528a516dc432827c85c7ff79b; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16727,6 +18085,7 @@ ALTER TABLE ONLY public.patient_contact
 
 
 --
+-- TOC entry 5102 (class 2606 OID 282907)
 -- Name: meta_ccda_export_log_type fk_7f266f44a7f3dc13e034689f4834d5bf; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16735,6 +18094,7 @@ ALTER TABLE ONLY public.meta_ccda_export_log_type
 
 
 --
+-- TOC entry 5122 (class 2606 OID 283007)
 -- Name: meta_day_of_week fk_7f926a592fdae8c9fe944c8202f6e1d8; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16743,6 +18103,7 @@ ALTER TABLE ONLY public.meta_day_of_week
 
 
 --
+-- TOC entry 5393 (class 2606 OID 284362)
 -- Name: work_list fk_80192526e7a3b07e80fd2992bae03552; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16751,6 +18112,7 @@ ALTER TABLE ONLY public.work_list
 
 
 --
+-- TOC entry 5230 (class 2606 OID 283547)
 -- Name: meta_user_type fk_8223bd6899ce100da5fd3308f2ee813c; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16759,6 +18121,7 @@ ALTER TABLE ONLY public.meta_user_type
 
 
 --
+-- TOC entry 5063 (class 2606 OID 282712)
 -- Name: course_session_custom_field_value fk_826eae422cc0d2897c1c79d61e3c13ab; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16767,6 +18130,7 @@ ALTER TABLE ONLY public.course_session_custom_field_value
 
 
 --
+-- TOC entry 5291 (class 2606 OID 283852)
 -- Name: patient fk_830359c264bc4fc717584110e2ba8501; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16775,6 +18139,7 @@ ALTER TABLE ONLY public.patient
 
 
 --
+-- TOC entry 5364 (class 2606 OID 284217)
 -- Name: patient_vital fk_832dce21d11045f3ae12b56073087568; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16783,6 +18148,7 @@ ALTER TABLE ONLY public.patient_vital
 
 
 --
+-- TOC entry 5316 (class 2606 OID 283977)
 -- Name: patient_contact fk_834db22f440f2e0a8a9d9a302c62c3c8; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16791,6 +18157,7 @@ ALTER TABLE ONLY public.patient_contact
 
 
 --
+-- TOC entry 5067 (class 2606 OID 282732)
 -- Name: data_export_request fk_850672c8250e79d0baa15cd90925238e; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16799,6 +18166,7 @@ ALTER TABLE ONLY public.data_export_request
 
 
 --
+-- TOC entry 5383 (class 2606 OID 284312)
 -- Name: synap_user_token fk_8582d6fcc029958d0caa2939e96858f9; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16807,6 +18175,7 @@ ALTER TABLE ONLY public.synap_user_token
 
 
 --
+-- TOC entry 5035 (class 2606 OID 282572)
 -- Name: client_note fk_85b07533d571c4e8b97f5c538fbd07ce; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16815,6 +18184,7 @@ ALTER TABLE ONLY public.client_note
 
 
 --
+-- TOC entry 5420 (class 2606 OID 284497)
 -- Name: system_user fk_86aca5e3c3bc79a9bf66f1550c4f2e81; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16823,6 +18193,7 @@ ALTER TABLE ONLY public.system_user
 
 
 --
+-- TOC entry 5088 (class 2606 OID 282837)
 -- Name: meta_allergy_severity fk_86da95de20b8fea18b2f77f41d40f273; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16831,6 +18202,7 @@ ALTER TABLE ONLY public.meta_allergy_severity
 
 
 --
+-- TOC entry 5193 (class 2606 OID 283362)
 -- Name: meta_referral fk_86e0436ba1cba247b630e633ff193890; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16839,6 +18211,7 @@ ALTER TABLE ONLY public.meta_referral
 
 
 --
+-- TOC entry 5367 (class 2606 OID 284232)
 -- Name: patient_vital fk_889463f643d95d5016c8c02a4fe9147e; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16847,6 +18220,7 @@ ALTER TABLE ONLY public.patient_vital
 
 
 --
+-- TOC entry 5352 (class 2606 OID 284157)
 -- Name: patient_primary_care_provider fk_889bbc6592404677dbd87c2888d1b1b0; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16855,6 +18229,7 @@ ALTER TABLE ONLY public.patient_primary_care_provider
 
 
 --
+-- TOC entry 5066 (class 2606 OID 282727)
 -- Name: data_export_request fk_88c8aaff52d978775a5a9ee9b511e1cb; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16863,6 +18238,7 @@ ALTER TABLE ONLY public.data_export_request
 
 
 --
+-- TOC entry 5458 (class 2606 OID 284687)
 -- Name: patient_race fk_88d3468df6d3dcfdd32a25cd22225c16; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16871,6 +18247,7 @@ ALTER TABLE ONLY public.patient_race
 
 
 --
+-- TOC entry 5007 (class 2606 OID 282432)
 -- Name: ccda_import_allergy fk_88fcc43879aade30c900d908f184f495; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16879,6 +18256,7 @@ ALTER TABLE ONLY public.ccda_import_allergy
 
 
 --
+-- TOC entry 5017 (class 2606 OID 282482)
 -- Name: ccda_import_medication fk_8912ca5c26e5f35fc7cc8f4095a8e62f; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16887,6 +18265,7 @@ ALTER TABLE ONLY public.ccda_import_medication
 
 
 --
+-- TOC entry 5290 (class 2606 OID 283847)
 -- Name: patient fk_89d89bf8650c03039db221cec0f20b18; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16895,6 +18274,7 @@ ALTER TABLE ONLY public.patient
 
 
 --
+-- TOC entry 5276 (class 2606 OID 283777)
 -- Name: organization_employee_telephone fk_89fbc5a531a4fed530f098724b7e5c68; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16903,6 +18283,7 @@ ALTER TABLE ONLY public.organization_employee_telephone
 
 
 --
+-- TOC entry 5286 (class 2606 OID 283827)
 -- Name: patient fk_8a286ed47c83e33bae1a5201f09312f8; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16911,6 +18292,7 @@ ALTER TABLE ONLY public.patient
 
 
 --
+-- TOC entry 5302 (class 2606 OID 283907)
 -- Name: patient_address fk_8a85019c979fc4509bb24857086ec3e5; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16919,6 +18301,7 @@ ALTER TABLE ONLY public.patient_address
 
 
 --
+-- TOC entry 5123 (class 2606 OID 283012)
 -- Name: meta_day_of_week fk_8b7e4e2594a8cecc715bc3e6a3e58cde; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16927,6 +18310,7 @@ ALTER TABLE ONLY public.meta_day_of_week
 
 
 --
+-- TOC entry 5099 (class 2606 OID 282892)
 -- Name: meta_care_continuity_document_type fk_8b8544efdacb5ece7e7a3648e62846bf; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16935,6 +18319,7 @@ ALTER TABLE ONLY public.meta_care_continuity_document_type
 
 
 --
+-- TOC entry 5025 (class 2606 OID 282522)
 -- Name: client_document fk_8baad373179b2738a9406563fff1ef15; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16943,6 +18328,7 @@ ALTER TABLE ONLY public.client_document
 
 
 --
+-- TOC entry 5006 (class 2606 OID 282427)
 -- Name: ccda_import_allergy fk_8bb65dcfbc775ff4897e231457886a29; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16951,6 +18337,7 @@ ALTER TABLE ONLY public.ccda_import_allergy
 
 
 --
+-- TOC entry 5377 (class 2606 OID 284282)
 -- Name: synap_user fk_8cfe90895debb1f19204944eec5b168d; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16959,6 +18346,7 @@ ALTER TABLE ONLY public.synap_user
 
 
 --
+-- TOC entry 5253 (class 2606 OID 283662)
 -- Name: organization_division fk_8e294f4f92214c16d80315b30ccfd89f; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16967,6 +18355,7 @@ ALTER TABLE ONLY public.organization_division
 
 
 --
+-- TOC entry 5462 (class 2606 OID 284707)
 -- Name: patient_diagnosis_program fk_8e702dbf8afc880e50a2a34ac9cbc8a0; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16975,6 +18364,7 @@ ALTER TABLE ONLY public.patient_diagnosis_program
 
 
 --
+-- TOC entry 5180 (class 2606 OID 283297)
 -- Name: meta_patient_document_type fk_8ef75ffb2ad19a37c866b3ff2e228dc1; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16983,6 +18373,7 @@ ALTER TABLE ONLY public.meta_patient_document_type
 
 
 --
+-- TOC entry 5019 (class 2606 OID 282492)
 -- Name: ccda_import_medication fk_8f4d5cabead0c801359bc77b2a7fd627; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16991,6 +18382,7 @@ ALTER TABLE ONLY public.ccda_import_medication
 
 
 --
+-- TOC entry 5338 (class 2606 OID 284087)
 -- Name: patient_employment_info fk_8f80d937833a716d1deb7c05a76d70da; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -16999,6 +18391,7 @@ ALTER TABLE ONLY public.patient_employment_info
 
 
 --
+-- TOC entry 5169 (class 2606 OID 283242)
 -- Name: meta_military_status fk_904a4b7b294b90a459c7d9fef3a1a73f; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17007,6 +18400,7 @@ ALTER TABLE ONLY public.meta_military_status
 
 
 --
+-- TOC entry 5177 (class 2606 OID 283282)
 -- Name: meta_patient_document_status fk_90c1a610d0a4409c2b4247b51ed1e50c; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17015,6 +18409,7 @@ ALTER TABLE ONLY public.meta_patient_document_status
 
 
 --
+-- TOC entry 5313 (class 2606 OID 283962)
 -- Name: patient_allergy fk_9100a7a777f323e3f5913d7c74f27ca2; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17023,6 +18418,7 @@ ALTER TABLE ONLY public.patient_allergy
 
 
 --
+-- TOC entry 5335 (class 2606 OID 284072)
 -- Name: patient_employment_info fk_9153ed32852db7b97ed18f08610465f4; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17031,6 +18427,7 @@ ALTER TABLE ONLY public.patient_employment_info
 
 
 --
+-- TOC entry 5296 (class 2606 OID 283877)
 -- Name: patient fk_91c06806f710c4fef36b2df89ec94822; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17039,6 +18436,7 @@ ALTER TABLE ONLY public.patient
 
 
 --
+-- TOC entry 5203 (class 2606 OID 283412)
 -- Name: meta_smoking_status fk_91d28224f786e8468e020924050c89b4; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17047,6 +18445,7 @@ ALTER TABLE ONLY public.meta_smoking_status
 
 
 --
+-- TOC entry 5469 (class 2606 OID 284742)
 -- Name: work_list_reminder_who_patient fk_91fe480e2f283766e012680055325868; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17055,6 +18454,7 @@ ALTER TABLE ONLY public.work_list_reminder_who_patient
 
 
 --
+-- TOC entry 5266 (class 2606 OID 283727)
 -- Name: organization_employee_address fk_922f16c91138a430ecedcf6970188640; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17063,6 +18463,7 @@ ALTER TABLE ONLY public.organization_employee_address
 
 
 --
+-- TOC entry 5404 (class 2606 OID 284417)
 -- Name: work_list_approver fk_926c7c5d4dba98e5e7eeb26f29b8b0f8; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17071,6 +18472,7 @@ ALTER TABLE ONLY public.work_list_approver
 
 
 --
+-- TOC entry 5027 (class 2606 OID 282532)
 -- Name: client_document fk_929052423ca2d41fe05c1835f9484ebe; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17079,6 +18481,7 @@ ALTER TABLE ONLY public.client_document
 
 
 --
+-- TOC entry 4982 (class 2606 OID 280690)
 -- Name: oml_property fk_93097e7237c6ae4fdb7976cd689db848; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17087,6 +18490,7 @@ ALTER TABLE ONLY public.oml_property
 
 
 --
+-- TOC entry 5014 (class 2606 OID 282467)
 -- Name: ccda_import_diagnosis fk_93279f563bd361a652acab1b036ccb8c; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17095,6 +18499,7 @@ ALTER TABLE ONLY public.ccda_import_diagnosis
 
 
 --
+-- TOC entry 5250 (class 2606 OID 283647)
 -- Name: organization_division fk_93972761371c12c5925e4ae08c4f6ab1; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17103,6 +18508,7 @@ ALTER TABLE ONLY public.organization_division
 
 
 --
+-- TOC entry 5312 (class 2606 OID 283957)
 -- Name: patient_allergy fk_94048987d5ed1033b1d6b55c8318afb8; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17111,6 +18517,7 @@ ALTER TABLE ONLY public.patient_allergy
 
 
 --
+-- TOC entry 5089 (class 2606 OID 282842)
 -- Name: meta_allergy_type fk_944ab995460c71cce60f5fb5a3e0c6b2; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17119,6 +18526,7 @@ ALTER TABLE ONLY public.meta_allergy_type
 
 
 --
+-- TOC entry 5195 (class 2606 OID 283372)
 -- Name: meta_relationship fk_94fc700d41b39f7d10ebbfbbbd897d7d; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17127,6 +18535,7 @@ ALTER TABLE ONLY public.meta_relationship
 
 
 --
+-- TOC entry 5410 (class 2606 OID 284447)
 -- Name: work_list_reminder fk_953d4a995101ebba6cfc3f7d639341eb; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17135,6 +18544,7 @@ ALTER TABLE ONLY public.work_list_reminder
 
 
 --
+-- TOC entry 5476 (class 2606 OID 284777)
 -- Name: patient_social_needs_assistance_with fk_9556b4ed90c703e261340a3b275d7a5a; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17143,6 +18553,7 @@ ALTER TABLE ONLY public.patient_social_needs_assistance_with
 
 
 --
+-- TOC entry 5142 (class 2606 OID 283107)
 -- Name: meta_height_unit fk_9583ac3ccc5f2acae2c4c29a2adabb3a; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17151,6 +18562,7 @@ ALTER TABLE ONLY public.meta_height_unit
 
 
 --
+-- TOC entry 5116 (class 2606 OID 282977)
 -- Name: meta_contact_type fk_95c6d3824aed4c53fb99cedd6a4531a5; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17159,6 +18571,7 @@ ALTER TABLE ONLY public.meta_contact_type
 
 
 --
+-- TOC entry 5085 (class 2606 OID 282822)
 -- Name: meta_address_type fk_95fd317eaf437f02dfb94a255d82f251; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17167,6 +18580,7 @@ ALTER TABLE ONLY public.meta_address_type
 
 
 --
+-- TOC entry 5427 (class 2606 OID 284532)
 -- Name: calendar_item fk_97476f60eeff170bde4a9edbb24d5321; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17175,6 +18589,7 @@ ALTER TABLE ONLY public.calendar_item
 
 
 --
+-- TOC entry 5124 (class 2606 OID 283017)
 -- Name: meta_day_of_week fk_9765a5caa9514511c79a034e36d56d4d; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17183,6 +18598,7 @@ ALTER TABLE ONLY public.meta_day_of_week
 
 
 --
+-- TOC entry 5303 (class 2606 OID 283912)
 -- Name: patient_address fk_977e9b249f10e5835099a38776b552dc; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17191,6 +18607,7 @@ ALTER TABLE ONLY public.patient_address
 
 
 --
+-- TOC entry 5453 (class 2606 OID 284662)
 -- Name: meta_permission_cascaded_permission fk_97ebf70baa80c59c89fb72a893176e73; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17199,6 +18616,7 @@ ALTER TABLE ONLY public.meta_permission_cascaded_permission
 
 
 --
+-- TOC entry 5056 (class 2606 OID 282677)
 -- Name: course_session_attendance fk_97f9db16bbefdf50a0f22593b44d6d22; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17207,6 +18625,7 @@ ALTER TABLE ONLY public.course_session_attendance
 
 
 --
+-- TOC entry 5461 (class 2606 OID 284702)
 -- Name: patient_associated_patient fk_98810b35cf9fd7189395840481f5c0f7; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17215,6 +18634,7 @@ ALTER TABLE ONLY public.patient_associated_patient
 
 
 --
+-- TOC entry 5016 (class 2606 OID 282477)
 -- Name: ccda_import_medication fk_98bfa1ebde21fefc4361dc9485bed5ad; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17223,6 +18643,7 @@ ALTER TABLE ONLY public.ccda_import_medication
 
 
 --
+-- TOC entry 5265 (class 2606 OID 283722)
 -- Name: organization_employee_address fk_98dd80677c371037585284128a2c046d; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17231,6 +18652,7 @@ ALTER TABLE ONLY public.organization_employee_address
 
 
 --
+-- TOC entry 5004 (class 2606 OID 282417)
 -- Name: ccda_export_request fk_99a178072ca8c338c83e838f432b2c86; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17239,6 +18661,7 @@ ALTER TABLE ONLY public.ccda_export_request
 
 
 --
+-- TOC entry 5247 (class 2606 OID 283632)
 -- Name: meta_zip_code fk_9a96fb1908bb6b5ad337b8c4e4fc6217; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17247,6 +18670,7 @@ ALTER TABLE ONLY public.meta_zip_code
 
 
 --
+-- TOC entry 5215 (class 2606 OID 283472)
 -- Name: meta_state fk_9b3df15969ab38067823f1d481e78a66; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17255,6 +18679,7 @@ ALTER TABLE ONLY public.meta_state
 
 
 --
+-- TOC entry 5271 (class 2606 OID 283752)
 -- Name: organization_employee_division fk_9b6862acd2aad7b146827cd142a10d02; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17263,6 +18688,7 @@ ALTER TABLE ONLY public.organization_employee_division
 
 
 --
+-- TOC entry 5073 (class 2606 OID 282762)
 -- Name: housing_upgrade fk_9b72eff5b9f980e3dc1b4ba2d449d252; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17271,6 +18697,7 @@ ALTER TABLE ONLY public.housing_upgrade
 
 
 --
+-- TOC entry 5008 (class 2606 OID 282437)
 -- Name: ccda_import_allergy fk_9be8c2a944699ada60e591a3720a633a; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17279,6 +18706,7 @@ ALTER TABLE ONLY public.ccda_import_allergy
 
 
 --
+-- TOC entry 5311 (class 2606 OID 283952)
 -- Name: patient_allergy fk_9c8b6dc5063f9292a8a506b30bce5f0c; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17287,6 +18715,7 @@ ALTER TABLE ONLY public.patient_allergy
 
 
 --
+-- TOC entry 5382 (class 2606 OID 284307)
 -- Name: synap_user_token fk_9d76b3e84cd71744414b19d19bfc39e3; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17295,6 +18724,7 @@ ALTER TABLE ONLY public.synap_user_token
 
 
 --
+-- TOC entry 5288 (class 2606 OID 283837)
 -- Name: patient fk_9ee9dbb0dbe77fd8e528bb9fd132878d; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17303,6 +18733,7 @@ ALTER TABLE ONLY public.patient
 
 
 --
+-- TOC entry 5438 (class 2606 OID 284587)
 -- Name: course_category fk_a0c3b59515206be675b71276724bd4b0; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17311,6 +18742,7 @@ ALTER TABLE ONLY public.course_category
 
 
 --
+-- TOC entry 5428 (class 2606 OID 284537)
 -- Name: calendar_item fk_a196fb616888bde2b116663675a47da0; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17319,6 +18751,7 @@ ALTER TABLE ONLY public.calendar_item
 
 
 --
+-- TOC entry 5242 (class 2606 OID 283607)
 -- Name: meta_work_list_reminder_who_type fk_a1d3cdd088a72b0850bf49437f27fecd; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17327,6 +18760,7 @@ ALTER TABLE ONLY public.meta_work_list_reminder_who_type
 
 
 --
+-- TOC entry 5037 (class 2606 OID 282582)
 -- Name: course fk_a21a130087fa21084083475299df085e; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17335,6 +18769,7 @@ ALTER TABLE ONLY public.course
 
 
 --
+-- TOC entry 5249 (class 2606 OID 283642)
 -- Name: organization_division fk_a21e526a1a6640358346885ba2d5eb92; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17343,6 +18778,7 @@ ALTER TABLE ONLY public.organization_division
 
 
 --
+-- TOC entry 5455 (class 2606 OID 284672)
 -- Name: organization_employee_profile fk_a22a8943fed2bb1e5ac7d067d840163c; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17351,6 +18787,7 @@ ALTER TABLE ONLY public.organization_employee_profile
 
 
 --
+-- TOC entry 5406 (class 2606 OID 284427)
 -- Name: work_list_notes fk_a2a1699e8160acb582bfbae77543e6e8; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17359,6 +18796,7 @@ ALTER TABLE ONLY public.work_list_notes
 
 
 --
+-- TOC entry 5422 (class 2606 OID 284507)
 -- Name: meta_sync_status fk_a309da146615dc9935277939e6b1c3c0; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17367,6 +18805,7 @@ ALTER TABLE ONLY public.meta_sync_status
 
 
 --
+-- TOC entry 5107 (class 2606 OID 282932)
 -- Name: meta_ccda_sections fk_a334e95172c943e4417262bbe6c6d537; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17375,6 +18814,7 @@ ALTER TABLE ONLY public.meta_ccda_sections
 
 
 --
+-- TOC entry 5058 (class 2606 OID 282687)
 -- Name: course_session_attendance fk_a50830dcf310065d9e8a1628be6db734; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17383,6 +18823,7 @@ ALTER TABLE ONLY public.course_session_attendance
 
 
 --
+-- TOC entry 5372 (class 2606 OID 284257)
 -- Name: preferred_provider fk_a58401cbbee6afe4ec7387ecceb31687; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17391,6 +18832,7 @@ ALTER TABLE ONLY public.preferred_provider
 
 
 --
+-- TOC entry 5076 (class 2606 OID 282777)
 -- Name: housing_upgrade fk_a58419ba6f64a28ea72baaa44e0a3477; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17399,6 +18841,7 @@ ALTER TABLE ONLY public.housing_upgrade
 
 
 --
+-- TOC entry 5304 (class 2606 OID 283917)
 -- Name: patient_address fk_a725134896e2d86ac1e6fb4b400e0150; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17407,6 +18850,7 @@ ALTER TABLE ONLY public.patient_address
 
 
 --
+-- TOC entry 5320 (class 2606 OID 283997)
 -- Name: patient_contact fk_a7281538d536c260dbc4abc453bead8c; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17415,6 +18859,7 @@ ALTER TABLE ONLY public.patient_contact
 
 
 --
+-- TOC entry 5256 (class 2606 OID 283677)
 -- Name: organization_division fk_a7462a573c8bd6683580e9b33cfc67df; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17423,6 +18868,7 @@ ALTER TABLE ONLY public.organization_division
 
 
 --
+-- TOC entry 5220 (class 2606 OID 283497)
 -- Name: meta_synap_profile fk_a77565a758a703637d50ec1ba18e0201; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17431,6 +18877,7 @@ ALTER TABLE ONLY public.meta_synap_profile
 
 
 --
+-- TOC entry 5315 (class 2606 OID 283972)
 -- Name: patient_contact fk_a8496a2713c6c9659a40dd84f1aa5d33; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17439,6 +18886,7 @@ ALTER TABLE ONLY public.patient_contact
 
 
 --
+-- TOC entry 5371 (class 2606 OID 284252)
 -- Name: preferred_provider fk_a8b236de134286d25345e1c68bf35141; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17447,6 +18895,7 @@ ALTER TABLE ONLY public.preferred_provider
 
 
 --
+-- TOC entry 5323 (class 2606 OID 284012)
 -- Name: patient_contact_address fk_a8f55bce9d560458e2d8395cbf5da2e5; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17455,6 +18904,7 @@ ALTER TABLE ONLY public.patient_contact_address
 
 
 --
+-- TOC entry 5130 (class 2606 OID 283047)
 -- Name: meta_employee_status fk_a918f27ddec15e4662ff1cd7e97b747c; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17463,6 +18913,7 @@ ALTER TABLE ONLY public.meta_employee_status
 
 
 --
+-- TOC entry 5400 (class 2606 OID 284397)
 -- Name: work_list fk_a9a7652cdbd36906c16c1b42b58468ee; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17471,6 +18922,7 @@ ALTER TABLE ONLY public.work_list
 
 
 --
+-- TOC entry 5261 (class 2606 OID 283702)
 -- Name: organization_employee fk_a9c5fe11c0a0f3fb25ec0c8be83fff48; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17479,6 +18931,7 @@ ALTER TABLE ONLY public.organization_employee
 
 
 --
+-- TOC entry 5355 (class 2606 OID 284172)
 -- Name: patient_social_needs fk_aac887795514783c1538c8a5b9a796bb; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17487,6 +18940,7 @@ ALTER TABLE ONLY public.patient_social_needs
 
 
 --
+-- TOC entry 5096 (class 2606 OID 282877)
 -- Name: meta_blood_pressure_unit fk_aadd4929e26b1244fc2300754d90b113; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17495,6 +18949,7 @@ ALTER TABLE ONLY public.meta_blood_pressure_unit
 
 
 --
+-- TOC entry 5024 (class 2606 OID 282517)
 -- Name: cdn_temp_file fk_aaefc4685ca94813d74f2a291c767a9a; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17503,6 +18958,7 @@ ALTER TABLE ONLY public.cdn_temp_file
 
 
 --
+-- TOC entry 5034 (class 2606 OID 282567)
 -- Name: client_note fk_ab03ed3b46c8c077cb9bf41de24b9ec2; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17511,6 +18967,7 @@ ALTER TABLE ONLY public.client_note
 
 
 --
+-- TOC entry 5043 (class 2606 OID 282612)
 -- Name: course_custom_field_definition fk_ab57423eb2e8ed27ffb1916080bb5619; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17519,6 +18976,7 @@ ALTER TABLE ONLY public.course_custom_field_definition
 
 
 --
+-- TOC entry 5282 (class 2606 OID 283807)
 -- Name: organization_profile fk_abffb8d6c19617ad68d202c84f050d28; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17527,6 +18985,7 @@ ALTER TABLE ONLY public.organization_profile
 
 
 --
+-- TOC entry 5114 (class 2606 OID 282967)
 -- Name: meta_contact_type fk_adb99d75c9b0340319f17eae61b22699; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17535,6 +18994,7 @@ ALTER TABLE ONLY public.meta_contact_type
 
 
 --
+-- TOC entry 5443 (class 2606 OID 284612)
 -- Name: meta_answer fk_ae7ae93d511b98e2c29db4f672b7896c; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17543,6 +19003,7 @@ ALTER TABLE ONLY public.meta_answer
 
 
 --
+-- TOC entry 5146 (class 2606 OID 283127)
 -- Name: meta_housing_status fk_afbde2c6e974743f2c7215a930308ed7; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17551,6 +19012,7 @@ ALTER TABLE ONLY public.meta_housing_status
 
 
 --
+-- TOC entry 5070 (class 2606 OID 282747)
 -- Name: housing_upgrade fk_afd1a9e573ecb7bded1a85c129853939; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17559,6 +19021,7 @@ ALTER TABLE ONLY public.housing_upgrade
 
 
 --
+-- TOC entry 5310 (class 2606 OID 283947)
 -- Name: patient_admission fk_afdfcdd787d1efac702b06ad39712be7; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17567,6 +19030,7 @@ ALTER TABLE ONLY public.patient_admission
 
 
 --
+-- TOC entry 5417 (class 2606 OID 284482)
 -- Name: meta_oml_script fk_b18e4af37fdcbea4b7c93b7a64ee61e9; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17575,6 +19039,7 @@ ALTER TABLE ONLY public.meta_oml_script
 
 
 --
+-- TOC entry 5166 (class 2606 OID 283227)
 -- Name: meta_medication_delivery_route fk_b1c1d83d86f50a9d7d1c6995c7ec812a; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17583,6 +19048,7 @@ ALTER TABLE ONLY public.meta_medication_delivery_route
 
 
 --
+-- TOC entry 4989 (class 2606 OID 282342)
 -- Name: ccda_export fk_b2b5360c079b866a9d11e9a0e2fdd643; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17591,6 +19057,7 @@ ALTER TABLE ONLY public.ccda_export
 
 
 --
+-- TOC entry 5033 (class 2606 OID 282562)
 -- Name: client_note fk_b2d82731fc9bb9e686cd35bfdbfde129; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17599,6 +19066,7 @@ ALTER TABLE ONLY public.client_note
 
 
 --
+-- TOC entry 5029 (class 2606 OID 282542)
 -- Name: client_document_file fk_b2f04e7639a7e5ebe5bcf645a3e1979f; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17607,6 +19075,7 @@ ALTER TABLE ONLY public.client_document_file
 
 
 --
+-- TOC entry 5318 (class 2606 OID 283987)
 -- Name: patient_contact fk_b3490aa1473e2adf99e1357a94754459; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17615,6 +19084,7 @@ ALTER TABLE ONLY public.patient_contact
 
 
 --
+-- TOC entry 5127 (class 2606 OID 283032)
 -- Name: meta_diagnostic_code fk_b393c953a4309f8ab0f3545cc7d2d2da; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17623,6 +19093,7 @@ ALTER TABLE ONLY public.meta_diagnostic_code
 
 
 --
+-- TOC entry 5415 (class 2606 OID 284472)
 -- Name: work_list_reminder fk_b4e72531f18586d2e49dd05a43acc2ff; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17631,6 +19102,7 @@ ALTER TABLE ONLY public.work_list_reminder
 
 
 --
+-- TOC entry 5174 (class 2606 OID 283267)
 -- Name: meta_patient_diagnosis_status fk_b57d5e76f52ab3677ddd4c310d11d6a1; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17639,6 +19111,7 @@ ALTER TABLE ONLY public.meta_patient_diagnosis_status
 
 
 --
+-- TOC entry 5218 (class 2606 OID 283487)
 -- Name: meta_synap_profile fk_b6b6435a8d1708f14dcf3684ad16f25c; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17647,6 +19120,7 @@ ALTER TABLE ONLY public.meta_synap_profile
 
 
 --
+-- TOC entry 5179 (class 2606 OID 283292)
 -- Name: meta_patient_document_type fk_b70bc2f70318345d32fc46398297a55b; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17655,6 +19129,7 @@ ALTER TABLE ONLY public.meta_patient_document_type
 
 
 --
+-- TOC entry 5190 (class 2606 OID 283347)
 -- Name: meta_race fk_b8078ab72b05aebd7ff4169e0d313845; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17663,6 +19138,7 @@ ALTER TABLE ONLY public.meta_race
 
 
 --
+-- TOC entry 5028 (class 2606 OID 282537)
 -- Name: client_document fk_b881869f3cb8cb7b4a204a88235fa454; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17671,6 +19147,7 @@ ALTER TABLE ONLY public.client_document
 
 
 --
+-- TOC entry 5064 (class 2606 OID 282717)
 -- Name: data_export_request fk_b8e2e63f2c42f7072c1530234e72da75; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17679,6 +19156,7 @@ ALTER TABLE ONLY public.data_export_request
 
 
 --
+-- TOC entry 5375 (class 2606 OID 284272)
 -- Name: synap_config fk_b9d87fcbb381810dc1af3abd501130c2; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17687,6 +19165,7 @@ ALTER TABLE ONLY public.synap_config
 
 
 --
+-- TOC entry 4984 (class 2606 OID 282317)
 -- Name: care_continuity_import_request fk_ba82e0ee0e415803471973304aad3257; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17695,6 +19174,7 @@ ALTER TABLE ONLY public.care_continuity_import_request
 
 
 --
+-- TOC entry 5366 (class 2606 OID 284227)
 -- Name: patient_vital fk_bab7a9654d66239e6740189e4e5d923d; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17703,6 +19183,7 @@ ALTER TABLE ONLY public.patient_vital
 
 
 --
+-- TOC entry 5465 (class 2606 OID 284722)
 -- Name: work_list_assignee_patient fk_bb2b79e3d430f80ebc0bdf174deceaf8; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17711,6 +19192,7 @@ ALTER TABLE ONLY public.work_list_assignee_patient
 
 
 --
+-- TOC entry 5062 (class 2606 OID 282707)
 -- Name: course_session_custom_field_value fk_bcbc745c02f5f0582f5608062e5307db; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17719,6 +19201,7 @@ ALTER TABLE ONLY public.course_session_custom_field_value
 
 
 --
+-- TOC entry 5153 (class 2606 OID 283162)
 -- Name: meta_id_type fk_bcefdc9ca9c4641786c8e31e96899d14; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17727,6 +19210,7 @@ ALTER TABLE ONLY public.meta_id_type
 
 
 --
+-- TOC entry 5436 (class 2606 OID 284577)
 -- Name: meta_calendar_item_status fk_bd73e478e96a40b4b5dd5def587eafec; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17735,6 +19219,7 @@ ALTER TABLE ONLY public.meta_calendar_item_status
 
 
 --
+-- TOC entry 5437 (class 2606 OID 284582)
 -- Name: course_category fk_bea3ac067e273e346d560dfd20c6fc20; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17743,6 +19228,7 @@ ALTER TABLE ONLY public.course_category
 
 
 --
+-- TOC entry 5272 (class 2606 OID 283757)
 -- Name: organization_employee_division fk_beb29569cbbebac4e23ecc38297460f6; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17751,6 +19237,7 @@ ALTER TABLE ONLY public.organization_employee_division
 
 
 --
+-- TOC entry 5097 (class 2606 OID 282882)
 -- Name: meta_blood_pressure_unit fk_bed6d5570b05ee0519d7d7389e2049b6; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17759,6 +19246,7 @@ ALTER TABLE ONLY public.meta_blood_pressure_unit
 
 
 --
+-- TOC entry 5023 (class 2606 OID 282512)
 -- Name: cdn_temp_file fk_beefe24e029f55a30e37c6340e40a218; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17767,6 +19255,7 @@ ALTER TABLE ONLY public.cdn_temp_file
 
 
 --
+-- TOC entry 5317 (class 2606 OID 283982)
 -- Name: patient_contact fk_bf7aa847feef72918b5ae21866e81dbc; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17775,6 +19264,7 @@ ALTER TABLE ONLY public.patient_contact
 
 
 --
+-- TOC entry 5384 (class 2606 OID 284317)
 -- Name: synap_user_token fk_bfa4170c433ea2a99faaf0b1e7c34d6c; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17783,6 +19273,7 @@ ALTER TABLE ONLY public.synap_user_token
 
 
 --
+-- TOC entry 5380 (class 2606 OID 284297)
 -- Name: synap_user_group fk_bfd3fa950436743e0ace66288620a5c0; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17791,6 +19282,7 @@ ALTER TABLE ONLY public.synap_user_group
 
 
 --
+-- TOC entry 5353 (class 2606 OID 284162)
 -- Name: patient_primary_care_provider fk_c1ed912d32b5bdc8cac07b0e98984af5; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17799,6 +19291,7 @@ ALTER TABLE ONLY public.patient_primary_care_provider
 
 
 --
+-- TOC entry 5339 (class 2606 OID 284092)
 -- Name: patient_employment_info fk_c238ba8d7277d1ab1138f413be9cf7dd; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17807,6 +19300,7 @@ ALTER TABLE ONLY public.patient_employment_info
 
 
 --
+-- TOC entry 5163 (class 2606 OID 283212)
 -- Name: meta_language fk_c34dba6b2e6f15afe11228a72cf3b905; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17815,6 +19309,7 @@ ALTER TABLE ONLY public.meta_language
 
 
 --
+-- TOC entry 5069 (class 2606 OID 282742)
 -- Name: data_import_request fk_c3946ae333f53542cc8ec4b52ed302e1; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17823,6 +19318,7 @@ ALTER TABLE ONLY public.data_import_request
 
 
 --
+-- TOC entry 5189 (class 2606 OID 283342)
 -- Name: meta_provider_service_type fk_c3b805f20af350aa77b6536cca53cb06; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17831,6 +19327,7 @@ ALTER TABLE ONLY public.meta_provider_service_type
 
 
 --
+-- TOC entry 5044 (class 2606 OID 282617)
 -- Name: course_participant fk_c3f38471b7ab7d45670373bbc1c079eb; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17839,6 +19336,7 @@ ALTER TABLE ONLY public.course_participant
 
 
 --
+-- TOC entry 5057 (class 2606 OID 282682)
 -- Name: course_session_attendance fk_c43495a3a875c3364825b0af2c2f996b; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17847,6 +19345,7 @@ ALTER TABLE ONLY public.course_session_attendance
 
 
 --
+-- TOC entry 5137 (class 2606 OID 283082)
 -- Name: meta_family_relationship fk_c51c63a4cfa7a3ba7a86add01d15f298; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17855,6 +19354,7 @@ ALTER TABLE ONLY public.meta_family_relationship
 
 
 --
+-- TOC entry 5268 (class 2606 OID 283737)
 -- Name: organization_employee_address fk_c57b2800829fd003ffc9ee0061e8dd40; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17863,6 +19363,7 @@ ALTER TABLE ONLY public.organization_employee_address
 
 
 --
+-- TOC entry 5022 (class 2606 OID 282507)
 -- Name: ccd_upload fk_c5eaad314b0ec4f608b0367d63778981; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17871,6 +19372,7 @@ ALTER TABLE ONLY public.ccd_upload
 
 
 --
+-- TOC entry 5051 (class 2606 OID 282652)
 -- Name: course_session fk_c68cc1a706d9c73af8afcb9ac24f2b61; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17879,6 +19381,7 @@ ALTER TABLE ONLY public.course_session
 
 
 --
+-- TOC entry 5172 (class 2606 OID 283257)
 -- Name: meta_pain_level fk_c746655359b381d3664b5728d317d5f9; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17887,6 +19390,7 @@ ALTER TABLE ONLY public.meta_pain_level
 
 
 --
+-- TOC entry 5418 (class 2606 OID 284487)
 -- Name: system_user fk_c83bb7642221daeadde8166ce5f9e38d; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17895,6 +19399,7 @@ ALTER TABLE ONLY public.system_user
 
 
 --
+-- TOC entry 5341 (class 2606 OID 284102)
 -- Name: patient_medication fk_c84a7113f9ef352823d96f0dffacf032; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17903,6 +19408,7 @@ ALTER TABLE ONLY public.patient_medication
 
 
 --
+-- TOC entry 5321 (class 2606 OID 284002)
 -- Name: patient_contact fk_c8eea18d413cdc009520e46934a4a5ac; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17911,6 +19417,7 @@ ALTER TABLE ONLY public.patient_contact
 
 
 --
+-- TOC entry 5214 (class 2606 OID 283467)
 -- Name: meta_social_needs_category fk_c9896fd0c8327a3ff9c397d2c6a8a4de; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17919,6 +19426,7 @@ ALTER TABLE ONLY public.meta_social_needs_category
 
 
 --
+-- TOC entry 5059 (class 2606 OID 282692)
 -- Name: course_session_attendance fk_c9a86fa8d21cb128361c41828351b140; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17927,6 +19435,7 @@ ALTER TABLE ONLY public.course_session_attendance
 
 
 --
+-- TOC entry 5125 (class 2606 OID 283022)
 -- Name: meta_default_status fk_c9d569545f4f27a9510ab4558da05e2a; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17935,6 +19444,7 @@ ALTER TABLE ONLY public.meta_default_status
 
 
 --
+-- TOC entry 5314 (class 2606 OID 283967)
 -- Name: patient_allergy fk_ca3d7ba9218b94e16962fe238970364c; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17943,6 +19453,7 @@ ALTER TABLE ONLY public.patient_allergy
 
 
 --
+-- TOC entry 5373 (class 2606 OID 284262)
 -- Name: report fk_ca94124f549a6bdecf08d56a03437adc; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17951,6 +19462,7 @@ ALTER TABLE ONLY public.report
 
 
 --
+-- TOC entry 5440 (class 2606 OID 284597)
 -- Name: meta_question fk_cb0c7b57380295e0c8bc539484ff01e0; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17959,6 +19471,7 @@ ALTER TABLE ONLY public.meta_question
 
 
 --
+-- TOC entry 5181 (class 2606 OID 283302)
 -- Name: meta_patient_identity_type fk_cb381cd69ae4424d49f2ae8a97c1e055; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17967,6 +19480,7 @@ ALTER TABLE ONLY public.meta_patient_identity_type
 
 
 --
+-- TOC entry 5446 (class 2606 OID 284627)
 -- Name: patient_activation_q_a fk_cb7b09cb870a0a37deaf16bca60db745; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17975,6 +19489,7 @@ ALTER TABLE ONLY public.patient_activation_q_a
 
 
 --
+-- TOC entry 5474 (class 2606 OID 284767)
 -- Name: patient_social_needs_identified_encouraged fk_cc556e051635667fc3fe34662ea614af; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17983,6 +19498,7 @@ ALTER TABLE ONLY public.patient_social_needs_identified_encouraged
 
 
 --
+-- TOC entry 5075 (class 2606 OID 282772)
 -- Name: housing_upgrade fk_ccb3b59580e93579c763e0a1faff814f; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17991,6 +19507,7 @@ ALTER TABLE ONLY public.housing_upgrade
 
 
 --
+-- TOC entry 5475 (class 2606 OID 284772)
 -- Name: patient_social_needs_followup_with fk_ccddc72a23fd2e4cac3baf080cfa3ad5; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -17999,6 +19516,7 @@ ALTER TABLE ONLY public.patient_social_needs_followup_with
 
 
 --
+-- TOC entry 5460 (class 2606 OID 284697)
 -- Name: patient_associated_patient fk_cd9d3b58d0450d8e60dd689b8216d8e8; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18007,6 +19525,7 @@ ALTER TABLE ONLY public.patient_associated_patient
 
 
 --
+-- TOC entry 5411 (class 2606 OID 284452)
 -- Name: work_list_reminder fk_cda4db7d9a088d29aaace4e7e6c02187; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18015,6 +19534,7 @@ ALTER TABLE ONLY public.work_list_reminder
 
 
 --
+-- TOC entry 5407 (class 2606 OID 284432)
 -- Name: work_list_notes fk_cdbea2b33c1df3e08080669060eba332; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18023,6 +19543,7 @@ ALTER TABLE ONLY public.work_list_notes
 
 
 --
+-- TOC entry 4987 (class 2606 OID 282332)
 -- Name: care_continuity_import_request fk_cdc500f9290fb4113c93f478fd3b1d67; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18031,6 +19552,7 @@ ALTER TABLE ONLY public.care_continuity_import_request
 
 
 --
+-- TOC entry 5098 (class 2606 OID 282887)
 -- Name: meta_care_continuity_document_type fk_ceeaf4d62053496acbbf02b13ee976e2; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18039,6 +19561,7 @@ ALTER TABLE ONLY public.meta_care_continuity_document_type
 
 
 --
+-- TOC entry 5176 (class 2606 OID 283277)
 -- Name: meta_patient_document_status fk_cef57638116405317141b5c3dc3fa15b; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18047,6 +19570,7 @@ ALTER TABLE ONLY public.meta_patient_document_status
 
 
 --
+-- TOC entry 5334 (class 2606 OID 284067)
 -- Name: patient_diagnosis fk_cfbe843d7ba127e26997f97d49ad8c75; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18055,6 +19579,7 @@ ALTER TABLE ONLY public.patient_diagnosis
 
 
 --
+-- TOC entry 5049 (class 2606 OID 282642)
 -- Name: course_session fk_d0504bfa270143f3ef53e5cf9f82cde4; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18063,6 +19588,7 @@ ALTER TABLE ONLY public.course_session
 
 
 --
+-- TOC entry 5140 (class 2606 OID 283097)
 -- Name: meta_gender fk_d3cd47d3bb176f669bffdae481dda466; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18071,6 +19597,7 @@ ALTER TABLE ONLY public.meta_gender
 
 
 --
+-- TOC entry 5299 (class 2606 OID 283892)
 -- Name: patient fk_d3f7f690ee70f6789ef96fd72f83dcfe; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18079,6 +19606,7 @@ ALTER TABLE ONLY public.patient
 
 
 --
+-- TOC entry 5065 (class 2606 OID 282722)
 -- Name: data_export_request fk_d40f0c0dab2e8ca99322c1b8e0ef4b7c; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18087,6 +19615,7 @@ ALTER TABLE ONLY public.data_export_request
 
 
 --
+-- TOC entry 5275 (class 2606 OID 283772)
 -- Name: organization_employee_telephone fk_d532ff5def931d5b3e463f020086906c; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18095,6 +19624,7 @@ ALTER TABLE ONLY public.organization_employee_telephone
 
 
 --
+-- TOC entry 5368 (class 2606 OID 284237)
 -- Name: preferred_provider fk_d53fe15acb57ddd928bcad3c2e8d47c4; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18103,6 +19633,7 @@ ALTER TABLE ONLY public.preferred_provider
 
 
 --
+-- TOC entry 5301 (class 2606 OID 283902)
 -- Name: patient_address fk_d552ec6f2b754c1536d2d022377666b7; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18111,6 +19642,7 @@ ALTER TABLE ONLY public.patient_address
 
 
 --
+-- TOC entry 5464 (class 2606 OID 284717)
 -- Name: work_list_assignee_employee fk_d5602b600aabcff41d758950306dd683; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18119,6 +19651,7 @@ ALTER TABLE ONLY public.work_list_assignee_employee
 
 
 --
+-- TOC entry 5381 (class 2606 OID 284302)
 -- Name: synap_user_token fk_d5d0cdddfec051d0d2884461420c8872; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18127,6 +19660,7 @@ ALTER TABLE ONLY public.synap_user_token
 
 
 --
+-- TOC entry 5213 (class 2606 OID 283462)
 -- Name: meta_social_needs_category fk_d75a6e4c4179ba9841169fea93d73bfc; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18135,6 +19669,7 @@ ALTER TABLE ONLY public.meta_social_needs_category
 
 
 --
+-- TOC entry 5245 (class 2606 OID 283622)
 -- Name: meta_worklist_status fk_d8ecd828e4bea6d11bd23e5daf594c44; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18143,6 +19678,7 @@ ALTER TABLE ONLY public.meta_worklist_status
 
 
 --
+-- TOC entry 5340 (class 2606 OID 284097)
 -- Name: patient_medication fk_da85de84c83b4f338b073a909c9fa752; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18151,6 +19687,7 @@ ALTER TABLE ONLY public.patient_medication
 
 
 --
+-- TOC entry 5164 (class 2606 OID 283217)
 -- Name: meta_marital_status fk_db584d2b7259bab00145813d90378c48; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18159,6 +19696,7 @@ ALTER TABLE ONLY public.meta_marital_status
 
 
 --
+-- TOC entry 5207 (class 2606 OID 283432)
 -- Name: meta_snomed_code fk_dbdd8ba7d576763f2af643695cc20326; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18167,6 +19705,7 @@ ALTER TABLE ONLY public.meta_snomed_code
 
 
 --
+-- TOC entry 5199 (class 2606 OID 283392)
 -- Name: meta_severity fk_dc41ef7dd6c7b855304c98fecc291abe; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18175,6 +19714,7 @@ ALTER TABLE ONLY public.meta_severity
 
 
 --
+-- TOC entry 5009 (class 2606 OID 282442)
 -- Name: ccda_import_diagnosis fk_dc540f8b9175ca45f9fc64cd2441793f; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18183,6 +19723,7 @@ ALTER TABLE ONLY public.ccda_import_diagnosis
 
 
 --
+-- TOC entry 5336 (class 2606 OID 284077)
 -- Name: patient_employment_info fk_dcc5f569dbb1345daf5c65041d015fb3; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18191,6 +19732,7 @@ ALTER TABLE ONLY public.patient_employment_info
 
 
 --
+-- TOC entry 5369 (class 2606 OID 284242)
 -- Name: preferred_provider fk_dedfcbd3364d8f295ccfaa90bc4f0c84; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18199,6 +19741,7 @@ ALTER TABLE ONLY public.preferred_provider
 
 
 --
+-- TOC entry 5289 (class 2606 OID 283842)
 -- Name: patient fk_df9a26326c6b220d328fb9369babf715; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18207,6 +19750,7 @@ ALTER TABLE ONLY public.patient
 
 
 --
+-- TOC entry 5349 (class 2606 OID 284142)
 -- Name: patient_prescription fk_e060c838a5f0c82a7c4be4752c0c07e4; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18215,6 +19759,7 @@ ALTER TABLE ONLY public.patient_prescription
 
 
 --
+-- TOC entry 4990 (class 2606 OID 282347)
 -- Name: ccda_export fk_e105dc21000adc7a2f0b8c12976aa232; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18223,6 +19768,7 @@ ALTER TABLE ONLY public.ccda_export
 
 
 --
+-- TOC entry 5081 (class 2606 OID 282802)
 -- Name: kch_program_assignment fk_e197bad2788b55263a95e75d5879bc8d; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18231,6 +19777,7 @@ ALTER TABLE ONLY public.kch_program_assignment
 
 
 --
+-- TOC entry 5018 (class 2606 OID 282487)
 -- Name: ccda_import_medication fk_e1c5f7503915a0147bf4d4645b1105fe; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18239,6 +19786,7 @@ ALTER TABLE ONLY public.ccda_import_medication
 
 
 --
+-- TOC entry 5471 (class 2606 OID 284752)
 -- Name: patient_social_needs_legislative_action fk_e1ec4c8ff5df280f57b48d65e7604e2e; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18247,6 +19795,7 @@ ALTER TABLE ONLY public.patient_social_needs_legislative_action
 
 
 --
+-- TOC entry 5048 (class 2606 OID 282637)
 -- Name: course_participant fk_e20d8893e4b50573890d7b5f669f5ffb; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18255,6 +19804,7 @@ ALTER TABLE ONLY public.course_participant
 
 
 --
+-- TOC entry 5198 (class 2606 OID 283387)
 -- Name: meta_severity fk_e2147dc1fe6368d54fd1aac567ccc71b; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18263,6 +19813,7 @@ ALTER TABLE ONLY public.meta_severity
 
 
 --
+-- TOC entry 5159 (class 2606 OID 283192)
 -- Name: meta_label_detail fk_e24f7edb99db3b629eb655bafd6e2418; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18271,6 +19822,7 @@ ALTER TABLE ONLY public.meta_label_detail
 
 
 --
+-- TOC entry 5032 (class 2606 OID 282557)
 -- Name: client_note fk_e2e6785e81eb44811b08f74fbbbe69d4; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18279,6 +19831,7 @@ ALTER TABLE ONLY public.client_note
 
 
 --
+-- TOC entry 5229 (class 2606 OID 283542)
 -- Name: meta_token_type fk_e2f4778bbe73f8feba3ea75814511158; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18287,6 +19840,7 @@ ALTER TABLE ONLY public.meta_token_type
 
 
 --
+-- TOC entry 5330 (class 2606 OID 284047)
 -- Name: patient_diagnosis fk_e37a021af617ba0c1b620ef7890536ab; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18295,6 +19849,7 @@ ALTER TABLE ONLY public.patient_diagnosis
 
 
 --
+-- TOC entry 5209 (class 2606 OID 283442)
 -- Name: meta_social_needs fk_e3f71b9e54b1d65da16baa3dca3cf817; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18303,6 +19858,7 @@ ALTER TABLE ONLY public.meta_social_needs
 
 
 --
+-- TOC entry 4988 (class 2606 OID 282337)
 -- Name: care_continuity_import_request fk_e40dd4f046b50763a6be99aa32d9ddad; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18311,6 +19867,7 @@ ALTER TABLE ONLY public.care_continuity_import_request
 
 
 --
+-- TOC entry 5241 (class 2606 OID 283602)
 -- Name: meta_work_list_reminder_type fk_e41f197eeeba167c84d269e8a18887df; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18319,6 +19876,7 @@ ALTER TABLE ONLY public.meta_work_list_reminder_type
 
 
 --
+-- TOC entry 5192 (class 2606 OID 283357)
 -- Name: meta_referral fk_e4c1aa38808bb9db7f0db008b8540194; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18327,6 +19885,7 @@ ALTER TABLE ONLY public.meta_referral
 
 
 --
+-- TOC entry 5077 (class 2606 OID 282782)
 -- Name: kch_program fk_e4fb4461eff9952604d93b5494b18915; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18335,6 +19894,7 @@ ALTER TABLE ONLY public.kch_program
 
 
 --
+-- TOC entry 5359 (class 2606 OID 284192)
 -- Name: patient_specific_document fk_e50f0abebb672dc79a216a2630ccfd50; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18343,6 +19903,7 @@ ALTER TABLE ONLY public.patient_specific_document
 
 
 --
+-- TOC entry 5005 (class 2606 OID 282422)
 -- Name: ccda_import_allergy fk_e52749004c3237a099d0fb49591cedc3; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18351,6 +19912,7 @@ ALTER TABLE ONLY public.ccda_import_allergy
 
 
 --
+-- TOC entry 5468 (class 2606 OID 284737)
 -- Name: work_list_reminder_who_employee fk_e56b7bf0d6d51cfcd26b7c019131660f; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18359,6 +19921,7 @@ ALTER TABLE ONLY public.work_list_reminder_who_employee
 
 
 --
+-- TOC entry 5100 (class 2606 OID 282897)
 -- Name: meta_ccda_export_log_type fk_e57966b4980a5fa6020d1cdf43bbb399; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18367,6 +19930,7 @@ ALTER TABLE ONLY public.meta_ccda_export_log_type
 
 
 --
+-- TOC entry 5184 (class 2606 OID 283317)
 -- Name: meta_patient_status fk_e67f44d2a991c55fb4a2a38970d7e2a2; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18375,6 +19939,7 @@ ALTER TABLE ONLY public.meta_patient_status
 
 
 --
+-- TOC entry 4993 (class 2606 OID 282362)
 -- Name: ccda_export fk_e789c704b0285df7bb2feda513b16b4d; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18383,6 +19948,7 @@ ALTER TABLE ONLY public.ccda_export
 
 
 --
+-- TOC entry 5144 (class 2606 OID 283117)
 -- Name: meta_household_income_level fk_e84b302a847772d77ac3f99b4c26fcb7; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18391,6 +19957,7 @@ ALTER TABLE ONLY public.meta_household_income_level
 
 
 --
+-- TOC entry 5040 (class 2606 OID 282597)
 -- Name: course_custom_field_definition fk_e92ce63083ea365541052e9b59f585a8; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18399,6 +19966,7 @@ ALTER TABLE ONLY public.course_custom_field_definition
 
 
 --
+-- TOC entry 5042 (class 2606 OID 282607)
 -- Name: course_custom_field_definition fk_ea7c9d3b87b6e7d90b1f4af522bad736; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18407,6 +19975,7 @@ ALTER TABLE ONLY public.course_custom_field_definition
 
 
 --
+-- TOC entry 5175 (class 2606 OID 283272)
 -- Name: meta_patient_document_status fk_eb2339edc3bb6504fe4f80878addd277; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18415,6 +19984,7 @@ ALTER TABLE ONLY public.meta_patient_document_status
 
 
 --
+-- TOC entry 5187 (class 2606 OID 283332)
 -- Name: meta_permission fk_ebdcfd5d4629024e6fb9f0d13cf44839; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18423,6 +19993,7 @@ ALTER TABLE ONLY public.meta_permission
 
 
 --
+-- TOC entry 5011 (class 2606 OID 282452)
 -- Name: ccda_import_diagnosis fk_ec1576cd410f9c3931f34c3949975d51; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18431,6 +20002,7 @@ ALTER TABLE ONLY public.ccda_import_diagnosis
 
 
 --
+-- TOC entry 5324 (class 2606 OID 284017)
 -- Name: patient_contact_address fk_ed33c72e266cc691f4815a0acf12bcba; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18439,6 +20011,7 @@ ALTER TABLE ONLY public.patient_contact_address
 
 
 --
+-- TOC entry 5414 (class 2606 OID 284467)
 -- Name: work_list_reminder fk_eda35bb11c094f3150ae83ae21fb2627; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18447,6 +20020,7 @@ ALTER TABLE ONLY public.work_list_reminder
 
 
 --
+-- TOC entry 5430 (class 2606 OID 284547)
 -- Name: calendar_item fk_ede1cceab2f10b684b3e7215f85c9e9d; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18455,6 +20029,7 @@ ALTER TABLE ONLY public.calendar_item
 
 
 --
+-- TOC entry 5240 (class 2606 OID 283597)
 -- Name: meta_work_list_reminder_type fk_ede4b6a2d7acba772b76b82ad24a9ade; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18463,6 +20038,7 @@ ALTER TABLE ONLY public.meta_work_list_reminder_type
 
 
 --
+-- TOC entry 5228 (class 2606 OID 283537)
 -- Name: meta_token_type fk_ee33485652faff1afdeb5eb1fb9851ab; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18471,6 +20047,7 @@ ALTER TABLE ONLY public.meta_token_type
 
 
 --
+-- TOC entry 5356 (class 2606 OID 284177)
 -- Name: patient_social_needs fk_ef23f0c5b67156ede354757c011a1c00; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18479,6 +20056,7 @@ ALTER TABLE ONLY public.patient_social_needs
 
 
 --
+-- TOC entry 5031 (class 2606 OID 282552)
 -- Name: client_document_file fk_f178078a934a82e77565b97af7a9fd81; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18487,6 +20065,7 @@ ALTER TABLE ONLY public.client_document_file
 
 
 --
+-- TOC entry 4996 (class 2606 OID 282377)
 -- Name: ccda_export fk_f275e94dfab5e45c310fa0a3847f3cd8; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18495,6 +20074,7 @@ ALTER TABLE ONLY public.ccda_export
 
 
 --
+-- TOC entry 5082 (class 2606 OID 282807)
 -- Name: kch_program_assignment fk_f307dbca8ac3bed7f73d9c6fbac6b909; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18503,6 +20083,7 @@ ALTER TABLE ONLY public.kch_program_assignment
 
 
 --
+-- TOC entry 5235 (class 2606 OID 283572)
 -- Name: meta_work_list_approval_status fk_f408e70add0d7bcdebe93e8e80ca644c; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18511,6 +20092,7 @@ ALTER TABLE ONLY public.meta_work_list_approval_status
 
 
 --
+-- TOC entry 5211 (class 2606 OID 283452)
 -- Name: meta_social_needs fk_f40eeadb24e96cd9f5fbc1452edd7918; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18519,6 +20101,7 @@ ALTER TABLE ONLY public.meta_social_needs
 
 
 --
+-- TOC entry 5053 (class 2606 OID 282662)
 -- Name: course_session fk_f532b2d0da4214ad9e6a76e93c27cb2a; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18527,6 +20110,7 @@ ALTER TABLE ONLY public.course_session
 
 
 --
+-- TOC entry 5360 (class 2606 OID 284197)
 -- Name: patient_specific_document fk_f54a598a70ddb282abf888ca8c926af0; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18535,6 +20119,7 @@ ALTER TABLE ONLY public.patient_specific_document
 
 
 --
+-- TOC entry 4999 (class 2606 OID 282392)
 -- Name: ccda_export_log fk_f5da2e0bc92bace44c43f954bed7f552; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18543,6 +20128,7 @@ ALTER TABLE ONLY public.ccda_export_log
 
 
 --
+-- TOC entry 5459 (class 2606 OID 284692)
 -- Name: patient_race fk_f5dfa15d426dbcb1a611896812b91801; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18551,6 +20137,7 @@ ALTER TABLE ONLY public.patient_race
 
 
 --
+-- TOC entry 5094 (class 2606 OID 282867)
 -- Name: meta_basic_status fk_f6704adbd5293085b462bc721b261379; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18559,6 +20146,7 @@ ALTER TABLE ONLY public.meta_basic_status
 
 
 --
+-- TOC entry 5119 (class 2606 OID 282992)
 -- Name: meta_country fk_f6ffec1a3835239cb0d349c585820a4d; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18567,6 +20155,7 @@ ALTER TABLE ONLY public.meta_country
 
 
 --
+-- TOC entry 5413 (class 2606 OID 284462)
 -- Name: work_list_reminder fk_f80dc59763ca0d4d7f277f277cb52cdf; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18575,6 +20164,7 @@ ALTER TABLE ONLY public.work_list_reminder
 
 
 --
+-- TOC entry 5217 (class 2606 OID 283482)
 -- Name: meta_state fk_f8ecd97f08ec149cb7dc9604c641ad4d; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18583,6 +20173,7 @@ ALTER TABLE ONLY public.meta_state
 
 
 --
+-- TOC entry 5248 (class 2606 OID 283637)
 -- Name: meta_zip_code fk_fa705266566c895d5ed1598f8cd3cf67; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18591,6 +20182,7 @@ ALTER TABLE ONLY public.meta_zip_code
 
 
 --
+-- TOC entry 5270 (class 2606 OID 283747)
 -- Name: organization_employee_division fk_fa89fb19eb3f8a3b41ae7d399d76000c; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18599,6 +20191,7 @@ ALTER TABLE ONLY public.organization_employee_division
 
 
 --
+-- TOC entry 5026 (class 2606 OID 282527)
 -- Name: client_document fk_fab74dda4bf0b2246d9bb019daec5a9c; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18607,6 +20200,7 @@ ALTER TABLE ONLY public.client_document
 
 
 --
+-- TOC entry 5284 (class 2606 OID 283817)
 -- Name: patient fk_fb2c267679fdbc05c66bdf95ab719f9e; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18615,6 +20209,7 @@ ALTER TABLE ONLY public.patient
 
 
 --
+-- TOC entry 5457 (class 2606 OID 284682)
 -- Name: organization_profile_permission fk_fb693aae8d9a850f8876da737c07ca19; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18623,6 +20218,7 @@ ALTER TABLE ONLY public.organization_profile_permission
 
 
 --
+-- TOC entry 5136 (class 2606 OID 283077)
 -- Name: meta_family_relationship fk_fbd6d8f796059b7fc815c116be4a3c1e; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18631,6 +20227,7 @@ ALTER TABLE ONLY public.meta_family_relationship
 
 
 --
+-- TOC entry 5358 (class 2606 OID 284187)
 -- Name: patient_specific_document fk_fc57d409e217c8452a360cf3377c4106; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18639,6 +20236,7 @@ ALTER TABLE ONLY public.patient_specific_document
 
 
 --
+-- TOC entry 5206 (class 2606 OID 283427)
 -- Name: meta_snomed_code fk_fd6bbf6dac90718d8d6df0124d46af06; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18647,6 +20245,7 @@ ALTER TABLE ONLY public.meta_snomed_code
 
 
 --
+-- TOC entry 5346 (class 2606 OID 284127)
 -- Name: patient_medication fk_fd897db537c0a72178d2173a7d4c5d9c; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18655,6 +20254,7 @@ ALTER TABLE ONLY public.patient_medication
 
 
 --
+-- TOC entry 5447 (class 2606 OID 284632)
 -- Name: patient_activation_q_a fk_feeb91dded2c89421f42a4460c565e0a; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18663,6 +20263,7 @@ ALTER TABLE ONLY public.patient_activation_q_a
 
 
 --
+-- TOC entry 5197 (class 2606 OID 283382)
 -- Name: meta_relationship fk_ffb4a1236b19f13b0bd9a9284b540c81; Type: FK CONSTRAINT; Schema: public; Owner: aperiosf
 --
 
@@ -18671,11 +20272,15 @@ ALTER TABLE ONLY public.meta_relationship
 
 
 --
+-- TOC entry 5759 (class 0 OID 0)
+-- Dependencies: 8
 -- Name: SCHEMA public; Type: ACL; Schema: -; Owner: aperiosf
 --
 
 GRANT ALL ON SCHEMA public TO PUBLIC;
 
+
+-- Completed on 2019-07-11 03:46:09 UTC
 
 --
 -- PostgreSQL database dump complete
